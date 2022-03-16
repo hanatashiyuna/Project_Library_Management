@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogSign.LecturersGetNewPassActivity"
+    android:background="@drawable/bglogsign">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/castoro"
+        android:gravity="center"
+        android:text="@string/name_colleges"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".15" />
+
+    <EditText
+        android:id="@+id/LG_inputPassAdmin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#000000"
+        android:drawableStart="@drawable/ic_baseline_vpn_key"
+        android:drawablePadding="13dp"
+        android:hint="@string/admin_password"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintWidth_percent=".8"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:fontFamily="@font/castoro"/>
+
+    <EditText
+        android:id="@+id/LG_inputPassAdminAgain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#000000"
+        android:drawableStart="@drawable/ic_baseline_vpn_key"
+        android:drawablePadding="13dp"
+        android:hint="Nhập lại mật khẩu"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LG_inputPassAdmin"
+        app:layout_constraintWidth_percent=".8"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:fontFamily="@font/castoro"/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hiện mật khẩu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LG_inputPassAdminAgain"
+        app:layout_constraintHorizontal_bias=".142"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_design"
+        android:padding="14dp"
+        android:text="Đổi"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white_hex"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LG_inputPassAdminAgain"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias=".2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

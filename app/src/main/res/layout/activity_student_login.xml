@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogSign.StudentLoginActivity"
+    android:background="@drawable/bglogsign">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/castoro"
+        android:gravity="center"
+        android:text="@string/name_colleges"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".15" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        android:id="@+id/tv_title"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/castoro"/>
+
+    <EditText
+        android:id="@+id/LG_inputUsrename"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#000000"
+        android:drawableStart="@drawable/ic_baseline_account_circle"
+        android:drawablePadding="13dp"
+        android:hint="@string/mssv"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintWidth_percent=".8"
+        android:inputType="textPersonName"
+        android:autofillHints="name"
+        android:fontFamily="@font/castoro"/>
+
+    <EditText
+        android:id="@+id/LG_inputPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#000000"
+        android:drawableStart="@drawable/ic_baseline_vpn_key"
+        android:drawablePadding="13dp"
+        android:hint="@string/password_vi"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LG_inputUsrename"
+        app:layout_constraintWidth_percent=".8"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:fontFamily="@font/castoro"/>
+
+    <ImageView
+        android:id="@+id/iv_eye"
+        android:layout_width="48dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_baseline_remove_red_eye"
+        android:layout_marginEnd="85dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ForgotPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LG_inputPass"
+        app:layout_constraintTop_toBottomOf="@+id/LG_inputUsrename" />
+
+    <TextView
+        android:id="@+id/btn_ForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên Mật Khẩu?"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="@color/purple_500"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LG_inputPass"
+        app:layout_constraintVertical_bias=".2"
+        app:layout_constraintHorizontal_bias=".85"/>
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_design"
+        android:padding="14dp"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white_hex"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LG_inputPass"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias=".3"/>
+
+    <TextView
+        android:id="@+id/btn_LoginAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/castoro"
+        android:text="Đăng nhập với tư cách thủ thư"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Login"
+        app:layout_constraintVertical_bias=".2"
+        android:onClick="librariablogin"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

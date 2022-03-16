@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vido_manager_library">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VIDO_Manager_Library">
+        <activity
+            android:name=".LogSign.LecturersGetNewPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogSign.StudentGetNewPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogSign.LecturersForgotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogSign.StudentForgotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogSign.LecturersLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogSign.StudentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.BorrowBooksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.BooksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FlashScreen.WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.VIDO_Manager_Library" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
