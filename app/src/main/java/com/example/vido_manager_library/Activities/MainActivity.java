@@ -12,13 +12,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.vido_manager_library.Activities.AboutActivity;
-import com.example.vido_manager_library.Activities.BooksActivity;
-import com.example.vido_manager_library.Activities.BorrowBooksActivity;
 import com.example.vido_manager_library.Adapters.BooksAdapters;
 import com.example.vido_manager_library.Models.HomeHorModels;
 import com.example.vido_manager_library.R;
-import com.example.vido_manager_library.UserDetailActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;

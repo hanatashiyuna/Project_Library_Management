@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VIDO_Manager_Library">
         <activity
-            android:name=".UserDetailActivity"
+            android:name=".Activities.UserDetailActivity"
             android:exported="false" />
         <activity
             android:name=".LogSign.LecturersGetNewPassActivity"
