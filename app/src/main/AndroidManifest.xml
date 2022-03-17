@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VIDO_Manager_Library">
         <activity
+            android:name=".UserDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".LogSign.LecturersGetNewPassActivity"
             android:exported="false" />
         <activity
@@ -55,4 +58,6 @@
             android:resource="@array/preloaded_fonts" />
     </application>
 
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
 </manifest>

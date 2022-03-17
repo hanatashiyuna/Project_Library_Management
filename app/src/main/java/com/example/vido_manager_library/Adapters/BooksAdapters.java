@@ -1,5 +1,6 @@
 package com.example.vido_manager_library.Adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,11 +18,13 @@ import java.util.List;
 
 public class BooksAdapters extends RecyclerView.Adapter<BooksAdapters.ViewHolder> {
 
-    Context context;
+    //Context context;
+    Activity activity;
     List<HomeHorModels> list;
 
-    public BooksAdapters(Context context, List<HomeHorModels> list) {
-        this.context = context;
+    //Context to Activity
+    public BooksAdapters(Activity activity, List<HomeHorModels> list) {
+        this.activity = activity;
         this.list = list;
     }
 

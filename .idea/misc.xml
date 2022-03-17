@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable-v24/btn_bg_design.xml" value="0.290625" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable-v24/foreground_design.xml" value="0.290625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable-v24/foreground_design_light.xml" value="0.290625" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.290625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/ic_baseline_home.xml" value="0.290625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/ic_baseline_info.xml" value="0.290625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/search_bg.xml" value="0.290625" />
@@ -22,6 +24,7 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_student_get_new_pass.xml" value="0.2708333333333333" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_student_login.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_student_reregister.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_user_detail.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_welcome.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/book_item.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/book_item_2.xml" value="0.2708333333333333" />
@@ -36,5 +39,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.27447916666666666" />
+      </ProjectState>
+    </option>
   </component>
 </project>

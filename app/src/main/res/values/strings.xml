@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">THƯ VIỆN CAO ĐẲNG VIỄN ĐÔNG</string>
+    <string name="version">Beta version 1.0</string>
     <string name="infomation">Thông Tin</string>
-    <string name="books">Sách </string>
+    <string name="books">Sách Yêu Thích</string>
     <string name="home">Trang Chủ</string>
-    <string name="borrowBooks">Mượn Sách</string>
+    <string name="borrowBooks">Sách Đã Mượn</string>
     <string name="name_colleges">CAO ĐẲNG VIỄN ĐÔNG</string>
     <string name="adminLog">Mã Số Admin</string>
     <string name="admin_password">Mật Khẩu Admin</string>

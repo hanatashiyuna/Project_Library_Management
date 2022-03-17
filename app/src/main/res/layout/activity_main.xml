@@ -20,8 +20,8 @@
             android:background="@drawable/search_bg"
             android:drawableEnd="@drawable/ic_baseline_search"
             android:drawablePadding="9dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             android:fontFamily="@font/castoro"
             android:hint="Search your book"
             android:textColor="@color/black"
@@ -30,6 +30,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/user_circle"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/search_bg"
