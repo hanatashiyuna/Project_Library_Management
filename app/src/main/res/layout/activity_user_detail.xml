@@ -57,7 +57,7 @@
         android:layout_marginTop="20dp"/>
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/my_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
@@ -86,7 +86,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/my_info" />
 
     <TextView
         android:id="@+id/log_out_btn"
