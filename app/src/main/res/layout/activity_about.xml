@@ -43,6 +43,8 @@
             android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
             android:fontFamily="@font/castoro"
             android:paddingStart="20dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
             android:text="Nội quy thư viện"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -55,9 +57,10 @@
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
             android:fontFamily="@font/castoro"
             android:paddingStart="20dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
             android:text="Liên hệ"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -65,15 +68,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5"
             android:layout_marginTop="15dp"
-            android:background="#E3E3E3"/>
+            android:background="#E3E3E3"
+            app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
             android:fontFamily="@font/castoro"
             android:paddingStart="20dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
             android:text="Về chúng tôi"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -81,15 +86,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7"
             android:layout_marginTop="15dp"
-            android:background="#E3E3E3" />
+            android:background="#E3E3E3"
+            app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
             android:fontFamily="@font/castoro"
             android:paddingStart="20dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
             android:text="Thông tin ứng dụng"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -97,7 +104,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4"
             android:layout_marginTop="15dp"
-            android:background="#E3E3E3"/>
+            android:background="#E3E3E3"
+            app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

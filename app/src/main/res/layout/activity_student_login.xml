@@ -78,16 +78,15 @@
         android:autofillHints="password"
         android:fontFamily="@font/castoro"/>
 
-    <ImageView
-        android:id="@+id/iv_eye"
-        android:layout_width="48dp"
-        android:layout_height="36dp"
-        android:src="@drawable/ic_baseline_remove_red_eye"
-        android:layout_marginEnd="85dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_ForgotPass"
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hiện mật khẩu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/LG_inputPass"
-        app:layout_constraintTop_toBottomOf="@+id/LG_inputUsrename" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LG_inputPass"
+        app:layout_constraintHorizontal_bias=".142"/>
 
     <TextView
         android:id="@+id/btn_ForgotPass"

@@ -9,6 +9,7 @@ import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,7 +22,7 @@ import java.util.logging.Handler;
 
 public class StudentLoginActivity extends AppCompatActivity {
     private EditText LG_inputUsrename, LG_inputPass;
-    private ImageView ivEye;
+    private CheckBox checkBox;
     private boolean isOpenEye = false;
     private Button btn_Login;
     private TextView btn_loginAdmin, btn_forgotpass;
@@ -35,7 +36,7 @@ public class StudentLoginActivity extends AppCompatActivity {
         btn_forgotpass = (TextView) findViewById(R.id.btn_ForgotPass);
         btn_loginAdmin = (TextView) findViewById(R.id.btn_LoginAdmin);
 
-        ivEye = (ImageView) findViewById(R.id.iv_eye);
+        checkBox = (CheckBox) findViewById(R.id.checkbox);
 
         LG_inputUsrename = (EditText) findViewById(R.id.LG_inputUsrename);
         LG_inputPass = (EditText) findViewById(R.id.LG_inputPass);
@@ -100,19 +101,15 @@ public class StudentLoginActivity extends AppCompatActivity {
             }
         });
 
-        ivEye.setOnClickListener(new View.OnClickListener() {
+        checkBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!isOpenEye) {
-                    ivEye.setSelected(true);
-                    isOpenEye = true;
+                if(!checkBox.isChecked()) {
                     //Password visible
-                    LG_inputPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                }else{
-                    ivEye.setSelected(false);
-                    isOpenEye = false;
-                    //Password not visible
                     LG_inputPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                }else{
+                    //Password not visible
+                    LG_inputPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                 }
             }
         });

@@ -8,6 +8,7 @@ import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -19,6 +20,7 @@ public class LecturersLoginActivity extends AppCompatActivity {
     private EditText LG_inputUsernameAdmin, LG_inputPassAdmin;
     private Button btn_LoginAdmin;
     private TextView btn_ForgotPassAdmin;
+    private CheckBox checkBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,8 @@ public class LecturersLoginActivity extends AppCompatActivity {
 
         LG_inputUsernameAdmin = (EditText) findViewById(R.id.LG_inputUsernameAdmin);
         LG_inputPassAdmin = (EditText) findViewById(R.id.LG_inputPassAdmin);
+
+        checkBox = (CheckBox) findViewById(R.id.checkbox);
 
         //=================================================================
         //Phần Xử lí chạm chuyển activity
@@ -81,6 +85,19 @@ public class LecturersLoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(LecturersLoginActivity.this, LecturersForgotActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        checkBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!checkBox.isChecked()) {
+                    //Password visible
+                    LG_inputPassAdmin.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                }else{
+                    //Password not visible
+                    LG_inputPassAdmin.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                }
             }
         });
     }

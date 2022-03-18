@@ -30,7 +30,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView homeHorizontalRec, homeHorizontalRec2;
+    RecyclerView homeHorizontalRec, homeHorizontalRec2, homeHorizontalRec3, homeHorizontalRec4;
     List<HomeHorModels> bookList;
     BooksAdapters booksAdapters;
     ImageView user_detail_circle;
@@ -76,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
         //cardView home
         homeHorizontalRec = findViewById(R.id.home_hor_rec);
         homeHorizontalRec2 = findViewById(R.id.home_hor_rec2);
+        homeHorizontalRec3 = findViewById(R.id.home_hor_rec3);
+        homeHorizontalRec4 = findViewById(R.id.home_hor_rec4);
         bookList = new ArrayList<>();
 
         bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
@@ -86,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
 
         booksAdapters = new BooksAdapters(this, bookList);//context to activity => getApplication() to this
-        //Sách chuyên ngành
+        //Sách nổi bật
         homeHorizontalRec.setAdapter(booksAdapters);
         homeHorizontalRec.setLayoutManager(new LinearLayoutManager(getApplication(), RecyclerView.HORIZONTAL, false));
         homeHorizontalRec.setHasFixedSize(true);
@@ -95,6 +97,16 @@ public class MainActivity extends AppCompatActivity {
         homeHorizontalRec2.setAdapter(booksAdapters);
         homeHorizontalRec2.setLayoutManager(new LinearLayoutManager(getApplication(), RecyclerView.HORIZONTAL, false));
         homeHorizontalRec2.setHasFixedSize(true);
+
+        //Sách chuyên ngành
+        homeHorizontalRec3.setAdapter(booksAdapters);
+        homeHorizontalRec3.setLayoutManager(new LinearLayoutManager(getApplication(), RecyclerView.HORIZONTAL, false));
+        homeHorizontalRec3.setHasFixedSize(true);
+
+        //test
+        homeHorizontalRec4.setAdapter(booksAdapters);
+        homeHorizontalRec4.setLayoutManager(new LinearLayoutManager(getApplication(), RecyclerView.HORIZONTAL, false));
+        homeHorizontalRec4.setHasFixedSize(true);
 
         //Bottom Menu
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);

@@ -22,8 +22,8 @@ public class LecturersGetNewPassActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lecturers_get_new_pass);
 
         checkBox = (CheckBox) findViewById(R.id.checkbox);
-        LG_inputPassAdmin = (EditText) findViewById(R.id.LG_inputPass);
-        LG_inputPassAdminAgain = (EditText) findViewById(R.id.LG_inputPassAgain);
+        LG_inputPassAdmin = (EditText) findViewById(R.id.LG_inputPassAdmin);
+        LG_inputPassAdminAgain = (EditText) findViewById(R.id.LG_inputPassAdminAgain);
 
         checkBox.setOnClickListener(new View.OnClickListener() {
             @Override

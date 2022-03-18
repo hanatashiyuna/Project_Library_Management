@@ -78,6 +78,16 @@
         android:autofillHints="password"
         android:fontFamily="@font/castoro"/>
 
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hiện mật khẩu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LG_inputPassAdmin"
+        app:layout_constraintHorizontal_bias=".142"/>
+
     <TextView
         android:id="@+id/btn_ForgotPassAdmin"
         android:layout_width="wrap_content"
