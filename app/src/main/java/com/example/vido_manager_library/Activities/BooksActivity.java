@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
@@ -13,15 +15,21 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.vido_manager_library.Adapters.BooksAdapters;
 import com.example.vido_manager_library.Models.Capture;
+import com.example.vido_manager_library.Models.HomeHorModels;
 import com.example.vido_manager_library.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BooksActivity extends AppCompatActivity {
 
+    RecyclerView recLikeBooks;
     FloatingActionButton scanner_btn;
 
     @Override
@@ -29,9 +37,9 @@ public class BooksActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_books);
 
-        onInit();
-
         //scanner
+        scanner_btn = findViewById(R.id.fab);
+
         scanner_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,7 +58,17 @@ public class BooksActivity extends AppCompatActivity {
             }
         });
 
+        //init book
+        recLikeBooks = (RecyclerView) findViewById(R.id.recyclerViewLikeBooks);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        //set Item book with GridLayout
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
+        recLikeBooks.setLayoutManager(gridLayoutManager);
+        BooksAdapters booksAdapters = new BooksAdapters(this, getListBooks());
+        recLikeBooks.setAdapter(booksAdapters);
+
+        //Set navigation Fragment bottom
         bottomNavigationView.setBackground(null);
         bottomNavigationView.setSelectedItemId(R.id.books);
 
@@ -58,20 +76,20 @@ public class BooksActivity extends AppCompatActivity {
             @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()){
+                switch (menuItem.getItemId()) {
                     case R.id.home:
                         startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.books:
                         return true;
                     case R.id.borrowBooks:
                         startActivity(new Intent(getApplicationContext(), BorrowBooksActivity.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.infomation:
                         startActivity(new Intent(getApplicationContext(), AboutActivity.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(0, 0);
                         return true;
                     default:
                         return false;
@@ -79,11 +97,37 @@ public class BooksActivity extends AppCompatActivity {
             }
         });
     }
-    public void onInit(){
-        //scanner
-        scanner_btn = findViewById(R.id.fab);
+
+    private List<HomeHorModels> getListBooks() {
+        List<HomeHorModels> list = new ArrayList<>();
+        //First
+        list.add(new HomeHorModels(R.drawable.logo, "The First Book", HomeHorModels.TYPE_BOOK_1));
+        list.add(new HomeHorModels(R.drawable.logo, "The First Book", HomeHorModels.TYPE_BOOK_1));
+        list.add(new HomeHorModels(R.drawable.logo, "The First Book", HomeHorModels.TYPE_BOOK_1));
+        list.add(new HomeHorModels(R.drawable.logo, "The First Book", HomeHorModels.TYPE_BOOK_1));
+        list.add(new HomeHorModels(R.drawable.logo, "The First Book", HomeHorModels.TYPE_BOOK_1));
+        // Second
+        list.add(new HomeHorModels(R.drawable.logo, "The Second Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "The Second Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "The Second Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "The Second Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "The Second Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "The Second Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "The Second Book", HomeHorModels.TYPE_BOOK_2));
+
+        //Third
+        list.add(new HomeHorModels(R.drawable.logo, "The Third Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "The Third Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "The Third Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "The Third Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "The Third Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "The Third Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "The Third Book", HomeHorModels.TYPE_BOOK_2));
+
+        return list;
     }
 
+    //scanner
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
@@ -112,3 +156,5 @@ public class BooksActivity extends AppCompatActivity {
         }
     }
 }
+
+

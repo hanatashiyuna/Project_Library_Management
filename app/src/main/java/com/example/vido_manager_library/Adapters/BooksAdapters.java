@@ -9,8 +9,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.vido_manager_library.Activities.BooksActivity;
 import com.example.vido_manager_library.Models.HomeHorModels;
 import com.example.vido_manager_library.R;
 
@@ -20,11 +22,17 @@ public class BooksAdapters extends RecyclerView.Adapter<BooksAdapters.ViewHolder
 
     //Context context;
     Activity activity;
+    Fragment fragment;
     List<HomeHorModels> list;
 
     //Context to Activity
     public BooksAdapters(Activity activity, List<HomeHorModels> list) {
         this.activity = activity;
+        this.list = list;
+    }
+
+    public BooksAdapters(Fragment fragment, List<HomeHorModels> list) {
+        this.fragment = fragment;
         this.list = list;
     }
 

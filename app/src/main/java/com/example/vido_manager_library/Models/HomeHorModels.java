@@ -3,6 +3,7 @@ package com.example.vido_manager_library.Models;
 public class HomeHorModels {
     private int bookNumber, typeNumber,bookshelf, amountBooks, bookId, image;
     private String bookName, author, pbSC;
+    public static final int TYPE_BOOK_1 = 1,TYPE_BOOK_2 = 2, TYPE_BOOK_3 = 3;
 
     public HomeHorModels(int bookId) {
         this.bookId = bookId;
@@ -11,6 +12,12 @@ public class HomeHorModels {
     public HomeHorModels(int image, String bookName) {
         this.image = image;
         this.bookName = bookName;
+    }
+
+    public HomeHorModels(int image, String bookName, int bookId){
+        this.bookName = bookName;
+        this.bookId = bookId;
+        this.image = image;
     }
 
     public HomeHorModels(int bookNumber, int typeNumber, int bookshelf, int amountBooks, int bookId, int image, String bookName, String author, String pbSC) {
@@ -95,5 +102,17 @@ public class HomeHorModels {
 
     public void setImage(int image) {
         this.image = image;
+    }
+
+    public static int getTypeBook1() {
+        return TYPE_BOOK_1;
+    }
+
+    public static int getTypeBook2() {
+        return TYPE_BOOK_2;
+    }
+
+    public static int getTypeBook3() {
+        return TYPE_BOOK_3;
     }
 }
