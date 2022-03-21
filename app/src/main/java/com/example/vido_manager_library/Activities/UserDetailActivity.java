@@ -45,16 +45,16 @@ public class UserDetailActivity extends AppCompatActivity {
         myInfo = findViewById(R.id.my_info);
         name = findViewById(R.id.tv_name);
 
-//        informationVerRec = findViewById(R.id.information_ver_rec);
-//
-//        userDetailModelsList = new ArrayList<>();
-//
-//        userDetailModelsList.add(new UserDetailModels("Nguyen Van A", "14THDH", "? Go Vap", 2006010003, "04/09/2002", "0123456789", 14, "CNTT"));
-//        userDetailAdapters = new UserDetailAdapters(UserDetailActivity.this, userDetailModelsList);
-//
-//        informationVerRec.setAdapter(userDetailAdapters);
-        //informationVerRec.setLayoutManager(new LinearLayoutManager(getApplication(), RecyclerView.HORIZONTAL, false));
-        //informationVerRec.setHasFixedSize(true);
+        /*informationVerRec = findViewById(R.id.information_ver_rec);
+
+        userDetailModelsList = new ArrayList<>();
+
+        userDetailModelsList.add(new UserDetailModels("Nguyen Van A", "14THDH", "? Go Vap", 2006010003, "04/09/2002", "0123456789", 14, "CNTT"));
+        userDetailAdapters = new UserDetailAdapters(UserDetailActivity.this, userDetailModelsList);
+
+        informationVerRec.setAdapter(userDetailAdapters);
+        informationVerRec.setLayoutManager(new LinearLayoutManager(getApplication(), RecyclerView.HORIZONTAL, false));
+        informationVerRec.setHasFixedSize(true);*/
 
         //thong tin sinh vien
         myInfo.setOnClickListener(new View.OnClickListener() {
@@ -89,5 +89,6 @@ public class UserDetailActivity extends AppCompatActivity {
     public void switchActivity(){
         Intent intent = new Intent(UserDetailActivity.this, StudentLoginActivity.class);
         startActivity(intent);
+        finish();
     }
 }
