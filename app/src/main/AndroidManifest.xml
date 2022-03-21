@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VIDO_Manager_Library">
         <activity
+            android:name=".Activities.InformationActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.UserDetailActivity"
             android:exported="false" />
         <activity
@@ -55,12 +58,12 @@
             android:name=".Activities.MainActivity"
             android:exported="false"
             android:theme="@style/Theme.VIDO_Manager_Library" />
-
         <activity
             android:name=".Models.Capture"
             android:screenOrientation="portrait"
             android:stateNotNeeded="true"
-            android:theme="@style/zxing_CaptureTheme"/>
+            android:theme="@style/zxing_CaptureTheme" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

@@ -4,15 +4,21 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.browse.MediaBrowser;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -20,6 +26,7 @@ import com.example.vido_manager_library.Adapters.BooksAdapters;
 import com.example.vido_manager_library.Models.Capture;
 import com.example.vido_manager_library.Models.HomeHorModels;
 import com.example.vido_manager_library.R;
+import com.example.vido_manager_library.UserDetailFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -41,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        onInit();
         //scanner
-        scanner_btn = findViewById(R.id.fab);
 
         scanner_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //detail user - thong tin sinh vien
-        user_detail_circle = findViewById(R.id.user_circle);
 
         user_detail_circle.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,18 +80,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //cardView home
-        homeHorizontalRec = findViewById(R.id.home_hor_rec);
-        homeHorizontalRec2 = findViewById(R.id.home_hor_rec2);
-        homeHorizontalRec3 = findViewById(R.id.home_hor_rec3);
-        homeHorizontalRec4 = findViewById(R.id.home_hor_rec4);
-        bookList = new ArrayList<>();
-
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
+        fakeData();
 
         booksAdapters = new BooksAdapters(this, bookList);//context to activity => getApplication() to this
         //Sách nổi bật
@@ -140,6 +135,32 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //hàm fake data
+    public void fakeData(){
+        //cardView home
+        bookList = new ArrayList<>();
+
+        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
+        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
+        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
+        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
+        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
+        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
+
+    }
+    //hàm gộp biến
+    public void onInit(){
+        //scanner
+        scanner_btn = findViewById(R.id.fab);
+        //detail user - thong tin sinh vien
+        user_detail_circle = findViewById(R.id.user_circle);
+        //cardView home
+        homeHorizontalRec = findViewById(R.id.home_hor_rec);
+        homeHorizontalRec2 = findViewById(R.id.home_hor_rec2);
+        homeHorizontalRec3 = findViewById(R.id.home_hor_rec3);
+        homeHorizontalRec4 = findViewById(R.id.home_hor_rec4);
+    }
+
     //scanner
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -169,4 +190,15 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplication(), "Bạn vẫn chưa scan thứ gì...", Toast.LENGTH_SHORT).show();
         }
     }
+
+    //chuyển fragment replaceFragment(new fragment_name);
+    /**
+     * private void replaceFragment(Fragment fragment){
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame_layout, fragment);
+        fragmentTransaction.commit();
+    }
+     */
 }

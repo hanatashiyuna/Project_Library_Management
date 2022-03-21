@@ -34,5 +34,6 @@ public class WelcomeActivity extends AppCompatActivity {
     private void switchActivity() {
         Intent intent = new Intent(WelcomeActivity.this, StudentLoginActivity.class);
         startActivity(intent);
+        finish();
     }
 }
