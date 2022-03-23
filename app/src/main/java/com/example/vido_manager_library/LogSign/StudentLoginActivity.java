@@ -4,21 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Looper;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Activities.MainActivity;
+import com.example.vido_manager_library.User.Acitvity.MainActivity;
 import com.example.vido_manager_library.R;
-
-import java.util.logging.Handler;
 
 public class StudentLoginActivity extends AppCompatActivity {
     private EditText LG_inputUsrename, LG_inputPass;

@@ -13,10 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VIDO_Manager_Library">
         <activity
-            android:name=".Activities.InformationActivity"
+            android:name=".User.Acitvity.InformationActivity"
             android:exported="false" />
         <activity
-            android:name=".Activities.UserDetailActivity"
+            android:name=".User.Acitvity.UserDetailActivity"
             android:exported="false" />
         <activity
             android:name=".LogSign.LecturersGetNewPassActivity"
@@ -37,13 +37,13 @@
             android:name=".LogSign.StudentLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".Activities.BorrowBooksActivity"
+            android:name=".User.Acitvity.BorrowBooksActivity"
             android:exported="false" />
         <activity
-            android:name=".Activities.BooksActivity"
+            android:name=".User.Acitvity.BooksActivity"
             android:exported="false" />
         <activity
-            android:name=".Activities.AboutActivity"
+            android:name=".User.Acitvity.AboutActivity"
             android:exported="false" />
         <activity
             android:name=".FlashScreen.WelcomeActivity"
@@ -55,7 +55,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activities.MainActivity"
+            android:name=".User.Acitvity.MainActivity"
             android:exported="false"
             android:theme="@style/Theme.VIDO_Manager_Library" />
         <activity

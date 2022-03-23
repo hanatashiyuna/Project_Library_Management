@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 
-import com.example.vido_manager_library.Activities.MainActivity;
 import com.example.vido_manager_library.LogSign.StudentLoginActivity;
 import com.example.vido_manager_library.R;
 
