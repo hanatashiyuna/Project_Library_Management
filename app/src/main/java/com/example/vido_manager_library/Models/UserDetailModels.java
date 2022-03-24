@@ -1,6 +1,8 @@
 package com.example.vido_manager_library.Models;
 
-public class UserDetailModels {
+import java.io.Serializable;
+
+public class UserDetailModels implements Serializable {
 
     /** ---------------------------------------
     * coursera: khoas hocj(khoas 14, 15, 16)

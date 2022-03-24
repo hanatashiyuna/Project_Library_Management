@@ -74,7 +74,7 @@
         app:layout_constraintHorizontal_bias=".142"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_ChangePassStu"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_bg_design"
