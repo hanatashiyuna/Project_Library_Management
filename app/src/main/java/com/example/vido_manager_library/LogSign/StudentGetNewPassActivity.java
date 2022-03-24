@@ -80,7 +80,7 @@ public class StudentGetNewPassActivity extends AppCompatActivity {
             public void onResponse(Call<UserAuthor> call, Response<UserAuthor> response) {
 
                 if(response.isSuccessful()) {
-                    showResponse(response.body().toString());
+//                    showResponse(response.body().toString());
                     //Log.e(StudentGetNewPassActivity.this, "post submitted to API." + response.body().toString());
                 }
             }
@@ -92,10 +92,10 @@ public class StudentGetNewPassActivity extends AppCompatActivity {
         });
     }
 
-    public void showResponse(String response) {
-        if(mResponseTv.getVisibility() == View.GONE) {
-            mResponseTv.setVisibility(View.VISIBLE);
-        }
-        mResponseTv.setText(response);
-    }
+//    public void showResponse(String response) {
+//        if(mResponseTv.getVisibility() == View.GONE) {
+//            mResponseTv.setVisibility(View.VISIBLE);
+//        }
+//        mResponseTv.setText(response);
+//    }
 }
