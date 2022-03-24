@@ -14,13 +14,26 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.vido_manager_library.Api.ApiService;
+import com.example.vido_manager_library.Models.UserAuthor;
 import com.example.vido_manager_library.R;
+import com.example.vido_manager_library.User.Acitvity.MainActivity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class LecturersLoginActivity extends AppCompatActivity {
     private EditText LG_inputUsernameAdmin, LG_inputPassAdmin;
     private Button btn_LoginAdmin;
-    private TextView btn_ForgotPassAdmin;
+    private TextView btn_ForgotPassAdmin, btn_LoginStu;
     private CheckBox checkBox;
+    private List<UserAuthor> mListUser;
+    private UserAuthor mUser;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +42,16 @@ public class LecturersLoginActivity extends AppCompatActivity {
 
         btn_LoginAdmin = (Button) findViewById(R.id.btn_LoginAdmin);
         btn_ForgotPassAdmin = (TextView) findViewById(R.id.btn_ForgotPassAdmin);
+        btn_LoginStu = (TextView) findViewById(R.id.btn_LoginStu);
         //btn_loginStudent = (TextView) findViewById(R.id.btn_LoginStudent);
 
         LG_inputUsernameAdmin = (EditText) findViewById(R.id.LG_inputUsernameAdmin);
         LG_inputPassAdmin = (EditText) findViewById(R.id.LG_inputPassAdmin);
+
+        //Run ArrayList and download json User in Database
+        mListUser = new ArrayList<>();
+
+        getListUser();//Function down load
 
         checkBox = (CheckBox) findViewById(R.id.checkbox);
 
@@ -41,42 +60,7 @@ public class LecturersLoginActivity extends AppCompatActivity {
         btn_LoginAdmin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String username, password;
-                username = String.valueOf(LG_inputUsernameAdmin.getText());
-                password = String.valueOf(LG_inputPassAdmin.getText());
-
-                if (!username.equals("") && !password.equals("")){
-
-                    /*Handler handler = new Handler(Looper.getMainLooper());
-                    handler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            String[] field = new String[2];
-                            field[0] = "username";
-                            field[1] = "password";
-
-                            String[] data = new String[2];
-                            data[0] = username;
-                            data[1] = password;
-                            PutData putData = new PutData("http://192.168.1.9/CDVienDongLibary/LoginAndSignUp/loginadmin.php", "POST", field, data);
-                            if (putData.startPut()) {
-                                if (putData.onComplete()) {
-                                    String result = putData.getResult();
-                                    if (result.equals("Login Success")){
-                                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(LoginAdmin.this, MenuAdmin.class);
-                                        startActivity(intent);
-                                        finish();
-                                    }else{
-                                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            }
-                        }
-                    });*/
-                }else {
-                    Toast.makeText(getApplicationContext(), "All Fields Required", Toast.LENGTH_SHORT).show();
-                }
+                clickLogin(); //Treatment click Login
             }
         });
 
@@ -84,6 +68,14 @@ public class LecturersLoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LecturersLoginActivity.this, LecturersForgotActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_LoginStu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LecturersLoginActivity.this, StudentLoginActivity.class);
                 startActivity(intent);
             }
         });
@@ -100,5 +92,54 @@ public class LecturersLoginActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void switchActivity(){
+        Intent intent = new Intent(LecturersLoginActivity.this, MainActivity.class);
+        startActivity(intent);
+    }
+    private void getListUser() {
+        ApiService.apiService.covertUserAuthor().enqueue(new Callback<List<UserAuthor>>() {
+            @Override
+            public void onResponse(Call<List<UserAuthor>> call, Response<List<UserAuthor>> response) {
+                mListUser = response.body();
+//                Log.e("List User: ", mListUser.size()+"");
+            }
+            @Override
+            public void onFailure(Call<List<UserAuthor>> call, Throwable t) {
+                Toast.makeText(LecturersLoginActivity.this, "Sai Mật Khẩu Hoặc Tài Khoản", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+    private void clickLogin() {
+        String username = LG_inputUsernameAdmin.getText().toString().trim();
+        //String password = LG_inputPassAdmin.getText().toString().trim();
+
+        if (mListUser == null || mListUser.isEmpty()){
+            return;
+        }
+
+        boolean isHasUser = false;
+
+        for (UserAuthor userAuthor: mListUser) {
+            //set password
+            if (username.equals(userAuthor.getTentacgia())){
+                isHasUser = true;
+                mUser = userAuthor;
+                mListUser = null;
+                break;
+            }
+        }
+
+        if (isHasUser) {
+            Intent intent = new Intent(LecturersLoginActivity.this, MainActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("infor_userLecturersLogin", mUser);
+            intent.putExtras(bundle);
+            startActivity(intent);
+            finish();
+        }else {
+            Toast.makeText(LecturersLoginActivity.this, "Sai Mật Khẩu Hoặc Tài Khoản", Toast.LENGTH_SHORT).show();
+        }
     }
 }

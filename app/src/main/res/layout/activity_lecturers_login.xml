@@ -120,4 +120,19 @@
         app:layout_constraintTop_toBottomOf="@+id/LG_inputPassAdmin"
         app:layout_constraintWidth_percent=".8"
         app:layout_constraintVertical_bias=".3"/>
+    <TextView
+        android:id="@+id/btn_LoginStu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/castoro"
+        android:text="Đăng nhập với tư cách sinh viên"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_LoginAdmin"
+        app:layout_constraintVertical_bias=".2"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,7 +16,6 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_books.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_borrow_books.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_home.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_information.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_lecturers_forgot.xml" value="0.2708333333333333" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_lecturers_get_new_pass.xml" value="0.2708333333333333" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_lecturers_login.xml" value="0.2708333333333333" />
@@ -31,19 +30,23 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_welcome.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/book_item.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/book_item_2.xml" value="0.2708333333333333" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_borrowing_books.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_returned_books.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_user_detail.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/infomation_student.xml" value="0.2513586956521739" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/information_student.xml" value="0.2513586956521739" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/menu.xml" value="0.1296875" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/menu_navigation_noscan.xml" value="0.2513586956521739" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/menu/menu.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/menu/menu_navigation.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/Project_Library_Management/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/Project_Library_Management/app/src/main/res/layout/activity_lecturers_forgot.xml" value="0.18795289855072464" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/Project_Library_Management/app/src/main/res/layout/activity_lecturers_login.xml" value="0.18795289855072464" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/Project_Library_Management/app/src/main/res/layout/activity_student_forgot.xml" value="0.18795289855072464" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/Project_Library_Management/app/src/main/res/layout/activity_student_get_new_pass.xml" value="0.18795289855072464" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/Project_Library_Management/app/src/main/res/layout/activity_student_login.xml" value="0.18795289855072464" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/Project_Library_Management/app/src/main/res/layout/activity_user_detail.xml" value="0.1" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/Project_Library_Management/app/src/main/res/layout/book_item.xml" value="0.33" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

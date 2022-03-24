@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -13,8 +14,17 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.vido_manager_library.Api.ApiService;
+import com.example.vido_manager_library.Models.UserAuthor;
 import com.example.vido_manager_library.User.Acitvity.MainActivity;
 import com.example.vido_manager_library.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class StudentLoginActivity extends AppCompatActivity {
     private EditText LG_inputUsrename, LG_inputPass;
@@ -22,6 +32,8 @@ public class StudentLoginActivity extends AppCompatActivity {
     private boolean isOpenEye = false;
     private Button btn_Login;
     private TextView btn_loginAdmin, btn_forgotpass;
+    private List<UserAuthor> mListUser;
+    private UserAuthor mUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,47 +49,15 @@ public class StudentLoginActivity extends AppCompatActivity {
         LG_inputUsrename = (EditText) findViewById(R.id.LG_inputUsrename);
         LG_inputPass = (EditText) findViewById(R.id.LG_inputPass);
 
+        //Run ArrayList and download json User in Database
+        mListUser = new ArrayList<>();
+
+        getListUser();//Function down load
+
         btn_Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String mssv, password;
-                mssv = String.valueOf(LG_inputUsrename.getText());
-                password = String.valueOf(LG_inputPass.getText());
-
-                if (!mssv.equals("") && !password.equals("")){
-
-                    /* error to library
-                    Handler handler = new Handler(Looper.getMainLooper());
-                    handler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            String[] field = new String[2];
-                            field[0] = "mssv";
-                            field[1] = "password";
-
-                            String[] data = new String[2];
-                            data[0] = mssv;
-                            data[1] = password;
-                            PutData putData = new PutData("http://192.168.1.9/CDVienDongLibary/LoginAndSignUp/login.php", "POST", field, data);
-                            if (putData.startPut()) {
-                                if (putData.onComplete()) {
-                                    String result = putData.getResult();
-                                    if (result.equals("Login Success")){
-                                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(Login.this, Account.class);
-                                        startActivity(intent);
-                                        finish();
-                                    }else{
-                                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            }
-                        }
-                    });*/
-                }else {
-                    Toast.makeText(getApplicationContext(), "All Fields Required", Toast.LENGTH_SHORT).show();
-                    switchActivity();
-                }
+                clickLogin(); //Treatment click Login
             }
         });
 
@@ -114,5 +94,49 @@ public class StudentLoginActivity extends AppCompatActivity {
     public void switchActivity(){
         Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
         startActivity(intent);
+    }
+    private void getListUser() {
+        ApiService.apiService.covertUserAuthor().enqueue(new Callback<List<UserAuthor>>() {
+            @Override
+            public void onResponse(Call<List<UserAuthor>> call, Response<List<UserAuthor>> response) {
+                mListUser = response.body();
+//                Log.e("List User: ", mListUser.size()+"");
+            }
+            @Override
+            public void onFailure(Call<List<UserAuthor>> call, Throwable t) {
+                Toast.makeText(StudentLoginActivity.this, "Sai Mật Khẩu Hoặc Tài Khoản", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+    private void clickLogin() {
+        String username = LG_inputUsrename.getText().toString().trim();
+//        String password = LG_inputPass.getText().toString().trim();
+
+        if (mListUser == null || mListUser.isEmpty()){
+            return;
+        }
+
+        boolean isHasUser = false;
+
+        for (UserAuthor userAuthor: mListUser) {
+            //set password
+            if (username.equals(userAuthor.getTentacgia())){
+                isHasUser = true;
+                mUser = userAuthor;
+                mListUser = null;
+                break;
+            }
+        }
+
+        if (isHasUser) {
+            Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("infor_userLogin", mUser);
+            intent.putExtras(bundle);
+            startActivity(intent);
+            finish();
+        }else {
+            Toast.makeText(StudentLoginActivity.this, "Sai Mật Khẩu Hoặc Tài Khoản", Toast.LENGTH_SHORT).show();
+        }
     }
 }
