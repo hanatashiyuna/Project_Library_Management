@@ -15,4 +15,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="borrowingBook">Sách đang mượn</string>
     <string name="returnedBook">Sách đã trả</string>
+    <string name="view_more">Xem Thêm</string>
+    <string name="recentAddBook">Sách vừa thêm</string>
+    <string name="RecentBorrowingBooks">Số lượng sách đang mượn</string>
+    <string name="title_activity_home_admin">HomeAdminActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

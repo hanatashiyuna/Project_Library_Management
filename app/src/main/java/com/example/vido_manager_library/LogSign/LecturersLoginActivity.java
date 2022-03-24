@@ -2,6 +2,8 @@ package com.example.vido_manager_library.LogSign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
@@ -14,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.vido_manager_library.Admin.Activities.DashBoardActivity;
 import com.example.vido_manager_library.R;
 
 public class LecturersLoginActivity extends AppCompatActivity {
@@ -76,6 +79,7 @@ public class LecturersLoginActivity extends AppCompatActivity {
                     });*/
                 }else {
                     Toast.makeText(getApplicationContext(), "All Fields Required", Toast.LENGTH_SHORT).show();
+                    switchActivity();
                 }
             }
         });
@@ -100,5 +104,10 @@ public class LecturersLoginActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+    public void switchActivity(){
+        Intent intent = new Intent(LecturersLoginActivity.this, DashBoardActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

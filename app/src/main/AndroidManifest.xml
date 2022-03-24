@@ -13,6 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VIDO_Manager_Library">
         <activity
+            android:name=".Admin.Activities.HomeAdminActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home_admin" />
+        <activity
+            android:name=".Admin.Activities.DashBoardActivity"
+            android:exported="false" />
+        <activity
             android:name=".User.Acitvity.InformationActivity"
             android:exported="false" />
         <activity

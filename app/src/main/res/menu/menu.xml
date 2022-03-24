@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/info"
-        android:title="My infomation"/>
+    <item android:id="@+id/dashBoard"
+        android:title="@string/home"
+        android:icon="@drawable/ic_baseline_home"/>
 
-    <item android:id="@+id/logout"
-        android:title="Log Out"/>
+    <item
+        android:id="@+id/books"
+        android:title="@string/books"
+        android:icon="@drawable/ic_baseline_menu_book"/>
+
+    <item android:id="@+id/placeholder"
+        android:title=""
+        android:enabled="false"/>
+
+    <item
+        android:id="@+id/borrowBooks"
+        android:title="@string/borrowBooks"
+        android:icon="@drawable/ic_baseline_library_books_24"/>
+
+    <item
+        android:id="@+id/infomation"
+        android:title="@string/infomation"
+        android:icon="@drawable/ic_baseline_info"/>
 
 </menu>
