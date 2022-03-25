@@ -50,10 +50,10 @@ public class StudentGetNewPassActivity extends AppCompatActivity {
                 int tacgiaId = userAuthor.getTacgiaId();
                 String tentacgia = LG_inputPassAgain.getText().toString().trim();
                 String ngaysinh = userAuthor.getNgaysinh().trim();
-                String saches = userAuthor.getSaches().trim();
+//                String saches = userAuthor.getSaches().trim();
 
                 if(!TextUtils.isEmpty(tentacgia)) {
-                    sendPost(tacgiaId, tentacgia, ngaysinh, saches);
+//                    sendPost(tacgiaId, tentacgia, ngaysinh, saches);
                 }
             }
         });
@@ -74,23 +74,23 @@ public class StudentGetNewPassActivity extends AppCompatActivity {
         });
     }
 
-    public void sendPost(int tacgiaId, String tentacgia, String ngaysinh, String saches) {
-        ApiService.apiService.updateData(tacgiaId, tentacgia, ngaysinh, saches).enqueue(new Callback<UserAuthor>() {
-            @Override
-            public void onResponse(Call<UserAuthor> call, Response<UserAuthor> response) {
-
-                if(response.isSuccessful()) {
-//                    showResponse(response.body().toString());
-                    //Log.e(StudentGetNewPassActivity.this, "post submitted to API." + response.body().toString());
-                }
-            }
-
-            @Override
-            public void onFailure(Call<UserAuthor> call, Throwable t) {
-                //Log.e(TAG, "Unable to submit post to API.");
-            }
-        });
-    }
+//    public void sendPost(int tacgiaId, String tentacgia, String ngaysinh, String saches) {
+//        ApiService.apiService.updateData(tacgiaId, tentacgia, ngaysinh, saches).enqueue(new Callback<UserAuthor>() {
+//            @Override
+//            public void onResponse(Call<UserAuthor> call, Response<UserAuthor> response) {
+//
+//                if(response.isSuccessful()) {
+////                    showResponse(response.body().toString());
+//                    //Log.e(StudentGetNewPassActivity.this, "post submitted to API." + response.body().toString());
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<UserAuthor> call, Throwable t) {
+//                //Log.e(TAG, "Unable to submit post to API.");
+//            }
+//        });
+//    }
 
 //    public void showResponse(String response) {
 //        if(mResponseTv.getVisibility() == View.GONE) {

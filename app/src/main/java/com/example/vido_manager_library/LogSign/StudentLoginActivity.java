@@ -91,11 +91,9 @@ public class StudentLoginActivity extends AppCompatActivity {
         });
     }
 
-    public void switchActivity(){
-        Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
-        startActivity(intent);
-    }
-    private void getListUser() {
+   
+
+    public void getListUser() {
         ApiService.apiService.covertUserAuthor().enqueue(new Callback<List<UserAuthor>>() {
             @Override
             public void onResponse(Call<List<UserAuthor>> call, Response<List<UserAuthor>> response) {
@@ -134,7 +132,6 @@ public class StudentLoginActivity extends AppCompatActivity {
             bundle.putSerializable("infor_userLogin", mUser);
             intent.putExtras(bundle);
             startActivity(intent);
-            finish();
         }else {
             Toast.makeText(StudentLoginActivity.this, "Sai Mật Khẩu Hoặc Tài Khoản", Toast.LENGTH_SHORT).show();
         }

@@ -1,13 +1,17 @@
-package com.example.vido_manager_library.Models;
+package com.example.vido_manager_library.Admin.Model;
 
 import java.io.Serializable;
 
-public class UserAuthor implements Serializable {
+public class Authors implements Serializable {
     private int tacgiaId;
     private String tentacgia;
     private String ngaysinh;
-//    private String saches;
 
+    public Authors(int tacgiaId, String tentacgia, String ngaysinh) {
+        this.tacgiaId = tacgiaId;
+        this.tentacgia = tentacgia;
+        this.ngaysinh = ngaysinh;
+    }
 
     public int getTacgiaId() {
         return tacgiaId;
@@ -32,12 +36,4 @@ public class UserAuthor implements Serializable {
     public void setNgaysinh(String ngaysinh) {
         this.ngaysinh = ngaysinh;
     }
-
-//    public String getSaches() {
-//        return saches;
-//    }
-//
-//    public void setSaches(String saches) {
-//        this.saches = saches;
-//    }
 }

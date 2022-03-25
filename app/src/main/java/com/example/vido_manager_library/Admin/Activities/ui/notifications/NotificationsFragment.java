@@ -12,8 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.vido_manager_library.Admin.Activities.R;
-import com.example.vido_manager_library.Admin.Activities.databinding.FragmentNotificationsBinding;
+import com.example.vido_manager_library.databinding.FragmentNotificationsBinding;
+
 
 public class NotificationsFragment extends Fragment {
 

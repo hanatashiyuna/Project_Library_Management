@@ -48,11 +48,11 @@ public interface ApiService {
 
     //==============================
     // Update data project upload database
-    @POST("api/tacgias")
-    Call<UserAuthor> updateData(@Field("tacgiaId") int tacgiaId,
-                                @Field("tentacgia") String tentacgia,
-                                @Field("ngaysinh") String ngaysinh,
-                                @Field("saches") String saches);
+//    @POST("api/tacgias")
+//    Call<UserAuthor> updateData(@Field("tacgiaId") int tacgiaId,
+//                                @Field("tentacgia") String tentacgia,
+//                                @Field("ngaysinh") String ngaysinh,
+//                                @Field("saches") String saches);
     /*@GET("")
     Call<List<UserAuthor>> covertUserLecturers(@Query("id") String id);*/
     //==================================

@@ -11,7 +11,7 @@
     <string name="log_in">Đăng Nhập</string>
     <string name="mssv">Mã số sinh viên</string>
     <string name="password_vi">Mật Khẩu</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="borrowingBook">Sách đang mượn</string>
     <string name="returnedBook">Sách đã trả</string>
