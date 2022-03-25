@@ -21,7 +21,7 @@
 
     <item
         android:id="@+id/infomation"
-        android:title="@string/infomation"
+        android:title="@string/information"
         android:icon="@drawable/ic_baseline_info"/>
 
 </menu>

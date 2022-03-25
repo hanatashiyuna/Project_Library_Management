@@ -1,4 +1,4 @@
-package com.example.vido_manager_library.Fragment;
+package com.example.vido_manager_library.Fragment.User;
 
 import android.os.Bundle;
 
@@ -18,33 +18,33 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class BorrowingBooksFragment extends Fragment {
+public class ReturnedBooksFragment extends Fragment {
 
-    RecyclerView recBorrowingBook;
+    RecyclerView recReturnedBook;
     View view;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_borrowing_books, container, false);
+        view = inflater.inflate(R.layout.fragment_returned_books, container, false);
         //set borrowing books
-        recBorrowingBook = view.findViewById(R.id.borrowing_book_rec);
+        recReturnedBook = view.findViewById(R.id.returned_book_rec);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(view.getContext(), 3);
-        recBorrowingBook.setLayoutManager(gridLayoutManager);
+        recReturnedBook.setLayoutManager(gridLayoutManager);
         BooksAdapters booksAdapters = new BooksAdapters(this, getListBooks());
-        recBorrowingBook.setAdapter(booksAdapters);
+        recReturnedBook.setAdapter(booksAdapters);
+
         return view;
     }
-
     private List<HomeHorModels> getListBooks() {
         List<HomeHorModels> list = new ArrayList<>();
 
-        list.add(new HomeHorModels(R.drawable.logo, "Sách đang mượn", HomeHorModels.TYPE_BOOK_1));
-        list.add(new HomeHorModels(R.drawable.logo, "Sách đang mượn", HomeHorModels.TYPE_BOOK_1));
-        list.add(new HomeHorModels(R.drawable.logo, "Sách đang mượn", HomeHorModels.TYPE_BOOK_1));
-        list.add(new HomeHorModels(R.drawable.logo, "Sách đang mượn", HomeHorModels.TYPE_BOOK_1));
-        list.add(new HomeHorModels(R.drawable.logo, "Sách đang mượn", HomeHorModels.TYPE_BOOK_1));
+        list.add(new HomeHorModels(R.drawable.logo, "Sách đã trả", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "Sách đã trả", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "Sách đã trả", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "Sách đã trả", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.logo, "Sách đã trả", HomeHorModels.TYPE_BOOK_2));
 
         return list;
     }

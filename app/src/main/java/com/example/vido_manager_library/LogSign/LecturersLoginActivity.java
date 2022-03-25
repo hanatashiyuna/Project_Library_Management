@@ -2,8 +2,6 @@ package com.example.vido_manager_library.LogSign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
@@ -12,11 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Admin.Activities.DashBoardActivity;
+import com.example.vido_manager_library.Activities.Admin.HomeAdminActivity;
 import com.example.vido_manager_library.R;
 
 public class LecturersLoginActivity extends AppCompatActivity {
@@ -106,8 +103,7 @@ public class LecturersLoginActivity extends AppCompatActivity {
         });
     }
     public void switchActivity(){
-        Intent intent = new Intent(LecturersLoginActivity.this, DashBoardActivity.class);
+        Intent intent = new Intent(LecturersLoginActivity.this, HomeAdminActivity.class);
         startActivity(intent);
-        finish();
     }
 }

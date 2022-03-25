@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -16,7 +15,7 @@ import android.widget.Toast;
 
 import com.example.vido_manager_library.Api.ApiService;
 import com.example.vido_manager_library.Models.UserAuthor;
-import com.example.vido_manager_library.User.Acitvity.MainActivity;
+import com.example.vido_manager_library.Activities.User.MainActivity;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
@@ -29,7 +28,6 @@ import retrofit2.Response;
 public class StudentLoginActivity extends AppCompatActivity {
     private EditText LG_inputUsrename, LG_inputPass;
     private CheckBox checkBox;
-    private boolean isOpenEye = false;
     private Button btn_Login;
     private TextView btn_loginAdmin, btn_forgotpass;
     private List<UserAuthor> mListUser;
@@ -58,6 +56,8 @@ public class StudentLoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 clickLogin(); //Treatment click Login
+                /*Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
+                startActivity(intent);*/
             }
         });
 
@@ -91,16 +91,12 @@ public class StudentLoginActivity extends AppCompatActivity {
         });
     }
 
-    public void switchActivity(){
-        Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
-        startActivity(intent);
-    }
     private void getListUser() {
         ApiService.apiService.covertUserAuthor().enqueue(new Callback<List<UserAuthor>>() {
             @Override
             public void onResponse(Call<List<UserAuthor>> call, Response<List<UserAuthor>> response) {
                 mListUser = response.body();
-//                Log.e("List User: ", mListUser.size()+"");
+                //Log.e("List User : ", mListUser.size()+"");
             }
             @Override
             public void onFailure(Call<List<UserAuthor>> call, Throwable t) {
@@ -137,6 +133,9 @@ public class StudentLoginActivity extends AppCompatActivity {
             finish();
         }else {
             Toast.makeText(StudentLoginActivity.this, "Sai Mật Khẩu Hoặc Tài Khoản", Toast.LENGTH_SHORT).show();
+            /* TO DO CODING */
+            Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
+            startActivity(intent);
         }
     }
 }

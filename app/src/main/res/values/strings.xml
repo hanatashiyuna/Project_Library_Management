@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">THƯ VIỆN CAO ĐẲNG VIỄN ĐÔNG</string>
     <string name="version">Beta version 1.0</string>
-    <string name="infomation">Thông Tin</string>
+    <string name="information">Thông Tin</string>
     <string name="books">Sách Yêu Thích</string>
     <string name="home">Trang Chủ</string>
     <string name="borrowBooks">Sách Đã Mượn</string>
@@ -22,4 +22,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_activity_home_user">HomeUserActivity</string>
+    <string name="managerBook">Quản lý sách</string>
+    <string name="managerAccount">Quản lý tài khoản</string>
 </resources>

@@ -6,18 +6,21 @@
         android:icon="@drawable/ic_baseline_home"/>
 
     <item
-        android:id="@+id/books"
-        android:title="@string/books"
+        android:id="@+id/managerBooks"
+        android:title="@string/managerBook"
         android:icon="@drawable/ic_baseline_menu_book"/>
 
-    <item
-        android:id="@+id/borrowBooks"
-        android:title="@string/borrowBooks"
-        android:icon="@drawable/ic_baseline_library_books_24"/>
+    <item android:id="@+id/placeholder"
+        android:title=""
+        android:enabled="false"/>
 
     <item
-        android:id="@+id/infomation"
+        android:id="@+id/managerAccount"
+        android:title="@string/managerAccount"
+        android:icon="@drawable/ic_baseline_account_circle"/>
+
+    <item
+        android:id="@+id/information"
         android:title="@string/information"
         android:icon="@drawable/ic_baseline_info"/>
-
 </menu>

@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,17 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VIDO_Manager_Library">
         <activity
-            android:name=".Admin.Activities.HomeAdminActivity"
-            android:exported="false"
-            android:label="@string/title_activity_home_admin" />
-        <activity
-            android:name=".Admin.Activities.DashBoardActivity"
+            android:name=".Activities.Admin.HomeAdminActivity"
             android:exported="false" />
         <activity
-            android:name=".User.Acitvity.InformationActivity"
+            android:name=".Activities.User.InformationActivity"
             android:exported="false" />
         <activity
-            android:name=".User.Acitvity.UserDetailActivity"
+            android:name=".Activities.User.UserDetailActivity"
             android:exported="false" />
         <activity
             android:name=".LogSign.LecturersGetNewPassActivity"
@@ -45,13 +41,13 @@
             android:name=".LogSign.StudentLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".User.Acitvity.BorrowBooksActivity"
+            android:name=".Activities.User.BorrowBooksActivity"
             android:exported="false" />
         <activity
-            android:name=".User.Acitvity.BooksActivity"
+            android:name=".Activities.User.BooksActivity"
             android:exported="false" />
         <activity
-            android:name=".User.Acitvity.AboutActivity"
+            android:name=".Activities.User.AboutActivity"
             android:exported="false" />
         <activity
             android:name=".FlashScreen.WelcomeActivity"
@@ -63,7 +59,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".User.Acitvity.MainActivity"
+            android:name=".Activities.User.MainActivity"
             android:exported="false"
             android:theme="@style/Theme.VIDO_Manager_Library" />
         <activity

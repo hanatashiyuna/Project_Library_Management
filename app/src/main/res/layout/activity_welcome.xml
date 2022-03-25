@@ -36,14 +36,14 @@
         android:id="@+id/subText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CÓ VIỆC LÀM ĐÚNG NGÀNH - GIÀNH ĐẠI HỌC TOP TRÊN"
-        android:textColor="@color/white_hex"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text"
         android:layout_marginTop="10dp"
         android:background="@color/red"
-        android:textSize="12sp"
-        android:layout_marginEnd="80dp"/>
+        android:text="CÓ VIỆC LÀM ĐÚNG NGÀNH - GIÀNH ĐẠI HỌC TOP TRÊN"
+        android:textColor="@color/white_hex"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -54,7 +54,7 @@
         app:layout_constraintStart_toEndOf="@+id/subText"
         app:layout_constraintTop_toBottomOf="@+id/text"
         android:layout_marginTop="10dp"
-        android:textSize="12sp"
+        android:textSize="8sp"
         app:layout_constraintHorizontal_bias=".1"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

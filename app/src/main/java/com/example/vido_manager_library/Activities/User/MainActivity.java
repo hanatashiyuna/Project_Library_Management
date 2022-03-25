@@ -1,10 +1,10 @@
-package com.example.vido_manager_library.User.Acitvity;
+package com.example.vido_manager_library.Activities.User;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
@@ -13,6 +13,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.vido_manager_library.Adapters.BooksAdapters;
@@ -27,24 +28,27 @@ import com.google.zxing.integration.android.IntentResult;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BooksActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
-    RecyclerView recLikeBooks;
+    RecyclerView homeHorizontalRec, homeHorizontalRec2, homeHorizontalRec3, homeHorizontalRec4;
+    List<HomeHorModels> bookList;
+    BooksAdapters booksAdapters;
+    ImageView user_detail_circle;
     FloatingActionButton scanner_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_books);
+        setContentView(R.layout.activity_main);
 
+        onInit();
         //scanner
-        scanner_btn = findViewById(R.id.fab);
 
         scanner_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //khoi tao intent
-                IntentIntegrator intentIntegrator = new IntentIntegrator(BooksActivity.this);
+                IntentIntegrator intentIntegrator = new IntentIntegrator(MainActivity.this);
                 //Set prompt text
                 intentIntegrator.setPrompt("For flash use volume up key");
                 //Set beep
@@ -58,38 +62,64 @@ public class BooksActivity extends AppCompatActivity {
             }
         });
 
-        //init book
-        recLikeBooks = (RecyclerView) findViewById(R.id.recyclerViewLikeBooks);
+        //detail user - thong tin sinh vien
+
+        user_detail_circle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, UserDetailActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //cardView home
+        fakeData();
+
+        booksAdapters = new BooksAdapters(this, bookList);//context to activity => getApplication() to this
+        //Sách nổi bật
+        homeHorizontalRec.setAdapter(booksAdapters);
+        homeHorizontalRec.setLayoutManager(new LinearLayoutManager(getApplication(), RecyclerView.HORIZONTAL, false));
+        homeHorizontalRec.setHasFixedSize(true);
+
+        //Sách Giải Trí
+        homeHorizontalRec2.setAdapter(booksAdapters);
+        homeHorizontalRec2.setLayoutManager(new LinearLayoutManager(getApplication(), RecyclerView.HORIZONTAL, false));
+        homeHorizontalRec2.setHasFixedSize(true);
+
+        //Sách chuyên ngành
+        homeHorizontalRec3.setAdapter(booksAdapters);
+        homeHorizontalRec3.setLayoutManager(new LinearLayoutManager(getApplication(), RecyclerView.HORIZONTAL, false));
+        homeHorizontalRec3.setHasFixedSize(true);
+
+        //test
+        homeHorizontalRec4.setAdapter(booksAdapters);
+        homeHorizontalRec4.setLayoutManager(new LinearLayoutManager(getApplication(), RecyclerView.HORIZONTAL, false));
+        homeHorizontalRec4.setHasFixedSize(true);
+
+        //Bottom Menu
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-
-        //set Item book with GridLayout
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
-        recLikeBooks.setLayoutManager(gridLayoutManager);
-        BooksAdapters booksAdapters = new BooksAdapters(this, getListBooks());
-        recLikeBooks.setAdapter(booksAdapters);
-
-        //Set navigation Fragment bottom
         bottomNavigationView.setBackground(null);
-        bottomNavigationView.setSelectedItemId(R.id.books);
+
+        bottomNavigationView.setSelectedItemId(R.id.home);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
+                switch (menuItem.getItemId()){
                     case R.id.home:
-                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.books:
+                        startActivity(new Intent(getApplicationContext(), BooksActivity.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.borrowBooks:
                         startActivity(new Intent(getApplicationContext(), BorrowBooksActivity.class));
-                        overridePendingTransition(0, 0);
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.infomation:
                         startActivity(new Intent(getApplicationContext(), AboutActivity.class));
-                        overridePendingTransition(0, 0);
+                        overridePendingTransition(0,0);
                         return true;
                     default:
                         return false;
@@ -98,36 +128,34 @@ public class BooksActivity extends AppCompatActivity {
         });
     }
 
-    private List<HomeHorModels> getListBooks() {
-        List<HomeHorModels> list = new ArrayList<>();
-        //First
-        list.add(new HomeHorModels(R.drawable.logo, "The First Book", HomeHorModels.TYPE_BOOK_1));
-        list.add(new HomeHorModels(R.drawable.logo, "The First Book", HomeHorModels.TYPE_BOOK_1));
-        list.add(new HomeHorModels(R.drawable.logo, "The First Book", HomeHorModels.TYPE_BOOK_1));
-        list.add(new HomeHorModels(R.drawable.logo, "The First Book", HomeHorModels.TYPE_BOOK_1));
-        list.add(new HomeHorModels(R.drawable.logo, "The First Book", HomeHorModels.TYPE_BOOK_1));
-        // Second
-        list.add(new HomeHorModels(R.drawable.logo, "The Second Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.logo, "The Second Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.logo, "The Second Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.logo, "The Second Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.logo, "The Second Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.logo, "The Second Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.logo, "The Second Book", HomeHorModels.TYPE_BOOK_2));
+    //hàm fake data
+    public void fakeData(){
+        //cardView home
+        bookList = new ArrayList<>();
 
-        //Third
-        list.add(new HomeHorModels(R.drawable.logo, "The Third Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.logo, "The Third Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.logo, "The Third Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.logo, "The Third Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.logo, "The Third Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.logo, "The Third Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.logo, "The Third Book", HomeHorModels.TYPE_BOOK_2));
+        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
+        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
+        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
+        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
+        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
+        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
 
-        return list;
+    }
+    //hàm gộp biến
+    public void onInit(){
+        //scanner
+        scanner_btn = findViewById(R.id.fab);
+        //detail user - thong tin sinh vien
+        user_detail_circle = findViewById(R.id.user_circle);
+        //cardView home
+        homeHorizontalRec = findViewById(R.id.home_hor_rec);
+        homeHorizontalRec2 = findViewById(R.id.home_hor_rec2);
+        homeHorizontalRec3 = findViewById(R.id.home_hor_rec3);
+        homeHorizontalRec4 = findViewById(R.id.home_hor_rec4);
     }
 
     //scanner
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
@@ -138,7 +166,7 @@ public class BooksActivity extends AppCompatActivity {
              * khi content = null: khoi tao alert dialog
              */
 
-            AlertDialog.Builder builder = new AlertDialog.Builder(BooksActivity.this);
+            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
             builder.setTitle("Kết quả");
             builder.setMessage(intentResult.getContents());
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -156,5 +184,3 @@ public class BooksActivity extends AppCompatActivity {
         }
     }
 }
-
-

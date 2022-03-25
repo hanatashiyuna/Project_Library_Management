@@ -111,15 +111,15 @@
         android:padding="14dp"
         android:text="@string/log_in"
         android:textAllCaps="false"
+        android:textColor="@color/white_hex"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/white_hex"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LG_inputPass"
-        app:layout_constraintWidth_percent=".8"
-        app:layout_constraintVertical_bias=".3"/>
+        app:layout_constraintVertical_bias="0.298"
+        app:layout_constraintWidth_percent=".8" />
 
     <TextView
         android:id="@+id/btn_LoginAdmin"

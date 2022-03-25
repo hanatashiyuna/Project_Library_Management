@@ -12,7 +12,6 @@ import android.widget.Toast;
 import com.example.vido_manager_library.Api.ApiService;
 import com.example.vido_manager_library.Models.UserAuthor;
 import com.example.vido_manager_library.R;
-import com.example.vido_manager_library.User.Acitvity.MainActivity;
 
 import java.util.ArrayList;
 import java.util.List;

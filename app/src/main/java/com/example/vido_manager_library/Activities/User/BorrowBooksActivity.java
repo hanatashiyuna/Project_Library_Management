@@ -1,4 +1,4 @@
-package com.example.vido_manager_library.User.Acitvity;
+package com.example.vido_manager_library.Activities.User;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,8 +15,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.vido_manager_library.Adapters.FragmentPagerAdapter;
-import com.example.vido_manager_library.Fragment.BorrowingBooksFragment;
-import com.example.vido_manager_library.Fragment.ReturnedBooksFragment;
+import com.example.vido_manager_library.Fragment.User.BorrowingBooksFragment;
+import com.example.vido_manager_library.Fragment.User.ReturnedBooksFragment;
 import com.example.vido_manager_library.Models.Capture;
 import com.example.vido_manager_library.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;

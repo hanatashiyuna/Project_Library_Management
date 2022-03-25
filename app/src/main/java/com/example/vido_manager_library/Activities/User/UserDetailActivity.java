@@ -1,4 +1,4 @@
-package com.example.vido_manager_library.User.Acitvity;
+package com.example.vido_manager_library.Activities.User;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;

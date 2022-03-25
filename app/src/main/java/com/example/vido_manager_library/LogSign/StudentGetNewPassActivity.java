@@ -50,10 +50,10 @@ public class StudentGetNewPassActivity extends AppCompatActivity {
                 int tacgiaId = userAuthor.getTacgiaId();
                 String tentacgia = LG_inputPassAgain.getText().toString().trim();
                 String ngaysinh = userAuthor.getNgaysinh().trim();
-                String saches = userAuthor.getSaches().trim();
+                //String saches = userAuthor.getSaches().trim();
 
                 if(!TextUtils.isEmpty(tentacgia)) {
-                    sendPost(tacgiaId, tentacgia, ngaysinh, saches);
+                    //sendPost(tacgiaId, tentacgia, ngaysinh, saches);
                 }
             }
         });
