@@ -4,18 +4,18 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Switch;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Activities.User.MainActivity;
+import com.example.vido_manager_library.Admin.Activities.AdminActivity;
+import com.example.vido_manager_library.Fragment.Admin.AdminCategoryFrament;
+import com.example.vido_manager_library.Fragment.Admin.AdminPCFrament;
+import com.example.vido_manager_library.Fragment.Admin.AdminPositionFrament;
 import com.example.vido_manager_library.Fragment.Admin.HomeAdminFragment;
 import com.example.vido_manager_library.Fragment.Admin.ManagerFragment;
 import com.example.vido_manager_library.Models.Capture;
@@ -29,10 +29,7 @@ import com.google.zxing.integration.android.IntentResult;
 public class HomeAdminActivity extends AppCompatActivity {
 
     private BottomNavigationView mBottomNavView;
-    private ViewPager2 viewPager2;
     private FloatingActionButton scanner;
-    private HomeAdminFragment homeAdminFragment = new HomeAdminFragment();
-    private ManagerFragment managerFragment = new ManagerFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,22 +58,25 @@ public class HomeAdminActivity extends AppCompatActivity {
 
         //set bottom navigation menu
         mBottomNavView = findViewById(R.id.bottom_nav);
-        viewPager2 = findViewById(R.id.viewPager2);
         mBottomNavView.setBackground(null);
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, homeAdminFragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeAdminFragment()).commit();
 
         mBottomNavView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
-                    case R.id.home:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, homeAdminFragment).commit();
-                        return true;
                     case R.id.managerBooks:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, managerFragment).commit();
-                        return true;
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container, new ManagerFragment()).commit();
+                        break;
+                    case R.id.managerAccount:
+                    case R.id.infomation:
+                        break;
+                    case R.id.home:
+                    default:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeAdminFragment()).commit();
+                        break;
                 }
-                return false;
+                return true;
             }
         });
     }
