@@ -36,7 +36,7 @@ public class CreateQRCodeActivity extends AppCompatActivity {
 
         back = findViewById(R.id.back);
         imageQRCode = findViewById(R.id.imageQRCode);
-        String information = "";
+        String information = "2006010004";
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

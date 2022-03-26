@@ -6,7 +6,7 @@ public class UserAuthor implements Serializable {
     private int tacgiaId;
     private String tentacgia;
     private String ngaysinh;
-    //private String saches;
+//    private String saches;
 
 
     public int getTacgiaId() {
@@ -33,11 +33,11 @@ public class UserAuthor implements Serializable {
         this.ngaysinh = ngaysinh;
     }
 
-    /*public String getSaches() {
-        return saches;
-    }
-
-    public void setSaches(String saches) {
-        this.saches = saches;
-    }*/
+//    public String getSaches() {
+//        return saches;
+//    }
+//
+//    public void setSaches(String saches) {
+//        this.saches = saches;
+//    }
 }

@@ -42,6 +42,7 @@ public class AuthorAdapter extends RecyclerView.Adapter<AuthorAdapter.ViewHolder
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.name_item.setText(list.get(position).getTentacgia());
         holder.category_item.setText(list.get(position).getNgaysinh());
+        //
     }
 
     @Override

@@ -4,19 +4,23 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Adapters.AuthorAdapter;
 import com.example.vido_manager_library.Models.Authors;
+import com.example.vido_manager_library.Models.UserAuthor;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class AdminAuthorFrament extends Fragment {
 
@@ -27,7 +31,10 @@ public class AdminAuthorFrament extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view =  inflater.inflate(R.layout.fragment_admin_authors, container, false);
         listAuthorScreen = view.findViewById(R.id.listview_author);
+        RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(Objects.requireNonNull(getActivity()), DividerItemDecoration.VERTICAL);
+
         listAuthorScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
+        listAuthorScreen.addItemDecoration(itemDecoration);
         AuthorAdapter authorAdapters = new AuthorAdapter(this, getListAuthor());
         listAuthorScreen.setAdapter(authorAdapters);
         return view;
