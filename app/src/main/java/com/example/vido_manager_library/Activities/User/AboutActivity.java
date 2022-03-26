@@ -10,7 +10,6 @@ import android.view.MenuItem;
 
 import com.example.vido_manager_library.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 public class AboutActivity extends AppCompatActivity {
 
     @Override

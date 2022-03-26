@@ -19,7 +19,7 @@ import com.example.vido_manager_library.R;
 public class LecturersLoginActivity extends AppCompatActivity {
     private EditText LG_inputUsernameAdmin, LG_inputPassAdmin;
     private Button btn_LoginAdmin;
-    private TextView btn_ForgotPassAdmin;
+    private TextView btn_ForgotPassAdmin, btn_LoginStudent;
     private CheckBox checkBox;
 
     @Override
@@ -29,7 +29,7 @@ public class LecturersLoginActivity extends AppCompatActivity {
 
         btn_LoginAdmin = (Button) findViewById(R.id.btn_LoginAdmin);
         btn_ForgotPassAdmin = (TextView) findViewById(R.id.btn_ForgotPassAdmin);
-        //btn_loginStudent = (TextView) findViewById(R.id.btn_LoginStudent);
+        btn_LoginStudent = (TextView) findViewById(R.id.btn_LoginStu);
 
         LG_inputUsernameAdmin = (EditText) findViewById(R.id.LG_inputUsernameAdmin);
         LG_inputPassAdmin = (EditText) findViewById(R.id.LG_inputPassAdmin);
@@ -47,33 +47,6 @@ public class LecturersLoginActivity extends AppCompatActivity {
 
                 if (!username.equals("") && !password.equals("")){
 
-                    /*Handler handler = new Handler(Looper.getMainLooper());
-                    handler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            String[] field = new String[2];
-                            field[0] = "username";
-                            field[1] = "password";
-
-                            String[] data = new String[2];
-                            data[0] = username;
-                            data[1] = password;
-                            PutData putData = new PutData("http://192.168.1.9/CDVienDongLibary/LoginAndSignUp/loginadmin.php", "POST", field, data);
-                            if (putData.startPut()) {
-                                if (putData.onComplete()) {
-                                    String result = putData.getResult();
-                                    if (result.equals("Login Success")){
-                                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(LoginAdmin.this, MenuAdmin.class);
-                                        startActivity(intent);
-                                        finish();
-                                    }else{
-                                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            }
-                        }
-                    });*/
                 }else {
                     Toast.makeText(getApplicationContext(), "All Fields Required", Toast.LENGTH_SHORT).show();
                     switchActivity();
@@ -85,6 +58,14 @@ public class LecturersLoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LecturersLoginActivity.this, LecturersForgotActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_LoginStudent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LecturersLoginActivity.this, StudentLoginActivity.class);
                 startActivity(intent);
             }
         });

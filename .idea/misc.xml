@@ -16,6 +16,7 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_admin.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_books.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_borrow_books.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_create_qrcode.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_dash_board.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_home.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_home_admin.xml" value="0.1" />
@@ -34,13 +35,17 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_welcome.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/book_item.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/book_item_2.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_about.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_admin_authors.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_admin_books.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_borrowing_books.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_dashboard.xml" value="0.23731884057971014" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_favourite_books.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_home.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_home_admin.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_manager.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_returned_books.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_user_borrow_book.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_user_detail.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/infomation_student.xml" value="0.2513586956521739" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/information_student.xml" value="0.2513586956521739" />

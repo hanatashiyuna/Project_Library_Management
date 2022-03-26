@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -91,12 +92,13 @@ public class StudentLoginActivity extends AppCompatActivity {
         });
     }
 
+
     private void getListUser() {
         ApiService.apiService.covertUserAuthor().enqueue(new Callback<List<UserAuthor>>() {
             @Override
             public void onResponse(Call<List<UserAuthor>> call, Response<List<UserAuthor>> response) {
                 mListUser = response.body();
-                //Log.e("List User : ", mListUser.size()+"");
+                //Log.e("Value: ", mListUser.size() + " ");
             }
             @Override
             public void onFailure(Call<List<UserAuthor>> call, Throwable t) {
@@ -106,7 +108,7 @@ public class StudentLoginActivity extends AppCompatActivity {
     }
     private void clickLogin() {
         String username = LG_inputUsrename.getText().toString().trim();
-//        String password = LG_inputPass.getText().toString().trim();
+        //String password = LG_inputPass.getText().toString().trim();
 
         if (mListUser == null || mListUser.isEmpty()){
             return;

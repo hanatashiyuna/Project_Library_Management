@@ -12,20 +12,17 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Admin.Activities.AdminActivity;
-import com.example.vido_manager_library.Fragment.Admin.AdminCategoryFrament;
-import com.example.vido_manager_library.Fragment.Admin.AdminPCFrament;
-import com.example.vido_manager_library.Fragment.Admin.AdminPositionFrament;
 import com.example.vido_manager_library.Fragment.Admin.HomeAdminFragment;
 import com.example.vido_manager_library.Fragment.Admin.ManagerFragment;
-import com.example.vido_manager_library.Models.Capture;
+import com.example.vido_manager_library.QRCode.Capture;
 import com.example.vido_manager_library.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-
+/**
+ * Activity Basic for Administrator*/
 public class HomeAdminActivity extends AppCompatActivity {
 
     private BottomNavigationView mBottomNavView;

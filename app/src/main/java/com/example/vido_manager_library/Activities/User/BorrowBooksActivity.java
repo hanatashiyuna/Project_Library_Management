@@ -17,7 +17,7 @@ import android.widget.Toast;
 import com.example.vido_manager_library.Adapters.FragmentPagerAdapter;
 import com.example.vido_manager_library.Fragment.User.BorrowingBooksFragment;
 import com.example.vido_manager_library.Fragment.User.ReturnedBooksFragment;
-import com.example.vido_manager_library.Models.Capture;
+import com.example.vido_manager_library.QRCode.Capture;
 import com.example.vido_manager_library.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;

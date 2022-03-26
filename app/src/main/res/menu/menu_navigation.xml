@@ -6,7 +6,7 @@
         android:icon="@drawable/ic_baseline_home"/>
 
     <item
-        android:id="@+id/books"
+        android:id="@+id/favoriteBook"
         android:title="@string/books"
         android:icon="@drawable/ic_baseline_menu_book"/>
 
@@ -20,7 +20,7 @@
         android:icon="@drawable/ic_baseline_library_books_24"/>
 
     <item
-        android:id="@+id/infomation"
+        android:id="@+id/information"
         android:title="@string/information"
         android:icon="@drawable/ic_baseline_info"/>
 

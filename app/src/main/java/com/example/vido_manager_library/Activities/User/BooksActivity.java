@@ -16,7 +16,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.vido_manager_library.Adapters.BooksAdapters;
-import com.example.vido_manager_library.Models.Capture;
+import com.example.vido_manager_library.QRCode.Capture;
 import com.example.vido_manager_library.Models.HomeHorModels;
 import com.example.vido_manager_library.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;

@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VIDO_Manager_Library">
         <activity
+            android:name=".QRCode.CreateQRCodeActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.Admin.HomeAdminActivity"
             android:exported="false" />
         <activity
@@ -63,7 +66,7 @@
             android:exported="false"
             android:theme="@style/Theme.VIDO_Manager_Library" />
         <activity
-            android:name=".Models.Capture"
+            android:name=".QRCode.Capture"
             android:screenOrientation="portrait"
             android:stateNotNeeded="true"
             android:theme="@style/zxing_CaptureTheme" />
