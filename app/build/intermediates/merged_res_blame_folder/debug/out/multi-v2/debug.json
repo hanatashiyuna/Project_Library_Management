@@ -635,6 +635,21 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\values-v18_values-v18.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-3\\19075c4677e37e538c54d7f745fc8af4\\transformed\\appcompat-1.4.1\\res\\values-v18\\values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\values-hu_values-hu.arsc.flat",
             "map": [
                 {
@@ -722,21 +737,6 @@
                         "startOffsets": "7807,7866,7913,8039",
                         "endColumns": "58,46,125,115",
                         "endOffsets": "7861,7908,8034,8150"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\values-v18_values-v18.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-3\\19075c4677e37e538c54d7f745fc8af4\\transformed\\appcompat-1.4.1\\res\\values-v18\\values-v18.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
                     }
                 }
             ]
@@ -1513,6 +1513,21 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\values-port_values-port.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-3\\19075c4677e37e538c54d7f745fc8af4\\transformed\\appcompat-1.4.1\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\values-mr_values-mr.arsc.flat",
             "map": [
                 {
@@ -1583,21 +1598,6 @@
                         "startOffsets": "7150,7262",
                         "endColumns": "111,116",
                         "endOffsets": "7257,7374"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\values-port_values-port.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-3\\19075c4677e37e538c54d7f745fc8af4\\transformed\\appcompat-1.4.1\\res\\values-port\\values-port.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "55",
-                        "endOffsets": "106"
                     }
                 }
             ]
