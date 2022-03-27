@@ -79,15 +79,6 @@
             android:name="com.example.vido_manager_library.LogSign.StudentLoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.vido_manager_library.Activities.User.BorrowBooksActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.vido_manager_library.Activities.User.BooksActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.vido_manager_library.Activities.User.AboutActivity"
-            android:exported="false" />
-        <activity
             android:name="com.example.vido_manager_library.FlashScreen.WelcomeActivity"
             android:exported="true" >
             <intent-filter>

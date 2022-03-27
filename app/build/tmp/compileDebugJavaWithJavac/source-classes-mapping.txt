@@ -8,8 +8,6 @@ com/example/vido_manager_library/databinding/ActivityWelcomeBinding.java
  com.example.vido_manager_library.databinding.ActivityWelcomeBinding
 com/example/vido_manager_library/Models/Authors.java
  com.example.vido_manager_library.Models.Authors
-com/example/vido_manager_library/Activities/User/BorrowBooksActivity.java
- com.example.vido_manager_library.Activities.User.BorrowBooksActivity
 com/example/vido_manager_library/Adapters/BooksAdapters.java
  com.example.vido_manager_library.Adapters.BooksAdapters
  com.example.vido_manager_library.Adapters.BooksAdapters$ViewHolder
@@ -20,6 +18,8 @@ com/example/vido_manager_library/databinding/FragmentHomeBinding.java
  com.example.vido_manager_library.databinding.FragmentHomeBinding
 com/example/vido_manager_library/databinding/ActivityUserDetailBinding.java
  com.example.vido_manager_library.databinding.ActivityUserDetailBinding
+com/example/vido_manager_library/Interface/Admin/IClickAdminListenner.java
+ com.example.vido_manager_library.Interface.Admin.IClickAdminListenner
 com/example/vido_manager_library/Fragment/Admin/AdminPCFrament.java
  com.example.vido_manager_library.Fragment.Admin.AdminPCFrament
 com/example/vido_manager_library/databinding/ItemsBinding.java
@@ -44,14 +44,10 @@ com/example/vido_manager_library/databinding/FragmentAdminPcBinding.java
 com/example/vido_manager_library/Adapters/PositionAdapter.java
  com.example.vido_manager_library.Adapters.PositionAdapter
  com.example.vido_manager_library.Adapters.PositionAdapter$ViewHolder
-com/example/vido_manager_library/databinding/ActivityBorrowBooksBinding.java
- com.example.vido_manager_library.databinding.ActivityBorrowBooksBinding
-com/example/vido_manager_library/LogSign/LecturersLoginActivity.java
- com.example.vido_manager_library.LogSign.LecturersLoginActivity
- com.example.vido_manager_library.LogSign.LecturersLoginActivity$1
- com.example.vido_manager_library.LogSign.LecturersLoginActivity$2
- com.example.vido_manager_library.LogSign.LecturersLoginActivity$3
- com.example.vido_manager_library.LogSign.LecturersLoginActivity$4
+com/example/vido_manager_library/LogSign/LecturersForgotActivity.java
+ com.example.vido_manager_library.LogSign.LecturersForgotActivity
+ com.example.vido_manager_library.LogSign.LecturersForgotActivity$1
+ com.example.vido_manager_library.LogSign.LecturersForgotActivity$2
 com/example/vido_manager_library/databinding/ActivityLecturersLoginBinding.java
  com.example.vido_manager_library.databinding.ActivityLecturersLoginBinding
 com/example/vido_manager_library/databinding/ActivityStudentLoginBinding.java
@@ -95,13 +91,8 @@ com/example/vido_manager_library/Fragment/User/FavouriteBooksFragment.java
  com.example.vido_manager_library.Fragment.User.FavouriteBooksFragment
 com/example/vido_manager_library/databinding/ActivityStudentForgotBinding.java
  com.example.vido_manager_library.databinding.ActivityStudentForgotBinding
-com/example/vido_manager_library/databinding/ActivityAboutBinding.java
- com.example.vido_manager_library.databinding.ActivityAboutBinding
 com/example/vido_manager_library/Fragment/User/AboutFragment.java
  com.example.vido_manager_library.Fragment.User.AboutFragment
-com/example/vido_manager_library/Activities/User/AboutActivity.java
- com.example.vido_manager_library.Activities.User.AboutActivity
- com.example.vido_manager_library.Activities.User.AboutActivity$1
 com/example/vido_manager_library/Fragment/User/BorrowingBooksFragment.java
  com.example.vido_manager_library.Fragment.User.BorrowingBooksFragment
 com/example/vido_manager_library/Fragment/Admin/MethodFragment.java
@@ -114,13 +105,8 @@ com/example/vido_manager_library/databinding/FragmentReturnedBooksBinding.java
  com.example.vido_manager_library.databinding.FragmentReturnedBooksBinding
 com/example/vido_manager_library/databinding/FragmentAdminCategoriesBinding.java
  com.example.vido_manager_library.databinding.FragmentAdminCategoriesBinding
-com/example/vido_manager_library/databinding/ActivityBooksBinding.java
- com.example.vido_manager_library.databinding.ActivityBooksBinding
-com/example/vido_manager_library/Activities/Admin/HomeAdminActivity.java
- com.example.vido_manager_library.Activities.Admin.HomeAdminActivity
- com.example.vido_manager_library.Activities.Admin.HomeAdminActivity$1
- com.example.vido_manager_library.Activities.Admin.HomeAdminActivity$2
- com.example.vido_manager_library.Activities.Admin.HomeAdminActivity$3
+com/example/vido_manager_library/Fragment/Admin/AdminPositionFrament.java
+ com.example.vido_manager_library.Fragment.Admin.AdminPositionFrament
 com/example/vido_manager_library/Models/UserAuthor.java
  com.example.vido_manager_library.Models.UserAuthor
 com/example/vido_manager_library/Fragment/User/ReturnedBooksFragment.java
@@ -167,6 +153,7 @@ com/example/vido_manager_library/Models/Categorys.java
  com.example.vido_manager_library.Models.Categorys
 com/example/vido_manager_library/QRCode/CreateQRCodeActivity.java
  com.example.vido_manager_library.QRCode.CreateQRCodeActivity
+ com.example.vido_manager_library.QRCode.CreateQRCodeActivity$1
 com/example/vido_manager_library/Fragment/Admin/ManagerFragment.java
  com.example.vido_manager_library.Fragment.Admin.ManagerFragment
 com/example/vido_manager_library/databinding/ActivityHomeAdminBinding.java
@@ -191,14 +178,14 @@ com/example/vido_manager_library/databinding/ActivityLecturersGetNewPassBinding.
  com.example.vido_manager_library.databinding.ActivityLecturersGetNewPassBinding
 com/example/vido_manager_library/Adapters/ViewPageAdapter.java
  com.example.vido_manager_library.Adapters.ViewPageAdapter
-com/example/vido_manager_library/Fragment/Admin/AdminPositionFrament.java
- com.example.vido_manager_library.Fragment.Admin.AdminPositionFrament
-com/example/vido_manager_library/LogSign/LecturersForgotActivity.java
- com.example.vido_manager_library.LogSign.LecturersForgotActivity
- com.example.vido_manager_library.LogSign.LecturersForgotActivity$1
- com.example.vido_manager_library.LogSign.LecturersForgotActivity$2
-com/example/vido_manager_library/Activities/User/BooksActivity.java
- com.example.vido_manager_library.Activities.User.BooksActivity
- com.example.vido_manager_library.Activities.User.BooksActivity$1
- com.example.vido_manager_library.Activities.User.BooksActivity$2
- com.example.vido_manager_library.Activities.User.BooksActivity$3
+com/example/vido_manager_library/LogSign/LecturersLoginActivity.java
+ com.example.vido_manager_library.LogSign.LecturersLoginActivity
+ com.example.vido_manager_library.LogSign.LecturersLoginActivity$1
+ com.example.vido_manager_library.LogSign.LecturersLoginActivity$2
+ com.example.vido_manager_library.LogSign.LecturersLoginActivity$3
+ com.example.vido_manager_library.LogSign.LecturersLoginActivity$4
+com/example/vido_manager_library/Activities/Admin/HomeAdminActivity.java
+ com.example.vido_manager_library.Activities.Admin.HomeAdminActivity
+ com.example.vido_manager_library.Activities.Admin.HomeAdminActivity$1
+ com.example.vido_manager_library.Activities.Admin.HomeAdminActivity$2
+ com.example.vido_manager_library.Activities.Admin.HomeAdminActivity$3

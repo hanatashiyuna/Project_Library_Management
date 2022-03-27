@@ -8,13 +8,12 @@ import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Api.ApiService;
+import com.example.vido_manager_library.Interface.ApiService;
 import com.example.vido_manager_library.Models.UserAuthor;
 import com.example.vido_manager_library.R;
 
@@ -26,53 +25,48 @@ public class LecturersGetNewPassActivity extends AppCompatActivity {
 
     private CheckBox checkBox;
     private EditText LG_inputPassAdmin, LG_inputPassAdminAgain;
-    private Button btn_ChangePassLec;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lecturers_get_new_pass);
 
+        Button btn_ChangePassLec = findViewById(R.id.btn_ChangePassLec);
+
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
 
         UserAuthor userLecturer = (UserAuthor) bundle.get("infor_userLecturerLogin");
 
-        checkBox = (CheckBox) findViewById(R.id.checkbox);
-        LG_inputPassAdmin = (EditText) findViewById(R.id.LG_inputPassAdmin);
-        LG_inputPassAdminAgain = (EditText) findViewById(R.id.LG_inputPassAdminAgain);
-        btn_ChangePassLec = (Button) findViewById(R.id.btn_ChangePassLec);
+        checkBox = findViewById(R.id.checkbox);
+        LG_inputPassAdmin = findViewById(R.id.LG_inputPassAdmin);
+        LG_inputPassAdminAgain = findViewById(R.id.LG_inputPassAdminAgain);
+
         // Project UPDATE HERE.....
-        btn_ChangePassLec.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (LG_inputPassAdmin == LG_inputPassAdminAgain) {
-                    int tacgiaId = userLecturer.getTacgiaId();
-                    String tentacgia = LG_inputPassAdminAgain.getText().toString().trim();
-                    userLecturer.setTentacgia(tentacgia);
+        btn_ChangePassLec.setOnClickListener(view -> {
+            if (LG_inputPassAdmin == LG_inputPassAdminAgain) {
+                int tacgiaId = userLecturer.getTacgiaId();
+                String tentacgia = LG_inputPassAdminAgain.getText().toString().trim();
+                userLecturer.setTentacgia(tentacgia);
 
-                    if(!TextUtils.isEmpty(tentacgia)) {
-                        updateAccount(tacgiaId, userLecturer);
-                    }
-                }else {
-                    Toast.makeText(LecturersGetNewPassActivity.this, "Xác Nhận Mật Khẩu Không Trùng Nhau", Toast.LENGTH_SHORT).show();
+                if(!TextUtils.isEmpty(tentacgia)) {
+                    updateAccount(tacgiaId, userLecturer);
                 }
-
+            }else {
+                Toast.makeText(LecturersGetNewPassActivity.this, "Xác Nhận Mật Khẩu Không Trùng Nhau", Toast.LENGTH_SHORT).show();
             }
+
         });
 
-        checkBox.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(checkBox.isChecked()) {
-                    //Password visible
-                    LG_inputPassAdminAgain.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                    LG_inputPassAdmin.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                }else{
-                    //Password not visible
-                    LG_inputPassAdminAgain.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                    LG_inputPassAdmin.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                }
+        checkBox.setOnClickListener(view -> {
+            if(checkBox.isChecked()) {
+                //Password visible
+                LG_inputPassAdminAgain.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                LG_inputPassAdmin.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+            }else{
+                //Password not visible
+                LG_inputPassAdminAgain.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                LG_inputPassAdmin.setTransformationMethod(PasswordTransformationMethod.getInstance());
             }
         });
     }

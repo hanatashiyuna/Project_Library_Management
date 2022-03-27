@@ -1,4 +1,4 @@
-package com.example.vido_manager_library.Api;
+package com.example.vido_manager_library.Interface;
 
 import com.example.vido_manager_library.Models.UserAuthor;
 import com.google.gson.Gson;

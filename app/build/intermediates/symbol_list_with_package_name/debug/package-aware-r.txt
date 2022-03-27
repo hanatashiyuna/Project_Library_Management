@@ -2757,13 +2757,13 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_ChangePassLec
 id btn_ChangePassStu
 id btn_ForgotPass
 id btn_ForgotPassAdmin
 id btn_Login
 id btn_LoginAdmin
 id btn_LoginStu
-id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2917,6 +2917,7 @@ id item1
 id item2
 id item3
 id item4
+id itemSum
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -3330,10 +3331,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_about
 layout activity_book_detail
-layout activity_books
-layout activity_borrow_books
 layout activity_create_qrcode
 layout activity_home_admin
 layout activity_information

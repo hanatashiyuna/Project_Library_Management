@@ -29,7 +29,7 @@ public final class ActivityLecturersGetNewPassBinding implements ViewBinding {
   public final EditText LGInputPassAdminAgain;
 
   @NonNull
-  public final Button button;
+  public final Button btnChangePassLec;
 
   @NonNull
   public final CheckBox checkbox;
@@ -39,11 +39,11 @@ public final class ActivityLecturersGetNewPassBinding implements ViewBinding {
 
   private ActivityLecturersGetNewPassBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText LGInputPassAdmin, @NonNull EditText LGInputPassAdminAgain,
-      @NonNull Button button, @NonNull CheckBox checkbox, @NonNull TextView text) {
+      @NonNull Button btnChangePassLec, @NonNull CheckBox checkbox, @NonNull TextView text) {
     this.rootView = rootView;
     this.LGInputPassAdmin = LGInputPassAdmin;
     this.LGInputPassAdminAgain = LGInputPassAdminAgain;
-    this.button = button;
+    this.btnChangePassLec = btnChangePassLec;
     this.checkbox = checkbox;
     this.text = text;
   }
@@ -87,9 +87,9 @@ public final class ActivityLecturersGetNewPassBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.btn_ChangePassLec;
+      Button btnChangePassLec = ViewBindings.findChildViewById(rootView, id);
+      if (btnChangePassLec == null) {
         break missingId;
       }
 
@@ -106,7 +106,7 @@ public final class ActivityLecturersGetNewPassBinding implements ViewBinding {
       }
 
       return new ActivityLecturersGetNewPassBinding((ConstraintLayout) rootView, LGInputPassAdmin,
-          LGInputPassAdminAgain, button, checkbox, text);
+          LGInputPassAdminAgain, btnChangePassLec, checkbox, text);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -30,14 +30,19 @@ public final class ItemsBinding implements ViewBinding {
   public final ImageView igItem;
 
   @NonNull
+  public final LinearLayout itemSum;
+
+  @NonNull
   public final TextView nameItem;
 
   private ItemsBinding(@NonNull LinearLayout rootView, @NonNull TextView categoryItem,
-      @NonNull TextView idItem, @NonNull ImageView igItem, @NonNull TextView nameItem) {
+      @NonNull TextView idItem, @NonNull ImageView igItem, @NonNull LinearLayout itemSum,
+      @NonNull TextView nameItem) {
     this.rootView = rootView;
     this.categoryItem = categoryItem;
     this.idItem = idItem;
     this.igItem = igItem;
+    this.itemSum = itemSum;
     this.nameItem = nameItem;
   }
 
@@ -86,13 +91,16 @@ public final class ItemsBinding implements ViewBinding {
         break missingId;
       }
 
+      LinearLayout itemSum = (LinearLayout) rootView;
+
       id = R.id.name_item;
       TextView nameItem = ViewBindings.findChildViewById(rootView, id);
       if (nameItem == null) {
         break missingId;
       }
 
-      return new ItemsBinding((LinearLayout) rootView, categoryItem, idItem, igItem, nameItem);
+      return new ItemsBinding((LinearLayout) rootView, categoryItem, idItem, igItem, itemSum,
+          nameItem);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

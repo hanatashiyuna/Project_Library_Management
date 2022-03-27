@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.vido_manager_library.Interface.ApiService;
 import com.example.vido_manager_library.Models.UserAuthor;
@@ -36,41 +38,35 @@ public class StudentGetNewPassActivity extends AppCompatActivity {
             UserAuthor userAuthor = (UserAuthor) bundle.get("Forgot_userLogin");
 
 
-        checkBox = (CheckBox) findViewById(R.id.checkbox);
-        LG_inputPass = (EditText) findViewById(R.id.LG_inputPass);
-        LG_inputPassAgain = (EditText) findViewById(R.id.LG_inputPassAgain);
-        btn_ChangePassStu = (Button) findViewById(R.id.btn_ChangePassStu);
+        checkBox = findViewById(R.id.checkbox);
+        LG_inputPass = findViewById(R.id.LG_inputPass);
+        LG_inputPassAgain = findViewById(R.id.LG_inputPassAgain);
+        btn_ChangePassStu = findViewById(R.id.btn_ChangePassStu);
         // Project UPDATE HERE.....
-        btn_ChangePassStu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (LG_inputPass == LG_inputPassAgain) {
-                    int tacgiaId = userAuthor.getTacgiaId();
-                    String tentacgia = LG_inputPassAgain.getText().toString().trim();
-                    userAuthor.setTentacgia(tentacgia);
+        btn_ChangePassStu.setOnClickListener(view -> {
+            if (LG_inputPass == LG_inputPassAgain) {
+                int tacgiaId = userAuthor.getTacgiaId();
+                String tentacgia = LG_inputPassAgain.getText().toString().trim();
+                userAuthor.setTentacgia(tentacgia);
 
-                    if(!TextUtils.isEmpty(tentacgia)) {
-                        updateAccount(tacgiaId, userAuthor);
-                    }
-                }else {
-                    Toast.makeText(StudentGetNewPassActivity.this, "Xác Nhận Mật Khẩu Không Trùng Nhau", Toast.LENGTH_SHORT).show();
+                if(!TextUtils.isEmpty(tentacgia)) {
+                    updateAccount(tacgiaId, userAuthor);
                 }
-
+            }else {
+                Toast.makeText(StudentGetNewPassActivity.this, "Xác Nhận Mật Khẩu Không Trùng Nhau", Toast.LENGTH_SHORT).show();
             }
+
         });
 
-        checkBox.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(checkBox.isChecked()) {
-                    //Password visible
-                    LG_inputPassAgain.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                    LG_inputPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                }else{
-                    //Password not visible
-                    LG_inputPassAgain.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                    LG_inputPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                }
+        checkBox.setOnClickListener(view -> {
+            if(checkBox.isChecked()) {
+                //Password visible
+                LG_inputPassAgain.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                LG_inputPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+            }else{
+                //Password not visible
+                LG_inputPassAgain.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                LG_inputPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
             }
         });
     }

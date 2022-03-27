@@ -48,15 +48,6 @@
             android:name=".LogSign.StudentLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".Activities.User.BorrowBooksActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activities.User.BooksActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activities.User.AboutActivity"
-            android:exported="false" />
-        <activity
             android:name=".FlashScreen.WelcomeActivity"
             android:exported="true">
             <intent-filter>
