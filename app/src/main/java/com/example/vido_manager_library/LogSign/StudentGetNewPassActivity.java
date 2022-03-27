@@ -44,14 +44,18 @@ public class StudentGetNewPassActivity extends AppCompatActivity {
         btn_ChangePassStu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int tacgiaId = userAuthor.getTacgiaId();
-                String tentacgia = LG_inputPassAgain.getText().toString().trim();
-                String ngaysinh = userAuthor.getNgaysinh().trim();
-                //String saches = userAuthor.getSaches().trim();
+                if (LG_inputPass == LG_inputPassAgain) {
+                    int tacgiaId = userAuthor.getTacgiaId();
+                    String tentacgia = LG_inputPassAgain.getText().toString().trim();
+                    userAuthor.setTentacgia(tentacgia);
 
-                if(!TextUtils.isEmpty(tentacgia)) {
-                    //sendPost(tacgiaId, tentacgia, ngaysinh, saches);
+                    if(!TextUtils.isEmpty(tentacgia)) {
+                        updateAccount(tacgiaId, userAuthor);
+                    }
+                }else {
+                    Toast.makeText(StudentGetNewPassActivity.this, "Xác Nhận Mật Khẩu Không Trùng Nhau", Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
 
@@ -71,28 +75,21 @@ public class StudentGetNewPassActivity extends AppCompatActivity {
         });
     }
 
-    public void sendPost(int tacgiaId, String tentacgia, String ngaysinh, String saches) {
-        ApiService.apiService.updateData(tacgiaId, tentacgia, ngaysinh, saches).enqueue(new Callback<UserAuthor>() {
+    private void updateAccount(int id, UserAuthor userAuthor) {
+        ApiService.apiService.updateData(id, userAuthor).enqueue(new Callback<UserAuthor>() {
             @Override
             public void onResponse(Call<UserAuthor> call, Response<UserAuthor> response) {
 
                 if(response.isSuccessful()) {
-//                    showResponse(response.body().toString());
-                    //Log.e(StudentGetNewPassActivity.this, "post submitted to API." + response.body().toString());
+                    Intent intent = new Intent(StudentGetNewPassActivity.this, StudentLoginActivity.class);
+                    startActivity(intent);
                 }
             }
 
             @Override
             public void onFailure(Call<UserAuthor> call, Throwable t) {
-                //Log.e(TAG, "Unable to submit post to API.");
+                Log.e("Error", "Api dont put data.");
             }
         });
     }
-
-//    public void showResponse(String response) {
-//        if(mResponseTv.getVisibility() == View.GONE) {
-//            mResponseTv.setVisibility(View.VISIBLE);
-//        }
-//        mResponseTv.setText(response);
-//    }
 }

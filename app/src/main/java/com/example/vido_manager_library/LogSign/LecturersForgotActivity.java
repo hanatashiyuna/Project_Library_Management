@@ -84,7 +84,7 @@ public class LecturersForgotActivity extends AppCompatActivity {
         if (isHasUser) {
             Intent intent = new Intent(LecturersForgotActivity.this, LecturersGetNewPassActivity.class);
             Bundle bundle = new Bundle();
-            bundle.putSerializable("infor_userLogin", mUser);
+            bundle.putSerializable("infor_userLecturerLogin", mUser);
             intent.putExtras(bundle);
             startActivity(intent);
         }else {

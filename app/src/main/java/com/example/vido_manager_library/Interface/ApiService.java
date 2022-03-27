@@ -1,4 +1,4 @@
-package com.example.vido_manager_library.Interface;
+package com.example.vido_manager_library.Api;
 
 import com.example.vido_manager_library.Models.UserAuthor;
 import com.google.gson.Gson;
@@ -9,9 +9,13 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
+import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface ApiService {
 
@@ -46,11 +50,15 @@ public interface ApiService {
 
     //==============================
     // Update data project upload database
-    @POST("api/tacgias")
-    Call<UserAuthor> updateData(@Field("tacgiaId") int tacgiaId,
-                                @Field("tentacgia") String tentacgia,
-                                @Field("ngaysinh") String ngaysinh,
-                                @Field("saches") String saches);
+    @PUT("api/tacgias/{id}")
+    Call<UserAuthor> updateData(@Path("id") int id, @Body UserAuthor userAuthor);
+    /*@GET("")
+    Call<List<UserAuthor>> covertUserLecturers(@Query("id") String id);*/
+    //==================================
+
+    // Update data project upload database
+    @PUT("api/tacgias/{id}")
+    Call<UserAuthor> deleteData(@Path("id") int id);
     /*@GET("")
     Call<List<UserAuthor>> covertUserLecturers(@Query("id") String id);*/
     //==================================
