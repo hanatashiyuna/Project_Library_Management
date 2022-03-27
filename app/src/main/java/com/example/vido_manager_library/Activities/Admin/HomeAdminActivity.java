@@ -55,7 +55,6 @@ public class HomeAdminActivity extends AppCompatActivity {
 
         //set bottom navigation menu
         mBottomNavView = findViewById(R.id.bottom_nav);
-        mBottomNavView.setBackground(null);
         getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeAdminFragment()).commit();
 
         mBottomNavView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {

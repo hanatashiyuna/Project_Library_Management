@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             app:menu="@menu/menu_navigation_admin"
             android:layout_marginEnd="16dp"
-            app:itemBackground="@android:color/transparent"
+            app:itemBackground="@drawable/transparent_background"
             app:itemIconTint="@drawable/selector"
             app:itemTextColor="@drawable/selector"/>
     </com.google.android.material.bottomappbar.BottomAppBar>

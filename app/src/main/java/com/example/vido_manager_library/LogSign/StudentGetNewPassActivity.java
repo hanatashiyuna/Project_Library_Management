@@ -7,21 +7,18 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.Toast;
 
-import com.example.vido_manager_library.Api.ApiService;
+import com.example.vido_manager_library.Interface.ApiService;
 import com.example.vido_manager_library.Models.UserAuthor;
 import com.example.vido_manager_library.R;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.http.Field;
 
 public class StudentGetNewPassActivity extends AppCompatActivity {
 

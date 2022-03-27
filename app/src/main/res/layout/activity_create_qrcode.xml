@@ -18,18 +18,20 @@
         android:layout_marginTop="10dp"/>
 
     <TextView
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/castoro"
         android:text="@string/qr_code"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        android:fontFamily="@font/castoro"
         app:layout_constraintBottom_toBottomOf="@+id/back"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".45"
         app:layout_constraintStart_toEndOf="@+id/back"
-        app:layout_constraintTop_toTopOf="@+id/back"
-        app:layout_constraintHorizontal_bias=".45"/>
+        app:layout_constraintTop_toTopOf="@+id/back" />
+
     <ImageView
         android:id="@+id/imageQRCode"
         android:layout_width="300dp"

@@ -1,6 +1,8 @@
 package com.example.vido_manager_library.Models;
 
-public class HomeHorModels {
+import java.io.Serializable;
+
+public class HomeHorModels implements Serializable {
     private int bookNumber, typeNumber,bookshelf, amountBooks, bookId, image;
     private String bookName, author, pbSC;
     public static final int TYPE_BOOK_1 = 1,TYPE_BOOK_2 = 2, TYPE_BOOK_3 = 3;

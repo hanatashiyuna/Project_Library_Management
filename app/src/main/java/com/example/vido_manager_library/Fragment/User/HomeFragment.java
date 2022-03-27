@@ -1,6 +1,5 @@
 package com.example.vido_manager_library.Fragment.User;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -13,12 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.example.vido_manager_library.Activities.User.AboutActivity;
+import com.example.vido_manager_library.Activities.User.BookDetailActivity;
 import com.example.vido_manager_library.Activities.User.UserDetailActivity;
 import com.example.vido_manager_library.Adapters.BooksAdapters;
 import com.example.vido_manager_library.Models.HomeHorModels;
 import com.example.vido_manager_library.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +41,7 @@ public class HomeFragment extends Fragment {
         detailUser();
         fakeData();
 
-        booksAdapters = new BooksAdapters(this, bookList);//context to activity => getApplication() to this
+        booksAdapters = new BooksAdapters(getActivity(), bookList, this::onClickGoToDetail);//context to activity => getApplication() to this
         //Sách nổi bật
         homeHorizontalRec.setAdapter(booksAdapters);
         homeHorizontalRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
@@ -68,12 +66,7 @@ public class HomeFragment extends Fragment {
     }
 
     public void detailUser(){
-        user_detail_circle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                switchActivity();
-            }
-        });
+        user_detail_circle.setOnClickListener(view -> switchActivity());
     }
 
     public void switchActivity(){
@@ -81,7 +74,7 @@ public class HomeFragment extends Fragment {
         startActivity(intent);
     }
 
-    //hàm gộp biến
+    //khởi tạo
     public void onInit(){
         user_detail_circle = view.findViewById(R.id.user_circle);
         //cardView home
@@ -95,19 +88,26 @@ public class HomeFragment extends Fragment {
         //cardView home
         bookList = new ArrayList<>();
 
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
-        bookList.add(new HomeHorModels(R.drawable.logo, "CDVD Book"));
+        bookList.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever"));
+        bookList.add(new HomeHorModels(R.drawable.androidprogram, "Android Program"));
+        bookList.add(new HomeHorModels(R.drawable.curriculums_android, "Curriculums Android"));
+        bookList.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever"));
+        bookList.add(new HomeHorModels(R.drawable.androidprogram, "Android Program"));
+        bookList.add(new HomeHorModels(R.drawable.curriculums_android, "Curriculums Android"));
+        bookList.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever"));
+        bookList.add(new HomeHorModels(R.drawable.androidprogram, "Android Program"));
+        bookList.add(new HomeHorModels(R.drawable.curriculums_android, "Curriculums Android"));
+        bookList.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever"));
+        bookList.add(new HomeHorModels(R.drawable.androidprogram, "Android Program"));
+        bookList.add(new HomeHorModels(R.drawable.curriculums_android, "Curriculums Android"));
 
+    }
+    private void onClickGoToDetail(HomeHorModels homeHorModels) {
+        Intent intent = new Intent(getActivity(), BookDetailActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("book_information", homeHorModels);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 
 }

@@ -3,41 +3,35 @@ package com.example.vido_manager_library.Adapters;
 //import android.view.View;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-//import androidx.viewpager.widget.PagerAdapter;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import java.util.ArrayList;
+import com.example.vido_manager_library.Fragment.User.BorrowingBooksFragment;
+import com.example.vido_manager_library.Fragment.User.ReturnedBooksFragment;
 
-public class FragmentPagerAdapter extends androidx.fragment.app.FragmentPagerAdapter {
+public class FragmentPagerAdapter extends FragmentStateAdapter {
 
-    private final ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
-    private final ArrayList<String> fragmentTitle = new ArrayList<>();
+    private final String[] title = new String[]{"borrowing", "returned"};
 
-    public FragmentPagerAdapter(@NonNull FragmentManager fm, int behavior) {
-        super(fm, behavior);
-    }
-
-    @Override
-    public int getCount() {
-        return fragmentArrayList.size();
+    public FragmentPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
+        super(fragmentActivity);
     }
 
     @NonNull
     @Override
-    public Fragment getItem(int position) {
-        return fragmentArrayList.get(position);
+    public Fragment createFragment(int position) {
+        switch (position){
+            case 0:
+                return new BorrowingBooksFragment();
+            case 1:
+                return new ReturnedBooksFragment();
+        }
+        return new BorrowingBooksFragment();
     }
 
-    public void addFragment(Fragment fragment, String title){
-        fragmentArrayList.add(fragment);
-        fragmentTitle.add(title);
-    }
-
-    @Nullable
     @Override
-    public CharSequence getPageTitle(int position) {
-        return fragmentTitle.get(position);
+    public int getItemCount() {
+        return title.length;
     }
 }

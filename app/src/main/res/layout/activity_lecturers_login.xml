@@ -113,7 +113,7 @@
         android:textAllCaps="false"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/white_hex"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

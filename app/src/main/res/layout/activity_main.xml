@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.User.MainActivity"
-    android:background="@color/gray">
+    tools:context=".Activities.User.MainActivity">
 
     <FrameLayout
         android:id="@+id/container"
@@ -26,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginEnd="16dp"
-            android:background="@android:color/transparent"
+            android:background="@drawable/transparent_background"
             app:itemIconTint="@drawable/selector"
             app:itemTextColor="@drawable/selector"
             app:menu="@menu/menu_navigation" />

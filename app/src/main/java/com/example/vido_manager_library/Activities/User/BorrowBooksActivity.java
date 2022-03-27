@@ -37,7 +37,7 @@ public class BorrowBooksActivity extends AppCompatActivity {
         setContentView(R.layout.activity_borrow_books);
 
         //set fragment layout
-        tabLayout = findViewById(R.id.tabLayout);
+        /*tabLayout = findViewById(R.id.tabLayout);
         viewPager = findViewById(R.id.viewPager);
 
         tabLayout.setupWithViewPager(viewPager);
@@ -105,9 +105,9 @@ public class BorrowBooksActivity extends AppCompatActivity {
         IntentResult intentResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         //check condition
         if(intentResult.getContents() != null){
-            /**
+            *//**
              * khi content = null: khoi tao alert dialog
-             */
+             *//*
 
             AlertDialog.Builder builder = new AlertDialog.Builder(BorrowBooksActivity.this);
             builder.setTitle("Kết quả");
@@ -120,10 +120,10 @@ public class BorrowBooksActivity extends AppCompatActivity {
             });
             builder.show();
         }else{
-            /**
+            *//**
              * khi content ko null: in ra 1 doan hoi thoai
-             */
+             *//*
             Toast.makeText(getApplication(), "Bạn vẫn chưa scan thứ gì...", Toast.LENGTH_SHORT).show();
-        }
+        }*/
     }
 }
