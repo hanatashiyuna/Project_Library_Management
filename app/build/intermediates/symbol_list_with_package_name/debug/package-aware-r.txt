@@ -2645,12 +2645,14 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id LG_Username
 id LG_inputPass
 id LG_inputPassAdmin
 id LG_inputPassAdminAgain
 id LG_inputPassAgain
 id LG_inputUsernameAdmin
 id LG_inputUsrename
+id LG_mssv
 id META
 id NO_DEBUG
 id SHIFT
@@ -2764,6 +2766,7 @@ id btn_ForgotPassAdmin
 id btn_Login
 id btn_LoginAdmin
 id btn_LoginStu
+id btn_signup
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3166,7 +3169,6 @@ id textStart
 id textTop
 id textView
 id textView10
-id textView11
 id textView2
 id textView3
 id textView4
@@ -3174,7 +3176,6 @@ id textView5
 id textView6
 id textView7
 id textView8
-id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon

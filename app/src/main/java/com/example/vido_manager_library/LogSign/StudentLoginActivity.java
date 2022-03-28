@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.vido_manager_library.DataBase.DB_Helper;
+import com.example.vido_manager_library.Emtity.AccountModify;
 import com.example.vido_manager_library.Interface.ApiService;
 import com.example.vido_manager_library.Models.UserAuthor;
 import com.example.vido_manager_library.Activities.User.MainActivity;
@@ -37,58 +39,63 @@ public class StudentLoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_login);
+        DB_Helper.getInstance(this);
+        if (AccountModify.serchDB()) {
+            Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
+            startActivity(intent);
+        }else {
+            btn_Login = (Button) findViewById(R.id.btn_Login);
+            btn_forgotpass = (TextView) findViewById(R.id.btn_ForgotPass);
+            btn_loginAdmin = (TextView) findViewById(R.id.btn_LoginAdmin);
 
-        btn_Login = (Button) findViewById(R.id.btn_Login);
-        btn_forgotpass = (TextView) findViewById(R.id.btn_ForgotPass);
-        btn_loginAdmin = (TextView) findViewById(R.id.btn_LoginAdmin);
+            checkBox = (CheckBox) findViewById(R.id.checkbox);
 
-        checkBox = (CheckBox) findViewById(R.id.checkbox);
+            LG_inputUsrename = (EditText) findViewById(R.id.LG_inputUsrename);
+            LG_inputPass = (EditText) findViewById(R.id.LG_inputPass);
 
-        LG_inputUsrename = (EditText) findViewById(R.id.LG_inputUsrename);
-        LG_inputPass = (EditText) findViewById(R.id.LG_inputPass);
+            //Run ArrayList and download json User in Database
+            mListUser = new ArrayList<>();
 
-        //Run ArrayList and download json User in Database
-        mListUser = new ArrayList<>();
+            getListUser();//Function down load
 
-        getListUser();//Function down load
-
-        btn_Login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                clickLogin(); //Treatment click Login
+            btn_Login.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    clickLogin(); //Treatment click Login
                 /*Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
                 startActivity(intent);*/
-            }
-        });
-
-        btn_forgotpass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(StudentLoginActivity.this, StudentForgotActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btn_loginAdmin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(StudentLoginActivity.this, LecturersLoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        checkBox.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(!checkBox.isChecked()) {
-                    //Password visible
-                    LG_inputPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                }else{
-                    //Password not visible
-                    LG_inputPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                 }
-            }
-        });
+            });
+
+            btn_forgotpass.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(StudentLoginActivity.this, StudentForgotActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            btn_loginAdmin.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(StudentLoginActivity.this, LecturersLoginActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            checkBox.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(!checkBox.isChecked()) {
+                        //Password visible
+                        LG_inputPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    }else{
+                        //Password not visible
+                        LG_inputPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    }
+                }
+            });
+        }
     }
 
 

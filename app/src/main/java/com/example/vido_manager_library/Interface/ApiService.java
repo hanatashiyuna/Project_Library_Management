@@ -39,27 +39,19 @@ public interface ApiService {
     Call<List<UserAuthor>> covertUserLecturers(@Query("id") String id);*/
     //==================================
 
-    //===================================
-    //lấy ra tên tài khoản để xác nhận đổi mật khẩu
-    /*@GET("")
-    Call<List<UserAuthor>> covertNameUserStudents(@Query("id") String id);
-
-    @GET("")
-    Call<List<UserAuthor>> covertNameUserLecturers(@Query("id") String id);*/
-    //========================================================
-
     //==============================
     // Update data project upload database
     @PUT("api/tacgias/{id}")
     Call<UserAuthor> updateData(@Path("id") int id, @Body UserAuthor userAuthor);
-    /*@GET("")
-    Call<List<UserAuthor>> covertUserLecturers(@Query("id") String id);*/
     //==================================
 
-    // Update data project upload database
+    //Delete data and upload database
     @PUT("api/tacgias/{id}")
     Call<UserAuthor> deleteData(@Path("id") int id);
-    /*@GET("")
-    Call<List<UserAuthor>> covertUserLecturers(@Query("id") String id);*/
+    //==================================
+
+    //Insert data and upload database
+    @PUT("api/tacgias/{id}")
+    Call<UserAuthor> insertData(@Path("id") int id, @Body UserAuthor userAuthor);
     //==================================
 }
