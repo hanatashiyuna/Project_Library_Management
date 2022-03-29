@@ -21,6 +21,15 @@ public final class ActivityUserDetailBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView LGMssv;
+
+  @NonNull
+  public final TextView LGUsername;
+
+  @NonNull
+  public final TextView btnSignup;
+
+  @NonNull
   public final ImageView imageView2;
 
   @NonNull
@@ -32,22 +41,17 @@ public final class ActivityUserDetailBinding implements ViewBinding {
   @NonNull
   public final TextView myInfo;
 
-  @NonNull
-  public final TextView textView11;
-
-  @NonNull
-  public final TextView textView9;
-
-  private ActivityUserDetailBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView imageView2, @NonNull ImageView imageView3, @NonNull TextView logOutBtn,
-      @NonNull TextView myInfo, @NonNull TextView textView11, @NonNull TextView textView9) {
+  private ActivityUserDetailBinding(@NonNull ConstraintLayout rootView, @NonNull TextView LGMssv,
+      @NonNull TextView LGUsername, @NonNull TextView btnSignup, @NonNull ImageView imageView2,
+      @NonNull ImageView imageView3, @NonNull TextView logOutBtn, @NonNull TextView myInfo) {
     this.rootView = rootView;
+    this.LGMssv = LGMssv;
+    this.LGUsername = LGUsername;
+    this.btnSignup = btnSignup;
     this.imageView2 = imageView2;
     this.imageView3 = imageView3;
     this.logOutBtn = logOutBtn;
     this.myInfo = myInfo;
-    this.textView11 = textView11;
-    this.textView9 = textView9;
   }
 
   @Override
@@ -77,6 +81,24 @@ public final class ActivityUserDetailBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.LG_mssv;
+      TextView LGMssv = ViewBindings.findChildViewById(rootView, id);
+      if (LGMssv == null) {
+        break missingId;
+      }
+
+      id = R.id.LG_Username;
+      TextView LGUsername = ViewBindings.findChildViewById(rootView, id);
+      if (LGUsername == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_signup;
+      TextView btnSignup = ViewBindings.findChildViewById(rootView, id);
+      if (btnSignup == null) {
+        break missingId;
+      }
+
       id = R.id.imageView2;
       ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
       if (imageView2 == null) {
@@ -101,20 +123,8 @@ public final class ActivityUserDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView11;
-      TextView textView11 = ViewBindings.findChildViewById(rootView, id);
-      if (textView11 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView9;
-      TextView textView9 = ViewBindings.findChildViewById(rootView, id);
-      if (textView9 == null) {
-        break missingId;
-      }
-
-      return new ActivityUserDetailBinding((ConstraintLayout) rootView, imageView2, imageView3,
-          logOutBtn, myInfo, textView11, textView9);
+      return new ActivityUserDetailBinding((ConstraintLayout) rootView, LGMssv, LGUsername,
+          btnSignup, imageView2, imageView3, logOutBtn, myInfo);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -24,10 +24,10 @@
         <TextView
             android:id="@+id/book_name"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:textAlignment="center"
             android:layout_marginTop="10dp"
-            android:text="Book Name!"
+            android:text="Book Name! Name"
             android:textColor="@color/black"
             android:textSize="15sp"
             android:fontFamily="@font/castoro"/>
@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:layout_gravity="bottom">
 
             <ImageView
                 android:layout_width="15dp"

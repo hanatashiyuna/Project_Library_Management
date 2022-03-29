@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
+            "outputFile": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\Project_Library_Management\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-3\\59595c0a99abd232ac1db25f0566a72d\\transformed\\jetified-zxing-android-embedded-3.4.0\\res\\values-id\\values-id.xml",
+                    "source": "C:\\Users\\tan\\.gradle\\caches\\transforms-3\\b712005b5a5ac6f778433dc49ed0519c\\transformed\\jetified-zxing-android-embedded-3.4.0\\res\\values-id\\values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
