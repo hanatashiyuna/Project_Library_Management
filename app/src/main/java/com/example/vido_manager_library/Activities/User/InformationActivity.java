@@ -23,7 +23,7 @@ public class InformationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
 
-        onInit();
+        //onInit();
 
         //data test
         userDetailModelsList = new ArrayList<>();
@@ -36,7 +36,7 @@ public class InformationActivity extends AppCompatActivity {
 //        informationVerRec.setHasFixedSize(true);
     }
 
-    public void onInit(){
+    /*public void onInit(){
         informationVerRec = findViewById(R.id.information_ver_rec);
-    }
+    }*/
 }

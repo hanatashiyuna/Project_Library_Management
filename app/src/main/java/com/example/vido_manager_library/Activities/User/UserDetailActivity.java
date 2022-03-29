@@ -35,7 +35,7 @@ public class UserDetailActivity extends AppCompatActivity {
     List<UserDetailModels> userDetailModelsList;
     UserDetailAdapters userDetailAdapters;
     UserAuthor infor_sidnup;
-    Integer id_mssv;
+    Integer id_mssv,get_name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +70,7 @@ public class UserDetailActivity extends AppCompatActivity {
             LG_Username.setText(userStu.getName());
             LG_mssv.setText(String.valueOf(userStu.getMssv()));
             id_mssv = userStu.getMssv();
+            get_name = userStu.getMssv();
         }
 
 
@@ -77,19 +78,18 @@ public class UserDetailActivity extends AppCompatActivity {
         myInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final TextView infor_mssv = view.findViewById(R.id.infor_mssv);
-                final TextView infor_getmssv = view.findViewById(R.id.infor_getmssv);
-                final TextView infor_name  = view.findViewById(R.id.infor_name);
-                final TextView infor_getname = view.findViewById(R.id.infor_getname);
                 AlertDialog.Builder builder = new AlertDialog.Builder(UserDetailActivity.this);
                 builder.setTitle("Thông tin");
-//                builder.setIcon(R.drawable.ic_baseline_info_24);
+                builder.setIcon(R.drawable.ic_baseline_info_24);
+
+                TextView infor_getmssv = view.findViewById(R.id.infor_getmssv);
+                TextView infor_getname = view.findViewById(R.id.infor_getname);
+                infor_getmssv.setText(id_mssv);
+                infor_getname.setText(get_name);
+
 
                 builder.setView(R.layout.activity_information);
-                /*infor_mssv = setTitle(id_mssv);
-                infor_getmssv = findViewById(R.id.infor_getmssv);
-                infor_name  = findViewById(R.id.infor_name);
-                infor_getname = findViewById(R.id.infor_getname);*/
+
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
