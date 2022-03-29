@@ -3330,6 +3330,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0d0018
 int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
+int layout activity_book_admin_detail 0x7f0d009c
 int layout activity_book_detail 0x7f0d001c
 int layout activity_create_qrcode 0x7f0d001d
 int layout activity_home_admin 0x7f0d001e

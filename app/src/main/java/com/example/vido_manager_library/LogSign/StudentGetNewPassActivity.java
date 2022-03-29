@@ -2,13 +2,13 @@ package com.example.vido_manager_library.LogSign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -26,7 +26,6 @@ public class StudentGetNewPassActivity extends AppCompatActivity {
 
     private CheckBox checkBox;
     private EditText LG_inputPass, LG_inputPassAgain;
-    private Button btn_ChangePassStu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +40,7 @@ public class StudentGetNewPassActivity extends AppCompatActivity {
         checkBox = findViewById(R.id.checkbox);
         LG_inputPass = findViewById(R.id.LG_inputPass);
         LG_inputPassAgain = findViewById(R.id.LG_inputPassAgain);
-        btn_ChangePassStu = findViewById(R.id.btn_ChangePassStu);
+        Button btn_ChangePassStu = findViewById(R.id.btn_ChangePassStu);
         // Project UPDATE HERE.....
         btn_ChangePassStu.setOnClickListener(view -> {
             if (LG_inputPass == LG_inputPassAgain) {
@@ -54,6 +53,8 @@ public class StudentGetNewPassActivity extends AppCompatActivity {
                 }
             }else {
                 Toast.makeText(StudentGetNewPassActivity.this, "Xác Nhận Mật Khẩu Không Trùng Nhau", Toast.LENGTH_SHORT).show();
+                //Xác Nhận Đổi Mật Khẩu thì use cái này, set tạm
+                onBack(this);
             }
 
         });
@@ -84,8 +85,13 @@ public class StudentGetNewPassActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<UserAuthor> call, Throwable t) {
-                Log.e("Error", "Api dont put data.");
+                Log.e("Error", "Api don't put data.");
             }
         });
+    }
+
+    public void onBack(Context context){
+        Intent intent = new Intent(context, StudentLoginActivity.class);
+        context.startActivity(intent);
     }
 }

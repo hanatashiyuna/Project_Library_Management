@@ -55,24 +55,16 @@ public class UserDetailActivity extends AppCompatActivity {
                 builder.setTitle("Thông tin");
                 builder.setIcon(R.drawable.ic_baseline_info_24);
                 builder.setView(R.layout.activity_information);
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                });
+                builder.setPositiveButton("OK", (dialogInterface, i) -> dialogInterface.dismiss());
                 builder.show();
             }
         });
 
         //logout
-        btnLogOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                switchActivity();
-                //xử lý sau đăng xuất
-                //none
-            }
+        btnLogOut.setOnClickListener(view -> {
+            switchActivity();
+            //xử lý sau đăng xuất
+            //none
         });
     }
 

@@ -46,6 +46,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.VIDO_Manager_Library" >
         <activity
+            android:name="com.example.vido_manager_library.Activities.User.BookAdminDetailActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.vido_manager_library.Activities.User.BookDetailActivity"
             android:exported="false" />
         <activity

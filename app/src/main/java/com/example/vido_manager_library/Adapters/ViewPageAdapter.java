@@ -22,8 +22,6 @@ public class ViewPageAdapter extends FragmentStateAdapter {
     @Override
     public Fragment createFragment(int position) {
         switch (position){
-            case 0:
-                return new AdminAuthorFrament();
             case 1:
                 return new AdminCategoryFrament();
             case 2:

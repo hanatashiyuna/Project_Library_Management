@@ -6,3 +6,4 @@ public interface IClickItemBook {
 
     void onClickItemBook(HomeHorModels homeHorModels);
 }
+
