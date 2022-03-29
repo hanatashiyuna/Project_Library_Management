@@ -9,6 +9,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,8 +35,9 @@ public class UserDetailActivity extends AppCompatActivity {
     RecyclerView informationVerRec;
     List<UserDetailModels> userDetailModelsList;
     UserDetailAdapters userDetailAdapters;
-    UserAuthor infor_sidnup;
-    Integer id_mssv,get_name;
+    UserStu infor_sidnup;
+    Integer id_mssv;
+    String get_name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +72,8 @@ public class UserDetailActivity extends AppCompatActivity {
             LG_Username.setText(userStu.getName());
             LG_mssv.setText(String.valueOf(userStu.getMssv()));
             id_mssv = userStu.getMssv();
-            get_name = userStu.getMssv();
+            get_name = userStu.getName();
+            infor_sidnup = userStu;
         }
 
 
@@ -78,19 +81,20 @@ public class UserDetailActivity extends AppCompatActivity {
         myInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(UserDetailActivity.this);
-                builder.setTitle("Thông tin");
-                builder.setIcon(R.drawable.ic_baseline_info_24);
+                AlertDialog.Builder builder =new AlertDialog.Builder(UserDetailActivity.this);
+
+//      Khai báo layout sẽ đưa vào nơi chỉ định
+                LayoutInflater inflater = getLayoutInflater();
+                view = inflater.inflate(R.layout.activity_information, null);
 
                 TextView infor_getmssv = view.findViewById(R.id.infor_getmssv);
                 TextView infor_getname = view.findViewById(R.id.infor_getname);
-                infor_getmssv.setText(id_mssv);
-                infor_getname.setText(get_name);
 
-
-                builder.setView(R.layout.activity_information);
-
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                infor_getmssv.setText(String.valueOf(id_mssv));
+                infor_getname.setText(String.valueOf(get_name));
+                builder.setView(view);
+                builder.setIcon(R.drawable.ic_baseline_info_24);
+                builder.setTitle("Thông tin sinh viên.").setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();
@@ -105,15 +109,13 @@ public class UserDetailActivity extends AppCompatActivity {
         btn_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                /*infor_sidnup = MainActivity.inforUser;
-                Intent intent_Signup = new Intent(UserDetailActivity.this, StudentGetNewPassActivity.class);
+                //Do không đồng bộ Api nên không sử dụng được
+                /*Intent intent_Signup = new Intent(UserDetailActivity.this, StudentGetNewPassActivity.class);
                 Bundle bundle_Signup = new Bundle();
-
-                bundle_Signup.putSerializable("Forgot_userLogin", inforUser);
+                bundle_Signup.putSerializable("Forgot_userLogin", infor_sidnup);
                 intent_Signup.putExtras(bundle_Signup);
                 startActivity(intent_Signup);
-                finish();*/
+                */
             }
         });
 
@@ -124,7 +126,6 @@ public class UserDetailActivity extends AppCompatActivity {
                 AccountModify.delete(id_mssv);
                 switchActivity();
                 //xử lý sau đăng xuất
-                //none
                 finish();
             }
         });

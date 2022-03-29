@@ -3,6 +3,7 @@ package com.example.vido_manager_library.QRCode;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.nfc.Tag;
 import android.os.Bundle;
@@ -12,7 +13,9 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.vido_manager_library.Activities.User.MainActivity;
+import com.example.vido_manager_library.Emtity.AccountModify;
 import com.example.vido_manager_library.Models.UserAuthor;
+import com.example.vido_manager_library.Models.UserStu;
 import com.example.vido_manager_library.R;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.MultiFormatReader;
@@ -28,15 +31,32 @@ public class CreateQRCodeActivity extends AppCompatActivity {
 
     private ImageView back, imageQRCode;
     private UserAuthor userAuthor;
+    private String information;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_qrcode);
+        List<UserStu> mlistAccount = new ArrayList<UserStu>();
 
         back = findViewById(R.id.back);
         imageQRCode = findViewById(R.id.imageQRCode);
-        String information = "2006010004";
+
+        Cursor cursor = AccountModify.findTheFirst();
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            int id = cursor.getInt(0);
+            String name = cursor.getString(1);
+            String password = "123456";
+            mlistAccount.add(new UserStu(id,name,password));
+            cursor.moveToNext();
+        }
+        cursor.close();
+
+        for (UserStu userStu: mlistAccount) {
+            information = String.valueOf(userStu.getMssv());
+        }
+
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

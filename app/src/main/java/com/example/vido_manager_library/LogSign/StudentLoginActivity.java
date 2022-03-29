@@ -44,14 +44,14 @@ public class StudentLoginActivity extends AppCompatActivity {
             Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
             startActivity(intent);
         }else {
-            btn_Login = (Button) findViewById(R.id.btn_Login);
             btn_forgotpass = (TextView) findViewById(R.id.btn_ForgotPass);
             btn_loginAdmin = (TextView) findViewById(R.id.btn_LoginAdmin);
 
-            checkBox = (CheckBox) findViewById(R.id.checkbox);
-
             LG_inputUsrename = (EditText) findViewById(R.id.LG_inputUsrename);
             LG_inputPass = (EditText) findViewById(R.id.LG_inputPass);
+            btn_Login = (Button) findViewById(R.id.btn_Login);
+
+            checkBox = (CheckBox) findViewById(R.id.checkbox);
 
             //Run ArrayList and download json User in Database
             mListUser = new ArrayList<>();
@@ -104,11 +104,10 @@ public class StudentLoginActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<UserAuthor>> call, Response<List<UserAuthor>> response) {
                 mListUser = response.body();
-                //Log.e("Value: ", mListUser.size() + " ");
             }
             @Override
             public void onFailure(Call<List<UserAuthor>> call, Throwable t) {
-                Toast.makeText(StudentLoginActivity.this, "Sai Mật Khẩu Hoặc Tài Khoản", Toast.LENGTH_SHORT).show();
+                Toast.makeText(StudentLoginActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
             }
         });
     }
