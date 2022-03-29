@@ -32,16 +32,16 @@
         "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\Project_Library_Management\\app\\src\\main\\res\\layout\\information_student.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\Project_Library_Management\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_lecturers_forgot.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\Project_Library_Management\\app\\src\\main\\res\\layout\\activity_lecturers_forgot.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\Project_Library_Management\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_admin_categories.xml",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\Project_Library_Management\\app\\src\\main\\res\\layout\\fragment_admin_categories.xml"
     },
     {
         "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\Project_Library_Management\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_returned_books.xml",
         "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\Project_Library_Management\\app\\src\\main\\res\\layout\\fragment_returned_books.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\Project_Library_Management\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_admin_categories.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\Project_Library_Management\\app\\src\\main\\res\\layout\\fragment_admin_categories.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\Project_Library_Management\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_lecturers_forgot.xml",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\Project_Library_Management\\app\\src\\main\\res\\layout\\activity_lecturers_forgot.xml"
     },
     {
         "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\Project_Library_Management\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_admin_positions.xml",

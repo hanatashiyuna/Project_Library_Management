@@ -2910,9 +2910,12 @@ id immediateStop
 id included
 id info
 id infomation
+id infor_getmssv
+id infor_getname
+id infor_mssv
+id infor_name
 id infor_view
 id information
-id information_ver_rec
 id invisible
 id inward
 id italic

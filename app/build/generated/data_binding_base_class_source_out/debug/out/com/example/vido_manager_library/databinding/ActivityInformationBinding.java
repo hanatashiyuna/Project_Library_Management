@@ -4,10 +4,10 @@ package com.example.vido_manager_library.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.vido_manager_library.R;
@@ -20,12 +20,25 @@ public final class ActivityInformationBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final RecyclerView informationVerRec;
+  public final TextView inforGetmssv;
+
+  @NonNull
+  public final TextView inforGetname;
+
+  @NonNull
+  public final TextView inforMssv;
+
+  @NonNull
+  public final TextView inforName;
 
   private ActivityInformationBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView informationVerRec) {
+      @NonNull TextView inforGetmssv, @NonNull TextView inforGetname, @NonNull TextView inforMssv,
+      @NonNull TextView inforName) {
     this.rootView = rootView;
-    this.informationVerRec = informationVerRec;
+    this.inforGetmssv = inforGetmssv;
+    this.inforGetname = inforGetname;
+    this.inforMssv = inforMssv;
+    this.inforName = inforName;
   }
 
   @Override
@@ -55,13 +68,32 @@ public final class ActivityInformationBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.information_ver_rec;
-      RecyclerView informationVerRec = ViewBindings.findChildViewById(rootView, id);
-      if (informationVerRec == null) {
+      id = R.id.infor_getmssv;
+      TextView inforGetmssv = ViewBindings.findChildViewById(rootView, id);
+      if (inforGetmssv == null) {
         break missingId;
       }
 
-      return new ActivityInformationBinding((ConstraintLayout) rootView, informationVerRec);
+      id = R.id.infor_getname;
+      TextView inforGetname = ViewBindings.findChildViewById(rootView, id);
+      if (inforGetname == null) {
+        break missingId;
+      }
+
+      id = R.id.infor_mssv;
+      TextView inforMssv = ViewBindings.findChildViewById(rootView, id);
+      if (inforMssv == null) {
+        break missingId;
+      }
+
+      id = R.id.infor_name;
+      TextView inforName = ViewBindings.findChildViewById(rootView, id);
+      if (inforName == null) {
+        break missingId;
+      }
+
+      return new ActivityInformationBinding((ConstraintLayout) rootView, inforGetmssv, inforGetname,
+          inforMssv, inforName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

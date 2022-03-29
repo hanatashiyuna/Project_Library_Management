@@ -2909,9 +2909,12 @@ int id immediateStop 0x7f0a010a
 int id included 0x7f0a010b
 int id info 0x7f0a010c
 int id infomation 0x7f0a010d
+int id infor_getmssv 0x7f0a025e
+int id infor_getname 0x7f0a025f
+int id infor_mssv 0x7f0a0260
+int id infor_name 0x7f0a0261
 int id infor_view 0x7f0a010e
 int id information 0x7f0a010f
-int id information_ver_rec 0x7f0a0110
 int id invisible 0x7f0a0111
 int id inward 0x7f0a0112
 int id italic 0x7f0a0113
