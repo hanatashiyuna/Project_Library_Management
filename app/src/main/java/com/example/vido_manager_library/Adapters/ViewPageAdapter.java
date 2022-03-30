@@ -32,7 +32,6 @@ public class ViewPageAdapter extends FragmentStateAdapter {
                 return new AdminBookFrament();
             default:
                 return new AdminAuthorFrament();
-
         }
     }
 

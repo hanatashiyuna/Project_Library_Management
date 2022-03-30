@@ -7,9 +7,9 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.vido_manager_library.R;
@@ -22,7 +22,7 @@ public final class FragmentAdminPcBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final ListView listviewPc;
+  public final RecyclerView listviewPc;
 
   @NonNull
   public final EditText searchInputpc;
@@ -30,7 +30,7 @@ public final class FragmentAdminPcBinding implements ViewBinding {
   @NonNull
   public final ImageView searchOutputpc;
 
-  private FragmentAdminPcBinding(@NonNull LinearLayout rootView, @NonNull ListView listviewPc,
+  private FragmentAdminPcBinding(@NonNull LinearLayout rootView, @NonNull RecyclerView listviewPc,
       @NonNull EditText searchInputpc, @NonNull ImageView searchOutputpc) {
     this.rootView = rootView;
     this.listviewPc = listviewPc;
@@ -66,7 +66,7 @@ public final class FragmentAdminPcBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.listview_pc;
-      ListView listviewPc = ViewBindings.findChildViewById(rootView, id);
+      RecyclerView listviewPc = ViewBindings.findChildViewById(rootView, id);
       if (listviewPc == null) {
         break missingId;
       }

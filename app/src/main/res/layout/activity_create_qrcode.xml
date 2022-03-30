@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".QRCode.CreateQRCodeActivity"
-    android:background="@color/purple_500">
+    android:background="@color/purple_500"
+    android:paddingTop="15dp">
 
     <ImageView
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_arrow_back"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="10dp"

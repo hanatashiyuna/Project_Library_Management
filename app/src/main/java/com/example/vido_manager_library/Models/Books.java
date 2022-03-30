@@ -1,6 +1,8 @@
 package com.example.vido_manager_library.Models;
 
-public class Books {
+import java.io.Serializable;
+
+public class Books implements Serializable {
     private int sachID;
     private String tensach;
     private int tacgiaID;
@@ -9,6 +11,11 @@ public class Books {
     private String namxb;
     private int soban;
     private int vitriID;
+
+    public Books(String tensach, int soban) {
+        this.tensach = tensach;
+        this.soban = soban;
+    }
 
     public Books(int sachID, String tensach,
                  int tacgiaID, int theloaiID,

@@ -2,27 +2,18 @@ package com.example.vido_manager_library.Adapters;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.vido_manager_library.Activities.User.BookDetailActivity;
-import com.example.vido_manager_library.Activities.User.InformationActivity;
-import com.example.vido_manager_library.Activities.User.UserDetailActivity;
 import com.example.vido_manager_library.Interface.IClickItemBook;
-import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.Models.HomeHorModels;
 import com.example.vido_manager_library.R;
 
@@ -58,6 +49,13 @@ public class BooksAdapters extends RecyclerView.Adapter<BooksAdapters.ViewHolder
         this.list = list;
     }
 
+    public BooksAdapters(Fragment fragment, List<HomeHorModels> list, IClickItemBook iClickItemBook) {
+        this.fragment = fragment;
+        this.list = list;
+        this.iClickItemBook = iClickItemBook;
+    }
+
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -69,9 +67,15 @@ public class BooksAdapters extends RecyclerView.Adapter<BooksAdapters.ViewHolder
         HomeHorModels homeModels = list.get(position);
         holder.imageView.setImageResource(list.get(position).getImage());
         holder.textView.setText(list.get(position).getBookName());
-        holder.cardView.setOnClickListener(view -> {
-            iClickItemBook.onClickItemBook(homeModels);
-        });
+        if(homeModels != null){
+            holder.cardView.setOnClickListener(view -> {
+                iClickItemBook.onClickItemBook(homeModels);
+            });
+        }else {
+            holder.cardView.setOnClickListener(view -> {
+
+            });
+        }
     }
 
 
@@ -81,7 +85,7 @@ public class BooksAdapters extends RecyclerView.Adapter<BooksAdapters.ViewHolder
         return list.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView imageView;
         TextView textView;

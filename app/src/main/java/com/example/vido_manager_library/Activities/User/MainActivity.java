@@ -35,6 +35,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,9 +50,8 @@ public class MainActivity extends AppCompatActivity {
         //print QRCode
         FloatingActionButton mQRCode = findViewById(R.id.fab);
         mQRCode.setOnClickListener(view -> {
-            Bundle bundle = new Bundle();
             Intent intent = new Intent(MainActivity.this, CreateQRCodeActivity.class);
-            startActivity(intent, bundle);
+            startActivity(intent);
         });
 
         //Bottom Menu

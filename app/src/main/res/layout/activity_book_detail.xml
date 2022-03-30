@@ -6,17 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".Activities.User.BookDetailActivity">
 
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/img_book"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/nameBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/img_book"
+        app:layout_constraintTop_toTopOf="@+id/img_book"
+        android:text="name"/>
+
+    <TextView
+        android:id="@+id/nameAuthor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="name"
         android:textColor="@color/black"
-        android:textSize="36sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/img_book"
+        app:layout_constraintTop_toBottomOf="@+id/nameBook" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

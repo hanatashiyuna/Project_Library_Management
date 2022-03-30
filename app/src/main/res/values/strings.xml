@@ -27,4 +27,11 @@
     <string name="managerAccount">Quản lý tài khoản</string>
     <string name="search">Search your book</string>
     <string name="qr_code">QR Code</string>
+    <string name="background_infor">background_infor</string>
+    <string name="back">back</string>
+    <string name="avatar">avatar</string>
+    <string name="my_information">Thông tin cá nhân</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="log_out">Đăng xuất</string>
+    <string name="search_here">Tìm Kiếm Ở Đây</string>
 </resources>

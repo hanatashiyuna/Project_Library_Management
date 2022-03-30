@@ -35,6 +35,12 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder>{
         this.list = list;
     }
 
+    public BooksAdapter(Fragment fragment, List<Books> list, IClickItemBooks iClickItemBooks) {
+        this.fragment = fragment;
+        this.list = list;
+        this.iClickItemBooks = iClickItemBooks;
+    }
+
     @NonNull
     @Override
     public BooksAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -46,7 +52,7 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder>{
         Books books = list.get(position);
         holder.name_item.setText(list.get(position).getTensach());
         holder.category_item.setText(list.get(position).getTheloaiID());
-        //holder.items.setOnClickListener(view -> iClickItemBooks.onClickItemBooks(books));
+        holder.items.setOnClickListener(view -> iClickItemBooks.onClickItemBooks(books));
     }
 
     @Override
@@ -58,12 +64,12 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder>{
 
         TextView name_item;
         TextView category_item;
-        //LinearLayout items;
+        LinearLayout items;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             name_item = itemView.findViewById(R.id.name_item);
             category_item = itemView.findViewById(R.id.category_item);
-            //items = itemView.findViewById(R.id.itemSum);
+            items = itemView.findViewById(R.id.itemSum);
         }
     }
 }

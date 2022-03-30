@@ -7,9 +7,9 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.vido_manager_library.R;
@@ -22,7 +22,7 @@ public final class FragmentAdminPositionsBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final ListView listviewPosition;
+  public final RecyclerView listviewPositions;
 
   @NonNull
   public final EditText searchInputposition;
@@ -31,10 +31,10 @@ public final class FragmentAdminPositionsBinding implements ViewBinding {
   public final ImageView searchOutputposition;
 
   private FragmentAdminPositionsBinding(@NonNull LinearLayout rootView,
-      @NonNull ListView listviewPosition, @NonNull EditText searchInputposition,
+      @NonNull RecyclerView listviewPositions, @NonNull EditText searchInputposition,
       @NonNull ImageView searchOutputposition) {
     this.rootView = rootView;
-    this.listviewPosition = listviewPosition;
+    this.listviewPositions = listviewPositions;
     this.searchInputposition = searchInputposition;
     this.searchOutputposition = searchOutputposition;
   }
@@ -66,9 +66,9 @@ public final class FragmentAdminPositionsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.listview_position;
-      ListView listviewPosition = ViewBindings.findChildViewById(rootView, id);
-      if (listviewPosition == null) {
+      id = R.id.listview_positions;
+      RecyclerView listviewPositions = ViewBindings.findChildViewById(rootView, id);
+      if (listviewPositions == null) {
         break missingId;
       }
 
@@ -84,7 +84,7 @@ public final class FragmentAdminPositionsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAdminPositionsBinding((LinearLayout) rootView, listviewPosition,
+      return new FragmentAdminPositionsBinding((LinearLayout) rootView, listviewPositions,
           searchInputposition, searchOutputposition);
     }
     String missingId = rootView.getResources().getResourceName(id);

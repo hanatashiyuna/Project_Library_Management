@@ -7,9 +7,9 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.vido_manager_library.R;
@@ -22,7 +22,7 @@ public final class FragmentAdminCategoriesBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final ListView listviewCategory;
+  public final RecyclerView listviewCategory;
 
   @NonNull
   public final EditText searchInputcategory;
@@ -31,7 +31,7 @@ public final class FragmentAdminCategoriesBinding implements ViewBinding {
   public final ImageView searchOutputcategory;
 
   private FragmentAdminCategoriesBinding(@NonNull LinearLayout rootView,
-      @NonNull ListView listviewCategory, @NonNull EditText searchInputcategory,
+      @NonNull RecyclerView listviewCategory, @NonNull EditText searchInputcategory,
       @NonNull ImageView searchOutputcategory) {
     this.rootView = rootView;
     this.listviewCategory = listviewCategory;
@@ -67,7 +67,7 @@ public final class FragmentAdminCategoriesBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.listview_category;
-      ListView listviewCategory = ViewBindings.findChildViewById(rootView, id);
+      RecyclerView listviewCategory = ViewBindings.findChildViewById(rootView, id);
       if (listviewCategory == null) {
         break missingId;
       }

@@ -53,9 +53,9 @@ public class HomeAdminActivity extends AppCompatActivity {
                 case R.id.managerBooks:
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new ManagerFragment()).commit();
                     break;
-                case R.id.managerAccount:
+                /*case R.id.managerAccount:
                 case R.id.infomation:
-                    break;
+                    break;*/
                 case R.id.home:
                 default:
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeAdminFragment()).commit();

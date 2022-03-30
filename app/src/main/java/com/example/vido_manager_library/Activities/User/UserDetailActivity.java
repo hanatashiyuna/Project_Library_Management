@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +22,7 @@ import com.example.vido_manager_library.LogSign.StudentLoginActivity;
 import com.example.vido_manager_library.Models.UserAuthor;
 import com.example.vido_manager_library.Models.UserDetailModels;
 import com.example.vido_manager_library.Models.UserStu;
+import com.example.vido_manager_library.QRCode.CreateQRCodeActivity;
 import com.example.vido_manager_library.R;
 
 import java.io.Serializable;
@@ -31,10 +33,6 @@ import com.example.vido_manager_library.*;
 public class UserDetailActivity extends AppCompatActivity {
 
     TextView btnLogOut,btn_signup,myInfo, name,LG_Username,LG_mssv;
-    RecyclerView informationVerRec;
-    List<UserDetailModels> userDetailModelsList;
-    UserDetailAdapters userDetailAdapters;
-    UserAuthor infor_sidnup;
     Integer id_mssv,get_name;
 
     @Override
@@ -43,12 +41,16 @@ public class UserDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user_detail);
 
         //parameters
-//        informationVerRec = findViewById(R.id.information_ver_rec);
-
         btnLogOut = findViewById(R.id.log_out_btn);
         btn_signup = findViewById(R.id.btn_signup);
         myInfo = findViewById(R.id.my_info);
         name = findViewById(R.id.tv_name);
+        ImageView back = findViewById(R.id.back);
+
+        back.setOnClickListener(view -> {
+            Intent intent = new Intent(UserDetailActivity.this, MainActivity.class);
+            startActivity(intent);
+        });
 
 
         List<UserStu> mlistAccount = new ArrayList<UserStu>();
@@ -75,58 +77,44 @@ public class UserDetailActivity extends AppCompatActivity {
 
 
         //thong tin sinh vien
-        myInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(UserDetailActivity.this);
-                builder.setTitle("Thông tin");
-                builder.setIcon(R.drawable.ic_baseline_info_24);
+        myInfo.setOnClickListener(view -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(UserDetailActivity.this);
+            builder.setTitle("Thông tin");
+            builder.setIcon(R.drawable.ic_baseline_info_24);
 
-                TextView infor_getmssv = view.findViewById(R.id.infor_getmssv);
-                TextView infor_getname = view.findViewById(R.id.infor_getname);
-                infor_getmssv.setText(id_mssv);
-                infor_getname.setText(get_name);
+            TextView infor_getmssv = view.findViewById(R.id.infor_getmssv);
+            TextView infor_getname = view.findViewById(R.id.infor_getname);
+            infor_getmssv.setText(id_mssv);
+            infor_getname.setText(get_name);
 
 
-                builder.setView(R.layout.activity_information);
+            builder.setView(R.layout.activity_information);
 
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                });
-                builder.show();
-            }
+            builder.setPositiveButton("OK", (dialogInterface, i) -> dialogInterface.dismiss());
+            builder.show();
         });
 
         //Sign Up
 
-        btn_signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        btn_signup.setOnClickListener(view -> {
 
-                /*infor_sidnup = MainActivity.inforUser;
-                Intent intent_Signup = new Intent(UserDetailActivity.this, StudentGetNewPassActivity.class);
-                Bundle bundle_Signup = new Bundle();
+            /*infor_sidnup = MainActivity.inforUser;
+            Intent intent_Signup = new Intent(UserDetailActivity.this, StudentGetNewPassActivity.class);
+            Bundle bundle_Signup = new Bundle();
 
-                bundle_Signup.putSerializable("Forgot_userLogin", inforUser);
-                intent_Signup.putExtras(bundle_Signup);
-                startActivity(intent_Signup);
-                finish();*/
-            }
+            bundle_Signup.putSerializable("Forgot_userLogin", inforUser);
+            intent_Signup.putExtras(bundle_Signup);
+            startActivity(intent_Signup);
+            finish();*/
         });
 
         //logout
-        btnLogOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AccountModify.delete(id_mssv);
-                switchActivity();
-                //xử lý sau đăng xuất
-                //none
-                finish();
-            }
+        btnLogOut.setOnClickListener(view -> {
+            AccountModify.delete(id_mssv);
+            switchActivity();
+            //xử lý sau đăng xuất
+            //none
+            finish();
         });
     }
 

@@ -27,6 +27,9 @@ public final class ActivityUserDetailBinding implements ViewBinding {
   public final TextView LGUsername;
 
   @NonNull
+  public final ImageView back;
+
+  @NonNull
   public final TextView btnSignup;
 
   @NonNull
@@ -42,11 +45,13 @@ public final class ActivityUserDetailBinding implements ViewBinding {
   public final TextView myInfo;
 
   private ActivityUserDetailBinding(@NonNull ConstraintLayout rootView, @NonNull TextView LGMssv,
-      @NonNull TextView LGUsername, @NonNull TextView btnSignup, @NonNull ImageView imageView2,
-      @NonNull ImageView imageView3, @NonNull TextView logOutBtn, @NonNull TextView myInfo) {
+      @NonNull TextView LGUsername, @NonNull ImageView back, @NonNull TextView btnSignup,
+      @NonNull ImageView imageView2, @NonNull ImageView imageView3, @NonNull TextView logOutBtn,
+      @NonNull TextView myInfo) {
     this.rootView = rootView;
     this.LGMssv = LGMssv;
     this.LGUsername = LGUsername;
+    this.back = back;
     this.btnSignup = btnSignup;
     this.imageView2 = imageView2;
     this.imageView3 = imageView3;
@@ -93,6 +98,12 @@ public final class ActivityUserDetailBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.back;
+      ImageView back = ViewBindings.findChildViewById(rootView, id);
+      if (back == null) {
+        break missingId;
+      }
+
       id = R.id.btn_signup;
       TextView btnSignup = ViewBindings.findChildViewById(rootView, id);
       if (btnSignup == null) {
@@ -123,7 +134,7 @@ public final class ActivityUserDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityUserDetailBinding((ConstraintLayout) rootView, LGMssv, LGUsername,
+      return new ActivityUserDetailBinding((ConstraintLayout) rootView, LGMssv, LGUsername, back,
           btnSignup, imageView2, imageView3, logOutBtn, myInfo);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -7,9 +7,9 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.vido_manager_library.R;
@@ -22,7 +22,7 @@ public final class FragmentAdminBooksBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final ListView listviewBook;
+  public final RecyclerView listviewBook;
 
   @NonNull
   public final EditText searchInputbook;
@@ -30,8 +30,9 @@ public final class FragmentAdminBooksBinding implements ViewBinding {
   @NonNull
   public final ImageView searchOutputbook;
 
-  private FragmentAdminBooksBinding(@NonNull LinearLayout rootView, @NonNull ListView listviewBook,
-      @NonNull EditText searchInputbook, @NonNull ImageView searchOutputbook) {
+  private FragmentAdminBooksBinding(@NonNull LinearLayout rootView,
+      @NonNull RecyclerView listviewBook, @NonNull EditText searchInputbook,
+      @NonNull ImageView searchOutputbook) {
     this.rootView = rootView;
     this.listviewBook = listviewBook;
     this.searchInputbook = searchInputbook;
@@ -66,7 +67,7 @@ public final class FragmentAdminBooksBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.listview_book;
-      ListView listviewBook = ViewBindings.findChildViewById(rootView, id);
+      RecyclerView listviewBook = ViewBindings.findChildViewById(rootView, id);
       if (listviewBook == null) {
         break missingId;
       }
