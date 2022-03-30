@@ -30,6 +30,7 @@ import retrofit2.Response;
 public class StudentLoginActivity extends AppCompatActivity {
     private EditText LG_inputUsrename, LG_inputPass;
     private CheckBox checkBox;
+    private Button btn_Login;
     private TextView btn_loginAdmin, btn_forgotpass;
     private List<UserAuthor> mListUser;
     private UserAuthor mUser;
@@ -38,20 +39,19 @@ public class StudentLoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_login);
-
         DB_Helper.getInstance(this);
         if (AccountModify.serchDB()) {
             Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
             startActivity(intent);
         }else {
-            Button btn_Login = findViewById(R.id.btn_Login);
-            btn_forgotpass = findViewById(R.id.btn_ForgotPass);
-            btn_loginAdmin = findViewById(R.id.btn_LoginAdmin);
+            btn_forgotpass = (TextView) findViewById(R.id.btn_ForgotPass);
+            btn_loginAdmin = (TextView) findViewById(R.id.btn_LoginAdmin);
 
-            checkBox = findViewById(R.id.checkbox);
+            LG_inputUsrename = (EditText) findViewById(R.id.LG_inputUsrename);
+            LG_inputPass = (EditText) findViewById(R.id.LG_inputPass);
+            btn_Login = (Button) findViewById(R.id.btn_Login);
 
-            LG_inputUsrename = findViewById(R.id.LG_inputUsrename);
-            LG_inputPass = findViewById(R.id.LG_inputPass);
+            checkBox = (CheckBox) findViewById(R.id.checkbox);
 
             //Run ArrayList and download json User in Database
             mListUser = new ArrayList<>();
@@ -62,26 +62,37 @@ public class StudentLoginActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     clickLogin(); //Treatment click Login
+                /*Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
+                startActivity(intent);*/
                 }
             });
 
-            btn_forgotpass.setOnClickListener(view -> {
-                Intent intent = new Intent(StudentLoginActivity.this, StudentForgotActivity.class);
-                startActivity(intent);
+            btn_forgotpass.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(StudentLoginActivity.this, StudentForgotActivity.class);
+                    startActivity(intent);
+                }
             });
 
-            btn_loginAdmin.setOnClickListener(view -> {
-                Intent intent = new Intent(StudentLoginActivity.this, LecturersLoginActivity.class);
-                startActivity(intent);
+            btn_loginAdmin.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(StudentLoginActivity.this, LecturersLoginActivity.class);
+                    startActivity(intent);
+                }
             });
 
-            checkBox.setOnClickListener(v -> {
-                if(!checkBox.isChecked()) {
-                    //Password visible
-                    LG_inputPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                }else{
-                    //Password not visible
-                    LG_inputPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+            checkBox.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(!checkBox.isChecked()) {
+                        //Password visible
+                        LG_inputPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    }else{
+                        //Password not visible
+                        LG_inputPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    }
                 }
             });
         }
@@ -96,7 +107,7 @@ public class StudentLoginActivity extends AppCompatActivity {
             }
             @Override
             public void onFailure(Call<List<UserAuthor>> call, Throwable t) {
-                Toast.makeText(StudentLoginActivity.this, "Sai Mật Khẩu Hoặc Tài Khoản", Toast.LENGTH_SHORT).show();
+                Toast.makeText(StudentLoginActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -129,6 +140,9 @@ public class StudentLoginActivity extends AppCompatActivity {
             finish();
         }else {
             Toast.makeText(StudentLoginActivity.this, "Sai Mật Khẩu Hoặc Tài Khoản", Toast.LENGTH_SHORT).show();
+            /* TO DO CODING */
+            Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
+            startActivity(intent);
         }
     }
 }
