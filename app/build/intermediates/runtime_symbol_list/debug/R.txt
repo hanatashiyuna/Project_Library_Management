@@ -2767,7 +2767,6 @@ int id btn_ForgotPassAdmin 0x7f0a007b
 int id btn_Login 0x7f0a007c
 int id btn_LoginAdmin 0x7f0a007d
 int id btn_LoginStu 0x7f0a007e
-int id btn_add 0x7f0a0265
 int id btn_delete 0x7f0a0269
 int id btn_repair 0x7f0a0266
 int id btn_signup 0x7f0a007f
@@ -2853,6 +2852,8 @@ int id easeInOut 0x7f0a00ce
 int id easeOut 0x7f0a00cf
 int id east 0x7f0a00d0
 int id editText 0x7f0a00d1
+int id editText2 0x7f0a026a
+int id editText3 0x7f0a026b
 int id edit_query 0x7f0a00d2
 int id elastic 0x7f0a00d3
 int id end 0x7f0a00d4

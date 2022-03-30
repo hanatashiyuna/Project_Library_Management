@@ -43,7 +43,6 @@ public class BookAdminDetailActivity extends AppCompatActivity {
         ImageView back =  findViewById(R.id.back);
         back.setOnClickListener(view -> switchActivity());
 
-        Button btn_add = findViewById(R.id.btn_add);
         Button btn_delete = findViewById(R.id.btn_delete);
         Button btn_repair = findViewById(R.id.btn_repair);
     }
