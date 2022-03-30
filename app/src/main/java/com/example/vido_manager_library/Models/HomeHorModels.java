@@ -1,10 +1,13 @@
 package com.example.vido_manager_library.Models;
 
 import java.io.Serializable;
+/**
+ * pbSc = publishing company
+ */
 
 public class HomeHorModels implements Serializable {
-    private int bookNumber, typeNumber,bookshelf, amountBooks, bookId, image;
-    private String bookName, author, pbSC;
+    private int  typeNumber,bookshelf, amountBooks, bookId, image;
+    private String bookNumber, bookName, author, pbSC;
     public static final int TYPE_BOOK_1 = 1,TYPE_BOOK_2 = 2, TYPE_BOOK_3 = 3;
 
     public HomeHorModels(int bookId) {
@@ -22,7 +25,7 @@ public class HomeHorModels implements Serializable {
         this.image = image;
     }
 
-    public HomeHorModels(int bookNumber, int typeNumber, int bookshelf, int amountBooks, int bookId, int image, String bookName, String author, String pbSC) {
+    public HomeHorModels(String bookNumber, int typeNumber, int bookshelf, int amountBooks, int bookId, int image, String bookName, String author, String pbSC) {
         this.bookNumber = bookNumber;
         this.typeNumber = typeNumber;
         this.bookshelf = bookshelf;
@@ -34,11 +37,11 @@ public class HomeHorModels implements Serializable {
         this.pbSC = pbSC;
     }
 
-    public int getBookNumber() {
+    public String getBookNumber() {
         return bookNumber;
     }
 
-    public void setBookNumber(int bookNumber) {
+    public void setBookNumber(String bookNumber) {
         this.bookNumber = bookNumber;
     }
 

@@ -88,18 +88,18 @@ public class HomeFragment extends Fragment {
         //cardView home
         bookList = new ArrayList<>();
 
-        bookList.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever"));
-        bookList.add(new HomeHorModels(R.drawable.androidprogram, "Android Program"));
-        bookList.add(new HomeHorModels(R.drawable.curriculums_android, "Curriculums Android"));
-        bookList.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever"));
-        bookList.add(new HomeHorModels(R.drawable.androidprogram, "Android Program"));
-        bookList.add(new HomeHorModels(R.drawable.curriculums_android, "Curriculums Android"));
-        bookList.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever"));
-        bookList.add(new HomeHorModels(R.drawable.androidprogram, "Android Program"));
-        bookList.add(new HomeHorModels(R.drawable.curriculums_android, "Curriculums Android"));
-        bookList.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever"));
-        bookList.add(new HomeHorModels(R.drawable.androidprogram, "Android Program"));
-        bookList.add(new HomeHorModels(R.drawable.curriculums_android, "Curriculums Android"));
+        bookList.add(new HomeHorModels("200200",1,1, 4,HomeHorModels.TYPE_BOOK_1, R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever","Tran Minh Tan",""));
+        bookList.add(new HomeHorModels("202020",1,2, 5,HomeHorModels.TYPE_BOOK_1, R.drawable.androidprogram, "Android Program","Tran Minh Tan",""));
+        bookList.add(new HomeHorModels("200202",1,1, 5,HomeHorModels.TYPE_BOOK_1, R.drawable.curriculums_android, "Curriculums Android", "Tran Minh Tan", ""));
+        bookList.add(new HomeHorModels("000202",1,1, 4,HomeHorModels.TYPE_BOOK_1, R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever", "Tran Minh Tan", ""));
+        bookList.add(new HomeHorModels("200204",1,1, 7,HomeHorModels.TYPE_BOOK_1, R.drawable.androidprogram, "Android Program", "Tran Minh Tan", ""));
+        bookList.add(new HomeHorModels("000200",1,2, 3,HomeHorModels.TYPE_BOOK_1, R.drawable.curriculums_android, "Curriculums Android", "Tran Minh Tan", ""));
+        bookList.add(new HomeHorModels("200000",1,1, 3,HomeHorModels.TYPE_BOOK_1, R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever", "Tran Minh Tan", ""));
+        bookList.add(new HomeHorModels("000002",1,1, 3,HomeHorModels.TYPE_BOOK_1, R.drawable.androidprogram, "Android Program", "Tran Minh Tan", ""));
+        bookList.add(new HomeHorModels("202002",1,2, 4,HomeHorModels.TYPE_BOOK_1, R.drawable.curriculums_android, "Curriculums Android", "Tran Minh Tan", ""));
+        bookList.add(new HomeHorModels("020202",1,1, 5,HomeHorModels.TYPE_BOOK_1, R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever", "Tran Minh Tan", ""));
+        bookList.add(new HomeHorModels("002002",1,2, 7,HomeHorModels.TYPE_BOOK_1, R.drawable.androidprogram, "Android Program", "Tran Minh Tan", ""));
+        bookList.add(new HomeHorModels("200206",1,1, 3,HomeHorModels.TYPE_BOOK_1, R.drawable.curriculums_android, "Curriculums Android", "Tran Minh Tan", ""));
 
     }
     private void onClickGoToDetail(HomeHorModels homeHorModels) {

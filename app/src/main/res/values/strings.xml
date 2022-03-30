@@ -34,4 +34,7 @@
     <string name="change_password">Đổi mật khẩu</string>
     <string name="log_out">Đăng xuất</string>
     <string name="search_here">Tìm Kiếm Ở Đây</string>
+    <string name="add">Thêm</string>
+    <string name="delete">Xóa</string>
+    <string name="repair">Sửa</string>
 </resources>

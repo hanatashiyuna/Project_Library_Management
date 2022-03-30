@@ -2,11 +2,15 @@ package com.example.vido_manager_library.Activities.User;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.vido_manager_library.Activities.Admin.HomeAdminActivity;
 import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.Models.HomeHorModels;
 import com.example.vido_manager_library.R;
@@ -35,5 +39,17 @@ public class BookAdminDetailActivity extends AppCompatActivity {
             imgAdminBook.setImageResource(homeHorModels.getImage());
             amount.setText(String.valueOf(homeHorModels.getAmountBooks()));
         }
+
+        ImageView back =  findViewById(R.id.back);
+        back.setOnClickListener(view -> switchActivity());
+
+        Button btn_add = findViewById(R.id.btn_add);
+        Button btn_delete = findViewById(R.id.btn_delete);
+        Button btn_repair = findViewById(R.id.btn_repair);
+    }
+
+    public void switchActivity(){
+        Intent intent = new Intent(BookAdminDetailActivity.this, HomeAdminActivity.class);
+        startActivity(intent);
     }
 }

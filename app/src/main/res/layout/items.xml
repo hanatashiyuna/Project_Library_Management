@@ -61,8 +61,7 @@
                 android:textColor="@color/gray"
                 android:textSize="15sp"
                 android:textStyle="italic"
-                android:fontFamily="@font/castoro"
-                />
+                android:fontFamily="@font/castoro"/>
         </LinearLayout>
     </LinearLayout>
 

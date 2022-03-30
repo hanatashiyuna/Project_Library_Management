@@ -41,28 +41,28 @@ public class FavouriteBooksFragment extends Fragment {
     private List<HomeHorModels> getListBooks() {
         List<HomeHorModels> list = new ArrayList<>();
         //First
-        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The First Book", HomeHorModels.TYPE_BOOK_1));
+        list.add(new HomeHorModels("200200",1,1, 1,HomeHorModels.TYPE_BOOK_1, R.drawable.microsoft_firewall_isa_server, "The First Book", "", ""));
         list.add(new HomeHorModels(R.drawable.androidprogram, "The First Book", HomeHorModels.TYPE_BOOK_1));
         list.add(new HomeHorModels(R.drawable.curriculums_android, "The First Book", HomeHorModels.TYPE_BOOK_1));
         list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The First Book", HomeHorModels.TYPE_BOOK_1));
         list.add(new HomeHorModels(R.drawable.androidprogram, "The First Book", HomeHorModels.TYPE_BOOK_1));
         // Second
-        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The First Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.androidprogram, "The First Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.curriculums_android, "The First Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The First Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.androidprogram, "The First Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The First Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.androidprogram, "The First Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The Second Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.androidprogram, "The Second Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.curriculums_android, "The Second Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The Second Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.androidprogram, "The Second Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The Second Book", HomeHorModels.TYPE_BOOK_2));
+        list.add(new HomeHorModels(R.drawable.androidprogram, "The Second Book", HomeHorModels.TYPE_BOOK_2));
 
         //Third
-        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The First Book", HomeHorModels.TYPE_BOOK_3));
-        list.add(new HomeHorModels(R.drawable.androidprogram, "The First Book", HomeHorModels.TYPE_BOOK_3));
-        list.add(new HomeHorModels(R.drawable.curriculums_android, "The First Book", HomeHorModels.TYPE_BOOK_3));
-        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The First Book", HomeHorModels.TYPE_BOOK_3));
-        list.add(new HomeHorModels(R.drawable.androidprogram, "The First Book", HomeHorModels.TYPE_BOOK_3));
-        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The First Book", HomeHorModels.TYPE_BOOK_3));
-        list.add(new HomeHorModels(R.drawable.androidprogram, "The First Book", HomeHorModels.TYPE_BOOK_3));
+        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The Third Book", HomeHorModels.TYPE_BOOK_3));
+        list.add(new HomeHorModels(R.drawable.androidprogram, "The Third Book", HomeHorModels.TYPE_BOOK_3));
+        list.add(new HomeHorModels(R.drawable.curriculums_android, "The Third Book", HomeHorModels.TYPE_BOOK_3));
+        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The Third Book", HomeHorModels.TYPE_BOOK_3));
+        list.add(new HomeHorModels(R.drawable.androidprogram, "The Third Book", HomeHorModels.TYPE_BOOK_3));
+        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The Third Book", HomeHorModels.TYPE_BOOK_3));
+        list.add(new HomeHorModels(R.drawable.androidprogram, "The Third Book", HomeHorModels.TYPE_BOOK_3));
 
         return list;
     }

@@ -45,13 +45,13 @@ public class AdminBookFrament extends Fragment {
 
     private List<HomeHorModels> getListBooks() {
         List<HomeHorModels> listBooks = new ArrayList<>();
-        listBooks.add(new HomeHorModels(1, 4, 1, 5, 1,R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thien"));
-        listBooks.add(new HomeHorModels(1, 4, 1, 5, 1,R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thien"));
-        listBooks.add(new HomeHorModels(1, 4, 1, 5, 1,R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thien"));
-        listBooks.add(new HomeHorModels(1, 4, 1, 5, 1,R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thien"));
-        listBooks.add(new HomeHorModels(1, 4, 1, 5, 1,R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thien"));
-        listBooks.add(new HomeHorModels(1, 4, 1, 5, 1,R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thien"));
-        listBooks.add(new HomeHorModels(1, 4, 1, 5, 1,R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thien"));
+        listBooks.add(new HomeHorModels("000200", 4, 1, 5, 1,R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thien"));
+        listBooks.add(new HomeHorModels("000201", 4, 1, 5, 1,R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thien"));
+        listBooks.add(new HomeHorModels("000202", 4, 1, 5, 1,R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thien"));
+        listBooks.add(new HomeHorModels("000199", 4, 1, 5, 1,R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thien"));
+        listBooks.add(new HomeHorModels("200200", 4, 1, 5, 1,R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thien"));
+        listBooks.add(new HomeHorModels("000204", 4, 1, 5, 1,R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thien"));
+        listBooks.add(new HomeHorModels("200202", 4, 1, 5, 1,R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thien"));
         return listBooks;
     }
 

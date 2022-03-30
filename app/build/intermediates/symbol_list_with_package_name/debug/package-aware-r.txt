@@ -2768,6 +2768,9 @@ id btn_ForgotPassAdmin
 id btn_Login
 id btn_LoginAdmin
 id btn_LoginStu
+id btn_add
+id btn_delete
+id btn_repair
 id btn_signup
 id buttonPanel
 id cache_measures
@@ -3509,6 +3512,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string add
 string adminLog
 string admin_password
 string androidx_startup
@@ -3528,6 +3532,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string delete
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -3636,6 +3641,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string qr_code
 string recentAddBook
+string repair
 string returnedBook
 string search
 string search_here

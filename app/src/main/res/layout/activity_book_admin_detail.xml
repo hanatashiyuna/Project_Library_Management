@@ -4,14 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.User.BookAdminDetailActivity">
+    tools:context=".Activities.User.BookAdminDetailActivity"
+    android:paddingTop="25dp">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imgBookAdmin"
         android:layout_width="90dp"
         android:layout_height="90dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:id="@+id/nameBook"
@@ -35,5 +45,39 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgBookAdmin"
         app:layout_constraintTop_toBottomOf="@+id/nameBook" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:foreground="@drawable/btn_bg_design"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountBook"
+        app:layout_constraintVertical_bias=".8" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/btn_bg_design"
+        android:text="@string/delete"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_add"
+        app:layout_constraintStart_toEndOf="@+id/btn_add"
+        app:layout_constraintTop_toTopOf="@+id/btn_add"
+        android:layout_marginStart="50dp"/>
+
+    <Button
+        android:id="@+id/btn_repair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/btn_bg_design"
+        android:text="@string/repair"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_delete"
+        app:layout_constraintTop_toTopOf="@+id/btn_delete" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
