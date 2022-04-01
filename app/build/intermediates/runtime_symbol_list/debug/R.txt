@@ -2531,9 +2531,12 @@ int drawable abc_vector_test 0x7f080055
 int drawable androidprogram 0x7f080056
 int drawable avd_hide_password 0x7f080057
 int drawable avd_show_password 0x7f080058
+int drawable avt_student 0x7f0800c4
 int drawable background 0x7f080059
 int drawable background_user 0x7f08005a
 int drawable bglogsign 0x7f08005b
+int drawable border 0x7f0800c3
+int drawable border_radius 0x7f0800c5
 int drawable btn_bg_design 0x7f08005c
 int drawable btn_checkbox_checked_mtrl 0x7f08005d
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f08005e
@@ -2736,6 +2739,7 @@ int id anticipate 0x7f0a005c
 int id arc 0x7f0a005d
 int id asConfigured 0x7f0a005e
 int id async 0x7f0a005f
+int id author 0x7f0a026c
 int id auto 0x7f0a0060
 int id autoComplete 0x7f0a0061
 int id autoCompleteToEnd 0x7f0a0062
@@ -3064,6 +3068,7 @@ int id progress_circular 0x7f0a01a0
 int id progress_horizontal 0x7f0a01a1
 int id radio 0x7f0a01a2
 int id ratio 0x7f0a01a3
+int id rec_account 0x7f0a026d
 int id rectangles 0x7f0a01a4
 int id recyclerViewLikeBooks 0x7f0a01a5
 int id returned_book_rec 0x7f0a01a6
@@ -3385,6 +3390,7 @@ int layout fragment_favourite_books 0x7f0d0042
 int layout fragment_home 0x7f0d0043
 int layout fragment_home_admin 0x7f0d0044
 int layout fragment_manager 0x7f0d0045
+int layout fragment_manager_account 0x7f0d009d
 int layout fragment_method 0x7f0d0046
 int layout fragment_returned_books 0x7f0d0047
 int layout fragment_user_borrow_book 0x7f0d0048

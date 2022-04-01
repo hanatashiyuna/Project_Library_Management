@@ -2532,9 +2532,12 @@ drawable abc_vector_test
 drawable androidprogram
 drawable avd_hide_password
 drawable avd_show_password
+drawable avt_student
 drawable background
 drawable background_user
 drawable bglogsign
+drawable border
+drawable border_radius
 drawable btn_bg_design
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -2737,6 +2740,7 @@ id anticipate
 id arc
 id asConfigured
 id async
+id author
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -3065,6 +3069,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id rec_account
 id rectangles
 id recyclerViewLikeBooks
 id returned_book_rec
@@ -3386,6 +3391,7 @@ layout fragment_favourite_books
 layout fragment_home
 layout fragment_home_admin
 layout fragment_manager
+layout fragment_manager_account
 layout fragment_method
 layout fragment_returned_books
 layout fragment_user_borrow_book

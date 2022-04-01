@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.vido_manager_library.Fragment.Admin.HomeAdminFragment;
+import com.example.vido_manager_library.Fragment.Admin.ManagerAccountFragment;
 import com.example.vido_manager_library.Fragment.Admin.ManagerFragment;
 import com.example.vido_manager_library.QRCode.Capture;
 import com.example.vido_manager_library.R;
@@ -53,9 +54,11 @@ public class HomeAdminActivity extends AppCompatActivity {
                 case R.id.managerBooks:
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new ManagerFragment()).commit();
                     break;
-                /*case R.id.managerAccount:
+                case R.id.managerAccount:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new ManagerAccountFragment()).commit();
+                    break;
                 case R.id.infomation:
-                    break;*/
+                    break;
                 case R.id.home:
                 default:
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeAdminFragment()).commit();

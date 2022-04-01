@@ -46,6 +46,14 @@
         app:layout_constraintStart_toEndOf="@+id/imgBookAdmin"
         app:layout_constraintTop_toBottomOf="@+id/nameBook" />
 
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgBookAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/amountBook" />
+
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
@@ -53,7 +61,7 @@
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/amountBook" />
+        app:layout_constraintTop_toBottomOf="@+id/author" />
 
     <EditText
         android:id="@+id/editText3"

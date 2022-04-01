@@ -38,6 +38,7 @@
         android:layout_height="wrap_content"
         app:layout_anchor="@id/bottomAppBar"
         android:src="@drawable/ic_baseline_qr_code_scanner"
+        android:backgroundTint="@color/purple_500"
+        app:tint="@color/white"
         tools:ignore="ContentDescription"/>
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

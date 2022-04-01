@@ -25,6 +25,7 @@ public class BookAdminDetailActivity extends AppCompatActivity {
         ImageView imgAdminBook = findViewById(R.id.imgBookAdmin);
         TextView name = findViewById(R.id.nameBook);
         TextView amount = findViewById(R.id.amountBook);
+        TextView author = findViewById(R.id.author);
         Bundle bundle = getIntent().getExtras();
         if(bundle == null){
             return;
@@ -38,6 +39,7 @@ public class BookAdminDetailActivity extends AppCompatActivity {
             name.setText(homeHorModels.getBookName());
             imgAdminBook.setImageResource(homeHorModels.getImage());
             amount.setText(String.valueOf(homeHorModels.getAmountBooks()));
+            author.setText(homeHorModels.getAuthor());
         }
 
         ImageView back =  findViewById(R.id.back);

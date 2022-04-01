@@ -44,14 +44,14 @@ public class StudentLoginActivity extends AppCompatActivity {
             Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
             startActivity(intent);
         }else {
-            btn_forgotpass = (TextView) findViewById(R.id.btn_ForgotPass);
-            btn_loginAdmin = (TextView) findViewById(R.id.btn_LoginAdmin);
+            btn_forgotpass = findViewById(R.id.btn_ForgotPass);
+            btn_loginAdmin = findViewById(R.id.btn_LoginAdmin);
 
-            LG_inputUsrename = (EditText) findViewById(R.id.LG_inputUsrename);
-            LG_inputPass = (EditText) findViewById(R.id.LG_inputPass);
-            btn_Login = (Button) findViewById(R.id.btn_Login);
+            LG_inputUsrename = findViewById(R.id.LG_inputUsrename);
+            LG_inputPass = findViewById(R.id.LG_inputPass);
+            btn_Login = findViewById(R.id.btn_Login);
 
-            checkBox = (CheckBox) findViewById(R.id.checkbox);
+            checkBox = findViewById(R.id.checkbox);
 
             //Run ArrayList and download json User in Database
             mListUser = new ArrayList<>();
@@ -62,25 +62,17 @@ public class StudentLoginActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     clickLogin(); //Treatment click Login
-                /*Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
-                startActivity(intent);*/
                 }
             });
 
-            btn_forgotpass.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(StudentLoginActivity.this, StudentForgotActivity.class);
-                    startActivity(intent);
-                }
+            btn_forgotpass.setOnClickListener(view -> {
+                Intent intent = new Intent(StudentLoginActivity.this, StudentForgotActivity.class);
+                startActivity(intent);
             });
 
-            btn_loginAdmin.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(StudentLoginActivity.this, LecturersLoginActivity.class);
-                    startActivity(intent);
-                }
+            btn_loginAdmin.setOnClickListener(view -> {
+                Intent intent = new Intent(StudentLoginActivity.this, LecturersLoginActivity.class);
+                startActivity(intent);
             });
 
             checkBox.setOnClickListener(new View.OnClickListener() {
@@ -140,9 +132,6 @@ public class StudentLoginActivity extends AppCompatActivity {
             finish();
         }else {
             Toast.makeText(StudentLoginActivity.this, "Sai Mật Khẩu Hoặc Tài Khoản", Toast.LENGTH_SHORT).show();
-            /* TO DO CODING */
-            Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
-            startActivity(intent);
         }
     }
 }

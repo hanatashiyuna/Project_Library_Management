@@ -40,6 +40,10 @@
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_home_admin.xml"
     },
     {
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_manager_account.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager_account.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_admin_categories.xml",
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_categories.xml"
     },
