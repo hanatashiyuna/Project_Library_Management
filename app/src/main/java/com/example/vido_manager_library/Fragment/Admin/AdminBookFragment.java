@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * fragment for admin as home page, book list*/
 
-public class AdminBookFrament extends Fragment {
+public class AdminBookFragment extends Fragment {
 
     ImageView btnAddBook;
     @Nullable

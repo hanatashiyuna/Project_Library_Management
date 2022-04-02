@@ -23,42 +23,42 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 /**
- * fragment for admin as home, position bookSelf*/
-public class AdminPositionFrament extends Fragment {
+ * fragment for admin as home page, pushing company(pc or psc)
+ * */
+public class AdminPCFragment extends Fragment {
 
-    ImageView btn_add;
-
+    ImageView btnAddPC;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_admin_positions, container, false);
+        View view = inflater.inflate(R.layout.fragment_admin_pc, container, false);
 
-        //set button add position
-        btn_add = view.findViewById(R.id.addPosition);
-        btn_add.setOnClickListener(new View.OnClickListener() {
+        //set button add pushing company
+        btnAddPC = view.findViewById(R.id.addPushingCompany);
+        btnAddPC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
             }
         });
 
-        RecyclerView listPositionsScreen = view.findViewById(R.id.listview_positions);
+        RecyclerView listPCScreen = view.findViewById(R.id.listview_pc);
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(Objects.requireNonNull(getActivity()), DividerItemDecoration.VERTICAL);
 
-        listPositionsScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
-        listPositionsScreen.addItemDecoration(itemDecoration);
+        listPCScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
+        listPCScreen.addItemDecoration(itemDecoration);
         AuthorAdapter authorAdapters = new AuthorAdapter(this, getListAuthor(), this::onClickGoToDetail);
-        listPositionsScreen.setAdapter(authorAdapters);
+        listPCScreen.setAdapter(authorAdapters);
         return view;
     }
 
     private List<Authors> getListAuthor() {
         List<Authors> listAuthor = new ArrayList<>();
-        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(2, "PC", "07-09-2002"));
+        listAuthor.add(new Authors(2, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(2, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(2, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(2, "Tran Minh Tan", "07-09-2002"));
         return listAuthor;
     }
 
@@ -70,5 +70,4 @@ public class AdminPositionFrament extends Fragment {
         startActivity(intent);
 
     }
-
 }

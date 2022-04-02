@@ -22,46 +22,40 @@ import com.example.vido_manager_library.R;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+/*
+ * fragment for admin as home, position bookSelf*/
+public class AdminPositionFragment extends Fragment {
 
-/**
- * fragment for admin as home page, author*/
-
-public class AdminAuthorFrament extends Fragment {
-
-    ImageView btnAddAuthor;
+    ImageView btn_add;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_admin_positions, container, false);
 
-        View view = inflater.inflate(R.layout.fragment_admin_authors, container, false);
+        //set button add position
+        btn_add = view.findViewById(R.id.addPosition);
+        btn_add.setOnClickListener(view1 -> {
 
-        //set button add author
-        btnAddAuthor = view.findViewById(R.id.addAuthor);
-        btnAddAuthor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
         });
 
-        RecyclerView listAuthorScreen = view.findViewById(R.id.listview_author);
+        RecyclerView listPositionsScreen = view.findViewById(R.id.listview_positions);
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(Objects.requireNonNull(getActivity()), DividerItemDecoration.VERTICAL);
 
-        listAuthorScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
-        listAuthorScreen.addItemDecoration(itemDecoration);
+        listPositionsScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
+        listPositionsScreen.addItemDecoration(itemDecoration);
         AuthorAdapter authorAdapters = new AuthorAdapter(this, getListAuthor(), this::onClickGoToDetail);
-        listAuthorScreen.setAdapter(authorAdapters);
+        listPositionsScreen.setAdapter(authorAdapters);
         return view;
     }
 
     private List<Authors> getListAuthor() {
         List<Authors> listAuthor = new ArrayList<>();
         listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(2, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(3, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(4, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(5, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
         return listAuthor;
     }
 

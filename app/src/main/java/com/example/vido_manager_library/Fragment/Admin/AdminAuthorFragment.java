@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,41 +23,45 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class AdminCategoryFrament extends Fragment {
+/**
+ * fragment for admin as home page, author*/
 
-    ImageView btn_add;
+public class AdminAuthorFragment extends Fragment {
+
+    ImageView btnAddAuthor;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_admin_categories, container, false);
 
-        //set button add category
-        btn_add = view.findViewById(R.id.addCategory);
-        btn_add.setOnClickListener(new View.OnClickListener() {
+        View view = inflater.inflate(R.layout.fragment_admin_authors, container, false);
+
+        //set button add author
+        btnAddAuthor = view.findViewById(R.id.addAuthor);
+        btnAddAuthor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
             }
         });
 
-        RecyclerView listCategoryScreen = view.findViewById(R.id.listview_category);
+        RecyclerView listAuthorScreen = view.findViewById(R.id.listview_author);
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(Objects.requireNonNull(getActivity()), DividerItemDecoration.VERTICAL);
 
-        listCategoryScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
-        listCategoryScreen.addItemDecoration(itemDecoration);
+        listAuthorScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
+        listAuthorScreen.addItemDecoration(itemDecoration);
         AuthorAdapter authorAdapters = new AuthorAdapter(this, getListAuthor(), this::onClickGoToDetail);
-        listCategoryScreen.setAdapter(authorAdapters);
+        listAuthorScreen.setAdapter(authorAdapters);
         return view;
     }
 
     private List<Authors> getListAuthor() {
         List<Authors> listAuthor = new ArrayList<>();
-        listAuthor.add(new Authors(7, "Mavis", "07-09-2002"));
-        listAuthor.add(new Authors(7, "Mavis", "07-09-2002"));
-        listAuthor.add(new Authors(7, "Mavis", "07-09-2002"));
-        listAuthor.add(new Authors(7, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(7, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(2, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(3, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(4, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(5, "Tran Minh Tan", "07-09-2002"));
         return listAuthor;
     }
 
@@ -70,4 +73,5 @@ public class AdminCategoryFrament extends Fragment {
         startActivity(intent);
 
     }
+
 }

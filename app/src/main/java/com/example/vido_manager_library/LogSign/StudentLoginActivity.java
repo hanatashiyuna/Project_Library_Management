@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
-import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -28,10 +27,10 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class StudentLoginActivity extends AppCompatActivity {
-    private EditText LG_inputUsrename, LG_inputPass;
+    EditText LG_inputUsername, LG_inputPass;
     private CheckBox checkBox;
-    private Button btn_Login;
-    private TextView btn_loginAdmin, btn_forgotpass;
+    Button btn_Login;
+    TextView btn_loginAdmin, btn_forgotPass;
     private List<UserAuthor> mListUser;
     private UserAuthor mUser;
 
@@ -44,10 +43,10 @@ public class StudentLoginActivity extends AppCompatActivity {
             Intent intent = new Intent(StudentLoginActivity.this, MainActivity.class);
             startActivity(intent);
         }else {
-            btn_forgotpass = findViewById(R.id.btn_ForgotPass);
+            btn_forgotPass = findViewById(R.id.btn_ForgotPass);
             btn_loginAdmin = findViewById(R.id.btn_LoginAdmin);
 
-            LG_inputUsrename = findViewById(R.id.LG_inputUsrename);
+            LG_inputUsername = findViewById(R.id.LG_inputUsrename);
             LG_inputPass = findViewById(R.id.LG_inputPass);
             btn_Login = findViewById(R.id.btn_Login);
 
@@ -58,14 +57,11 @@ public class StudentLoginActivity extends AppCompatActivity {
 
             getListUser();//Function down load
 
-            btn_Login.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    clickLogin(); //Treatment click Login
-                }
+            btn_Login.setOnClickListener(view -> {
+                clickLogin(); //Treatment click Login
             });
 
-            btn_forgotpass.setOnClickListener(view -> {
+            btn_forgotPass.setOnClickListener(view -> {
                 Intent intent = new Intent(StudentLoginActivity.this, StudentForgotActivity.class);
                 startActivity(intent);
             });
@@ -75,16 +71,13 @@ public class StudentLoginActivity extends AppCompatActivity {
                 startActivity(intent);
             });
 
-            checkBox.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(!checkBox.isChecked()) {
-                        //Password visible
-                        LG_inputPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                    }else{
-                        //Password not visible
-                        LG_inputPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                    }
+            checkBox.setOnClickListener(v -> {
+                if(!checkBox.isChecked()) {
+                    //Password visible
+                    LG_inputPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                }else{
+                    //Password not visible
+                    LG_inputPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                 }
             });
         }
@@ -99,13 +92,12 @@ public class StudentLoginActivity extends AppCompatActivity {
             }
             @Override
             public void onFailure(Call<List<UserAuthor>> call, Throwable t) {
-                Toast.makeText(StudentLoginActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(StudentLoginActivity.this, "Hệ Thống Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
             }
         });
     }
     private void clickLogin() {
-        String username = LG_inputUsrename.getText().toString().trim();
-        //String password = LG_inputPass.getText().toString().trim();
+        String username = LG_inputUsername.getText().toString().trim();
 
         if (mListUser == null || mListUser.isEmpty()){
             return;
@@ -114,7 +106,6 @@ public class StudentLoginActivity extends AppCompatActivity {
         boolean isHasUser = false;
 
         for (UserAuthor userAuthor: mListUser) {
-            //set password
             if (username.equals(userAuthor.getTentacgia())){
                 isHasUser = true;
                 mUser = userAuthor;
