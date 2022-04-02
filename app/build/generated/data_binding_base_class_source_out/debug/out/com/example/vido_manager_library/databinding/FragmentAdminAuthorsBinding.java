@@ -22,6 +22,9 @@ public final class FragmentAdminAuthorsBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ImageView addAuthor;
+
+  @NonNull
   public final RecyclerView listviewAuthor;
 
   @NonNull
@@ -30,10 +33,11 @@ public final class FragmentAdminAuthorsBinding implements ViewBinding {
   @NonNull
   public final ImageView searchOutputauthor;
 
-  private FragmentAdminAuthorsBinding(@NonNull LinearLayout rootView,
+  private FragmentAdminAuthorsBinding(@NonNull LinearLayout rootView, @NonNull ImageView addAuthor,
       @NonNull RecyclerView listviewAuthor, @NonNull EditText searchInputauthor,
       @NonNull ImageView searchOutputauthor) {
     this.rootView = rootView;
+    this.addAuthor = addAuthor;
     this.listviewAuthor = listviewAuthor;
     this.searchInputauthor = searchInputauthor;
     this.searchOutputauthor = searchOutputauthor;
@@ -66,6 +70,12 @@ public final class FragmentAdminAuthorsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.addAuthor;
+      ImageView addAuthor = ViewBindings.findChildViewById(rootView, id);
+      if (addAuthor == null) {
+        break missingId;
+      }
+
       id = R.id.listview_author;
       RecyclerView listviewAuthor = ViewBindings.findChildViewById(rootView, id);
       if (listviewAuthor == null) {
@@ -84,7 +94,7 @@ public final class FragmentAdminAuthorsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAdminAuthorsBinding((LinearLayout) rootView, listviewAuthor,
+      return new FragmentAdminAuthorsBinding((LinearLayout) rootView, addAuthor, listviewAuthor,
           searchInputauthor, searchOutputauthor);
     }
     String missingId = rootView.getResources().getResourceName(id);

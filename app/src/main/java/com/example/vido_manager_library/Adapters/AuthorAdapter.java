@@ -52,6 +52,7 @@ public class AuthorAdapter extends RecyclerView.Adapter<AuthorAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Authors author = list.get(position);
+        holder.idItem.setText(String.valueOf(list.get(position).getTacgiaId()));
         holder.name_item.setText(list.get(position).getTentacgia());
         holder.category_item.setText(list.get(position).getNgaysinh());
         holder.itemSum.setOnClickListener(view -> iClickItemAuthor.onClickItemAdmin(author));
@@ -64,14 +65,14 @@ public class AuthorAdapter extends RecyclerView.Adapter<AuthorAdapter.ViewHolder
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView name_item;
-        TextView category_item;
+        TextView name_item, category_item, idItem;
         LinearLayout itemSum;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             name_item = itemView.findViewById(R.id.name_item);
             category_item = itemView.findViewById(R.id.category_item);
             itemSum = itemView.findViewById(R.id.itemSum);
+            idItem = itemView.findViewById(R.id.id_item);
         }
     }
 }

@@ -2913,7 +2913,6 @@ int id icon 0x7f0a0109
 int id icon_group 0x7f0a010a
 int id id_item 0x7f0a010b
 int id ifRoom 0x7f0a010c
-int id ig_item 0x7f0a010d
 int id ignore 0x7f0a010e
 int id ignoreRequest 0x7f0a010f
 int id image 0x7f0a0110
@@ -2960,6 +2959,7 @@ int id listview_category 0x7f0a0138
 int id listview_pc 0x7f0a0139
 int id listview_positions 0x7f0a013a
 int id locale 0x7f0a013b
+int id logOut 0x7f0a0271
 int id log_out_btn 0x7f0a013c
 int id logo 0x7f0a013d
 int id ltr 0x7f0a013e

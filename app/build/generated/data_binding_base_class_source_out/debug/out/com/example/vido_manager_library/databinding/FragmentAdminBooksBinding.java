@@ -22,6 +22,9 @@ public final class FragmentAdminBooksBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ImageView addBook;
+
+  @NonNull
   public final RecyclerView listviewBook;
 
   @NonNull
@@ -30,10 +33,11 @@ public final class FragmentAdminBooksBinding implements ViewBinding {
   @NonNull
   public final ImageView searchOutputbook;
 
-  private FragmentAdminBooksBinding(@NonNull LinearLayout rootView,
+  private FragmentAdminBooksBinding(@NonNull LinearLayout rootView, @NonNull ImageView addBook,
       @NonNull RecyclerView listviewBook, @NonNull EditText searchInputbook,
       @NonNull ImageView searchOutputbook) {
     this.rootView = rootView;
+    this.addBook = addBook;
     this.listviewBook = listviewBook;
     this.searchInputbook = searchInputbook;
     this.searchOutputbook = searchOutputbook;
@@ -66,6 +70,12 @@ public final class FragmentAdminBooksBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.addBook;
+      ImageView addBook = ViewBindings.findChildViewById(rootView, id);
+      if (addBook == null) {
+        break missingId;
+      }
+
       id = R.id.listview_book;
       RecyclerView listviewBook = ViewBindings.findChildViewById(rootView, id);
       if (listviewBook == null) {
@@ -84,8 +94,8 @@ public final class FragmentAdminBooksBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAdminBooksBinding((LinearLayout) rootView, listviewBook, searchInputbook,
-          searchOutputbook);
+      return new FragmentAdminBooksBinding((LinearLayout) rootView, addBook, listviewBook,
+          searchInputbook, searchOutputbook);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

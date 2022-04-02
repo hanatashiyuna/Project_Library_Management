@@ -22,6 +22,9 @@ public final class FragmentAdminPcBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ImageView addPushingCompany;
+
+  @NonNull
   public final RecyclerView listviewPc;
 
   @NonNull
@@ -30,9 +33,11 @@ public final class FragmentAdminPcBinding implements ViewBinding {
   @NonNull
   public final ImageView searchOutputpc;
 
-  private FragmentAdminPcBinding(@NonNull LinearLayout rootView, @NonNull RecyclerView listviewPc,
+  private FragmentAdminPcBinding(@NonNull LinearLayout rootView,
+      @NonNull ImageView addPushingCompany, @NonNull RecyclerView listviewPc,
       @NonNull EditText searchInputpc, @NonNull ImageView searchOutputpc) {
     this.rootView = rootView;
+    this.addPushingCompany = addPushingCompany;
     this.listviewPc = listviewPc;
     this.searchInputpc = searchInputpc;
     this.searchOutputpc = searchOutputpc;
@@ -65,6 +70,12 @@ public final class FragmentAdminPcBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.addPushingCompany;
+      ImageView addPushingCompany = ViewBindings.findChildViewById(rootView, id);
+      if (addPushingCompany == null) {
+        break missingId;
+      }
+
       id = R.id.listview_pc;
       RecyclerView listviewPc = ViewBindings.findChildViewById(rootView, id);
       if (listviewPc == null) {
@@ -83,8 +94,8 @@ public final class FragmentAdminPcBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAdminPcBinding((LinearLayout) rootView, listviewPc, searchInputpc,
-          searchOutputpc);
+      return new FragmentAdminPcBinding((LinearLayout) rootView, addPushingCompany, listviewPc,
+          searchInputpc, searchOutputpc);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

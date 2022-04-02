@@ -58,10 +58,10 @@ public class AdminAuthorFrament extends Fragment {
     private List<Authors> getListAuthor() {
         List<Authors> listAuthor = new ArrayList<>();
         listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(2, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(3, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(4, "Tran Minh Tan", "07-09-2002"));
+        listAuthor.add(new Authors(5, "Tran Minh Tan", "07-09-2002"));
         return listAuthor;
     }
 

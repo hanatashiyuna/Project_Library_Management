@@ -22,6 +22,9 @@ public final class FragmentAdminPositionsBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ImageView addPosition;
+
+  @NonNull
   public final RecyclerView listviewPositions;
 
   @NonNull
@@ -31,9 +34,10 @@ public final class FragmentAdminPositionsBinding implements ViewBinding {
   public final ImageView searchOutputposition;
 
   private FragmentAdminPositionsBinding(@NonNull LinearLayout rootView,
-      @NonNull RecyclerView listviewPositions, @NonNull EditText searchInputposition,
-      @NonNull ImageView searchOutputposition) {
+      @NonNull ImageView addPosition, @NonNull RecyclerView listviewPositions,
+      @NonNull EditText searchInputposition, @NonNull ImageView searchOutputposition) {
     this.rootView = rootView;
+    this.addPosition = addPosition;
     this.listviewPositions = listviewPositions;
     this.searchInputposition = searchInputposition;
     this.searchOutputposition = searchOutputposition;
@@ -66,6 +70,12 @@ public final class FragmentAdminPositionsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.addPosition;
+      ImageView addPosition = ViewBindings.findChildViewById(rootView, id);
+      if (addPosition == null) {
+        break missingId;
+      }
+
       id = R.id.listview_positions;
       RecyclerView listviewPositions = ViewBindings.findChildViewById(rootView, id);
       if (listviewPositions == null) {
@@ -84,8 +94,8 @@ public final class FragmentAdminPositionsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAdminPositionsBinding((LinearLayout) rootView, listviewPositions,
-          searchInputposition, searchOutputposition);
+      return new FragmentAdminPositionsBinding((LinearLayout) rootView, addPosition,
+          listviewPositions, searchInputposition, searchOutputposition);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
