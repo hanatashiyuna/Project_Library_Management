@@ -11,9 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
-import com.example.vido_manager_library.Activities.User.BookAdminDetailActivity;
+import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
 import com.example.vido_manager_library.Adapters.AuthorAdapter;
 import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.R;

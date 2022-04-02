@@ -2,11 +2,9 @@ package com.example.vido_manager_library.Fragment.Admin;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,13 +13,9 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.vido_manager_library.Activities.User.BookAdminDetailActivity;
-import com.example.vido_manager_library.Activities.User.BookDetailActivity;
+import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
 import com.example.vido_manager_library.Adapters.AuthorAdapter;
-import com.example.vido_manager_library.Interface.IClickItemAuthor;
 import com.example.vido_manager_library.Models.Authors;
-import com.example.vido_manager_library.Models.HomeHorModels;
-import com.example.vido_manager_library.Models.UserAuthor;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;

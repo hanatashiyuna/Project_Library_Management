@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VIDO_Manager_Library">
         <activity
-            android:name=".Activities.User.BookAdminDetailActivity"
+            android:name=".Activities.Admin.BookAdminDetailActivity"
             android:exported="false" />
         <activity
             android:name=".Activities.User.BookDetailActivity"

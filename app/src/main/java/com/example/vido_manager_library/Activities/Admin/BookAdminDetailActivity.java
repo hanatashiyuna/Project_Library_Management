@@ -1,16 +1,13 @@
-package com.example.vido_manager_library.Activities.User;
+package com.example.vido_manager_library.Activities.Admin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.vido_manager_library.Activities.Admin.HomeAdminActivity;
 import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.Models.HomeHorModels;
 import com.example.vido_manager_library.R;

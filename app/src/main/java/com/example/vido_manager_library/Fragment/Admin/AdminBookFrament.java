@@ -9,24 +9,16 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.vido_manager_library.Activities.User.BookAdminDetailActivity;
-import com.example.vido_manager_library.Adapters.AuthorAdapter;
-import com.example.vido_manager_library.Adapters.BooksAdapter;
+import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
 import com.example.vido_manager_library.Adapters.BooksAdapters;
-import com.example.vido_manager_library.Interface.IClickItemBooks;
-import com.example.vido_manager_library.Models.Authors;
-import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.Models.HomeHorModels;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class AdminBookFrament extends Fragment {
     @Nullable
