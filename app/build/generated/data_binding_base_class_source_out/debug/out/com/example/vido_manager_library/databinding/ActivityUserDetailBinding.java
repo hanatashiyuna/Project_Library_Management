@@ -44,10 +44,13 @@ public final class ActivityUserDetailBinding implements ViewBinding {
   @NonNull
   public final TextView myInfo;
 
+  @NonNull
+  public final TextView version;
+
   private ActivityUserDetailBinding(@NonNull ConstraintLayout rootView, @NonNull TextView LGMssv,
       @NonNull TextView LGUsername, @NonNull ImageView back, @NonNull TextView btnSignup,
       @NonNull ImageView imageView2, @NonNull ImageView imageView3, @NonNull TextView logOutBtn,
-      @NonNull TextView myInfo) {
+      @NonNull TextView myInfo, @NonNull TextView version) {
     this.rootView = rootView;
     this.LGMssv = LGMssv;
     this.LGUsername = LGUsername;
@@ -57,6 +60,7 @@ public final class ActivityUserDetailBinding implements ViewBinding {
     this.imageView3 = imageView3;
     this.logOutBtn = logOutBtn;
     this.myInfo = myInfo;
+    this.version = version;
   }
 
   @Override
@@ -134,8 +138,14 @@ public final class ActivityUserDetailBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.version;
+      TextView version = ViewBindings.findChildViewById(rootView, id);
+      if (version == null) {
+        break missingId;
+      }
+
       return new ActivityUserDetailBinding((ConstraintLayout) rootView, LGMssv, LGUsername, back,
-          btnSignup, imageView2, imageView3, logOutBtn, myInfo);
+          btnSignup, imageView2, imageView3, logOutBtn, myInfo, version);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

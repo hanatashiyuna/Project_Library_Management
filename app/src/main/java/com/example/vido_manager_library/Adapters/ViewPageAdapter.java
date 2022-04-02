@@ -2,7 +2,6 @@ package com.example.vido_manager_library.Adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.vido_manager_library.Fragment.Admin.AdminAuthorFrament;
@@ -10,7 +9,6 @@ import com.example.vido_manager_library.Fragment.Admin.AdminBookFrament;
 import com.example.vido_manager_library.Fragment.Admin.AdminCategoryFrament;
 import com.example.vido_manager_library.Fragment.Admin.AdminPCFrament;
 import com.example.vido_manager_library.Fragment.Admin.AdminPositionFrament;
-import com.example.vido_manager_library.Fragment.Admin.HomeAdminFragment;
 
 public class ViewPageAdapter extends FragmentStateAdapter {
 

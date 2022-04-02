@@ -32,7 +32,7 @@ import com.example.vido_manager_library.*;
 
 public class UserDetailActivity extends AppCompatActivity {
 
-    TextView btnLogOut,btn_signup,myInfo, name,LG_Username,LG_mssv;
+    TextView btnLogOut, btn_signup, myInfo, name, LG_Username, LG_mssv, version;
     ImageView back;
     UserStu infor_sidnup;
     Integer id_mssv;
@@ -51,7 +51,9 @@ public class UserDetailActivity extends AppCompatActivity {
         myInfo = findViewById(R.id.my_info);
         name = findViewById(R.id.tv_name);
         back = findViewById(R.id.back);
+        version = findViewById(R.id.version);
 
+        version.setText(String.format("Beta Version %s", BuildConfig.VERSION_NAME));
 
         List<UserStu> mlistAccount = new ArrayList<UserStu>();
         LG_Username = findViewById(R.id.LG_Username);

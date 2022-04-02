@@ -22,6 +22,9 @@ public final class FragmentAdminCategoriesBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ImageView addCategory;
+
+  @NonNull
   public final RecyclerView listviewCategory;
 
   @NonNull
@@ -31,9 +34,10 @@ public final class FragmentAdminCategoriesBinding implements ViewBinding {
   public final ImageView searchOutputcategory;
 
   private FragmentAdminCategoriesBinding(@NonNull LinearLayout rootView,
-      @NonNull RecyclerView listviewCategory, @NonNull EditText searchInputcategory,
-      @NonNull ImageView searchOutputcategory) {
+      @NonNull ImageView addCategory, @NonNull RecyclerView listviewCategory,
+      @NonNull EditText searchInputcategory, @NonNull ImageView searchOutputcategory) {
     this.rootView = rootView;
+    this.addCategory = addCategory;
     this.listviewCategory = listviewCategory;
     this.searchInputcategory = searchInputcategory;
     this.searchOutputcategory = searchOutputcategory;
@@ -66,6 +70,12 @@ public final class FragmentAdminCategoriesBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.addCategory;
+      ImageView addCategory = ViewBindings.findChildViewById(rootView, id);
+      if (addCategory == null) {
+        break missingId;
+      }
+
       id = R.id.listview_category;
       RecyclerView listviewCategory = ViewBindings.findChildViewById(rootView, id);
       if (listviewCategory == null) {
@@ -84,8 +94,8 @@ public final class FragmentAdminCategoriesBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAdminCategoriesBinding((LinearLayout) rootView, listviewCategory,
-          searchInputcategory, searchOutputcategory);
+      return new FragmentAdminCategoriesBinding((LinearLayout) rootView, addCategory,
+          listviewCategory, searchInputcategory, searchOutputcategory);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

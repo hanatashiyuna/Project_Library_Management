@@ -2556,6 +2556,7 @@ drawable design_snackbar_background
 drawable foreground_design
 drawable foreground_design_light
 drawable ic_baseline_account_circle
+drawable ic_baseline_add
 drawable ic_baseline_arrow_back
 drawable ic_baseline_arrow_back_ios_new
 drawable ic_baseline_dashboard_24
@@ -2724,6 +2725,11 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addAuthor
+id addBook
+id addCategory
+id addPosition
+id addPushingCompany
 id admin_AddInfor
 id admin_viewpagerAddInfor
 id alertTitle
@@ -3233,6 +3239,7 @@ id unlabeled
 id up
 id useLogo
 id user_circle
+id version
 id vertical_only
 id viewPager
 id view_offset_helper
@@ -3381,6 +3388,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_about
+layout fragment_about_admin
 layout fragment_admin_authors
 layout fragment_admin_books
 layout fragment_admin_categories
@@ -3659,7 +3667,6 @@ string title_activity_home_user
 string title_dashboard
 string title_home
 string title_notifications
-string version
 string view_more
 string zxing_app_name
 string zxing_button_ok

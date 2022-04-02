@@ -113,9 +113,9 @@
                 app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24"/>
 
             <TextView
+                android:id="@+id/version"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/version"
                 android:textColor="@color/gray"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"

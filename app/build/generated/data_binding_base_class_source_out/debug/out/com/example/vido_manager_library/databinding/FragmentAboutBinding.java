@@ -42,10 +42,13 @@ public final class FragmentAboutBinding implements ViewBinding {
   @NonNull
   public final TextView textView7;
 
+  @NonNull
+  public final TextView version;
+
   private FragmentAboutBinding(@NonNull FrameLayout rootView,
       @NonNull ConstraintLayout constraintLayout, @NonNull ImageView imageView,
       @NonNull TextView textView3, @NonNull TextView textView4, @NonNull TextView textView5,
-      @NonNull TextView textView6, @NonNull TextView textView7) {
+      @NonNull TextView textView6, @NonNull TextView textView7, @NonNull TextView version) {
     this.rootView = rootView;
     this.constraintLayout = constraintLayout;
     this.imageView = imageView;
@@ -54,6 +57,7 @@ public final class FragmentAboutBinding implements ViewBinding {
     this.textView5 = textView5;
     this.textView6 = textView6;
     this.textView7 = textView7;
+    this.version = version;
   }
 
   @Override
@@ -125,8 +129,14 @@ public final class FragmentAboutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.version;
+      TextView version = ViewBindings.findChildViewById(rootView, id);
+      if (version == null) {
+        break missingId;
+      }
+
       return new FragmentAboutBinding((FrameLayout) rootView, constraintLayout, imageView,
-          textView3, textView4, textView5, textView6, textView7);
+          textView3, textView4, textView5, textView6, textView7, version);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

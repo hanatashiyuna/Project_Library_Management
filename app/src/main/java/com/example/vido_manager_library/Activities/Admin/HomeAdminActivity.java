@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.vido_manager_library.Fragment.Admin.AboutAdminFragment;
 import com.example.vido_manager_library.Fragment.Admin.HomeAdminFragment;
 import com.example.vido_manager_library.Fragment.Admin.ManagerAccountFragment;
 import com.example.vido_manager_library.Fragment.Admin.ManagerFragment;
@@ -18,7 +19,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-/**
+/*
  * Activity Basic for Administrator*/
 public class HomeAdminActivity extends AppCompatActivity {
 
@@ -51,18 +52,20 @@ public class HomeAdminActivity extends AppCompatActivity {
 
         mBottomNavView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){
+                case R.id.home:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeAdminFragment()).commit();
+                    break;
                 case R.id.managerBooks:
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new ManagerFragment()).commit();
                     break;
                 case R.id.managerAccount:
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new ManagerAccountFragment()).commit();
                     break;
-                case R.id.infomation:
+                case R.id.information:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new AboutAdminFragment()).commit();
                     break;
-                case R.id.home:
                 default:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeAdminFragment()).commit();
-                    break;
+                    return false;
             }
             return true;
         });

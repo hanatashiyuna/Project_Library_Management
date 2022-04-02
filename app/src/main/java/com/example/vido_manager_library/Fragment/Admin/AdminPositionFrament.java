@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,12 +22,25 @@ import com.example.vido_manager_library.R;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-
+/**
+ * fragment for admin as home, position bookSelf*/
 public class AdminPositionFrament extends Fragment {
+
+    ImageView btn_add;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_admin_positions, container, false);
+
+        //set button add position
+        btn_add = view.findViewById(R.id.addPosition);
+        btn_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
         RecyclerView listPositionsScreen = view.findViewById(R.id.listview_positions);
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(Objects.requireNonNull(getActivity()), DividerItemDecoration.VERTICAL);

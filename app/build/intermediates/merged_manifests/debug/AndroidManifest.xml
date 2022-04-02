@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.vido_manager_library"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.6" >
 
     <uses-sdk
         android:minSdkVersion="25"
@@ -46,7 +46,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.VIDO_Manager_Library" >
         <activity
-            android:name="com.example.vido_manager_library.Activities.User.BookAdminDetailActivity"
+            android:name="com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity"
             android:exported="false" />
         <activity
             android:name="com.example.vido_manager_library.Activities.User.BookDetailActivity"

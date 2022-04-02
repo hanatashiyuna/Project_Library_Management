@@ -132,12 +132,12 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ASUS\.gradle\cache
 		ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
 		ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:16:9-58
-activity#com.example.vido_manager_library.Activities.User.BookAdminDetailActivity
+activity#com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity
 ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
 		ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:18:13-68
+		ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:18:13-69
 activity#com.example.vido_manager_library.Activities.User.BookDetailActivity
 ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
