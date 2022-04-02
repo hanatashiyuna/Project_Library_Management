@@ -4,7 +4,6 @@ package com.example.vido_manager_library.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -27,21 +26,16 @@ public final class ItemsBinding implements ViewBinding {
   public final TextView idItem;
 
   @NonNull
-  public final ImageView igItem;
-
-  @NonNull
   public final LinearLayout itemSum;
 
   @NonNull
   public final TextView nameItem;
 
   private ItemsBinding(@NonNull LinearLayout rootView, @NonNull TextView categoryItem,
-      @NonNull TextView idItem, @NonNull ImageView igItem, @NonNull LinearLayout itemSum,
-      @NonNull TextView nameItem) {
+      @NonNull TextView idItem, @NonNull LinearLayout itemSum, @NonNull TextView nameItem) {
     this.rootView = rootView;
     this.categoryItem = categoryItem;
     this.idItem = idItem;
-    this.igItem = igItem;
     this.itemSum = itemSum;
     this.nameItem = nameItem;
   }
@@ -85,12 +79,6 @@ public final class ItemsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.ig_item;
-      ImageView igItem = ViewBindings.findChildViewById(rootView, id);
-      if (igItem == null) {
-        break missingId;
-      }
-
       LinearLayout itemSum = (LinearLayout) rootView;
 
       id = R.id.name_item;
@@ -99,8 +87,7 @@ public final class ItemsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemsBinding((LinearLayout) rootView, categoryItem, idItem, igItem, itemSum,
-          nameItem);
+      return new ItemsBinding((LinearLayout) rootView, categoryItem, idItem, itemSum, nameItem);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
