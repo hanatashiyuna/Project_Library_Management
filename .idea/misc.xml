@@ -77,10 +77,20 @@
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/Project_Library_Management/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/Project_Library_Management/app/src/main/res/layout/information_student.xml" value="0.33" />
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/Project_Library_Management/app/src/main/res/layout/items.xml" value="0.14175724637681159" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/activity_book_admin_detail.xml" value="0.1" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/activity_information.xml" value="0.1" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/activity_student_get_new_pass.xml" value="0.1" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/activity_user_detail.xml" value="0.1" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/fragment_about.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/fragment_about_admin.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/fragment_manager.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/fragment_manager_account.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/fragment_method.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/fragment_returned_books.xml" value="0.16847826086956522" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
