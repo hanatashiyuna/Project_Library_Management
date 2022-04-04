@@ -55,8 +55,6 @@ public class AdminAuthorFragment extends Fragment {
             }
         });
 
-        Log.e("Loi", String.valueOf(mListAuthorAdmin.size()));
-
         RecyclerView listAuthorScreen = view.findViewById(R.id.listview_author);
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(Objects.requireNonNull(getActivity()), DividerItemDecoration.VERTICAL);
 
@@ -64,13 +62,13 @@ public class AdminAuthorFragment extends Fragment {
         listAuthorScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
         listAuthorScreen.addItemDecoration(itemDecoration);
 
-        getListJSAuthor(listAuthorScreen);
+        getListJS(listAuthorScreen);
 
         return view;
     }
 
 
-    private void getListJSAuthor(RecyclerView listAuthorScreen) {
+    private void getListJS(RecyclerView listAuthorScreen) {
         ApiAuthorAdmin.apiauthoradmin.covertAuthorAdmin().enqueue(new Callback<List<Authors>>() {
             @Override
             public void onResponse(Call<List<Authors>> call, Response<List<Authors>> response) {

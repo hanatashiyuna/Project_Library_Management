@@ -56,12 +56,12 @@ public class AdminCategoryFragment extends Fragment {
 
         listCategoryScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
         listCategoryScreen.addItemDecoration(itemDecoration);
-        getListJSCategory(listCategoryScreen);
+        getListJS(listCategoryScreen);
 
         return view;
     }
 
-    private void getListJSCategory(RecyclerView listCategoryScreen) {
+    private void getListJS(RecyclerView listCategoryScreen) {
         ApiCategoryAdmin.apicategoryadmin.covertCategoryAdmin().enqueue(new Callback<List<Categorys>>() {
             @Override
             public void onResponse(Call<List<Categorys>> call, Response<List<Categorys>> response) {

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,6 +18,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
 import com.example.vido_manager_library.Adapters.AuthorAdapter;
 import com.example.vido_manager_library.Adapters.PCAdapter;
+import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
+import com.example.vido_manager_library.Interface.ApiPublishingHouseAdmin;
 import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.Models.PC;
 import com.example.vido_manager_library.R;
@@ -24,17 +27,22 @@ import com.example.vido_manager_library.R;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 /*
  * fragment for admin as home page, pushing company(pc or psc)
  */
 public class AdminPCFragment extends Fragment {
-
+    List<PC> mListPCAdmin;
     ImageView btnAddPC;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_admin_pc, container, false);
-
+        mListPCAdmin = new ArrayList<>();
         //set button add pushing company
         btnAddPC = view.findViewById(R.id.addPushingCompany);
         btnAddPC.setOnClickListener(new View.OnClickListener() {
@@ -49,27 +57,31 @@ public class AdminPCFragment extends Fragment {
 
         listPCScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
         listPCScreen.addItemDecoration(itemDecoration);
-        PCAdapter pcAdapter = new PCAdapter(this, getListPC(), this::onClickGoToDetail);
-        listPCScreen.setAdapter(pcAdapter);
+        getListJS(listPCScreen);
         return view;
     }
 
-    private List<PC> getListPC() {
-        List<PC> listPC = new ArrayList<>();
-        listPC.add(new PC(1, "PC","? Go Vap","yuna@gmail.com", "abc"));
-        listPC.add(new PC(2, "PC","? Go Vap","yuna@gmail.com", "abc"));
-        listPC.add(new PC(3, "PC","? Go Vap","yuna@gmail.com", "abc"));
-        listPC.add(new PC(4, "PC","? Go Vap","yuna@gmail.com", "abc"));
-        listPC.add(new PC(5, "PC","? Go Vap","yuna@gmail.com", "abc"));
-        return listPC;
-    }
+    private void getListJS(RecyclerView listPCScreen) {
+        ApiPublishingHouseAdmin.apiPublishingHouseAdmin.covertPublishingHouseAdmin().enqueue(new Callback<List<PC>>() {
+            @Override
+            public void onResponse(Call<List<PC>> call, Response<List<PC>> response) {
+                mListPCAdmin = response.body();
+                PCAdapter pcAdapter = new PCAdapter(AdminPCFragment.this, mListPCAdmin, this::onClickGoToDetail);
+                listPCScreen.setAdapter(pcAdapter);
+            }
+            private void onClickGoToDetail(PC pc) {
+                Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("pushing_company", pc);
+                intent.putExtras(bundle);
+                startActivity(intent);
 
-    private void onClickGoToDetail(PC pc) {
-        Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
-        Bundle bundle = new Bundle();
-        bundle.putSerializable("pushing_company", pc);
-        intent.putExtras(bundle);
-        startActivity(intent);
+            }
+            @Override
+            public void onFailure(Call<List<PC>> call, Throwable t) {
+                Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 }
