@@ -68,9 +68,7 @@ public class BooksAdapters extends RecyclerView.Adapter<BooksAdapters.ViewHolder
         holder.imageView.setImageResource(list.get(position).getImage());
         holder.textView.setText(list.get(position).getBookName());
         if(homeModels != null){
-            holder.cardView.setOnClickListener(view -> {
-                iClickItemBook.onClickItemBook(homeModels);
-            });
+            holder.cardView.setOnClickListener(view -> iClickItemBook.onClickItemBook(homeModels));
         }else {
             holder.cardView.setOnClickListener(view -> {
 

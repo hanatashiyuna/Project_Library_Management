@@ -4,13 +4,16 @@ import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.vido_manager_library.Interface.IClickItemCategory;
 import com.example.vido_manager_library.Models.Authors;
+import com.example.vido_manager_library.Models.Categorys;
 import com.example.vido_manager_library.R;
 
 import java.util.List;
@@ -19,15 +22,22 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     //Context context;
     Activity activity;
     Fragment fragment;
-    List<Authors> list;
+    List<Categorys> list;
+    IClickItemCategory iClickItemCategory;
 
     //Context to Activity
-    public CategoryAdapter(Activity activity, List<Authors> list) {
+    public CategoryAdapter(Activity activity, List<Categorys> list) {
         this.activity = activity;
         this.list = list;
     }
 
-    public CategoryAdapter(Fragment fragment, List<Authors> list) {
+    public CategoryAdapter(Fragment fragment, List<Categorys> list, IClickItemCategory iClickItemCategory) {
+        this.fragment = fragment;
+        this.list = list;
+        this.iClickItemCategory = iClickItemCategory;
+    }
+
+    public CategoryAdapter(Fragment fragment, List<Categorys> list) {
         this.fragment = fragment;
         this.list = list;
     }
@@ -40,8 +50,10 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.name_item.setText(list.get(position).getTentacgia());
-        holder.category_item.setText(list.get(position).getNgaysinh());
+        Categorys categorys = list.get(position);
+        holder.name_item.setText(list.get(position).getTentheloai());
+        holder.category_item.setText(String.valueOf(list.get(position).getTheloaiID()));
+        holder.itemSum.setOnClickListener(view -> iClickItemCategory.onClickItemCategory(categorys));
     }
 
     @Override
@@ -53,10 +65,12 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
         TextView name_item;
         TextView category_item;
+        LinearLayout itemSum;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             name_item = itemView.findViewById(R.id.name_item);
             category_item = itemView.findViewById(R.id.category_item);
+            itemSum = itemView.findViewById(R.id.itemSum);
         }
     }
 }

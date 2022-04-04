@@ -52,7 +52,7 @@ public class ManagerAccountFragment extends Fragment {
     public void onClickGoToDetail(Authors authors){
         Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("Account", authors);
+        bundle.putSerializable("account", authors);
         intent.putExtras(bundle);
         startActivity(intent);
     }

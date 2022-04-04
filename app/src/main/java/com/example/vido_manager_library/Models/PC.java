@@ -1,6 +1,8 @@
 package com.example.vido_manager_library.Models;
 
-public class PC {
+import java.io.Serializable;
+
+public class PC implements Serializable {
     private int nhaxbID;
     private String tenxuatban;
     private String diachi;

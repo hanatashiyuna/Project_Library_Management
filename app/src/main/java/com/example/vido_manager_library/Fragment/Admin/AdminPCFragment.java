@@ -16,15 +16,17 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
 import com.example.vido_manager_library.Adapters.AuthorAdapter;
+import com.example.vido_manager_library.Adapters.PCAdapter;
 import com.example.vido_manager_library.Models.Authors;
+import com.example.vido_manager_library.Models.PC;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-/**
+/*
  * fragment for admin as home page, pushing company(pc or psc)
- * */
+ */
 public class AdminPCFragment extends Fragment {
 
     ImageView btnAddPC;
@@ -47,25 +49,25 @@ public class AdminPCFragment extends Fragment {
 
         listPCScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
         listPCScreen.addItemDecoration(itemDecoration);
-        AuthorAdapter authorAdapters = new AuthorAdapter(this, getListAuthor(), this::onClickGoToDetail);
-        listPCScreen.setAdapter(authorAdapters);
+        PCAdapter pcAdapter = new PCAdapter(this, getListPC(), this::onClickGoToDetail);
+        listPCScreen.setAdapter(pcAdapter);
         return view;
     }
 
-    private List<Authors> getListAuthor() {
-        List<Authors> listAuthor = new ArrayList<>();
-        listAuthor.add(new Authors(2, "PC", "07-09-2002"));
-        listAuthor.add(new Authors(2, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(2, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(2, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(2, "Tran Minh Tan", "07-09-2002"));
-        return listAuthor;
+    private List<PC> getListPC() {
+        List<PC> listPC = new ArrayList<>();
+        listPC.add(new PC(1, "PC","? Go Vap","yuna@gmail.com", "abc"));
+        listPC.add(new PC(2, "PC","? Go Vap","yuna@gmail.com", "abc"));
+        listPC.add(new PC(3, "PC","? Go Vap","yuna@gmail.com", "abc"));
+        listPC.add(new PC(4, "PC","? Go Vap","yuna@gmail.com", "abc"));
+        listPC.add(new PC(5, "PC","? Go Vap","yuna@gmail.com", "abc"));
+        return listPC;
     }
 
-    private void onClickGoToDetail(Authors authors) {
+    private void onClickGoToDetail(PC pc) {
         Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("books_informationAuthor", authors);
+        bundle.putSerializable("pushing_company", pc);
         intent.putExtras(bundle);
         startActivity(intent);
 

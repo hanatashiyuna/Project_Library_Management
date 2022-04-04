@@ -36,14 +36,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/img_book"
-        app:layout_constraintTop_toTopOf="@+id/img_book"
-        android:text="name"/>
+        app:layout_constraintTop_toTopOf="@+id/img_book"/>
 
     <TextView
         android:id="@+id/nameAuthor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="name"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"

@@ -1,7 +1,5 @@
 package com.example.vido_manager_library.Adapters;
 
-//import android.view.View;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;

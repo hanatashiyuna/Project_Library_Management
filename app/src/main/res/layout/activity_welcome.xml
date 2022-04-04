@@ -15,7 +15,8 @@
         android:layout_marginTop="230dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/logo" />
 
     <TextView
         android:id="@+id/text"
@@ -24,7 +25,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        android:text="CAO ĐẲNG VIỄN ĐÔNG"
+        android:text="@string/name_colleges"
         android:textColor="@color/white"
         android:textSize="23sp"
         android:textStyle="bold"

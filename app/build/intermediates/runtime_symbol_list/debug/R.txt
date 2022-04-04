@@ -3559,6 +3559,7 @@ int string information 0x7f120039
 int string item_view_role_description 0x7f12003a
 int string log_in 0x7f12003b
 int string log_out 0x7f12003c
+int string logo 0x7f1200ad
 int string m3_ref_typeface_brand_display_regular 0x7f12003d
 int string m3_ref_typeface_brand_medium 0x7f12003e
 int string m3_ref_typeface_brand_regular 0x7f12003f

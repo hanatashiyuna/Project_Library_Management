@@ -15,8 +15,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
-import com.example.vido_manager_library.Adapters.AuthorAdapter;
-import com.example.vido_manager_library.Models.Authors;
+import com.example.vido_manager_library.Adapters.PositionAdapter;
+import com.example.vido_manager_library.Models.Positions;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
@@ -44,28 +44,27 @@ public class AdminPositionFragment extends Fragment {
 
         listPositionsScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
         listPositionsScreen.addItemDecoration(itemDecoration);
-        AuthorAdapter authorAdapters = new AuthorAdapter(this, getListAuthor(), this::onClickGoToDetail);
-        listPositionsScreen.setAdapter(authorAdapters);
+        PositionAdapter positionAdapter = new PositionAdapter(this, getListPosition(), this::onClickGoToDetail);
+        listPositionsScreen.setAdapter(positionAdapter);
         return view;
     }
 
-    private List<Authors> getListAuthor() {
-        List<Authors> listAuthor = new ArrayList<>();
-        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(1, "Tran Minh Tan", "07-09-2002"));
-        return listAuthor;
+    private List<Positions> getListPosition() {
+        List<Positions> listPositions = new ArrayList<>();
+        listPositions.add(new Positions(1, "A"));
+        listPositions.add(new Positions(2, "A"));
+        listPositions.add(new Positions(3, "A"));
+        listPositions.add(new Positions(4, "A"));
+        listPositions.add(new Positions(5, "A"));
+        listPositions.add(new Positions(1, "B"));
+        return listPositions;
     }
 
-    private void onClickGoToDetail(Authors authors) {
+    private void onClickGoToDetail(Positions positions) {
         Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("books_informationAuthor", authors);
+        bundle.putSerializable("books_self", positions);
         intent.putExtras(bundle);
         startActivity(intent);
-
     }
-
 }

@@ -1,14 +1,11 @@
 package com.example.vido_manager_library.DataBase;
 
-import android.content.ContentValues;
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-import com.example.vido_manager_library.Emtity.AccountAdminModify;
 import com.example.vido_manager_library.Emtity.AccountModify;
 
 public class DB_Helper extends SQLiteOpenHelper{

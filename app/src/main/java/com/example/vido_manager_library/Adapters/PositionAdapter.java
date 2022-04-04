@@ -4,12 +4,15 @@ import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.vido_manager_library.Interface.IClickItemBooks;
+import com.example.vido_manager_library.Interface.IClickItemPositions;
 import com.example.vido_manager_library.Models.Positions;
 import com.example.vido_manager_library.R;
 
@@ -20,6 +23,7 @@ public class PositionAdapter extends RecyclerView.Adapter<PositionAdapter.ViewHo
     Activity activity;
     Fragment fragment;
     List<Positions> list;
+    IClickItemPositions iClickItemPositions;
 
     //Context to Activity
     public PositionAdapter(Activity activity, List<Positions> list) {
@@ -27,6 +31,11 @@ public class PositionAdapter extends RecyclerView.Adapter<PositionAdapter.ViewHo
         this.list = list;
     }
 
+    public PositionAdapter(Fragment fragment, List<Positions> list, IClickItemPositions iClickItemPositions) {
+        this.fragment = fragment;
+        this.list = list;
+        this.iClickItemPositions = iClickItemPositions;
+    }
     public PositionAdapter(Fragment fragment, List<Positions> list) {
         this.fragment = fragment;
         this.list = list;
@@ -40,8 +49,10 @@ public class PositionAdapter extends RecyclerView.Adapter<PositionAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        Positions positions = list.get(position);
         holder.name_item.setText(list.get(position).getTenhang());
-        holder.category_item.setText(list.get(position).getVitriId());
+        holder.category_item.setText(String.valueOf(list.get(position).getVitriId()));
+        holder.itemSum.setOnClickListener(view -> iClickItemPositions.onClickItemPositions(positions));
     }
 
     @Override
@@ -53,10 +64,12 @@ public class PositionAdapter extends RecyclerView.Adapter<PositionAdapter.ViewHo
 
         TextView name_item;
         TextView category_item;
+        LinearLayout itemSum;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             name_item = itemView.findViewById(R.id.name_item);
             category_item = itemView.findViewById(R.id.category_item);
+            itemSum = itemView.findViewById(R.id.itemSum);
         }
     }
 }

@@ -17,7 +17,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
 import com.example.vido_manager_library.Adapters.AuthorAdapter;
+import com.example.vido_manager_library.Adapters.CategoryAdapter;
 import com.example.vido_manager_library.Models.Authors;
+import com.example.vido_manager_library.Models.Categorys;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
@@ -47,25 +49,26 @@ public class AdminCategoryFragment extends Fragment {
 
         listCategoryScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
         listCategoryScreen.addItemDecoration(itemDecoration);
-        AuthorAdapter authorAdapters = new AuthorAdapter(this, getListAuthor(), this::onClickGoToDetail);
-        listCategoryScreen.setAdapter(authorAdapters);
+        CategoryAdapter categoryAdapter = new CategoryAdapter(this, getListCategories(), this::onClickGoToDetail);
+        listCategoryScreen.setAdapter(categoryAdapter);
         return view;
     }
 
-    private List<Authors> getListAuthor() {
-        List<Authors> listAuthor = new ArrayList<>();
-        listAuthor.add(new Authors(7, "Mavis", "07-09-2002"));
-        listAuthor.add(new Authors(7, "Mavis", "07-09-2002"));
-        listAuthor.add(new Authors(7, "Mavis", "07-09-2002"));
-        listAuthor.add(new Authors(7, "Tran Minh Tan", "07-09-2002"));
-        listAuthor.add(new Authors(7, "Tran Minh Tan", "07-09-2002"));
-        return listAuthor;
+    private List<Categorys> getListCategories() {
+        List<Categorys> listCategories = new ArrayList<>();
+        listCategories.add(new Categorys(1, "Tin Học"));
+        listCategories.add(new Categorys(2, "Ngôn Ngữ Học"));
+        listCategories.add(new Categorys(3, "Cơ Khí"));
+        listCategories.add(new Categorys(4, "Mạng"));
+        listCategories.add(new Categorys(5, "Đồ Họa"));
+        listCategories.add(new Categorys(6, "Chăm Sóc Sắc Đẹp"));
+        return listCategories;
     }
 
-    private void onClickGoToDetail(Authors authors) {
+    private void onClickGoToDetail(Categorys categorys) {
         Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("books_informationAuthor", authors);
+        bundle.putSerializable("books_category", categorys);
         intent.putExtras(bundle);
         startActivity(intent);
 

@@ -3560,6 +3560,7 @@ string information
 string item_view_role_description
 string log_in
 string log_out
+string logo
 string m3_ref_typeface_brand_display_regular
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
