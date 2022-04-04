@@ -11,7 +11,7 @@ public class UserLectuters implements Serializable {
     private final List<Borrow> borrowLecturers = new ArrayList<Borrow>();
     private final List<GiveBack> givebackLecturers = new ArrayList<GiveBack>();
 
-    public UserLectuters(int thuthuId, String hoten, String ngaysinh, String sdt, String diachi, String email, String username, String matkhau) {
+    public UserLectuters(int thuthuId, String hoten, String ngaysinh, String sdt, String diachi, String email, String username) {
         this.thuthuId = thuthuId;
         this.hoten = hoten;
         this.ngaysinh = ngaysinh;
@@ -19,7 +19,7 @@ public class UserLectuters implements Serializable {
         this.diachi = diachi;
         this.email = email;
         this.username = username;
-        this.matkhau = matkhau;
+
     }
 
     public int getThuthuId() {

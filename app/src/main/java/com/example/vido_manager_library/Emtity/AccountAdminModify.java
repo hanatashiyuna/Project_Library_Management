@@ -49,18 +49,6 @@ public class AccountAdminModify {
         return reValue;
     }
 
-
-    /*    thuthuId: 1,
-    hoten: "Nguyễn Thị Đào",
-    ngaysinh: "1972-02-15T00:00:00",
-    sdt: "0912348569",
-    diachi: "Công viên phần mềm, Lô 2 Đường Số 16, Quang Trung, Quận 12",
-    email: "nguyedao@gmail.com",
-    username: "AdminDao",
-    matkhau: "123",
-    muons: [ ],
-    tras: [ ],*/
-
     public static void insert(UserLectuters userLectuters) {
         SQLiteDatabase sqLiteDatabase = DB_Helper.getInstance(null).getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -77,6 +65,6 @@ public class AccountAdminModify {
 
     public static void delete(int id) {
         SQLiteDatabase sqLiteDatabase = DB_Helper.getInstance(null).getWritableDatabase();
-        sqLiteDatabase.delete("accountleclist"," masosinhvien="+id,null);
+        sqLiteDatabase.delete("accountleclist"," thuthuId="+id,null);
     }
 }

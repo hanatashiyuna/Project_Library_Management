@@ -15,6 +15,7 @@ import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
 public interface ApiAuthorAdmin {
+
     Gson gson = new GsonBuilder()
             .setDateFormat("yyyy-MM-dd HH:mm:ss")
             .create();

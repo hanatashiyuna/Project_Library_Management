@@ -20,7 +20,7 @@ public interface ApiCategoryAdmin {
             .create();
 
     //https://zalobot.pmsa.com.vn/api/theloais
-    ApiCategoryAdmin apiLecturers= new Retrofit.Builder()
+    ApiCategoryAdmin apicategoryadmin= new Retrofit.Builder()
             .baseUrl("https://zalobot.pmsa.com.vn/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
@@ -30,7 +30,7 @@ public interface ApiCategoryAdmin {
     //==============================
     // lấy ra danh sách các tài khoản, mật khẩu để đăng nhập
     @GET("api/theloais")
-    Call<List<Categorys>> covertUserLectuters();
+    Call<List<Categorys>> covertCategoryAdmin();
     /*@GET("")
     Call<List<UserAuthor>> covertUserLecturers(@Query("id") String id);*/
     //==================================
@@ -38,16 +38,16 @@ public interface ApiCategoryAdmin {
     //==============================
     // Update data project upload database
     @PUT("api/theloais/{id}")
-    Call<Categorys> updateDataLecturers(@Path("id") int id, @Body Categorys categorys);
+    Call<Categorys> updateDataCategoryAdmin(@Path("id") int id, @Body Categorys categorys);
     //==================================
 
     //Delete data and upload database
     @PUT("api/theloais/{id}")
-    Call<Categorys> deleteDataLecturers(@Path("id") int id);
+    Call<Categorys> deleteDataCategoryAdmin(@Path("id") int id);
     //==================================
 
     //Insert data and upload database
     @PUT("api/theloais/{id}")
-    Call<Categorys> insertDataLecturers(@Path("id") int id, @Body Categorys categorys);
+    Call<Categorys> insertDataCategoryAdmin(@Path("id") int id, @Body Categorys categorys);
     //==================================
 }

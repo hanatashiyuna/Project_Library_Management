@@ -20,7 +20,7 @@ public interface ApiPositionAdmin {
             .create();
 
     //https://zalobot.pmsa.com.vn/api/vitris
-    ApiPositionAdmin apiLecturers= new Retrofit.Builder()
+    ApiPositionAdmin apiPositionAdmin= new Retrofit.Builder()
             .baseUrl("https://zalobot.pmsa.com.vn/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
@@ -30,24 +30,22 @@ public interface ApiPositionAdmin {
     //==============================
     // lấy ra danh sách các tài khoản, mật khẩu để đăng nhập
     @GET("api/vitris")
-    Call<List<Positions>> covertUserLectuters();
-    /*@GET("")
-    Call<List<UserAuthor>> covertUserLecturers(@Query("id") String id);*/
+    Call<List<Positions>> covertPositionAdmin();
     //==================================
 
     //==============================
     // Update data project upload database
     @PUT("api/vitris/{id}")
-    Call<Positions> updateDataLecturers(@Path("id") int id, @Body Positions positions);
+    Call<Positions> updateDataPositionAdmin(@Path("id") int id, @Body Positions positions);
     //==================================
 
     //Delete data and upload database
     @PUT("api/vitris/{id}")
-    Call<Positions> deleteDataLecturers(@Path("id") int id);
+    Call<Positions> deleteDataPositionAdmin(@Path("id") int id);
     //==================================
 
     //Insert data and upload database
     @PUT("api/vitris/{id}")
-    Call<Positions> insertDataLecturers(@Path("id") int id, @Body Positions positions);
+    Call<Positions> insertDataPositionAdmin(@Path("id") int id, @Body Positions positions);
     //==================================
 }

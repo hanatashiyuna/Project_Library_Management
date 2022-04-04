@@ -20,7 +20,7 @@ public interface ApiBookAdmin {
             .create();
 
     //https://zalobot.pmsa.com.vn/api/saches
-    ApiBookAdmin apiLecturers= new Retrofit.Builder()
+    ApiBookAdmin apiBookAdmin= new Retrofit.Builder()
             .baseUrl("https://zalobot.pmsa.com.vn/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
@@ -30,7 +30,7 @@ public interface ApiBookAdmin {
     //==============================
     // lấy ra danh sách các tài khoản, mật khẩu để đăng nhập
     @GET("api/saches")
-    Call<List<Books>> covertUserLectuters();
+    Call<List<Books>> covertBookAdmin();
     /*@GET("")
     Call<List<UserAuthor>> covertUserLecturers(@Query("id") String id);*/
     //==================================
@@ -38,16 +38,16 @@ public interface ApiBookAdmin {
     //==============================
     // Update data project upload database
     @PUT("api/saches/{id}")
-    Call<Books> updateDataLecturers(@Path("id") int id, @Body Books books);
+    Call<Books> updateDataBookAdmin(@Path("id") int id, @Body Books books);
     //==================================
 
     //Delete data and upload database
     @PUT("api/saches/{id}")
-    Call<Books> deleteDataLecturers(@Path("id") int id);
+    Call<Books> deleteDataBookAdmin(@Path("id") int id);
     //==================================
 
     //Insert data and upload database
     @PUT("api/saches/{id}")
-    Call<Books> insertDataLecturers(@Path("id") int id, @Body Books books);
+    Call<Books> insertDataBookAdmin(@Path("id") int id, @Body Books books);
     //==================================
 }

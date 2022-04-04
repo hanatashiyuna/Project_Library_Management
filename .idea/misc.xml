@@ -83,10 +83,13 @@
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/activity_user_detail.xml" value="0.1" />
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/fragment_about.xml" value="0.16847826086956522" />
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/fragment_about_admin.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/fragment_admin_authors.xml" value="0.1" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/fragment_admin_categories.xml" value="0.18206521739130435" />
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/fragment_manager.xml" value="0.16847826086956522" />
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/fragment_manager_account.xml" value="0.16847826086956522" />
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/fragment_method.xml" value="0.16847826086956522" />
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/fragment_returned_books.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/items.xml" value="0.18206521739130435" />
       </map>
     </option>
   </component>

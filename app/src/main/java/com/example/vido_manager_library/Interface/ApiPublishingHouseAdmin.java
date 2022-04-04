@@ -20,7 +20,7 @@ public interface ApiPublishingHouseAdmin {
             .create();
 
     //https://zalobot.pmsa.com.vn/api/nhaxbs
-    ApiPublishingHouseAdmin apiLecturers= new Retrofit.Builder()
+    ApiPublishingHouseAdmin apiPublishingHouseAdmin= new Retrofit.Builder()
             .baseUrl("https://zalobot.pmsa.com.vn/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
@@ -30,24 +30,23 @@ public interface ApiPublishingHouseAdmin {
     //==============================
     // lấy ra danh sách các tài khoản, mật khẩu để đăng nhập
     @GET("api/nhaxbs")
-    Call<List<PC>> covertUserLectuters();
-    /*@GET("")
-    Call<List<UserAuthor>> covertUserLecturers(@Query("id") String id);*/
+    Call<List<PC>> covertPublishingHouseAdmin();
+
     //==================================
 
     //==============================
     // Update data project upload database
     @PUT("api/nhaxbs/{id}")
-    Call<PC> updateDataLecturers(@Path("id") int id, @Body PC pc);
+    Call<PC> updateDataPublishingHouseAdmin(@Path("id") int id, @Body PC pc);
     //==================================
 
     //Delete data and upload database
     @PUT("api/nhaxbs/{id}")
-    Call<PC> deleteDataLecturers(@Path("id") int id);
+    Call<PC> deleteDataPublishingHouseAdmin(@Path("id") int id);
     //==================================
 
     //Insert data and upload database
     @PUT("api/nhaxbs/{id}")
-    Call<PC> insertDataLecturers(@Path("id") int id, @Body PC pc);
+    Call<PC> insertDataPublishingHouseAdmin(@Path("id") int id, @Body PC pc);
     //==================================
 }

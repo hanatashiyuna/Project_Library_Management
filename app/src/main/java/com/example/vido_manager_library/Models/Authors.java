@@ -1,11 +1,14 @@
 package com.example.vido_manager_library.Models;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Authors implements Serializable {
     private int tacgiaId;
     private String tentacgia;
     private String ngaysinh;
+    private List<Books> saches = new ArrayList<>();
 
     public Authors(int tacgiaId, String tentacgia, String ngaysinh) {
         this.tacgiaId = tacgiaId;
@@ -35,5 +38,13 @@ public class Authors implements Serializable {
 
     public void setNgaysinh(String ngaysinh) {
         this.ngaysinh = ngaysinh;
+    }
+
+    public List<Books> getSaches() {
+        return saches;
+    }
+
+    public void setSaches(List<Books> saches) {
+        this.saches = saches;
     }
 }
