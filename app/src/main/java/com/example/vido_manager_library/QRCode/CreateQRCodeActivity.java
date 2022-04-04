@@ -5,32 +5,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.nfc.Tag;
 import android.os.Bundle;
-import android.util.Log;
-import android.util.LogPrinter;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.example.vido_manager_library.Activities.User.MainActivity;
 import com.example.vido_manager_library.Emtity.AccountModify;
-import com.example.vido_manager_library.Models.UserAuthor;
 import com.example.vido_manager_library.Models.UserStu;
 import com.example.vido_manager_library.R;
 import com.google.zxing.BarcodeFormat;
-import com.google.zxing.MultiFormatReader;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.common.BitMatrix;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 
-import java.io.StringBufferInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
 public class CreateQRCodeActivity extends AppCompatActivity {
 
     private ImageView back, imageQRCode;
-    private UserAuthor userAuthor;
+    private UserStu infor_qr;
     private String information;
 
     @Override
@@ -46,16 +40,25 @@ public class CreateQRCodeActivity extends AppCompatActivity {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             int id = cursor.getInt(0);
-            String name = cursor.getString(1);
-            String password = "123456";
-            mlistAccount.add(new UserStu(id,name,password));
+            String masosinhvien = cursor.getString(6);
+            String tensinhvien = cursor.getString(1);
+            String matkhau = cursor.getString(2);
+            String diachi = cursor.getString(3);
+            String lop = cursor.getString(4);
+            String email = cursor.getString(5);
+            String soCmnd = cursor.getString(7);
+            String ngaysinh = cursor.getString(8);
+            String khoa = cursor.getString(9);
+            mlistAccount.add(new UserStu(id, masosinhvien, tensinhvien, diachi, lop, email, matkhau, soCmnd, ngaysinh, khoa));
             cursor.moveToNext();
         }
         cursor.close();
 
         for (UserStu userStu: mlistAccount) {
-            information = String.valueOf(userStu.getMssv());
+            infor_qr = userStu;
         }
+
+        information = String.valueOf(infor_qr.getMasosinhvien());
 
 
         back.setOnClickListener(new View.OnClickListener() {

@@ -1,47 +1,96 @@
 package com.example.vido_manager_library.Models;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class UserLectuters implements Serializable {
-    private int id, permission;
-    private String nameLecturers, phoneLecturers;
+    private int thuthuId;
+    private String hoten, ngaysinh, sdt,diachi, email,username,matkhau;
+    private final List<Borrow> borrowLecturers = new ArrayList<Borrow>();
+    private final List<GiveBack> givebackLecturers = new ArrayList<GiveBack>();
 
-    public UserLectuters(int id, int permission, String nameLecturers, String phoneLecturers) {
-        this.id = id;
-        this.permission = permission;
-        this.nameLecturers = nameLecturers;
-        this.phoneLecturers = phoneLecturers;
+    public UserLectuters(int thuthuId, String hoten, String ngaysinh, String sdt, String diachi, String email, String username, String matkhau) {
+        this.thuthuId = thuthuId;
+        this.hoten = hoten;
+        this.ngaysinh = ngaysinh;
+        this.sdt = sdt;
+        this.diachi = diachi;
+        this.email = email;
+        this.username = username;
+        this.matkhau = matkhau;
     }
 
-    public int getId() {
-        return id;
+    public int getThuthuId() {
+        return thuthuId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setThuthuId(int thuthuId) {
+        this.thuthuId = thuthuId;
     }
 
-    public int getPermission() {
-        return permission;
+    public String getHoten() {
+        return hoten;
     }
 
-    public void setPermission(int permission) {
-        this.permission = permission;
+    public void setHoten(String hoten) {
+        this.hoten = hoten;
     }
 
-    public String getNameLecturers() {
-        return nameLecturers;
+    public String getNgaysinh() {
+        return ngaysinh;
     }
 
-    public void setNameLecturers(String nameLecturers) {
-        this.nameLecturers = nameLecturers;
+    public void setNgaysinh(String ngaysinh) {
+        this.ngaysinh = ngaysinh;
     }
 
-    public String getPhoneLecturers() {
-        return phoneLecturers;
+    public String getSdt() {
+        return sdt;
     }
 
-    public void setPhoneLecturers(String phoneLecturers) {
-        this.phoneLecturers = phoneLecturers;
+    public void setSdt(String sdt) {
+        this.sdt = sdt;
+    }
+
+    public String getDiachi() {
+        return diachi;
+    }
+
+    public void setDiachi(String diachi) {
+        this.diachi = diachi;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getMatkhau() {
+        return matkhau;
+    }
+
+    public void setMatkhau(String matkhau) {
+        this.matkhau = matkhau;
+    }
+
+    public List<Borrow> getBorrowLecturers() {
+        return borrowLecturers;
+    }
+
+    public List<GiveBack> getGivebackLecturers() {
+        return givebackLecturers;
     }
 }

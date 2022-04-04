@@ -20,10 +20,46 @@ public final class ActivityInformationBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView inforAddress;
+
+  @NonNull
+  public final TextView inforBirth;
+
+  @NonNull
+  public final TextView inforClass;
+
+  @NonNull
+  public final TextView inforCmnd;
+
+  @NonNull
+  public final TextView inforEmail;
+
+  @NonNull
+  public final TextView inforGetaddress;
+
+  @NonNull
+  public final TextView inforGetbirth;
+
+  @NonNull
+  public final TextView inforGetclass;
+
+  @NonNull
+  public final TextView inforGetcmnd;
+
+  @NonNull
+  public final TextView inforGetemail;
+
+  @NonNull
+  public final TextView inforGetmajors;
+
+  @NonNull
   public final TextView inforGetmssv;
 
   @NonNull
   public final TextView inforGetname;
+
+  @NonNull
+  public final TextView inforMajors;
 
   @NonNull
   public final TextView inforMssv;
@@ -32,11 +68,28 @@ public final class ActivityInformationBinding implements ViewBinding {
   public final TextView inforName;
 
   private ActivityInformationBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView inforGetmssv, @NonNull TextView inforGetname, @NonNull TextView inforMssv,
+      @NonNull TextView inforAddress, @NonNull TextView inforBirth, @NonNull TextView inforClass,
+      @NonNull TextView inforCmnd, @NonNull TextView inforEmail, @NonNull TextView inforGetaddress,
+      @NonNull TextView inforGetbirth, @NonNull TextView inforGetclass,
+      @NonNull TextView inforGetcmnd, @NonNull TextView inforGetemail,
+      @NonNull TextView inforGetmajors, @NonNull TextView inforGetmssv,
+      @NonNull TextView inforGetname, @NonNull TextView inforMajors, @NonNull TextView inforMssv,
       @NonNull TextView inforName) {
     this.rootView = rootView;
+    this.inforAddress = inforAddress;
+    this.inforBirth = inforBirth;
+    this.inforClass = inforClass;
+    this.inforCmnd = inforCmnd;
+    this.inforEmail = inforEmail;
+    this.inforGetaddress = inforGetaddress;
+    this.inforGetbirth = inforGetbirth;
+    this.inforGetclass = inforGetclass;
+    this.inforGetcmnd = inforGetcmnd;
+    this.inforGetemail = inforGetemail;
+    this.inforGetmajors = inforGetmajors;
     this.inforGetmssv = inforGetmssv;
     this.inforGetname = inforGetname;
+    this.inforMajors = inforMajors;
     this.inforMssv = inforMssv;
     this.inforName = inforName;
   }
@@ -68,6 +121,72 @@ public final class ActivityInformationBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.infor_address;
+      TextView inforAddress = ViewBindings.findChildViewById(rootView, id);
+      if (inforAddress == null) {
+        break missingId;
+      }
+
+      id = R.id.infor_birth;
+      TextView inforBirth = ViewBindings.findChildViewById(rootView, id);
+      if (inforBirth == null) {
+        break missingId;
+      }
+
+      id = R.id.infor_class;
+      TextView inforClass = ViewBindings.findChildViewById(rootView, id);
+      if (inforClass == null) {
+        break missingId;
+      }
+
+      id = R.id.infor_cmnd;
+      TextView inforCmnd = ViewBindings.findChildViewById(rootView, id);
+      if (inforCmnd == null) {
+        break missingId;
+      }
+
+      id = R.id.infor_email;
+      TextView inforEmail = ViewBindings.findChildViewById(rootView, id);
+      if (inforEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.infor_getaddress;
+      TextView inforGetaddress = ViewBindings.findChildViewById(rootView, id);
+      if (inforGetaddress == null) {
+        break missingId;
+      }
+
+      id = R.id.infor_getbirth;
+      TextView inforGetbirth = ViewBindings.findChildViewById(rootView, id);
+      if (inforGetbirth == null) {
+        break missingId;
+      }
+
+      id = R.id.infor_getclass;
+      TextView inforGetclass = ViewBindings.findChildViewById(rootView, id);
+      if (inforGetclass == null) {
+        break missingId;
+      }
+
+      id = R.id.infor_getcmnd;
+      TextView inforGetcmnd = ViewBindings.findChildViewById(rootView, id);
+      if (inforGetcmnd == null) {
+        break missingId;
+      }
+
+      id = R.id.infor_getemail;
+      TextView inforGetemail = ViewBindings.findChildViewById(rootView, id);
+      if (inforGetemail == null) {
+        break missingId;
+      }
+
+      id = R.id.infor_getmajors;
+      TextView inforGetmajors = ViewBindings.findChildViewById(rootView, id);
+      if (inforGetmajors == null) {
+        break missingId;
+      }
+
       id = R.id.infor_getmssv;
       TextView inforGetmssv = ViewBindings.findChildViewById(rootView, id);
       if (inforGetmssv == null) {
@@ -77,6 +196,12 @@ public final class ActivityInformationBinding implements ViewBinding {
       id = R.id.infor_getname;
       TextView inforGetname = ViewBindings.findChildViewById(rootView, id);
       if (inforGetname == null) {
+        break missingId;
+      }
+
+      id = R.id.infor_majors;
+      TextView inforMajors = ViewBindings.findChildViewById(rootView, id);
+      if (inforMajors == null) {
         break missingId;
       }
 
@@ -92,7 +217,9 @@ public final class ActivityInformationBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityInformationBinding((ConstraintLayout) rootView, inforGetmssv, inforGetname,
+      return new ActivityInformationBinding((ConstraintLayout) rootView, inforAddress, inforBirth,
+          inforClass, inforCmnd, inforEmail, inforGetaddress, inforGetbirth, inforGetclass,
+          inforGetcmnd, inforGetemail, inforGetmajors, inforGetmssv, inforGetname, inforMajors,
           inforMssv, inforName);
     }
     String missingId = rootView.getResources().getResourceName(id);

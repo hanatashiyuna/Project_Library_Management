@@ -2,10 +2,8 @@ package com.example.vido_manager_library.LogSign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
@@ -14,8 +12,9 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.vido_manager_library.Emtity.AccountModify;
 import com.example.vido_manager_library.Interface.ApiService;
-import com.example.vido_manager_library.Models.UserAuthor;
+import com.example.vido_manager_library.Models.UserStu;
 import com.example.vido_manager_library.R;
 
 import retrofit2.Call;
@@ -25,7 +24,7 @@ import retrofit2.Response;
 public class StudentGetNewPassActivity extends AppCompatActivity {
 
     private CheckBox checkBox;
-    private EditText LG_inputPass, LG_inputPassAgain;
+    private EditText LG_inputNewPass, LG_inputNewPassAgain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,27 +33,27 @@ public class StudentGetNewPassActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
 
-            UserAuthor userAuthor = (UserAuthor) bundle.get("Forgot_userLogin");
+        UserStu userStu = (UserStu) bundle.get("Forgot_userLogin");
 
-
+        LG_inputNewPass = findViewById(R.id.LG_inputNewPass);
+        LG_inputNewPassAgain = findViewById(R.id.LG_inputNewPassAgain);
         checkBox = findViewById(R.id.checkbox);
-        LG_inputPass = findViewById(R.id.LG_inputPass);
-        LG_inputPassAgain = findViewById(R.id.LG_inputPassAgain);
+
+
+
         Button btn_ChangePassStu = findViewById(R.id.btn_ChangePassStu);
         // Project UPDATE HERE.....
         btn_ChangePassStu.setOnClickListener(view -> {
-            if (LG_inputPass == LG_inputPassAgain) {
-                int tacgiaId = userAuthor.getTacgiaId();
-                String tentacgia = LG_inputPassAgain.getText().toString().trim();
-                userAuthor.setTentacgia(tentacgia);
+            String newPass = LG_inputNewPass.getText().toString().trim();
+            String newPassAgain = LG_inputNewPassAgain.getText().toString().trim();
+            if (String.valueOf(newPass).equals(String.valueOf(newPassAgain))) {
+                int MSSV = userStu.getSinhvienId();
+                userStu.setMatkhau(newPassAgain);
+                updateAccount(MSSV, userStu,newPassAgain);
 
-                if(!TextUtils.isEmpty(tentacgia)) {
-                    updateAccount(tacgiaId, userAuthor);
-                }
             }else {
                 Toast.makeText(StudentGetNewPassActivity.this, "Xác Nhận Mật Khẩu Không Trùng Nhau", Toast.LENGTH_SHORT).show();
-                //Xác Nhận Đổi Mật Khẩu thì use cái này, set tạm
-                onBack(this);
+
             }
 
         });
@@ -62,36 +61,35 @@ public class StudentGetNewPassActivity extends AppCompatActivity {
         checkBox.setOnClickListener(view -> {
             if(checkBox.isChecked()) {
                 //Password visible
-                LG_inputPassAgain.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                LG_inputPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                LG_inputNewPassAgain.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                LG_inputNewPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
             }else{
                 //Password not visible
-                LG_inputPassAgain.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                LG_inputPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                LG_inputNewPassAgain.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                LG_inputNewPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
             }
         });
     }
 
-    private void updateAccount(int id, UserAuthor userAuthor) {
-        ApiService.apiService.updateData(id, userAuthor).enqueue(new Callback<UserAuthor>() {
+    private void updateAccount(int id, UserStu userStu, String newPassAgain) {
+        ApiService.apiService.updateDataStu(id, userStu).enqueue(new Callback<UserStu>() {
             @Override
-            public void onResponse(Call<UserAuthor> call, Response<UserAuthor> response) {
+            public void onResponse(Call<UserStu> call, Response<UserStu> response) {
 
                 if(response.isSuccessful()) {
+                    if (AccountModify.serchDB()) {
+                        AccountModify.delete(userStu.getSinhvienId());
+                    }
+                    Toast.makeText(StudentGetNewPassActivity.this, "Đổi mật khẩu thành công",Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(StudentGetNewPassActivity.this, StudentLoginActivity.class);
                     startActivity(intent);
                 }
             }
 
             @Override
-            public void onFailure(Call<UserAuthor> call, Throwable t) {
-                Log.e("Error", "Api don't put data.");
+            public void onFailure(Call<UserStu> call, Throwable t) {
+                Log.e("Error", "Api dont put data.");
             }
         });
-    }
-
-    public void onBack(Context context){
-        Intent intent = new Intent(context, StudentLoginActivity.class);
-        context.startActivity(intent);
     }
 }

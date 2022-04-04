@@ -23,10 +23,10 @@ public final class ActivityStudentGetNewPassBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final EditText LGInputPass;
+  public final EditText LGInputNewPass;
 
   @NonNull
-  public final EditText LGInputPassAgain;
+  public final EditText LGInputNewPassAgain;
 
   @NonNull
   public final Button btnChangePassStu;
@@ -38,11 +38,11 @@ public final class ActivityStudentGetNewPassBinding implements ViewBinding {
   public final TextView text;
 
   private ActivityStudentGetNewPassBinding(@NonNull ConstraintLayout rootView,
-      @NonNull EditText LGInputPass, @NonNull EditText LGInputPassAgain,
+      @NonNull EditText LGInputNewPass, @NonNull EditText LGInputNewPassAgain,
       @NonNull Button btnChangePassStu, @NonNull CheckBox checkbox, @NonNull TextView text) {
     this.rootView = rootView;
-    this.LGInputPass = LGInputPass;
-    this.LGInputPassAgain = LGInputPassAgain;
+    this.LGInputNewPass = LGInputNewPass;
+    this.LGInputNewPassAgain = LGInputNewPassAgain;
     this.btnChangePassStu = btnChangePassStu;
     this.checkbox = checkbox;
     this.text = text;
@@ -75,15 +75,15 @@ public final class ActivityStudentGetNewPassBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.LG_inputPass;
-      EditText LGInputPass = ViewBindings.findChildViewById(rootView, id);
-      if (LGInputPass == null) {
+      id = R.id.LG_inputNewPass;
+      EditText LGInputNewPass = ViewBindings.findChildViewById(rootView, id);
+      if (LGInputNewPass == null) {
         break missingId;
       }
 
-      id = R.id.LG_inputPassAgain;
-      EditText LGInputPassAgain = ViewBindings.findChildViewById(rootView, id);
-      if (LGInputPassAgain == null) {
+      id = R.id.LG_inputNewPassAgain;
+      EditText LGInputNewPassAgain = ViewBindings.findChildViewById(rootView, id);
+      if (LGInputNewPassAgain == null) {
         break missingId;
       }
 
@@ -105,8 +105,8 @@ public final class ActivityStudentGetNewPassBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityStudentGetNewPassBinding((ConstraintLayout) rootView, LGInputPass,
-          LGInputPassAgain, btnChangePassStu, checkbox, text);
+      return new ActivityStudentGetNewPassBinding((ConstraintLayout) rootView, LGInputNewPass,
+          LGInputNewPassAgain, btnChangePassStu, checkbox, text);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

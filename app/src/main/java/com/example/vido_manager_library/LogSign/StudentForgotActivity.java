@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.vido_manager_library.Interface.ApiService;
-import com.example.vido_manager_library.Models.UserAuthor;
+import com.example.vido_manager_library.Models.UserStu;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
@@ -24,8 +24,8 @@ public class StudentForgotActivity extends AppCompatActivity {
 
     private Button btn_forgotPass;
     private EditText LG_inputUsrename;
-    private List<UserAuthor> mListUser;
-    private UserAuthor mUser;
+    private List<UserStu> mListUser;
+    private UserStu mUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,14 +50,14 @@ public class StudentForgotActivity extends AppCompatActivity {
     }
 
     private void getListUser() {
-        ApiService.apiService.covertUserAuthor().enqueue(new Callback<List<UserAuthor>>() {
+        ApiService.apiService.covertUserStu().enqueue(new Callback<List<UserStu>>() {
             @Override
-            public void onResponse(Call<List<UserAuthor>> call, Response<List<UserAuthor>> response) {
+            public void onResponse(Call<List<UserStu>> call, Response<List<UserStu>> response) {
                 mListUser = response.body();
 //                Log.e("List User: ", mListUser.size()+"");
             }
             @Override
-            public void onFailure(Call<List<UserAuthor>> call, Throwable t) {
+            public void onFailure(Call<List<UserStu>> call, Throwable t) {
                 Toast.makeText(StudentForgotActivity.this, "Không Tìm Thấy Tài Khoản", Toast.LENGTH_SHORT).show();
             }
         });
@@ -71,11 +71,11 @@ public class StudentForgotActivity extends AppCompatActivity {
 
         boolean isHasUser = false;
 
-        for (UserAuthor userAuthor: mListUser) {
+        for (UserStu userStu: mListUser) {
             //set password
-            if (username.equals(userAuthor.getTentacgia())){
+            if (username.equals(String.valueOf(userStu.getMasosinhvien()))){
                 isHasUser = true;
-                mUser = userAuthor;
+                mUser = userStu;
                 mListUser = null;
                 break;
             }

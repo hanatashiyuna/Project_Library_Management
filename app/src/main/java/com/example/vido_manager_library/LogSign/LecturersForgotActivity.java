@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Interface.ApiService;
-import com.example.vido_manager_library.Models.UserAuthor;
+import com.example.vido_manager_library.Interface.ApiLecturers;
+import com.example.vido_manager_library.Models.UserLectuters;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
@@ -24,8 +24,8 @@ public class LecturersForgotActivity extends AppCompatActivity {
 
     private Button btn_forgotPass;
     private EditText LG_inputUsernameAdmin;
-    private List<UserAuthor> mListUser;
-    private UserAuthor mUser;
+    private List<UserLectuters> mListUser;
+    private UserLectuters mUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,15 +50,15 @@ public class LecturersForgotActivity extends AppCompatActivity {
     }
 
     private void getListUser() {
-        ApiService.apiService.covertUserAuthor().enqueue(new Callback<List<UserAuthor>>() {
+        ApiLecturers.apiLecturers.covertUserLectuters().enqueue(new Callback<List<UserLectuters>>() {
             @Override
-            public void onResponse(Call<List<UserAuthor>> call, Response<List<UserAuthor>> response) {
+            public void onResponse(Call<List<UserLectuters>> call, Response<List<UserLectuters>> response) {
                 mListUser = response.body();
 //                Log.e("List User: ", mListUser.size()+"");
             }
             @Override
-            public void onFailure(Call<List<UserAuthor>> call, Throwable t) {
-                Toast.makeText(LecturersForgotActivity.this, "Không Tìm Thấy Tài Khoản", Toast.LENGTH_SHORT).show();
+            public void onFailure(Call<List<UserLectuters>> call, Throwable t) {
+                Toast.makeText(LecturersForgotActivity.this, "Đang có vấn đề về mạng. Vui lòng thử lại.", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -71,11 +71,11 @@ public class LecturersForgotActivity extends AppCompatActivity {
 
         boolean isHasUser = false;
 
-        for (UserAuthor userAuthor: mListUser) {
+        for (UserLectuters userLectuters : mListUser) {
             //set password
-            if (username.equals(userAuthor.getTentacgia())){
+            if (username.equals(userLectuters.getUsername())){
                 isHasUser = true;
-                mUser = userAuthor;
+                mUser = userLectuters;
                 mListUser = null;
                 break;
             }

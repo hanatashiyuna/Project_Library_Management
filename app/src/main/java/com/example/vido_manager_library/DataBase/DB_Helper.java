@@ -1,16 +1,19 @@
 package com.example.vido_manager_library.DataBase;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import com.example.vido_manager_library.Emtity.AccountAdminModify;
 import com.example.vido_manager_library.Emtity.AccountModify;
 
 public class DB_Helper extends SQLiteOpenHelper{
-    private static final int DB_VERSION = 3;
-    private static final String DB_NAME = "accountstu";
+    private static final int DB_VERSION = 1;
+    private static final String DB_NAME = "dbaccount";
 
     public static DB_Helper instance = null;
 
@@ -31,8 +34,9 @@ public class DB_Helper extends SQLiteOpenHelper{
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String sql_addDbStu = AccountModify.QUERY_CREATE_TABLE_STU;
         sqLiteDatabase.execSQL(sql_addDbStu);
-//        String sql_addDbAdmin = AccountAdminModify.QUERY_CREATE_TABLE_ADMIN;
-//        sqLiteDatabase.execSQL(sql_addDbAdmin);
+        String sql_addDbAdmin = AccountAdminModify.QUERY_CREATE_TABLE_ADMIN;
+        sqLiteDatabase.execSQL(sql_addDbAdmin);
+
     }
 
 

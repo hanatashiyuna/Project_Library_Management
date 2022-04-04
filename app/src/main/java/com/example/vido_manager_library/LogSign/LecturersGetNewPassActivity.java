@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
@@ -13,8 +12,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Interface.ApiService;
-import com.example.vido_manager_library.Models.UserAuthor;
+import com.example.vido_manager_library.Interface.ApiLecturers;
+import com.example.vido_manager_library.Models.UserLectuters;
 import com.example.vido_manager_library.R;
 
 import retrofit2.Call;
@@ -36,7 +35,7 @@ public class LecturersGetNewPassActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
 
-        UserAuthor userLecturer = (UserAuthor) bundle.get("infor_userLecturerLogin");
+        UserLectuters userLecturers = (UserLectuters) bundle.get("infor_userLecturerLogin");
 
         checkBox = findViewById(R.id.checkbox);
         LG_inputPassAdmin = findViewById(R.id.LG_inputPassAdmin);
@@ -44,14 +43,12 @@ public class LecturersGetNewPassActivity extends AppCompatActivity {
 
         // Project UPDATE HERE.....
         btn_ChangePassLec.setOnClickListener(view -> {
-            if (LG_inputPassAdmin == LG_inputPassAdminAgain) {
-                int tacgiaId = userLecturer.getTacgiaId();
-                String tentacgia = LG_inputPassAdminAgain.getText().toString().trim();
-                userLecturer.setTentacgia(tentacgia);
-
-                if(!TextUtils.isEmpty(tentacgia)) {
-                    updateAccount(tacgiaId, userLecturer);
-                }
+            String newPassAdmin = LG_inputPassAdmin.getText().toString().trim();
+            String newPassAgainAdmin = LG_inputPassAdminAgain.getText().toString().trim();
+            if (newPassAdmin.equals(newPassAgainAdmin)) {
+                int idLecturer = userLecturers.getThuthuId();
+                userLecturers.setMatkhau(newPassAgainAdmin);
+                updateAccount(idLecturer, userLecturers);
             }else {
                 Toast.makeText(LecturersGetNewPassActivity.this, "Xác Nhận Mật Khẩu Không Trùng Nhau", Toast.LENGTH_SHORT).show();
             }
@@ -71,20 +68,22 @@ public class LecturersGetNewPassActivity extends AppCompatActivity {
         });
     }
 
-    private void updateAccount(int id, UserAuthor userAuthor) {
-        ApiService.apiService.updateData(id, userAuthor).enqueue(new Callback<UserAuthor>() {
+    private void updateAccount(int id, UserLectuters userLectuters) {
+        ApiLecturers.apiLecturers.updateDataLecturers(id, userLectuters).enqueue(new Callback<UserLectuters>() {
             @Override
-            public void onResponse(Call<UserAuthor> call, Response<UserAuthor> response) {
+            public void onResponse(Call<UserLectuters> call, Response<UserLectuters> response) {
 
                 if(response.isSuccessful()) {
+                    Toast.makeText(LecturersGetNewPassActivity.this, "Đổi mật khẩu thành công",Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LecturersGetNewPassActivity.this, LecturersLoginActivity.class);
                     startActivity(intent);
                 }
             }
 
             @Override
-            public void onFailure(Call<UserAuthor> call, Throwable t) {
+            public void onFailure(Call<UserLectuters> call, Throwable t) {
                 Log.e("Error", "Api dont put data.");
+                Toast.makeText(LecturersGetNewPassActivity.this, "Đang có vấn đề về mạng. Vui lòng thử lại.",Toast.LENGTH_SHORT).show();
             }
         });
     }
