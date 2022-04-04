@@ -1,394 +1,394 @@
 [
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_about.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_about.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_student_get_new_pass.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_student_get_new_pass.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_arrow_back_ios_new.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_arrow_back_ios_new.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_info.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_info.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_navigation.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\menu\\menu_navigation.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_about_admin.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_about_admin.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_home_black_24dp.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_microsoft_firewall_isa_server.jpg.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\microsoft_firewall_isa_server.jpg"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_foreground_design.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable-v24\\foreground_design.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_vpn_key.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_vpn_key.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_admin_books.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_books.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_info_24.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_info_24.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_arrow_back_ios_new.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_arrow_back_ios_new.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\font_castoro.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\font\\castoro.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_arrow_back.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_arrow_back.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_transparent_background.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\transparent_background.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_favourite_books.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_favourite_books.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_curriculums_android.jpg.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\curriculums_android.jpg"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_student_get_new_pass.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_student_get_new_pass.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_admin_authors.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_authors.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_user_borrow_book.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_user_borrow_book.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_home_admin.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_home_admin.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_returned_books.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_returned_books.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_remove_red_eye.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_remove_red_eye.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_keyboard_arrow_right_24.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_keyboard_arrow_right_24.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_navigation_noscan.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\menu\\menu_navigation_noscan.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_home.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_home.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_home_admin.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_home_admin.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\menu_menu.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\menu\\menu.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_user_borrow_book.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_user_borrow_book.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_items.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\items.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_notifications_24.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_notifications_24.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_favourite_books.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_favourite_books.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\font_castoro.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\font\\castoro.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_bglogsign.jpg.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\bglogsign.jpg"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_qr_code_scanner.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_qr_code_scanner.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_qr_code_scanner.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_qr_code_scanner.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_background_user.jpg.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\background_user.jpg"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_admin_books.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_books.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\logo.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_about_admin.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_about_admin.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_foreground_design_light.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable-v24\\foreground_design_light.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_star_rate_24.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_star_rate_24.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_navigation.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\menu\\menu_navigation.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_method.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_method.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_add.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_add.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_info.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_info.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_dashboard_24.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_dashboard_24.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_admin_positions.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_positions.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_manager.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_avt_student.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\avt_student.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_book_item.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\book_item.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_items.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\items.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_home_admin.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_home_admin.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_lecturers_forgot.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_lecturers_forgot.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_androidprogram.jpg.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\androidprogram.jpg"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_student_forgot.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_student_forgot.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_manager_account.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager_account.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_lecturers_get_new_pass.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_lecturers_get_new_pass.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_admin_pc.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_pc.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_create_qrcode.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_create_qrcode.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_search.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_search.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_method.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_method.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_star_outline_24.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_star_outline_24.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_account_circle.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_account_circle.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_student_login.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_student_login.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_btn_bg_design.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable-v24\\btn_bg_design.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_book_item.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\book_item.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_background_user.jpg.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\background_user.jpg"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_admin_positions.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_positions.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_welcome.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_user_detail.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_user_detail.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_admin_categories.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_categories.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_create_qrcode.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_create_qrcode.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_navigation_admin.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\menu\\menu_navigation_admin.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_selector.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\selector.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_border_radius.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\border_radius.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_menu_book.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_menu_book.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_vpn_key.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_vpn_key.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_dashboard_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\font_amita.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\font\\amita.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_btn_bg_design.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable-v24\\btn_bg_design.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_information.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_information.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_book_admin_detail.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_book_admin_detail.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_lecturers_login.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_lecturers_login.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_foreground_design.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable-v24\\foreground_design.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_keyboard_arrow_right_24.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_keyboard_arrow_right_24.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_user_detail.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_user_detail.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_avt_student.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\avt_student.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_book_detail.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_book_detail.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_search.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_search.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_add.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_add.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_information_student.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\information_student.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_borrowing_books.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_borrowing_books.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_search_bg.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\search_bg.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_home.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_home.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_dashboard_black_24dp.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_dashboard_black_24dp.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\menu_menu.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\menu\\menu.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_admin_pc.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_pc.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_home_24.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_home_24.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_home_admin.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_home_admin.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_foreground_design_light.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable-v24\\foreground_design_light.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_admin_categories.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_categories.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_information.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_information.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_admin_authors.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_authors.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\font_amarante.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\font\\amarante.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_returned_books.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_returned_books.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_info_24.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_info_24.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\logo.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_manager.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_background.jpg.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\background.jpg"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_bglogsign.jpg.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\bglogsign.jpg"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_navigation_admin.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\menu\\menu_navigation_admin.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_book_admin_detail.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_book_admin_detail.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_home_24.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_home_24.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\font_amita.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\font\\amita.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_student_forgot.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_student_forgot.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_border.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\border.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_border.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\border.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_selector.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\selector.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_star_half.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_star_half.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_student_login.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_student_login.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_star_half.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_star_half.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_account_circle.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_account_circle.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_transparent_background.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\transparent_background.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_remove_red_eye.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_remove_red_eye.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_androidprogram.jpg.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\androidprogram.jpg"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_search_bg.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\search_bg.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_about.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_about.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_notifications_black_24dp.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_curriculums_android.jpg.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\curriculums_android.jpg"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_book_detail.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_book_detail.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\font_amarante.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\font\\amarante.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_star_rate_24.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_star_rate_24.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_library_books_24.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_library_books_24.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_notifications_24.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_notifications_24.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_navigation_noscan.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\menu\\menu_navigation_noscan.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_star_outline_24.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_star_outline_24.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_library_books_24.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_library_books_24.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_border_radius.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\border_radius.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_lecturers_get_new_pass.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_lecturers_get_new_pass.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_lecturers_forgot.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_lecturers_forgot.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_information_student.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\information_student.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_background.jpg.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\background.jpg"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_arrow_back.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_arrow_back.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_microsoft_firewall_isa_server.jpg.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\microsoft_firewall_isa_server.jpg"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_borrowing_books.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_borrowing_books.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_menu_book.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_menu_book.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_manager_account.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager_account.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_nav_menu.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_welcome.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_welcome.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_dashboard_24.xml.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_dashboard_24.xml"
+        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_lecturers_login.xml.flat",
+        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_lecturers_login.xml"
     }
 ]
