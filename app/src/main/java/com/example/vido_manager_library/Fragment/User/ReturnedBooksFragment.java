@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 import com.example.vido_manager_library.Activities.User.BookDetailActivity;
 import com.example.vido_manager_library.Adapters.BooksAdapters;
-import com.example.vido_manager_library.Models.HomeHorModels;
+import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
@@ -39,22 +39,22 @@ public class ReturnedBooksFragment extends Fragment {
 
         return view;
     }
-    private List<HomeHorModels> getListBooks() {
-        List<HomeHorModels> list = new ArrayList<>();
-
-        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The First Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.androidprogram, "The First Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.curriculums_android, "The First Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.microsoft_firewall_isa_server, "The First Book", HomeHorModels.TYPE_BOOK_2));
-        list.add(new HomeHorModels(R.drawable.androidprogram, "The First Book", HomeHorModels.TYPE_BOOK_2));
+    private List<Books> getListBooks() {
+        List<Books> list = new ArrayList<>();
+        list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
 
         return list;
     }
 
-    private void onClickGoToDetail(HomeHorModels homeHorModels) {
+    private void onClickGoToDetail(Books books) {
         Intent intent = new Intent(getActivity(), BookDetailActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("book_information", homeHorModels);
+        bundle.putSerializable("book_information", books);
         intent.putExtras(bundle);
         startActivity(intent);
     }

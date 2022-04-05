@@ -89,8 +89,6 @@ com/example/vido_manager_library/databinding/FragmentManagerBinding.java
  com.example.vido_manager_library.databinding.FragmentManagerBinding
 com/example/vido_manager_library/databinding/ActivityBookAdminDetailBinding.java
  com.example.vido_manager_library.databinding.ActivityBookAdminDetailBinding
-com/example/vido_manager_library/Models/HomeHorModels.java
- com.example.vido_manager_library.Models.HomeHorModels
 com/example/vido_manager_library/Models/Books.java
  com.example.vido_manager_library.Models.Books
 com/example/vido_manager_library/Models/Categorys.java

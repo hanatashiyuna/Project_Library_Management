@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Interface.IClickItemBook;
 import com.example.vido_manager_library.Models.Books;
-import com.example.vido_manager_library.Models.HomeHorModels;
 import com.example.vido_manager_library.R;
 
 import java.util.List;
@@ -25,32 +24,32 @@ public class BooksAdapters extends RecyclerView.Adapter<BooksAdapters.ViewHolder
     Context context;
     Activity activity;
     Fragment fragment;
-    List<HomeHorModels> list;
+    List<Books> list;
     private IClickItemBook iClickItemBook;
 
     //Context to Activity
-    public BooksAdapters(Activity activity, List<HomeHorModels> list) {
+    public BooksAdapters(Activity activity, List<Books> list) {
         this.activity = activity;
         this.list = list;
     }
 
-    public BooksAdapters(Activity activity, List<HomeHorModels> list, IClickItemBook iClickItemBook) {
+    public BooksAdapters(Activity activity, List<Books> list, IClickItemBook iClickItemBook) {
         this.activity = activity;
         this.list = list;
         this.iClickItemBook = iClickItemBook;
     }
 
-    public BooksAdapters(Context context, List<HomeHorModels> list) {
+    public BooksAdapters(Context context, List<Books> list) {
         this.context = context;
         this.list = list;
     }
 
-    public BooksAdapters(Fragment fragment, List<HomeHorModels> list) {
+    public BooksAdapters(Fragment fragment, List<Books> list) {
         this.fragment = fragment;
         this.list = list;
     }
 
-    public BooksAdapters(Fragment fragment, List<HomeHorModels> list, IClickItemBook iClickItemBook) {
+    public BooksAdapters(Fragment fragment, List<Books> list, IClickItemBook iClickItemBook) {
         this.fragment = fragment;
         this.list = list;
         this.iClickItemBook = iClickItemBook;
@@ -65,11 +64,11 @@ public class BooksAdapters extends RecyclerView.Adapter<BooksAdapters.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        HomeHorModels homeModels = list.get(position);
-        holder.imageView.setImageResource(list.get(position).getImage());
-        holder.textView.setText(list.get(position).getBookName());
-        if(homeModels != null){
-            holder.cardView.setOnClickListener(view -> iClickItemBook.onClickItemBook(homeModels));
+        Books books = list.get(position);
+        holder.imageView.setImageResource(R.drawable.androidprogram);
+        holder.textView.setText(list.get(position).getTensach());
+        if(books != null){
+            holder.cardView.setOnClickListener(view -> iClickItemBook.onClickItemBook(books));
         }else {
             holder.cardView.setOnClickListener(view -> {
 

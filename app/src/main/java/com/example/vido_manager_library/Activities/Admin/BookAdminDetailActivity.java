@@ -9,8 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.vido_manager_library.Models.Authors;
+import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.Models.Categorys;
-import com.example.vido_manager_library.Models.HomeHorModels;
 import com.example.vido_manager_library.Models.PC;
 import com.example.vido_manager_library.Models.Positions;
 import com.example.vido_manager_library.R;
@@ -35,11 +35,11 @@ public class BookAdminDetailActivity extends AppCompatActivity {
             name.setText(String.format("Tên: %s", authors.getTentacgia()));
             amount.setText(String.format("Ngày sinh: %s", authors.getNgaysinh()));
         }else if(bundle.containsKey("book_information")){
-            HomeHorModels homeHorModels = (HomeHorModels) bundle.get("book_information");
-            name.setText(String.format("Tên Sách: %s", homeHorModels.getBookName()));
-            imgAdminBook.setImageResource(homeHorModels.getImage());
-            amount.setText(String.format("Số lượng sách: %s", homeHorModels.getAmountBooks()));
-            author.setText(String.format("Tác Giả: %s", homeHorModels.getAuthor()));
+            Books books = (Books) bundle.get("book_information");
+            name.setText(String.format("Tên Sách: %s", books.getTensach()));
+            imgAdminBook.setImageResource(R.drawable.androidprogram);
+            amount.setText(String.format("Số lượng sách: %s", books.getSoban()));
+            author.setText(String.format("Tác Giả: %s", books.getTacgiaID()));
         }else if(bundle.containsKey("books_self")){
             Positions positions = (Positions) bundle.get("books_self");
             name.setText(String.format("Hàng: %s", positions.getTenhang()));

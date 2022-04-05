@@ -51,7 +51,7 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder>{
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Books books = list.get(position);
         holder.name_item.setText(list.get(position).getTensach());
-        holder.category_item.setText(list.get(position).getTheloaiID());
+        holder.category_item.setText(String.valueOf(list.get(position).getTheloaiID()));
         holder.items.setOnClickListener(view -> iClickItemBooks.onClickItemBooks(books));
     }
 

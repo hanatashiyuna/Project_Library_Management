@@ -17,10 +17,7 @@ public class Books implements Serializable {
         this.soban = soban;
     }
 
-    public Books(int sachID, String tensach,
-                 int tacgiaID, int theloaiID,
-                 int nhaxbID, String namxb,
-                 int soban, int vitriID) {
+    public Books(int sachID, String tensach, int tacgiaID, int theloaiID, int nhaxbID, String namxb, int soban, int vitriID) {
         this.sachID = sachID;
         this.tensach = tensach;
         this.tacgiaID = tacgiaID;

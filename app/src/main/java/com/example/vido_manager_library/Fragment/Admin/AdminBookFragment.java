@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
 import com.example.vido_manager_library.Adapters.BooksAdapters;
-import com.example.vido_manager_library.Models.HomeHorModels;
+import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
@@ -46,22 +46,22 @@ public class AdminBookFragment extends Fragment {
         return view;
     }
 
-    private List<HomeHorModels> getListBooks() {
-        List<HomeHorModels> listBooks = new ArrayList<>();
-        listBooks.add(new HomeHorModels("000200", 4, 1, 5, HomeHorModels.TYPE_BOOK_1, R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thiện"));
-        listBooks.add(new HomeHorModels("000201", 4, 1, 4, HomeHorModels.TYPE_BOOK_2, R.drawable.androidprogram, "Microsoft Firewall Isa Sever", "Mavis", "Vu Cong Chi Thiện"));
-        listBooks.add(new HomeHorModels("000202", 4, 1, 7, HomeHorModels.TYPE_BOOK_3, R.drawable.androidprogram, "Curriculums Android", "Mavis", "Vu Cong Chi Thiện"));
-        listBooks.add(new HomeHorModels("000200", 4, 1, 5, HomeHorModels.TYPE_BOOK_1, R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thiện"));
-        listBooks.add(new HomeHorModels("000201", 4, 1, 4, HomeHorModels.TYPE_BOOK_2, R.drawable.androidprogram, "Microsoft Firewall Isa Sever", "Mavis", "Vu Cong Chi Thiện"));
-        listBooks.add(new HomeHorModels("000202", 4, 1, 7, HomeHorModels.TYPE_BOOK_3, R.drawable.androidprogram, "Curriculums Android", "Mavis", "Vu Cong Chi Thiện"));
-        listBooks.add(new HomeHorModels("000200", 4, 1, 5, HomeHorModels.TYPE_BOOK_1, R.drawable.androidprogram, "Android Program", "Tran Minh Tan", "Vu Cong Chi Thiện"));
+    private List<Books> getListBooks() {
+        List<Books> listBooks = new ArrayList<>();
+        listBooks.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        listBooks.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        listBooks.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        listBooks.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        listBooks.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        listBooks.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        listBooks.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
         return listBooks;
     }
 
-    private void onClickGoToDetail(HomeHorModels homeHorModels) {
+    private void onClickGoToDetail(Books books) {
         Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("book_information", homeHorModels);
+        bundle.putSerializable("book_information", books);
         intent.putExtras(bundle);
         startActivity(intent);
     }

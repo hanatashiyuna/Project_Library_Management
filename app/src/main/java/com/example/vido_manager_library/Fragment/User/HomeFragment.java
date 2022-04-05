@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import com.example.vido_manager_library.Activities.User.BookDetailActivity;
 import com.example.vido_manager_library.Activities.User.UserDetailActivity;
 import com.example.vido_manager_library.Adapters.BooksAdapters;
-import com.example.vido_manager_library.Models.HomeHorModels;
+import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ public class HomeFragment extends Fragment {
 
     View view;
     RecyclerView homeHorizontalRec, homeHorizontalRec2, homeHorizontalRec3, homeHorizontalRec4;
-    List<HomeHorModels> bookList;
+    List<Books> bookList;
     BooksAdapters booksAdapters;
     ImageView user_detail_circle;
 
@@ -87,25 +87,23 @@ public class HomeFragment extends Fragment {
     public void fakeData(){
         //cardView home
         bookList = new ArrayList<>();
-
-        bookList.add(new HomeHorModels("200200",1,1, 4,HomeHorModels.TYPE_BOOK_1, R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever","Tran Minh Tan",""));
-        bookList.add(new HomeHorModels("202020",1,2, 5,HomeHorModels.TYPE_BOOK_1, R.drawable.androidprogram, "Android Program","Tran Minh Tan",""));
-        bookList.add(new HomeHorModels("200202",1,1, 5,HomeHorModels.TYPE_BOOK_1, R.drawable.curriculums_android, "Curriculums Android", "Tran Minh Tan", ""));
-        bookList.add(new HomeHorModels("000202",1,1, 4,HomeHorModels.TYPE_BOOK_1, R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever", "Tran Minh Tan", ""));
-        bookList.add(new HomeHorModels("200204",1,1, 7,HomeHorModels.TYPE_BOOK_1, R.drawable.androidprogram, "Android Program", "Tran Minh Tan", ""));
-        bookList.add(new HomeHorModels("000200",1,2, 3,HomeHorModels.TYPE_BOOK_1, R.drawable.curriculums_android, "Curriculums Android", "Tran Minh Tan", ""));
-        bookList.add(new HomeHorModels("200000",1,1, 3,HomeHorModels.TYPE_BOOK_1, R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever", "Tran Minh Tan", ""));
-        bookList.add(new HomeHorModels("000002",1,1, 3,HomeHorModels.TYPE_BOOK_1, R.drawable.androidprogram, "Android Program", "Tran Minh Tan", ""));
-        bookList.add(new HomeHorModels("202002",1,2, 4,HomeHorModels.TYPE_BOOK_1, R.drawable.curriculums_android, "Curriculums Android", "Tran Minh Tan", ""));
-        bookList.add(new HomeHorModels("020202",1,1, 5,HomeHorModels.TYPE_BOOK_1, R.drawable.microsoft_firewall_isa_server, "Microsoft Firewall Isa Sever", "Tran Minh Tan", ""));
-        bookList.add(new HomeHorModels("002002",1,2, 7,HomeHorModels.TYPE_BOOK_1, R.drawable.androidprogram, "Android Program", "Tran Minh Tan", ""));
-        bookList.add(new HomeHorModels("200206",1,1, 3,HomeHorModels.TYPE_BOOK_1, R.drawable.curriculums_android, "Curriculums Android", "Tran Minh Tan", ""));
-
+        bookList.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        bookList.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        bookList.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        bookList.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        bookList.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        bookList.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        bookList.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        bookList.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        bookList.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        bookList.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        bookList.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        bookList.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
     }
-    private void onClickGoToDetail(HomeHorModels homeHorModels) {
+    private void onClickGoToDetail(Books books) {
         Intent intent = new Intent(getActivity(), BookDetailActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("book_information", homeHorModels);
+        bundle.putSerializable("book_information", books);
         intent.putExtras(bundle);
         startActivity(intent);
     }

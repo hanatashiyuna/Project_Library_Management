@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.vido_manager_library.Models.HomeHorModels;
+import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.R;
 
 public class BookDetailActivity extends AppCompatActivity {
@@ -25,9 +25,9 @@ public class BookDetailActivity extends AppCompatActivity {
         if(bundle == null){
             return;
         }
-        HomeHorModels homeHorModels = (HomeHorModels) bundle.get("book_information");
-        nameBook.setText(homeHorModels.getBookName());
-        imgBook.setImageResource(homeHorModels.getImage());
+        Books books = (Books) bundle.get("book_information");
+        nameBook.setText(books.getTensach());
+        imgBook.setImageResource(R.drawable.androidprogram);
 
         back.setOnClickListener(view -> switchActivity());
     }
