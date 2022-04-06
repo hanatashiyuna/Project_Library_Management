@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".QRCode.CreateQRCodeActivity"
-    android:background="@color/purple_500"
+    android:background="@drawable/background"
     android:paddingTop="15dp">
 
     <ImageView
@@ -16,7 +16,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/back"/>
 
     <TextView
         android:id="@+id/textView10"
@@ -34,12 +35,64 @@
         app:layout_constraintTop_toTopOf="@+id/back" />
 
     <ImageView
+        android:id="@+id/avt"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/avt_student"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/avatar"/>
+
+    <TextView
+        android:id="@+id/name_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arsenal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avt"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/code_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arsenal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_student" />
+
+    <TextView
+        android:id="@+id/class_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arsenal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code_student" />
+
+    <ImageView
         android:id="@+id/imageQRCode"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/scanner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/class_student"
+        app:layout_constraintVertical_bias=".15"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

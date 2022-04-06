@@ -72,6 +72,10 @@
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\menu\\menu_navigation_noscan.xml"
     },
     {
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_dialog_add_book.xml.flat",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\dialog_add_book.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
@@ -142,6 +146,10 @@
     {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_home_admin.xml.flat",
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_home_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\font_arsenal.xml.flat",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\font\\arsenal.xml"
     },
     {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_androidprogram.jpg.flat",

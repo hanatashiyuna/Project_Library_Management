@@ -37,4 +37,13 @@
     <string name="delete">Xóa</string>
     <string name="repair">Sửa</string>
     <string name="logo">logo</string>
+    <string name="scanner">scanner</string>
+    <string name="id_book">ID Sách</string>
+    <string name="name_book">Tên Sách</string>
+    <string name="id_author">ID Tác Giả</string>
+    <string name="id_category">ID Thể Loại</string>
+    <string name="id_nxb">ID NXB</string>
+    <string name="namxb">Năm Xuất Bản</string>
+    <string name="amount">Số Lượng</string>
+    <string name="position">Vị Trí</string>
 </resources>

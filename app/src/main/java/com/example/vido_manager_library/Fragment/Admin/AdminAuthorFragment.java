@@ -2,7 +2,6 @@ package com.example.vido_manager_library.Fragment.Admin;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,10 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
 import com.example.vido_manager_library.Adapters.AuthorAdapter;
 import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
-import com.example.vido_manager_library.Interface.ApiService;
-import com.example.vido_manager_library.LogSign.StudentLoginActivity;
 import com.example.vido_manager_library.Models.Authors;
-import com.example.vido_manager_library.Models.UserStu;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
@@ -48,11 +44,8 @@ public class AdminAuthorFragment extends Fragment {
         mListAuthorAdmin = new ArrayList<>();
         //set button add author
         btnAddAuthor = view.findViewById(R.id.addAuthor);
-        btnAddAuthor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        btnAddAuthor.setOnClickListener(view1 -> {
 
-            }
         });
 
         RecyclerView listAuthorScreen = view.findViewById(R.id.listview_author);

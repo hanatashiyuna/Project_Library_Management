@@ -24,8 +24,16 @@
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\book_item.xml"
     },
     {
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_add_book.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\dialog_add_book.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_student_get_new_pass.xml",
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_student_get_new_pass.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_book.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_add_book.xml"
     },
     {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_borrowing_books.xml",
@@ -66,6 +74,10 @@
     {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_manager.xml",
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_author.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_add_author.xml"
     },
     {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_information.xml",

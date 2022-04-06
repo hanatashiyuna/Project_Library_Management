@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -32,6 +33,7 @@ import retrofit2.Response;
 public class BookAdminDetailActivity extends AppCompatActivity {
 
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,14 +41,13 @@ public class BookAdminDetailActivity extends AppCompatActivity {
 
         ImageView imgAdminBook = findViewById(R.id.imgBookAdmin);
         TextView name = findViewById(R.id.nameBook);
-        TextView amount = findViewById(R.id.amountBook);
         TextView author = findViewById(R.id.author);
-        /**Tiêu đề của file BookAdminDetailActivity
+        /**Tiêu đề của file BookAdminDetailActivity*/
         TextView title_editText2 = findViewById(R.id.title_editText2);
         TextView title_editText3 = findViewById(R.id.title_editText3);
         //Nhận Dữ Liệu
         EditText editText2 = findViewById(R.id.editText2);
-        EditText editText3 = findViewById(R.id.editText3);*/
+        EditText editText3 = findViewById(R.id.editText3);
 
 
         Bundle bundle = getIntent().getExtras();
@@ -61,13 +62,12 @@ public class BookAdminDetailActivity extends AppCompatActivity {
         if(bundle.containsKey("books_informationAuthor")){
             Authors authors = (Authors) bundle.get("books_informationAuthor");
             name.setText(String.format("Tên: %s", authors.getTentacgia()));
-            amount.setText(String.format("Ngày sinh: %s", authors.getNgaysinh()));
-            /**lấy dữ liệu và cách hoạt động của các chức năng
+            /**lấy dữ liệu và cách hoạt động của các chức năng*/
             title_editText2.setText("Tên Tác Giả: ");
             editText2.setHint(authors.getTentacgia());
             title_editText3.setText("Năm Sinh (yyyy-mm-dd): ");
             editText3.setHint(authors.getNgaysinh());
-            btn_repair.setOnClickListener(view -> {
+            /**btn_repair.setOnClickListener(view -> {
                 String name_author = editText2.getText().toString().trim();
                 String birth_author = editText3.getText().toString().trim();
                 if (!String.valueOf(name_author).equals("") && !String.valueOf(birth_author).equals("")) {
@@ -107,24 +107,24 @@ public class BookAdminDetailActivity extends AppCompatActivity {
             Books books = (Books) bundle.get("book_information");
             name.setText(String.format("Tên Sách: %s", books.getTensach()));
             imgAdminBook.setImageResource(R.drawable.androidprogram);
-            amount.setText(String.format("Số lượng sách: %s", books.getSoban()));
             author.setText(String.format("Tác Giả: %s", books.getTacgiaID()));
+
         }else if(bundle.containsKey("books_self")){
             Positions positions = (Positions) bundle.get("books_self");
             name.setText(String.format("Hàng: %s", positions.getTenhang()));
-            amount.setText(String.format("Vị trí: %s", positions.getVitriId()));
+
         }else if(bundle.containsKey("pushing_company")){
             PC pc = (PC) bundle.get("pushing_company");
             name.setText(String.format("NXB: %s", pc.getTenxuatban()));
-            amount.setText(String.format("ID NXB: %s", pc.getNhaxbID()));
+
         }else if(bundle.containsKey("books_category")){
             Categorys categorys = (Categorys) bundle.get("books_category");
             name.setText(String.format("Thể Loại: %s", categorys.getTentheloai()));
-            amount.setText(String.format("ID Thể Loại: %s", categorys.getTheloaiID()));
+
         }else if(bundle.containsKey("account")){
             Authors authors = (Authors) bundle.get("account");
             name.setText(String.format("Tên: %s", authors.getTentacgia()));
-            amount.setText(String.format("Ngày sinh: %s", authors.getNgaysinh()));
+
         }
 
         ImageView back =  findViewById(R.id.back);

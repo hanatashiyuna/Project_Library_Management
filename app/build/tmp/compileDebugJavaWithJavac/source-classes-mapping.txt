@@ -57,8 +57,9 @@ com/example/vido_manager_library/Models/Borrow.java
  com.example.vido_manager_library.Models.Borrow
 com/example/vido_manager_library/databinding/FragmentBorrowingBooksBinding.java
  com.example.vido_manager_library.databinding.FragmentBorrowingBooksBinding
-com/example/vido_manager_library/Fragment/Admin/AdminBookFragment.java
- com.example.vido_manager_library.Fragment.Admin.AdminBookFragment
+com/example/vido_manager_library/Fragment/Admin/AdminAuthorFragment.java
+ com.example.vido_manager_library.Fragment.Admin.AdminAuthorFragment
+ com.example.vido_manager_library.Fragment.Admin.AdminAuthorFragment$1
 com/example/vido_manager_library/databinding/FragmentReturnedBooksBinding.java
  com.example.vido_manager_library.databinding.FragmentReturnedBooksBinding
 com/example/vido_manager_library/Interface/ApiLecturers.java
@@ -95,7 +96,6 @@ com/example/vido_manager_library/Models/Categorys.java
  com.example.vido_manager_library.Models.Categorys
 com/example/vido_manager_library/QRCode/CreateQRCodeActivity.java
  com.example.vido_manager_library.QRCode.CreateQRCodeActivity
- com.example.vido_manager_library.QRCode.CreateQRCodeActivity$1
 com/example/vido_manager_library/Fragment/Admin/ManagerFragment.java
  com.example.vido_manager_library.Fragment.Admin.ManagerFragment
 com/example/vido_manager_library/databinding/ActivityHomeAdminBinding.java
@@ -107,8 +107,10 @@ com/example/vido_manager_library/Fragment/User/UserBorrowBookFragment.java
  com.example.vido_manager_library.Fragment.User.UserBorrowBookFragment
 com/example/vido_manager_library/databinding/ActivityLecturersGetNewPassBinding.java
  com.example.vido_manager_library.databinding.ActivityLecturersGetNewPassBinding
-com/example/vido_manager_library/Adapters/ViewPageAdapter.java
- com.example.vido_manager_library.Adapters.ViewPageAdapter
+com/example/vido_manager_library/Fragment/Admin/AdminCategoryFragment.java
+ com.example.vido_manager_library.Fragment.Admin.AdminCategoryFragment
+ com.example.vido_manager_library.Fragment.Admin.AdminCategoryFragment$1
+ com.example.vido_manager_library.Fragment.Admin.AdminCategoryFragment$2
 com/example/vido_manager_library/LogSign/LecturersForgotActivity.java
  com.example.vido_manager_library.LogSign.LecturersForgotActivity
  com.example.vido_manager_library.LogSign.LecturersForgotActivity$1
@@ -192,6 +194,8 @@ com/example/vido_manager_library/databinding/ActivityMainBinding.java
 com/example/vido_manager_library/LogSign/LecturersGetNewPassActivity.java
  com.example.vido_manager_library.LogSign.LecturersGetNewPassActivity
  com.example.vido_manager_library.LogSign.LecturersGetNewPassActivity$1
+com/example/vido_manager_library/databinding/DialogAddBookBinding.java
+ com.example.vido_manager_library.databinding.DialogAddBookBinding
 com/example/vido_manager_library/Interface/ApiCategoryAdmin.java
  com.example.vido_manager_library.Interface.ApiCategoryAdmin
 com/example/vido_manager_library/Adapters/AuthorAdapter.java
@@ -231,11 +235,8 @@ com/example/vido_manager_library/Models/PC.java
  com.example.vido_manager_library.Models.PC
 com/example/vido_manager_library/Emtity/AccountAdminModify.java
  com.example.vido_manager_library.Emtity.AccountAdminModify
-com/example/vido_manager_library/Fragment/Admin/AdminAuthorFragment.java
- com.example.vido_manager_library.Fragment.Admin.AdminAuthorFragment
- com.example.vido_manager_library.Fragment.Admin.AdminAuthorFragment$1
- com.example.vido_manager_library.Fragment.Admin.AdminAuthorFragment$2
-com/example/vido_manager_library/Fragment/Admin/AdminCategoryFragment.java
- com.example.vido_manager_library.Fragment.Admin.AdminCategoryFragment
- com.example.vido_manager_library.Fragment.Admin.AdminCategoryFragment$1
- com.example.vido_manager_library.Fragment.Admin.AdminCategoryFragment$2
+com/example/vido_manager_library/Adapters/ViewPageAdapter.java
+ com.example.vido_manager_library.Adapters.ViewPageAdapter
+com/example/vido_manager_library/Fragment/Admin/AdminBookFragment.java
+ com.example.vido_manager_library.Fragment.Admin.AdminBookFragment
+ com.example.vido_manager_library.Fragment.Admin.AdminBookFragment$1

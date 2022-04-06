@@ -6,19 +6,15 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.vido_manager_library.BuildConfig;
 import com.example.vido_manager_library.Emtity.AccountAdminModify;
-import com.example.vido_manager_library.Emtity.AccountModify;
 import com.example.vido_manager_library.LogSign.StudentLoginActivity;
 import com.example.vido_manager_library.Models.UserLectuters;
-import com.example.vido_manager_library.Models.UserStu;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
@@ -38,7 +34,6 @@ public class AboutAdminFragment extends Fragment {
         List<UserLectuters> mlistAccount = new ArrayList<UserLectuters>();
         UserLectuters infor_sidnup;
         infor_sidnup = getDatabase(mlistAccount);
-        /*Log.e("Looix", infor_sidnup.getHoten());*/
         TextView logOut = view.findViewById(R.id.logOut);
         logOut.setOnClickListener(view -> switchActivity(infor_sidnup));
         return view;

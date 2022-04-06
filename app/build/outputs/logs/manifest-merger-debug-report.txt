@@ -151,7 +151,7 @@ ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main
 	android:name
 		ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:24:13-56
 activity#com.example.vido_manager_library.Activities.Admin.HomeAdminActivity
-ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:26:9-29:54
+ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:26:9-29:55
 	android:windowSoftInputMode
 		ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:29:13-52
 	android:exported

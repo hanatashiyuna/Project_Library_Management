@@ -2644,6 +2644,7 @@ drawable tooltip_frame_light
 drawable transparent_background
 font amarante
 font amita
+font arsenal
 font castoro
 id ALT
 id BOTTOM_END
@@ -2738,7 +2739,6 @@ id aligned
 id all
 id allStates
 id always
-id amountBook
 id androidx_window_activity_scope
 id animateToEnd
 id animateToStart
@@ -2752,6 +2752,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id avt
 id back
 id barrier
 id baseline
@@ -2806,11 +2807,13 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id class_student
 id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
+id code_student
 id collapseActionView
 id compress
 id confirm_button
@@ -2842,6 +2845,14 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id df_add_book_amount
+id df_add_book_id
+id df_add_book_idAuthor
+id df_add_book_idCategory
+id df_add_book_idPC
+id df_add_book_name
+id df_add_book_position
+id df_add_book_year
 id dialog_button
 id dimensions
 id direct
@@ -3040,6 +3051,7 @@ id my_info
 id nameAuthor
 id nameBook
 id name_item
+id name_student
 id nav_controller_view_tag
 id nav_host_fragment_container
 id navigation_bar_item_active_indicator_view
@@ -3224,6 +3236,8 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id title_editText2
+id title_editText3
 id title_template
 id toggle
 id top
@@ -3400,6 +3414,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_add_book
 layout fragment_about
 layout fragment_about_admin
 layout fragment_admin_authors
@@ -3672,6 +3687,7 @@ string qr_code
 string recentAddBook
 string repair
 string returnedBook
+string scanner
 string search
 string search_here
 string search_menu_title

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/df_add_book_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/id_book"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/df_add_book_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_book"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:inputType="text"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/df_add_book_idAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/id_author"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/df_add_book_idCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/id_category"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/df_add_book_idPC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/id_nxb"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/df_add_book_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/namxb"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/df_add_book_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/df_add_book_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/position"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:inputType="numberDecimal"
+        android:importantForAutofill="no" />
+</LinearLayout>
