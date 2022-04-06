@@ -17,6 +17,22 @@ public class Books implements Serializable {
         this.soban = soban;
     }
 
+    /*sachId: 1,
+    masach: "LT1",
+    tensach: "Lập trình C++",
+    tacgiaId: 1,
+    theloaiId: 1,
+    nhaXbid: 1,
+    namXb: 2010,
+    soban: 5,
+    vitriId: 1,
+    img: "null",
+    nhaXb: null,
+    tacgia: null,
+    theloai: null,
+    vitri: null,
+    muons: [ ],*/
+
     public Books(int sachID, String tensach, int tacgiaID, int theloaiID, int nhaxbID, String namxb, int soban, int vitriID) {
         this.sachID = sachID;
         this.tensach = tensach;

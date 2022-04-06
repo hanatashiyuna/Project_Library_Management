@@ -10,6 +10,7 @@ import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
@@ -38,12 +39,12 @@ public interface ApiAuthorAdmin {
     //==============================
     // Update data project upload database
     @PUT("api/tacgias/{id}")
-    Call<Authors> updateDataLecturers(@Path("id") int id, @Body Authors authors);
+    Call<Authors> updateDataAuthorAdmin(@Path("id") int id, @Body Authors authors);
     //==================================
 
     //Delete data and upload database
-    @PUT("api/tacgias/{id}")
-    Call<Authors> deleteDataLecturers(@Path("id") int id);
+    @DELETE("api/tacgias/{id}")
+    Call<Authors> deleteAuthorAdmin(@Path("id") int id);
     //==================================
 
     //Insert data and upload database
