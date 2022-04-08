@@ -10,7 +10,9 @@ import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
@@ -42,12 +44,12 @@ public interface ApiBookAdmin {
     //==================================
 
     //Delete data and upload database
-    @PUT("api/saches/{id}")
+    @DELETE("api/saches/{id}")
     Call<Books> deleteDataBookAdmin(@Path("id") int id);
     //==================================
 
     //Insert data and upload database
-    @PUT("api/saches/{id}")
-    Call<Books> insertDataBookAdmin(@Path("id") int id, @Body Books books);
+    @POST("api/saches")
+    Call<Books> insertDataBookAdmin(@Body Books books);
     //==================================
 }

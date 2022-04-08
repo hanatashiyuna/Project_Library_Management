@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/df_add_namePublisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Nhà Xuất Bản"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/df_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Địa Chỉ"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/df_add_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/df_add_representative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Người Đại Diện"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/df_add_nameAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_author"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/df_add_birthdayAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/birthday"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:importantForAutofill="no"/>
+
+</LinearLayout>

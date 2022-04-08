@@ -5,12 +5,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -44,12 +46,7 @@ public class AdminCategoryFragment extends Fragment {
         mListCategoryAdmin = new ArrayList<>();
         //set button add category
         btn_add = view.findViewById(R.id.addCategory);
-        btn_add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+        btn_add.setOnClickListener(view1 -> showDialog());
 
         RecyclerView listCategoryScreen = view.findViewById(R.id.listview_category);
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(Objects.requireNonNull(getActivity()), DividerItemDecoration.VERTICAL);
@@ -83,5 +80,38 @@ public class AdminCategoryFragment extends Fragment {
             }
         });
 
+    }
+
+    private void showDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(Objects.requireNonNull(getActivity()));
+
+        LayoutInflater inflater = getLayoutInflater();
+        View viewDf = inflater.inflate(R.layout.dialog_add_category, null);
+
+        final EditText edCategory = viewDf.findViewById(R.id.df_add_category);
+
+        builder.setView(viewDf);
+        builder.setTitle("Thêm Tác Giả").setPositiveButton("Lưu", (dialogInterface, i) -> {
+            String mCategory = edCategory.getText().toString().trim();
+
+            if (!mCategory.equals("")) {
+                Categorys categorys = new Categorys(mCategory);
+
+                ApiCategoryAdmin.apicategoryadmin.insertDataCategoryAdmin(categorys).enqueue(new Callback<Categorys>() {
+                    @Override
+                    public void onResponse(Call<Categorys> call, Response<Categorys> response) {
+                        Toast.makeText(getActivity(), "Lưu Thành Công", Toast.LENGTH_SHORT).show();
+                    }
+                    @Override
+                    public void onFailure(Call<Categorys> call, Throwable t) {
+                        Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+            }else {
+                Toast.makeText(getActivity(), "Thiếu Tên Tác Giả Hoặc Ngày Sinh", Toast.LENGTH_SHORT).show();
+            }
+        }).setNegativeButton("Hủy", (dialogInterface, i) -> dialogInterface.dismiss());
+        builder.show();
     }
 }

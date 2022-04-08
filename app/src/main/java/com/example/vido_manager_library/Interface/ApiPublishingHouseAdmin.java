@@ -10,7 +10,9 @@ import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
@@ -41,12 +43,12 @@ public interface ApiPublishingHouseAdmin {
     //==================================
 
     //Delete data and upload database
-    @PUT("api/nhaxbs/{id}")
+    @DELETE("api/nhaxbs/{id}")
     Call<PC> deleteDataPublishingHouseAdmin(@Path("id") int id);
     //==================================
 
     //Insert data and upload database
-    @PUT("api/nhaxbs/{id}")
-    Call<PC> insertDataPublishingHouseAdmin(@Path("id") int id, @Body PC pc);
+    @POST("api/nhaxbs")
+    Call<PC> insertDataPublishingHouseAdmin(@Body PC pc);
     //==================================
 }

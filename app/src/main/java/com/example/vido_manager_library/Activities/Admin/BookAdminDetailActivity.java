@@ -1,22 +1,19 @@
 package com.example.vido_manager_library.Activities.Admin;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Adapters.AuthorAdapter;
-import com.example.vido_manager_library.Fragment.Admin.AdminAuthorFragment;
 import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
-import com.example.vido_manager_library.LogSign.StudentGetNewPassActivity;
+import com.example.vido_manager_library.Interface.ApiCategoryAdmin;
 import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.Models.Categorys;
@@ -24,7 +21,6 @@ import com.example.vido_manager_library.Models.PC;
 import com.example.vido_manager_library.Models.Positions;
 import com.example.vido_manager_library.R;
 
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -42,7 +38,7 @@ public class BookAdminDetailActivity extends AppCompatActivity {
         ImageView imgAdminBook = findViewById(R.id.imgBookAdmin);
         TextView name = findViewById(R.id.nameBook);
         TextView author = findViewById(R.id.author);
-        /**Tiêu đề của file BookAdminDetailActivity*/
+        //Tiêu đề của file BookAdminDetailActivity
         TextView title_editText2 = findViewById(R.id.title_editText2);
         TextView title_editText3 = findViewById(R.id.title_editText3);
         //Nhận Dữ Liệu
@@ -52,9 +48,9 @@ public class BookAdminDetailActivity extends AppCompatActivity {
 
         Bundle bundle = getIntent().getExtras();
 
-        /**xu ly btn delete & repair
+        //xu ly btn delete & repair
         Button btn_delete = findViewById(R.id.btn_delete);
-        Button btn_repair = findViewById(R.id.btn_repair);*/
+        Button btn_repair = findViewById(R.id.btn_repair);
 
         if(bundle == null){
             return;
@@ -67,10 +63,10 @@ public class BookAdminDetailActivity extends AppCompatActivity {
             editText2.setHint(authors.getTentacgia());
             title_editText3.setText("Năm Sinh (yyyy-mm-dd): ");
             editText3.setHint(authors.getNgaysinh());
-            /**btn_repair.setOnClickListener(view -> {
+            btn_repair.setOnClickListener(view -> {
                 String name_author = editText2.getText().toString().trim();
                 String birth_author = editText3.getText().toString().trim();
-                if (!String.valueOf(name_author).equals("") && !String.valueOf(birth_author).equals("")) {
+                if (!name_author.equals("") && !birth_author.equals("")) {
                     authors.setTentacgia(name_author);
                     authors.setNgaysinh(birth_author);
                     ApiAuthorAdmin.apiauthoradmin.updateDataAuthorAdmin(authors.getTacgiaId(), authors).enqueue(new Callback<Authors>() {
@@ -90,8 +86,7 @@ public class BookAdminDetailActivity extends AppCompatActivity {
 
                 }
             });
-            btn_delete.setOnClickListener(view -> {
-                ApiAuthorAdmin.apiauthoradmin.deleteAuthorAdmin(authors.getTacgiaId()).enqueue(new Callback<Authors>() {
+            btn_delete.setOnClickListener(view -> ApiAuthorAdmin.apiauthoradmin.deleteAuthorAdmin(authors.getTacgiaId()).enqueue(new Callback<Authors>() {
                 @Override
                 public void onResponse(Call<Authors> call, Response<Authors> response) {
                     Toast.makeText(BookAdminDetailActivity.this, "Xóa Thành Công", Toast.LENGTH_SHORT).show();
@@ -101,8 +96,7 @@ public class BookAdminDetailActivity extends AppCompatActivity {
                 public void onFailure(Call<Authors> call, Throwable t) {
                     Toast.makeText(BookAdminDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
                 }
-            });
-            });*/
+            }));
         }else if(bundle.containsKey("book_information")){
             Books books = (Books) bundle.get("book_information");
             name.setText(String.format("Tên Sách: %s", books.getTensach()));
@@ -119,7 +113,21 @@ public class BookAdminDetailActivity extends AppCompatActivity {
 
         }else if(bundle.containsKey("books_category")){
             Categorys categorys = (Categorys) bundle.get("books_category");
-            name.setText(String.format("Thể Loại: %s", categorys.getTentheloai()));
+            name.setText(String.format("Thể Loại: %s", categorys.getTheloaiID()));
+
+            btn_delete.setOnClickListener(view -> {
+                ApiCategoryAdmin.apicategoryadmin.deleteDataCategoryAdmin(categorys.getTheloaiID()).enqueue(new Callback<Categorys>() {
+                    @Override
+                    public void onResponse(Call<Categorys> call, Response<Categorys> response) {
+                        Toast.makeText(BookAdminDetailActivity.this, "Xóa Thành Công", Toast.LENGTH_SHORT).show();
+                        switchActivity();
+                    }
+                    @Override
+                    public void onFailure(Call<Categorys> call, Throwable t) {
+                        Toast.makeText(BookAdminDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            });
 
         }else if(bundle.containsKey("account")){
             Authors authors = (Authors) bundle.get("account");

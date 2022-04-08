@@ -3,20 +3,24 @@ package com.example.vido_manager_library.Models;
 import java.io.Serializable;
 
 public class Categorys implements Serializable {
-    private int theloaiID;
+    private int theloaiId;
     private String tentheloai;
 
-    public Categorys(int theloaiID, String tentheloai) {
-        this.theloaiID = theloaiID;
+    public Categorys(int theloaiId, String tentheloai) {
+        this.theloaiId = theloaiId;
+        this.tentheloai = tentheloai;
+    }
+
+    public Categorys(String tentheloai) {
         this.tentheloai = tentheloai;
     }
 
     public int getTheloaiID() {
-        return theloaiID;
+        return theloaiId;
     }
 
-    public void setTheloaiID(int theloaiID) {
-        this.theloaiID = theloaiID;
+    public void setTheloaiID(int theloaiId) {
+        this.theloaiId = theloaiId;
     }
 
     public String getTentheloai() {

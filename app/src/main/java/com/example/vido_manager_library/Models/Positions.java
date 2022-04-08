@@ -13,6 +13,11 @@ public class Positions implements Serializable {
         this.soke = soke;
     }
 
+    public Positions(String tenhang,String soke) {
+        this.tenhang = tenhang;
+        this.soke = soke;
+    }
+
     public int getVitriId() {
         return vitriId;
     }

@@ -10,7 +10,9 @@ import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
@@ -42,12 +44,12 @@ public interface ApiCategoryAdmin {
     //==================================
 
     //Delete data and upload database
-    @PUT("api/theloais/{id}")
+    @DELETE("api/theloais/{id}")
     Call<Categorys> deleteDataCategoryAdmin(@Path("id") int id);
     //==================================
 
     //Insert data and upload database
-    @PUT("api/theloais/{id}")
-    Call<Categorys> insertDataCategoryAdmin(@Path("id") int id, @Body Categorys categorys);
+    @POST("api/theloais")
+    Call<Categorys> insertDataCategoryAdmin(@Body Categorys categorys);
     //==================================
 }

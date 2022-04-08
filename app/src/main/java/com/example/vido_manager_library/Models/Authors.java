@@ -16,6 +16,11 @@ public class Authors implements Serializable {
         this.ngaysinh = ngaysinh;
     }
 
+    public Authors(String tentacgia, String ngaysinh) {
+        this.tentacgia = tentacgia;
+        this.ngaysinh = ngaysinh;
+    }
+
     public int getTacgiaId() {
         return tacgiaId;
     }

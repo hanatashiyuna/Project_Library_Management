@@ -17,6 +17,13 @@ public class PC implements Serializable {
         this.thongtinnguoidaidien = thongtinnguoidaidien;
     }
 
+    public PC(String tenxuatban, String diachi, String email, String thongtinnguoidaidien) {
+        this.tenxuatban = tenxuatban;
+        this.diachi = diachi;
+        this.email = email;
+        this.thongtinnguoidaidien = thongtinnguoidaidien;
+    }
+
     public int getNhaxbID() {
         return nhaxbID;
     }

@@ -2593,6 +2593,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notifications_black_24dp
 drawable logo
+drawable logo_black_white
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2845,6 +2846,8 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id df_add_address
+id df_add_birthdayAuthor
 id df_add_book_amount
 id df_add_book_id
 id df_add_book_idAuthor
@@ -2853,6 +2856,13 @@ id df_add_book_idPC
 id df_add_book_name
 id df_add_book_position
 id df_add_book_year
+id df_add_category
+id df_add_email
+id df_add_nameAuthor
+id df_add_namePublisher
+id df_add_nameRowPosition
+id df_add_representative
+id df_add_selfBookPosition
 id dialog_button
 id dimensions
 id direct
@@ -3414,7 +3424,11 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_add_author
 layout dialog_add_book
+layout dialog_add_category
+layout dialog_add_position
+layout dialog_add_publisher
 layout fragment_about
 layout fragment_about_admin
 layout fragment_admin_authors
@@ -3558,12 +3572,14 @@ string abc_toolbar_collapse_description
 string add
 string adminLog
 string admin_password
+string amount
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
 string avatar
 string back
 string background_infor
+string birthday
 string books
 string borrowBooks
 string borrowingBook
@@ -3584,6 +3600,10 @@ string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string home
 string icon_content_description
+string id_author
+string id_book
+string id_category
+string id_nxb
 string information
 string item_view_role_description
 string log_in
@@ -3674,7 +3694,10 @@ string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
 string my_information
+string name_author
+string name_book
 string name_colleges
+string namxb
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string password_toggle_content_description
@@ -3683,6 +3706,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string position
 string qr_code
 string recentAddBook
 string repair

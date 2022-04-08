@@ -1,9 +1,7 @@
 package com.example.vido_manager_library.Fragment.Admin;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,69 +17,55 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
-import com.example.vido_manager_library.Adapters.AuthorAdapter;
 import com.example.vido_manager_library.Adapters.BooksAdapters;
-import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
 import com.example.vido_manager_library.Interface.ApiBookAdmin;
-import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 /**
- * fragment for admin as home page, book list*/
+ * fragment for admin as home page, book list
+ * code by Yuna
+ */
 
 public class AdminBookFragment extends Fragment {
     /**khởi tạo arraylist*/
     List<Books> mListBooksAdmin;
-
     ImageView btnAddBook;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_admin_books, container, false);
-        /**gọi arraylist vào chương trình*/
+        /** gọi array list */
         mListBooksAdmin = new ArrayList<>();
         //set button add book
         btnAddBook = view.findViewById(R.id.addBook);
-        btnAddBook.setOnClickListener(view1 -> {
-            showDialog();
-        });
+        btnAddBook.setOnClickListener(view1 -> showDialog());
 
         RecyclerView listBookScreen = view.findViewById(R.id.listview_book);
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 3);
         listBookScreen.setLayoutManager(gridLayoutManager);
-        /**Gọi phương thức và truyền tham số RecyclerView*/
+        /** Gọi method và truyền PARAMETER RecyclerView*/
         getListJS(listBookScreen);
         return view;
     }
 
-    private List<Books> getListBooks() {
-        mListBooksAdmin.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
-        mListBooksAdmin.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
-        mListBooksAdmin.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
-        mListBooksAdmin.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
-        mListBooksAdmin.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
-        mListBooksAdmin.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
-        //mListBooksAdmin.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
-        return mListBooksAdmin;
-    }
-
-
     /**Lấy dữ liệu từ api*/
     private void getListJS(RecyclerView listBookScreen) {
-        //Gọi interface api trùng với api mình cần
+        //Gọi interface api trùng với api cần
         ApiBookAdmin.apiBookAdmin.covertBookAdmin().enqueue(new Callback<List<Books>>() {
             @Override
             public void onResponse(Call<List<Books>> call, Response<List<Books>> response) {
                 mListBooksAdmin = response.body();
-                BooksAdapters booksAdapters = new BooksAdapters(getActivity(), getListBooks(), this::onClickGoToDetail);
+                BooksAdapters booksAdapters = new BooksAdapters(getActivity(), mListBooksAdmin, this::onClickGoToDetail);
                 listBookScreen.setAdapter(booksAdapters);
             }
             private void onClickGoToDetail(Books books) {
@@ -101,7 +85,7 @@ public class AdminBookFragment extends Fragment {
 
     //dialog add book
     public void showDialog(){
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        AlertDialog.Builder builder = new AlertDialog.Builder(Objects.requireNonNull(getActivity()));
 
         LayoutInflater inflater = getLayoutInflater();
         View viewDf = inflater.inflate(R.layout.dialog_add_book, null);

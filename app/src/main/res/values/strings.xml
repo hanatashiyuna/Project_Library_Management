@@ -46,4 +46,6 @@
     <string name="namxb">Năm Xuất Bản</string>
     <string name="amount">Số Lượng</string>
     <string name="position">Vị Trí</string>
+    <string name="name_author">Tên Tác Giả</string>
+    <string name="birthday">Năm-Tháng-Ngày</string>
 </resources>

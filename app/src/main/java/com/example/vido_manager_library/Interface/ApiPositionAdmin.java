@@ -10,6 +10,7 @@ import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
@@ -40,12 +41,12 @@ public interface ApiPositionAdmin {
     //==================================
 
     //Delete data and upload database
-    @PUT("api/vitris/{id}")
+    @DELETE("api/vitris/{id}")
     Call<Positions> deleteDataPositionAdmin(@Path("id") int id);
     //==================================
 
     //Insert data and upload database
-    @PUT("api/vitris/{id}")
-    Call<Positions> insertDataPositionAdmin(@Path("id") int id, @Body Positions positions);
+    @PUT("api/vitris")
+    Call<Positions> insertDataPositionAdmin(@Body Positions positions);
     //==================================
 }
