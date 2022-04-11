@@ -188,32 +188,8 @@ public class BookAdminDetailActivity extends AppCompatActivity {
                 }
             }));
 
-        }else if(bundle.containsKey("books_self")){
-            Positions positions = (Positions) bundle.get("books_self");
-
-        }else if(bundle.containsKey("pushing_company")){
-            PC pc = (PC) bundle.get("pushing_company");
-
-        }else if(bundle.containsKey("books_category")){
-            Categorys categorys = (Categorys) bundle.get("books_category");
-
-            btn_delete.setOnClickListener(view -> {
-                ApiCategoryAdmin.apicategoryadmin.deleteDataCategoryAdmin(categorys.getTheloaiID()).enqueue(new Callback<Categorys>() {
-                    @Override
-                    public void onResponse(Call<Categorys> call, Response<Categorys> response) {
-                        Toast.makeText(BookAdminDetailActivity.this, "Xóa Thành Công", Toast.LENGTH_SHORT).show();
-                        switchActivity();
-                    }
-                    @Override
-                    public void onFailure(Call<Categorys> call, Throwable t) {
-                        Toast.makeText(BookAdminDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
-                    }
-                });
-            });
-
-        }else if(bundle.containsKey("account")){
-            Authors authors = (Authors) bundle.get("account");
-
+        }else{
+            Toast.makeText(BookAdminDetailActivity.this, "Hệ Thống Đang Gặp Vấn Đề Vui Lòng Liên Hệ Với Admin", Toast.LENGTH_SHORT).show();
         }
 
         ImageView back =  findViewById(R.id.back);
@@ -279,8 +255,6 @@ public class BookAdminDetailActivity extends AppCompatActivity {
         }
         return IDAuthor;
     }
-
-
 
     public void switchActivity(){
         Intent intent = new Intent(BookAdminDetailActivity.this, HomeAdminActivity.class);
