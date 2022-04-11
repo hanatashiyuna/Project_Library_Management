@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.vido_manager_library.Activities.Admin.AuthorDetailActivity;
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
 import com.example.vido_manager_library.Adapters.AuthorAdapter;
 import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
@@ -147,7 +148,7 @@ public class AdminAuthorFragment extends Fragment {
                 listAuthorScreen.setAdapter(authorAdapters);
             }
             private void onClickGoToDetail(Authors authors) {
-                Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
+                Intent intent = new Intent(getActivity(), AuthorDetailActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("books_informationAuthor", authors);
                 intent.putExtras(bundle);

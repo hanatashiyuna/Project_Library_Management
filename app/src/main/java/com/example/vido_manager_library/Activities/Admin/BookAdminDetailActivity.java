@@ -3,6 +3,8 @@ package com.example.vido_manager_library.Activities.Admin;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,7 +14,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.vido_manager_library.Fragment.Admin.AdminBookFragment;
 import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
+import com.example.vido_manager_library.Interface.ApiBookAdmin;
 import com.example.vido_manager_library.Interface.ApiCategoryAdmin;
 import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.Models.Books;
@@ -28,7 +32,6 @@ import retrofit2.Response;
 
 public class BookAdminDetailActivity extends AppCompatActivity {
 
-
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,15 +39,24 @@ public class BookAdminDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_book_admin_detail);
 
         ImageView imgAdminBook = findViewById(R.id.imgBookAdmin);
-        TextView name = findViewById(R.id.nameBook);
-        TextView author = findViewById(R.id.author);
         //Tiêu đề của file BookAdminDetailActivity
-        TextView title_editText2 = findViewById(R.id.title_editText2);
-        TextView title_editText3 = findViewById(R.id.title_editText3);
+        TextView title_codeBook = findViewById(R.id.title_codeBook);
+        TextView title_nameBook = findViewById(R.id.title_nameBook);
+        TextView title_authorId = findViewById(R.id.title_authorId);
+        TextView title_categoryId = findViewById(R.id.title_categoryId);
+        TextView title_publisherId = findViewById(R.id.title_publisherId);
+        TextView title_pbYear = findViewById(R.id.title_publish_year);
+        TextView title_amount = findViewById(R.id.title_Amount);
+        TextView title_position = findViewById(R.id.title_position);
         //Nhận Dữ Liệu
-        EditText editText2 = findViewById(R.id.editText2);
-        EditText editText3 = findViewById(R.id.editText3);
-
+        EditText ed_codeBook = findViewById(R.id.ed_codeBook);
+        EditText ed_nameBook = findViewById(R.id.ed_nameBook);
+        EditText ed_authorId = findViewById(R.id.Ed_authorId);
+        EditText ed_categoryId = findViewById(R.id.Ed_categoryId);
+        EditText ed_publisherId = findViewById(R.id.Ed_publisherId);
+        EditText ed_pbYear = findViewById(R.id.Ed_publisher_year);
+        EditText ed_amount = findViewById(R.id.Ed_amount);
+        EditText ed_position = findViewById(R.id.Ed_position);
 
         Bundle bundle = getIntent().getExtras();
 
@@ -55,28 +67,29 @@ public class BookAdminDetailActivity extends AppCompatActivity {
         if(bundle == null){
             return;
         }
-        if(bundle.containsKey("books_informationAuthor")){
-            Authors authors = (Authors) bundle.get("books_informationAuthor");
-            name.setText(String.format("Tên: %s", authors.getTentacgia()));
-            /**lấy dữ liệu và cách hoạt động của các chức năng*/
-            title_editText2.setText("Tên Tác Giả: ");
-            editText2.setHint(authors.getTentacgia());
-            title_editText3.setText("Năm Sinh (yyyy-mm-dd): ");
-            editText3.setHint(authors.getNgaysinh());
+        if(bundle.containsKey("book_information")){
+            Books books = (Books) bundle.get("book_information");
+            imgAdminBook.setImageResource(R.drawable.androidprogram);
+            title_codeBook.setText("Mã Sách: ");
+            ed_codeBook.setHint(books.getMasach());
+            title_nameBook.setText("Tên Sách: ");
+            ed_nameBook.setHint(books.getTensach());
+            title_authorId.setText("Tên Sách: ");
+            ed_authorId.setHint(books.getTacgiaID());
             btn_repair.setOnClickListener(view -> {
-                String name_author = editText2.getText().toString().trim();
-                String birth_author = editText3.getText().toString().trim();
-                if (!name_author.equals("") && !birth_author.equals("")) {
-                    authors.setTentacgia(name_author);
-                    authors.setNgaysinh(birth_author);
-                    ApiAuthorAdmin.apiauthoradmin.updateDataAuthorAdmin(authors.getTacgiaId(), authors).enqueue(new Callback<Authors>() {
+                String code_book = ed_codeBook.getText().toString().trim();
+                String name_book = ed_nameBook.getText().toString().trim();
+                if (!code_book.equals("") && !name_book.equals("")) {
+                    books.setTensach(code_book);
+                    books.setMasach(name_book);
+                    ApiBookAdmin.apiBookAdmin.updateDataBookAdmin(books.getSachID(), books).enqueue(new Callback<Books>() {
                         @Override
-                        public void onResponse(Call<Authors> call, Response<Authors> response) {
+                        public void onResponse(Call<Books> call, Response<Books> response) {
                             Toast.makeText(BookAdminDetailActivity.this, "Lưu Thành Công", Toast.LENGTH_SHORT).show();
                             switchActivity();
                         }
                         @Override
-                        public void onFailure(Call<Authors> call, Throwable t) {
+                        public void onFailure(Call<Books> call, Throwable t) {
                             Toast.makeText(BookAdminDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
                         }
                     });
@@ -86,34 +99,26 @@ public class BookAdminDetailActivity extends AppCompatActivity {
 
                 }
             });
-            btn_delete.setOnClickListener(view -> ApiAuthorAdmin.apiauthoradmin.deleteAuthorAdmin(authors.getTacgiaId()).enqueue(new Callback<Authors>() {
+            btn_delete.setOnClickListener(view -> ApiBookAdmin.apiBookAdmin.deleteDataBookAdmin(books.getSachID()).enqueue(new Callback<Books>() {
                 @Override
-                public void onResponse(Call<Authors> call, Response<Authors> response) {
+                public void onResponse(Call<Books> call, Response<Books> response) {
                     Toast.makeText(BookAdminDetailActivity.this, "Xóa Thành Công", Toast.LENGTH_SHORT).show();
                     switchActivity();
                 }
                 @Override
-                public void onFailure(Call<Authors> call, Throwable t) {
+                public void onFailure(Call<Books> call, Throwable t) {
                     Toast.makeText(BookAdminDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
                 }
             }));
-        }else if(bundle.containsKey("book_information")){
-            Books books = (Books) bundle.get("book_information");
-            name.setText(String.format("Tên Sách: %s", books.getTensach()));
-            imgAdminBook.setImageResource(R.drawable.androidprogram);
-            author.setText(String.format("Tác Giả: %s", books.getSachID()));
 
         }else if(bundle.containsKey("books_self")){
             Positions positions = (Positions) bundle.get("books_self");
-            name.setText(String.format("Hàng: %s", positions.getTenhang()));
 
         }else if(bundle.containsKey("pushing_company")){
             PC pc = (PC) bundle.get("pushing_company");
-            name.setText(String.format("NXB: %s", pc.getTenxuatban()));
 
         }else if(bundle.containsKey("books_category")){
             Categorys categorys = (Categorys) bundle.get("books_category");
-            name.setText(String.format("Thể Loại: %s", categorys.getTheloaiID()));
 
             btn_delete.setOnClickListener(view -> {
                 ApiCategoryAdmin.apicategoryadmin.deleteDataCategoryAdmin(categorys.getTheloaiID()).enqueue(new Callback<Categorys>() {
@@ -131,7 +136,6 @@ public class BookAdminDetailActivity extends AppCompatActivity {
 
         }else if(bundle.containsKey("account")){
             Authors authors = (Authors) bundle.get("account");
-            name.setText(String.format("Tên: %s", authors.getTentacgia()));
 
         }
 
@@ -145,6 +149,4 @@ public class BookAdminDetailActivity extends AppCompatActivity {
         Intent intent = new Intent(BookAdminDetailActivity.this, HomeAdminActivity.class);
         startActivity(intent);
     }
-
-
 }

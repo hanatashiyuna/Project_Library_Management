@@ -74,16 +74,16 @@ public class HomeAdminActivity extends AppCompatActivity {
         mBottomNavView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){
                 case R.id.home:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeAdminFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeAdminFragment(), "home").commit();
                     break;
                 case R.id.managerBooks:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new ManagerFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new ManagerFragment(), "managerBook").commit();
                     break;
                 case R.id.managerAccount:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new ManagerAccountFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new ManagerAccountFragment(), "managerAccount").commit();
                     break;
                 case R.id.information:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new AboutAdminFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new AboutAdminFragment(), "about").commit();
                     break;
                 default:
                     return false;
