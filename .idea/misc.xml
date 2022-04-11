@@ -11,6 +11,7 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/border_radius.xml" value="0.290625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/box_shadow.xml" value="0.290625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/corner_radius.xml" value="0.290625" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/ic_baseline_file_upload.xml" value="0.290625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/ic_baseline_home.xml" value="0.290625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/ic_baseline_info.xml" value="0.290625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/ic_baseline_qr_code_scanner.xml" value="0.290625" />
@@ -22,7 +23,8 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_add_author.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_add_book.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_admin.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_book_admin_detail.xml" value="0.24365942028985507" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_author_detail.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_book_admin_detail.xml" value="0.23011120615911035" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_book_detail.xml" value="0.24365942028985507" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_books.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_borrow_books.xml" value="0.27447916666666666" />

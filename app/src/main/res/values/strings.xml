@@ -51,6 +51,10 @@
     <string name="select_author">Chọn Tác Giả</string>
     <string name="searchThreeDot">Tìm Kiếm..</string>
     <string name="code_book">Mã Sách</string>
+    <string name="gone_back">gone_back</string>
+    <string name="star">star</string>
+    <string name="image_book">imageBook</string>
+    <string name="none">none</string>
 
     <string-array name="book_list">
         <item></item>

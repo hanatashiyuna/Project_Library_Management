@@ -24,6 +24,10 @@
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable-v24\\foreground_design.xml"
     },
     {
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_file_upload.xml.flat",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_file_upload.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
@@ -74,6 +78,10 @@
     {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_arrow_drop_up.xml.flat",
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_arrow_drop_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_author_detail.xml.flat",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_author_detail.xml"
     },
     {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_dialog_add_book.xml.flat",
@@ -328,10 +336,6 @@
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_book_admin_detail.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_bglogsign.jpg.flat",
-        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\bglogsign.jpg"
-    },
-    {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_manager_return_books.xml.flat",
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager_return_books.xml"
     },
@@ -434,6 +438,10 @@
     {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_nav_menu.xml.flat",
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_log_sign.jpg.flat",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\bg_log_sign.jpg"
     },
     {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_dashboard_24.xml.flat",

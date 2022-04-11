@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LogSign.StudentForgotActivity"
-    android:background="@drawable/bglogsign">
+    android:background="@drawable/bg_log_sign">
 
     <TextView
         android:id="@+id/text"

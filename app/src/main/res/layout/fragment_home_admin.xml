@@ -3,18 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.Admin.HomeAdminFragment">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/admin_AddInfor"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"/>
 
     <androidx.viewpager2.widget.ViewPager2
         android:layout_marginTop="50dp"
         android:id="@+id/admin_viewpagerAddInfor"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
-
 </FrameLayout>
