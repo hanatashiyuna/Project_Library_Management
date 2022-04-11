@@ -19,6 +19,9 @@
             android:name=".Activities.Admin.AuthorDetailActivity"
             android:exported="false" />
         <activity
+            android:name=".Activities.Admin.BorrowDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.Admin.BookAdminDetailActivity"
             android:exported="false" />
         <activity

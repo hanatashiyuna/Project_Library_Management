@@ -50,6 +50,9 @@
             android:name="com.example.vido_manager_library.Activities.Admin.AuthorDetailActivity"
             android:exported="false" />
         <activity
+            android:name="com.example.vido_manager_library.Activities.Admin.BorrowDetailActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity"
             android:exported="false" />
         <activity

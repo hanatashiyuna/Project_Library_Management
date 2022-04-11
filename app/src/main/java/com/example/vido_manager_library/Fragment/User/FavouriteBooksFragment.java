@@ -40,7 +40,7 @@ public class FavouriteBooksFragment extends Fragment {
     private List<Books> getListBooks() {
         List<Books> list = new ArrayList<>();
         //First
-        list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        /*list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
         list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
         list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
         list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
@@ -61,7 +61,7 @@ public class FavouriteBooksFragment extends Fragment {
         list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
         list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
         list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
-        list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));*/
 
         return list;
     }

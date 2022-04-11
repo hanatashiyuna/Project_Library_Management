@@ -130,7 +130,7 @@ public class AdminBookFragment extends Fragment {
 
     private void getListJS(RecyclerView listBookScreen) {
         //Gọi interface api trùng với api cần
-        ApiBookAdmin.apiBookAdmin.covertBookAdmin().enqueue(new Callback<List<Books>>() {
+        ApiBookAdmin.apiBookAdmin.covertBookAdmin("").enqueue(new Callback<List<Books>>() {
             @Override
             public void onResponse(Call<List<Books>> call, Response<List<Books>> response) {
                 mListBooksAdmin = response.body();

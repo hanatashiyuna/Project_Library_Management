@@ -41,12 +41,12 @@ public class ReturnedBooksFragment extends Fragment {
     }
     private List<Books> getListBooks() {
         List<Books> list = new ArrayList<>();
+        /*list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
         list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
         list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
         list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
         list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
-        list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
-        list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));
+        list.add(new Books(202,"Android Program", 1, 5, 3, "2003", 5, 1));*/
 
         return list;
     }

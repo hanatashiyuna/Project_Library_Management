@@ -45,7 +45,7 @@
             android:textColorHint="@color/gray"
             android:inputType="text"
             android:background="@android:drawable/editbox_background"
-            app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down"
+            app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24"
             android:importantForAutofill="no" />
 
         <ScrollView
@@ -68,7 +68,7 @@
             android:layout_gravity="center_vertical"
             android:textColorHint="@color/gray"
             android:background="@android:drawable/editbox_background"
-            app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down" />
+            app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -91,7 +91,7 @@
             android:importantForAutofill="no"
             android:inputType="text"
             android:background="@android:drawable/editbox_background"
-            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down"/>
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -138,7 +138,7 @@
             android:inputType="text"
             android:importantForAutofill="no"
             android:background="@android:drawable/editbox_background"
-            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down"/>
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"/>
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

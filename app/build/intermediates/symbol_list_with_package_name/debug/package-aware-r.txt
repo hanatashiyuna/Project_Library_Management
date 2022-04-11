@@ -2561,8 +2561,7 @@ drawable ic_baseline_account_circle
 drawable ic_baseline_add
 drawable ic_baseline_arrow_back
 drawable ic_baseline_arrow_back_ios_new
-drawable ic_baseline_arrow_drop_down
-drawable ic_baseline_arrow_drop_up
+drawable ic_baseline_arrow_drop_down_24
 drawable ic_baseline_dashboard_24
 drawable ic_baseline_file_upload
 drawable ic_baseline_home
@@ -2573,6 +2572,7 @@ drawable ic_baseline_keyboard_arrow_right_24
 drawable ic_baseline_library_books_24
 drawable ic_baseline_menu_book
 drawable ic_baseline_notifications_24
+drawable ic_baseline_playlist_add_24
 drawable ic_baseline_qr_code_scanner
 drawable ic_baseline_remove_red_eye
 drawable ic_baseline_search
@@ -2598,7 +2598,6 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notifications_black_24dp
 drawable logo
-drawable logo_black_white
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2792,8 +2791,10 @@ id btn_ForgotPassAdmin
 id btn_Login
 id btn_LoginAdmin
 id btn_LoginStu
+id btn_add_new_borrow
 id btn_delete
 id btn_repair
+id btn_save_borow
 id btn_signup
 id buttonPanel
 id cache_measures
@@ -2819,7 +2820,9 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id class_borrow
 id class_student
+id classcard_borrow
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -2945,7 +2948,9 @@ id honorRequest
 id horizontal_only
 id icon
 id icon_group
+id id_borrow
 id id_item
+id idcard_borrow
 id ifRoom
 id ignore
 id ignoreRequest
@@ -2999,6 +3004,7 @@ id line3
 id linear
 id listMode
 id list_item
+id list_view_borrow
 id listview_author
 id listview_book
 id listview_category
@@ -3075,8 +3081,10 @@ id multiply
 id my_info
 id nameAuthor
 id nameBook
+id name_borrow
 id name_item
 id name_student
+id namecard_borrow
 id nav_controller_view_tag
 id nav_host_fragment_container
 id navigation_bar_item_active_indicator_view
@@ -3416,6 +3424,7 @@ layout abc_tooltip
 layout activity_author_detail
 layout activity_book_admin_detail
 layout activity_book_detail
+layout activity_borrow_detail
 layout activity_create_qrcode
 layout activity_home_admin
 layout activity_information
@@ -3746,7 +3755,6 @@ string search_menu_title
 string select_author
 string star
 string status_bar_notification_info_overflow
-string student_borrow
 string title_activity_home_admin
 string title_activity_home_user
 string title_dashboard

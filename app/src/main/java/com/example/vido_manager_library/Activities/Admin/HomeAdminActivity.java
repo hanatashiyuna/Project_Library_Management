@@ -7,8 +7,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
+import com.example.vido_manager_library.Activities.User.MainActivity;
 import com.example.vido_manager_library.DataBase.DB_Helper;
 import com.example.vido_manager_library.Emtity.AccountAdminModify;
 import com.example.vido_manager_library.Emtity.AccountModify;
@@ -17,6 +19,8 @@ import com.example.vido_manager_library.Fragment.Admin.HomeAdminFragment;
 import com.example.vido_manager_library.Fragment.Admin.ManagerAccountFragment;
 import com.example.vido_manager_library.Fragment.Admin.ManagerFragment;
 import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
+import com.example.vido_manager_library.Interface.ApiService;
+import com.example.vido_manager_library.LogSign.StudentLoginActivity;
 import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.Models.UserLectuters;
 import com.example.vido_manager_library.Models.UserStu;
@@ -37,6 +41,8 @@ import retrofit2.Response;
 /*
  * Activity Basic for Administrator*/
 public class HomeAdminActivity extends AppCompatActivity {
+    private List<UserStu> mListUser;
+    private UserStu mUser;
     @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +71,7 @@ public class HomeAdminActivity extends AppCompatActivity {
             intentIntegrator.setCaptureActivity(Capture.class);
             //initiate scan
             intentIntegrator.initiateScan();
+
         });
 
         //set bottom navigation menu
@@ -102,12 +109,9 @@ public class HomeAdminActivity extends AppCompatActivity {
             /*
              * khi content = null: khoi tao alert dialog
              */
+            String qrcode = String.valueOf(intentResult.getContents());
+            getListUser(qrcode);
 
-            AlertDialog.Builder builder = new AlertDialog.Builder(HomeAdminActivity.this);
-            builder.setTitle("Kết quả");
-            builder.setMessage(intentResult.getContents());
-            builder.setPositiveButton("OK", (dialogInterface, i) -> dialogInterface.dismiss());
-            builder.show();
         }else{
             /*
              * khi content ko null: in ra 1 ket qua
@@ -115,6 +119,56 @@ public class HomeAdminActivity extends AppCompatActivity {
             Toast.makeText(getApplication(), "Bạn vẫn chưa scan thứ gì...", Toast.LENGTH_SHORT).show();
         }
     }
+    private void getListUser(String qrcode) {
+        ApiService.apiService.covertUserStu().enqueue(new Callback<List<UserStu>>() {
+            @Override
+            public void onResponse(Call<List<UserStu>> call, Response<List<UserStu>> response) {
+                mListUser = response.body();
+                QrTreatment(qrcode);
+            }
+            @Override
+            public void onFailure(Call<List<UserStu>> call, Throwable t) {
+                Toast.makeText(HomeAdminActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+    private void QrTreatment(String qrcode) {
+        String qrtreatment = qrcode.toString().trim();
 
+        if (!qrtreatment.equals("")) {
+            if (mListUser == null || mListUser.isEmpty()){
+                return;
+            }
+
+            boolean isHasUser = false;
+
+            for (UserStu userStu: mListUser) {
+                //set password
+                if (qrtreatment.equals(userStu.getMasosinhvien())){
+                    isHasUser = true;
+                    mUser = userStu;
+                    mListUser = null;
+                    break;
+                }
+            }
+
+
+            if (isHasUser) {
+                Intent intent = new Intent(HomeAdminActivity.this, BorrowDetailActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("infor_userLogin", mUser);
+                intent.putExtras(bundle);
+                startActivity(intent);
+                finish();
+            }else {
+                Toast.makeText(HomeAdminActivity.this, "Sai Mật Khẩu Hoặc Tài Khoản", Toast.LENGTH_SHORT).show();
+            }
+
+        }else {
+            Toast.makeText(getApplicationContext(), "Sai Tài Khoản Hoặc Mật Khẩu.", Toast.LENGTH_SHORT).show();
+
+        }
+
+    }
 
 }
