@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
+import com.example.vido_manager_library.Activities.Admin.PositionDetailActivity;
 import com.example.vido_manager_library.Adapters.AuthorAdapter;
 import com.example.vido_manager_library.Adapters.PositionAdapter;
 import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
@@ -86,7 +87,7 @@ public class AdminPositionFragment extends Fragment {
                 listPositionsScreen.setAdapter(positionAdapter);
             }
             private void onClickGoToDetail(Positions positions) {
-                Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
+                Intent intent = new Intent(getActivity(), PositionDetailActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("books_self", positions);
                 intent.putExtras(bundle);

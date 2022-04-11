@@ -130,7 +130,7 @@ public class AdminBookFragment extends Fragment {
 
     private void getListJS(RecyclerView listBookScreen) {
         //Gọi interface api trùng với api cần
-        ApiBookAdmin.apiBookAdmin.covertBookAdmin("").enqueue(new Callback<List<Books>>() {
+        ApiBookAdmin.apiBookAdmin.convertBookOriginalAdmin().enqueue(new Callback<List<Books>>() {
             @Override
             public void onResponse(Call<List<Books>> call, Response<List<Books>> response) {
                 mListBooksAdmin = response.body();
@@ -229,7 +229,6 @@ public class AdminBookFragment extends Fragment {
                 Toast.makeText(getActivity(), "Thiếu Tên Tác Giả Hoặc Ngày Sinh", Toast.LENGTH_SHORT).show();
             }
 
-            //mListBooksAdmin.add(new Books(nameBook, idAuthor, idCategory, publisher, year, amount, position));
         }).setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.dismiss());
         builder.show();
     }

@@ -2561,7 +2561,9 @@ drawable ic_baseline_account_circle
 drawable ic_baseline_add
 drawable ic_baseline_arrow_back
 drawable ic_baseline_arrow_back_ios_new
+drawable ic_baseline_arrow_drop_down
 drawable ic_baseline_arrow_drop_down_24
+drawable ic_baseline_arrow_drop_up
 drawable ic_baseline_dashboard_24
 drawable ic_baseline_file_upload
 drawable ic_baseline_home
@@ -2598,6 +2600,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notifications_black_24dp
 drawable logo
+drawable logo_black_white
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2898,6 +2901,15 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id ed_address
+id ed_bookSelf
+id ed_category
+id ed_codeBook
+id ed_email
+id ed_last
+id ed_nameBook
+id ed_namePosition
+id ed_namePublisher
 id editText
 id editText2
 id editText3
@@ -3016,6 +3028,7 @@ id log_out_btn
 id logo
 id ltr
 id lv_author
+id lv_authorName
 id lv_category
 id lv_position
 id lv_publisher
@@ -3156,6 +3169,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollViewAuthor
 id scrollable
 id search_badge
 id search_bar
@@ -3267,10 +3281,19 @@ id time
 id title
 id titleDividerNoCustom
 id title_Amount
+id title_address
 id title_authorId
+id title_bookSelf
 id title_categoryId
+id title_codeBook
 id title_editText2
 id title_editText3
+id title_email
+id title_last
+id title_nameBook
+id title_nameCategory
+id title_namePosition
+id title_namePublisher
 id title_position
 id title_publish_year
 id title_publisherId
@@ -3425,6 +3448,7 @@ layout activity_author_detail
 layout activity_book_admin_detail
 layout activity_book_detail
 layout activity_borrow_detail
+layout activity_category_detail
 layout activity_create_qrcode
 layout activity_home_admin
 layout activity_information
@@ -3432,6 +3456,8 @@ layout activity_lecturers_forgot
 layout activity_lecturers_get_new_pass
 layout activity_lecturers_login
 layout activity_main
+layout activity_position_detail
+layout activity_publisher_detail
 layout activity_student_forgot
 layout activity_student_get_new_pass
 layout activity_student_login
@@ -3755,6 +3781,7 @@ string search_menu_title
 string select_author
 string star
 string status_bar_notification_info_overflow
+string student_borrow
 string title_activity_home_admin
 string title_activity_home_user
 string title_dashboard

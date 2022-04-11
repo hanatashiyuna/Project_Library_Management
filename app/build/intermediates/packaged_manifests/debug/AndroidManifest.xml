@@ -47,6 +47,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.VIDO_Manager_Library" >
         <activity
+            android:name="com.example.vido_manager_library.Activities.Admin.PublisherDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.vido_manager_library.Activities.Admin.PositionDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.vido_manager_library.Activities.Admin.CategoryDetailActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.vido_manager_library.Activities.Admin.AuthorDetailActivity"
             android:exported="false" />
         <activity
@@ -54,7 +63,8 @@
             android:exported="false" />
         <activity
             android:name="com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.example.vido_manager_library.Activities.User.BookDetailActivity"
             android:exported="false" />

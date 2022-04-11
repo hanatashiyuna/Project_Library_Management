@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
+import com.example.vido_manager_library.Activities.Admin.PublisherDetailActivity;
 import com.example.vido_manager_library.Adapters.PCAdapter;
 import com.example.vido_manager_library.Interface.ApiPublishingHouseAdmin;
 import com.example.vido_manager_library.Interface.ApiService;
@@ -82,7 +83,7 @@ public class AdminPCFragment extends Fragment {
                 listPCScreen.setAdapter(pcAdapter);
             }
             private void onClickGoToDetail(PC pc) {
-                Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
+                Intent intent = new Intent(getActivity(), PublisherDetailActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("pushing_company", pc);
                 intent.putExtras(bundle);

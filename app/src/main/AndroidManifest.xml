@@ -16,6 +16,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VIDO_Manager_Library">
         <activity
+            android:name=".Activities.Admin.PublisherDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Admin.PositionDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Admin.CategoryDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.Admin.AuthorDetailActivity"
             android:exported="false" />
         <activity
@@ -23,7 +32,8 @@
             android:exported="false" />
         <activity
             android:name=".Activities.Admin.BookAdminDetailActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".Activities.User.BookDetailActivity"
             android:exported="false" />

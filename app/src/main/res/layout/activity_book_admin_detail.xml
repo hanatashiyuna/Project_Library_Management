@@ -135,6 +135,20 @@
             android:inputType="text"
             android:importantForAutofill="no"/>
 
+        <ScrollView
+            android:id="@+id/scrollViewAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ed_authorId">
+
+            <ListView
+                android:id="@+id/lv_authorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
         <TextView
             android:id="@+id/title_categoryId"
             android:layout_width="match_parent"
@@ -148,7 +162,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Ed_authorId" />
+            app:layout_constraintTop_toBottomOf="@+id/scrollViewAuthor" />
 
         <EditText
             android:id="@+id/Ed_categoryId"

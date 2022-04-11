@@ -20,6 +20,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
+import com.example.vido_manager_library.Activities.Admin.CategoryDetailActivity;
 import com.example.vido_manager_library.Adapters.AuthorAdapter;
 import com.example.vido_manager_library.Adapters.CategoryAdapter;
 import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
@@ -84,7 +85,7 @@ public class AdminCategoryFragment extends Fragment {
                 listCategoryScreen.setAdapter(categoryAdapter);
             }
             private void onClickGoToDetail(Categorys categorys) {
-                Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
+                Intent intent = new Intent(getActivity(), CategoryDetailActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("books_category", categorys);
                 intent.putExtras(bundle);
