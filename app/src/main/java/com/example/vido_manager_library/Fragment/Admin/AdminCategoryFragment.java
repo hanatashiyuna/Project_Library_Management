@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -38,6 +39,8 @@ import retrofit2.Response;
 public class AdminCategoryFragment extends Fragment {
     List<Categorys> mListCategoryAdmin;
     ImageView btn_add;
+    SearchView searchViewCategory;
+    //private static String searchCategory = "";
 
     @Nullable
     @Override
@@ -54,6 +57,20 @@ public class AdminCategoryFragment extends Fragment {
         listCategoryScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
         listCategoryScreen.addItemDecoration(itemDecoration);
         getListJS(listCategoryScreen);
+
+        searchViewCategory = view.findViewById(R.id.search_inputcategory);
+        /*searchViewCategory.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                //searchCategory = new Text;
+                return true;
+            }
+        });*/
 
         return view;
     }
@@ -91,7 +108,7 @@ public class AdminCategoryFragment extends Fragment {
         final EditText edCategory = viewDf.findViewById(R.id.df_add_category);
 
         builder.setView(viewDf);
-        builder.setTitle("Thêm Tác Giả").setPositiveButton("Lưu", (dialogInterface, i) -> {
+        builder.setTitle("Thêm Thể Loại").setPositiveButton("Lưu", (dialogInterface, i) -> {
             String mCategory = edCategory.getText().toString().trim();
 
             if (!mCategory.equals("")) {

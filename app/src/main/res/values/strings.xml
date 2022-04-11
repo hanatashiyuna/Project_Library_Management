@@ -48,4 +48,11 @@
     <string name="position">Vị Trí</string>
     <string name="name_author">Tên Tác Giả</string>
     <string name="birthday">Năm-Tháng-Ngày</string>
+    <string name="select_author">Chọn Tác Giả</string>
+    <string name="searchThreeDot">Tìm Kiếm..</string>
+    <string name="code_book">Mã Sách</string>
+
+    <string-array name="book_list">
+        <item></item>
+    </string-array>
 </resources>

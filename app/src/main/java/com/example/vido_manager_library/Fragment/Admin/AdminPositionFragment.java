@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -41,6 +42,8 @@ import retrofit2.Response;
 public class AdminPositionFragment extends Fragment {
     List<Positions> mListPositionsAdmin;
     ImageView btn_add;
+    SearchView searchViewPosition;
+    //private static String searchPosition = "";
 
     @Nullable
     @Override
@@ -57,6 +60,20 @@ public class AdminPositionFragment extends Fragment {
         listPositionsScreen.setLayoutManager(new LinearLayoutManager(getActivity()));
         listPositionsScreen.addItemDecoration(itemDecoration);
         getListJS(listPositionsScreen);
+
+        searchViewPosition = view.findViewById(R.id.search_inputposition);
+        /*searchViewPosition.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                //searchPosition = new Text;
+                return true;
+            }
+        });*/
         return view;
     }
 

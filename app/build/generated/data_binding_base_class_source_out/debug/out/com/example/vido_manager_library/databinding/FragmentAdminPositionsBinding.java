@@ -4,11 +4,11 @@ package com.example.vido_manager_library.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -28,19 +28,15 @@ public final class FragmentAdminPositionsBinding implements ViewBinding {
   public final RecyclerView listviewPositions;
 
   @NonNull
-  public final EditText searchInputposition;
-
-  @NonNull
-  public final ImageView searchOutputposition;
+  public final SearchView searchInputposition;
 
   private FragmentAdminPositionsBinding(@NonNull LinearLayout rootView,
       @NonNull ImageView addPosition, @NonNull RecyclerView listviewPositions,
-      @NonNull EditText searchInputposition, @NonNull ImageView searchOutputposition) {
+      @NonNull SearchView searchInputposition) {
     this.rootView = rootView;
     this.addPosition = addPosition;
     this.listviewPositions = listviewPositions;
     this.searchInputposition = searchInputposition;
-    this.searchOutputposition = searchOutputposition;
   }
 
   @Override
@@ -83,19 +79,13 @@ public final class FragmentAdminPositionsBinding implements ViewBinding {
       }
 
       id = R.id.search_inputposition;
-      EditText searchInputposition = ViewBindings.findChildViewById(rootView, id);
+      SearchView searchInputposition = ViewBindings.findChildViewById(rootView, id);
       if (searchInputposition == null) {
         break missingId;
       }
 
-      id = R.id.search_outputposition;
-      ImageView searchOutputposition = ViewBindings.findChildViewById(rootView, id);
-      if (searchOutputposition == null) {
-        break missingId;
-      }
-
       return new FragmentAdminPositionsBinding((LinearLayout) rootView, addPosition,
-          listviewPositions, searchInputposition, searchOutputposition);
+          listviewPositions, searchInputposition);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

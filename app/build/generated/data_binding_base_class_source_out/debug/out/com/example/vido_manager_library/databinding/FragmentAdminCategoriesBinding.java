@@ -4,9 +4,9 @@ package com.example.vido_manager_library.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.SearchView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -28,19 +28,15 @@ public final class FragmentAdminCategoriesBinding implements ViewBinding {
   public final RecyclerView listviewCategory;
 
   @NonNull
-  public final EditText searchInputcategory;
-
-  @NonNull
-  public final ImageView searchOutputcategory;
+  public final SearchView searchInputcategory;
 
   private FragmentAdminCategoriesBinding(@NonNull LinearLayout rootView,
       @NonNull ImageView addCategory, @NonNull RecyclerView listviewCategory,
-      @NonNull EditText searchInputcategory, @NonNull ImageView searchOutputcategory) {
+      @NonNull SearchView searchInputcategory) {
     this.rootView = rootView;
     this.addCategory = addCategory;
     this.listviewCategory = listviewCategory;
     this.searchInputcategory = searchInputcategory;
-    this.searchOutputcategory = searchOutputcategory;
   }
 
   @Override
@@ -83,19 +79,13 @@ public final class FragmentAdminCategoriesBinding implements ViewBinding {
       }
 
       id = R.id.search_inputcategory;
-      EditText searchInputcategory = ViewBindings.findChildViewById(rootView, id);
+      SearchView searchInputcategory = ViewBindings.findChildViewById(rootView, id);
       if (searchInputcategory == null) {
         break missingId;
       }
 
-      id = R.id.search_outputcategory;
-      ImageView searchOutputcategory = ViewBindings.findChildViewById(rootView, id);
-      if (searchOutputcategory == null) {
-        break missingId;
-      }
-
       return new FragmentAdminCategoriesBinding((LinearLayout) rootView, addCategory,
-          listviewCategory, searchInputcategory, searchOutputcategory);
+          listviewCategory, searchInputcategory);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

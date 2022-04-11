@@ -4,11 +4,11 @@ package com.example.vido_manager_library.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -28,19 +28,15 @@ public final class FragmentAdminPcBinding implements ViewBinding {
   public final RecyclerView listviewPc;
 
   @NonNull
-  public final EditText searchInputpc;
-
-  @NonNull
-  public final ImageView searchOutputpc;
+  public final SearchView searchInputpc;
 
   private FragmentAdminPcBinding(@NonNull LinearLayout rootView,
       @NonNull ImageView addPushingCompany, @NonNull RecyclerView listviewPc,
-      @NonNull EditText searchInputpc, @NonNull ImageView searchOutputpc) {
+      @NonNull SearchView searchInputpc) {
     this.rootView = rootView;
     this.addPushingCompany = addPushingCompany;
     this.listviewPc = listviewPc;
     this.searchInputpc = searchInputpc;
-    this.searchOutputpc = searchOutputpc;
   }
 
   @Override
@@ -83,19 +79,13 @@ public final class FragmentAdminPcBinding implements ViewBinding {
       }
 
       id = R.id.search_inputpc;
-      EditText searchInputpc = ViewBindings.findChildViewById(rootView, id);
+      SearchView searchInputpc = ViewBindings.findChildViewById(rootView, id);
       if (searchInputpc == null) {
         break missingId;
       }
 
-      id = R.id.search_outputpc;
-      ImageView searchOutputpc = ViewBindings.findChildViewById(rootView, id);
-      if (searchOutputpc == null) {
-        break missingId;
-      }
-
       return new FragmentAdminPcBinding((LinearLayout) rootView, addPushingCompany, listviewPc,
-          searchInputpc, searchOutputpc);
+          searchInputpc);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

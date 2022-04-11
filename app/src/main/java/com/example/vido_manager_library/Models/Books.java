@@ -3,14 +3,15 @@ package com.example.vido_manager_library.Models;
 import java.io.Serializable;
 
 public class Books implements Serializable {
-    private int sachID;
+    private int sachId;
+    private String masach;
     private String tensach;
-    private int tacgiaID;
-    private int theloaiID;
-    private int nhaxbID;
-    private String namxb;
+    private int tacgiaId;
+    private int theloaiId;
+    private int nhaXbid;
+    private String namXb;
     private int soban;
-    private int vitriID;
+    private int vitriId;
 
     public Books(String tensach, int soban) {
         this.tensach = tensach;
@@ -33,23 +34,34 @@ public class Books implements Serializable {
     vitri: null,
     muons: [ ],*/
 
-    public Books(int sachID, String tensach, int tacgiaID, int theloaiID, int nhaxbID, String namxb, int soban, int vitriID) {
-        this.sachID = sachID;
+    public Books(int sachId, String tensach, int tacgiaID, int theloaiID, int nhaxbID, String namxb, int soban, int vitriID) {
+        this.sachId = sachId;
         this.tensach = tensach;
-        this.tacgiaID = tacgiaID;
-        this.theloaiID = theloaiID;
-        this.nhaxbID = nhaxbID;
-        this.namxb = namxb;
+        this.tacgiaId = tacgiaID;
+        this.theloaiId = theloaiID;
+        this.nhaXbid = nhaxbID;
+        this.namXb = namxb;
         this.soban = soban;
-        this.vitriID = vitriID;
+        this.vitriId = vitriID;
+    }
+
+    public Books(String masach, String tensach, int tacgiaID, int theloaiID, int nhaxbID, String namxb, int soban, int vitriID) {
+        this.masach = masach;
+        this.tensach = tensach;
+        this.tacgiaId = tacgiaID;
+        this.theloaiId = theloaiID;
+        this.nhaXbid = nhaxbID;
+        this.namXb = namxb;
+        this.soban = soban;
+        this.vitriId = vitriID;
     }
 
     public int getSachID() {
-        return sachID;
+        return sachId;
     }
 
     public void setSachID(int sachID) {
-        this.sachID = sachID;
+        this.sachId = sachID;
     }
 
     public String getTensach() {
@@ -61,35 +73,35 @@ public class Books implements Serializable {
     }
 
     public int getTacgiaID() {
-        return tacgiaID;
+        return tacgiaId;
     }
 
     public void setTacgiaID(int tacgiaID) {
-        this.tacgiaID = tacgiaID;
+        this.tacgiaId = tacgiaID;
     }
 
     public int getTheloaiID() {
-        return theloaiID;
+        return theloaiId;
     }
 
     public void setTheloaiID(int theloaiID) {
-        this.theloaiID = theloaiID;
+        this.theloaiId = theloaiID;
     }
 
     public int getNhaxbID() {
-        return nhaxbID;
+        return nhaXbid;
     }
 
     public void setNhaxbID(int nhaxbID) {
-        this.nhaxbID = nhaxbID;
+        this.nhaXbid = nhaxbID;
     }
 
     public String getNamxb() {
-        return namxb;
+        return namXb;
     }
 
     public void setNamxb(String namxb) {
-        this.namxb = namxb;
+        this.namXb = namxb;
     }
 
     public int getSoban() {
@@ -101,10 +113,18 @@ public class Books implements Serializable {
     }
 
     public int getVitriID() {
-        return vitriID;
+        return vitriId;
     }
 
     public void setVitriID(int vitriID) {
-        this.vitriID = vitriID;
+        this.vitriId = vitriID;
+    }
+
+    public String getMasach() {
+        return masach;
+    }
+
+    public void setMasach(String masach) {
+        this.masach = masach;
     }
 }

@@ -1,87 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/logo_black_white"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/df_add_book_id"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/id_book"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray"
-        android:importantForAutofill="no"
-        android:inputType="numberDecimal" />
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/df_add_book_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/name_book"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray"
-        android:inputType="text"
-        android:importantForAutofill="no" />
+        <EditText
+            android:id="@+id/df_add_code_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/code_book"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:importantForAutofill="no"/>
+        <EditText
+            android:id="@+id/df_add_book_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_book"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="text"
+            android:padding="12dp"
+            android:importantForAutofill="no"
+            android:background="@android:drawable/editbox_background"/>
 
-    <EditText
-        android:id="@+id/df_add_book_idAuthor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/id_author"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray"
-        android:importantForAutofill="no"
-        android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/df_list_book_idAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_author"
+            android:padding="12dp"
+            android:layout_gravity="center_vertical"
+            android:textColorHint="@color/gray"
+            android:inputType="text"
+            android:background="@android:drawable/editbox_background"
+            app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down"
+            android:importantForAutofill="no" />
 
-    <EditText
-        android:id="@+id/df_add_book_idCategory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/id_category"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray"
-        android:importantForAutofill="no"
-        android:inputType="numberDecimal" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:fadeScrollbars="true">
+            <ListView
+                android:id="@+id/lv_author"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+        </ScrollView>
 
-    <EditText
-        android:id="@+id/df_add_book_idPC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/id_nxb"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray"
-        android:importantForAutofill="no"
-        android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/df_add_book_idCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/id_category"
+            android:padding="12dp"
+            android:layout_gravity="center_vertical"
+            android:textColorHint="@color/gray"
+            android:background="@android:drawable/editbox_background"
+            app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down" />
 
-    <EditText
-        android:id="@+id/df_add_book_year"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/namxb"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray"
-        android:importantForAutofill="no"
-        android:inputType="text" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true">
+            <ListView
+                android:id="@+id/lv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
 
-    <EditText
-        android:id="@+id/df_add_book_amount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/amount"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray"
-        android:importantForAutofill="no"
-        android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/df_add_book_idPC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="@string/id_nxb"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:background="@android:drawable/editbox_background"
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down"/>
 
-    <EditText
-        android:id="@+id/df_add_book_position"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/position"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray"
-        android:inputType="numberDecimal"
-        android:importantForAutofill="no" />
-</LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true">
+            <ListView
+                android:id="@+id/lv_publisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+
+        <EditText
+            android:id="@+id/df_add_book_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="@string/namxb"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:background="@android:drawable/editbox_background"/>
+
+        <EditText
+            android:id="@+id/df_add_book_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="@string/amount"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background"/>
+
+        <EditText
+            android:id="@+id/df_add_book_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="@string/position"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:background="@android:drawable/editbox_background"
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true">
+            <ListView
+                android:id="@+id/lv_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+    </LinearLayout>
+</ScrollView>

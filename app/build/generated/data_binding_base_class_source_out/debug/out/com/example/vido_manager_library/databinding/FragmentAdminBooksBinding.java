@@ -4,11 +4,11 @@ package com.example.vido_manager_library.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -28,19 +28,14 @@ public final class FragmentAdminBooksBinding implements ViewBinding {
   public final RecyclerView listviewBook;
 
   @NonNull
-  public final EditText searchInputbook;
-
-  @NonNull
-  public final ImageView searchOutputbook;
+  public final SearchView searchInputbook;
 
   private FragmentAdminBooksBinding(@NonNull LinearLayout rootView, @NonNull ImageView addBook,
-      @NonNull RecyclerView listviewBook, @NonNull EditText searchInputbook,
-      @NonNull ImageView searchOutputbook) {
+      @NonNull RecyclerView listviewBook, @NonNull SearchView searchInputbook) {
     this.rootView = rootView;
     this.addBook = addBook;
     this.listviewBook = listviewBook;
     this.searchInputbook = searchInputbook;
-    this.searchOutputbook = searchOutputbook;
   }
 
   @Override
@@ -83,19 +78,13 @@ public final class FragmentAdminBooksBinding implements ViewBinding {
       }
 
       id = R.id.search_inputbook;
-      EditText searchInputbook = ViewBindings.findChildViewById(rootView, id);
+      SearchView searchInputbook = ViewBindings.findChildViewById(rootView, id);
       if (searchInputbook == null) {
         break missingId;
       }
 
-      id = R.id.search_outputbook;
-      ImageView searchOutputbook = ViewBindings.findChildViewById(rootView, id);
-      if (searchOutputbook == null) {
-        break missingId;
-      }
-
       return new FragmentAdminBooksBinding((LinearLayout) rootView, addBook, listviewBook,
-          searchInputbook, searchOutputbook);
+          searchInputbook);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

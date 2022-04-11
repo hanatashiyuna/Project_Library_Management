@@ -72,6 +72,10 @@
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\menu\\menu_navigation_noscan.xml"
     },
     {
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_arrow_drop_up.xml.flat",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_arrow_drop_up.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_dialog_add_book.xml.flat",
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\dialog_add_book.xml"
     },
@@ -328,6 +332,10 @@
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\bglogsign.jpg"
     },
     {
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_manager_return_books.xml.flat",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager_return_books.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_home_24.xml.flat",
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_home_24.xml"
     },
@@ -400,12 +408,20 @@
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_lecturers_forgot.xml"
     },
     {
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_manager_borrow.xml.flat",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager_borrow.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_background.jpg.flat",
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\background.jpg"
     },
     {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_microsoft_firewall_isa_server.jpg.flat",
         "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\microsoft_firewall_isa_server.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_arrow_drop_down.xml.flat",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\drawable\\ic_baseline_arrow_drop_down.xml"
     },
     {
         "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_menu_book.xml.flat",

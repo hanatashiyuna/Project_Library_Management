@@ -101,7 +101,7 @@ public class BookAdminDetailActivity extends AppCompatActivity {
             Books books = (Books) bundle.get("book_information");
             name.setText(String.format("Tên Sách: %s", books.getTensach()));
             imgAdminBook.setImageResource(R.drawable.androidprogram);
-            author.setText(String.format("Tác Giả: %s", books.getTacgiaID()));
+            author.setText(String.format("Tác Giả: %s", books.getSachID()));
 
         }else if(bundle.containsKey("books_self")){
             Positions positions = (Positions) bundle.get("books_self");

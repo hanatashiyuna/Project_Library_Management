@@ -24,29 +24,27 @@ import java.util.Objects;
 public class ManagerAccountFragment extends Fragment {
 
     View view;
+    private List<Authors> mListAccount;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_manager_account, container, false);
+        mListAccount = new ArrayList<>();
         RecyclerView recAccount = view.findViewById(R.id.rec_account);
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(Objects.requireNonNull(getActivity()), DividerItemDecoration.VERTICAL);
 
         recAccount.setLayoutManager(new LinearLayoutManager(getActivity()));
         recAccount.addItemDecoration(itemDecoration);
 
-        AuthorAdapter adapter = new AuthorAdapter(this, getListAcc(), this::onClickGoToDetail);
-        recAccount.setAdapter(adapter);
+        getJs(recAccount);
         return view;
     }
-    public List<Authors> getListAcc(){
-        List<Authors> listAccount = new ArrayList<>();
-        listAccount.add(new Authors(1, "Yuna", "20/02/2002"));
-        listAccount.add(new Authors(1, "Yuna", "20/02/2002"));
-        listAccount.add(new Authors(1, "Yuna", "20/02/2002"));
-        listAccount.add(new Authors(1, "Yuna", "20/02/2002"));
-        return listAccount;
+
+    public void getJs(RecyclerView listAuthorScreen){
+        AuthorAdapter adapter = new AuthorAdapter(this, mListAccount, this::onClickGoToDetail);
+        listAuthorScreen.setAdapter(adapter);
     }
 
     public void onClickGoToDetail(Authors authors){

@@ -2,28 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="10dp">
-        <EditText
+        <androidx.appcompat.widget.SearchView
             android:id="@+id/search_inputpc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="4"
-            android:hint="@string/search_here"
+            app:defaultQueryHint="@string/search_here"
             android:inputType="text"
-            android:importantForAutofill="no" />
-
-        <ImageView
-            android:id="@+id/search_outputpc"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_weight="1"
-            android:src="@drawable/ic_baseline_search"
-            android:contentDescription="@string/search"/>
+            android:importantForAutofill="no"
+            app:iconifiedByDefault="false"/>
 
         <ImageView
             android:id="@+id/addPushingCompany"

@@ -7,17 +7,36 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import androidx.viewpager2.widget.ViewPager2;
 import com.example.vido_manager_library.R;
+import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentManagerBinding implements ViewBinding {
   @NonNull
   private final FrameLayout rootView;
 
-  private FragmentManagerBinding(@NonNull FrameLayout rootView) {
+  @NonNull
+  public final ConstraintLayout adminConstraintLayout;
+
+  @NonNull
+  public final TabLayout tabLayout;
+
+  @NonNull
+  public final ViewPager2 viewPagerAdmin;
+
+  private FragmentManagerBinding(@NonNull FrameLayout rootView,
+      @NonNull ConstraintLayout adminConstraintLayout, @NonNull TabLayout tabLayout,
+      @NonNull ViewPager2 viewPagerAdmin) {
     this.rootView = rootView;
+    this.adminConstraintLayout = adminConstraintLayout;
+    this.tabLayout = tabLayout;
+    this.viewPagerAdmin = viewPagerAdmin;
   }
 
   @Override
@@ -43,10 +62,32 @@ public final class FragmentManagerBinding implements ViewBinding {
 
   @NonNull
   public static FragmentManagerBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.admin_constraintLayout;
+      ConstraintLayout adminConstraintLayout = ViewBindings.findChildViewById(rootView, id);
+      if (adminConstraintLayout == null) {
+        break missingId;
+      }
 
-    return new FragmentManagerBinding((FrameLayout) rootView);
+      id = R.id.tabLayout;
+      TabLayout tabLayout = ViewBindings.findChildViewById(rootView, id);
+      if (tabLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.viewPagerAdmin;
+      ViewPager2 viewPagerAdmin = ViewBindings.findChildViewById(rootView, id);
+      if (viewPagerAdmin == null) {
+        break missingId;
+      }
+
+      return new FragmentManagerBinding((FrameLayout) rootView, adminConstraintLayout, tabLayout,
+          viewPagerAdmin);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

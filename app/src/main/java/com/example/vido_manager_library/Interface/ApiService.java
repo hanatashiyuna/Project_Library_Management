@@ -1,5 +1,7 @@
 package com.example.vido_manager_library.Interface;
 
+import com.example.vido_manager_library.Models.Authors;
+import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.Models.UserStu;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -13,6 +15,7 @@ import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface ApiService {
 
@@ -35,7 +38,10 @@ public interface ApiService {
     /*@GET("")
     Call<List<UserAuthor>> covertUserLecturers(@Query("id") String id);*/
     //==================================
-
+    @GET("api/booklists?")
+    Call<List<Books>> convertBookAdmin(@Query("search") String search);
+    @GET("api/tacgias?")
+    Call<List<Authors>> convertAuthor(@Query("search") String search);
     //==============================
     // Update data project upload database
     @PUT("api/SinhViens/{id}")

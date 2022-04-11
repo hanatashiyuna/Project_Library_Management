@@ -12,6 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
@@ -46,7 +47,7 @@ public interface ApiPositionAdmin {
     //==================================
 
     //Insert data and upload database
-    @PUT("api/vitris")
+    @POST("api/vitris")
     Call<Positions> insertDataPositionAdmin(@Body Positions positions);
     //==================================
 }

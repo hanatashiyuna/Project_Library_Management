@@ -4,11 +4,11 @@ package com.example.vido_manager_library.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -28,19 +28,14 @@ public final class FragmentAdminAuthorsBinding implements ViewBinding {
   public final RecyclerView listviewAuthor;
 
   @NonNull
-  public final EditText searchInputauthor;
-
-  @NonNull
-  public final ImageView searchOutputauthor;
+  public final SearchView searchInputAuthor;
 
   private FragmentAdminAuthorsBinding(@NonNull LinearLayout rootView, @NonNull ImageView addAuthor,
-      @NonNull RecyclerView listviewAuthor, @NonNull EditText searchInputauthor,
-      @NonNull ImageView searchOutputauthor) {
+      @NonNull RecyclerView listviewAuthor, @NonNull SearchView searchInputAuthor) {
     this.rootView = rootView;
     this.addAuthor = addAuthor;
     this.listviewAuthor = listviewAuthor;
-    this.searchInputauthor = searchInputauthor;
-    this.searchOutputauthor = searchOutputauthor;
+    this.searchInputAuthor = searchInputAuthor;
   }
 
   @Override
@@ -82,20 +77,14 @@ public final class FragmentAdminAuthorsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.search_inputauthor;
-      EditText searchInputauthor = ViewBindings.findChildViewById(rootView, id);
-      if (searchInputauthor == null) {
-        break missingId;
-      }
-
-      id = R.id.search_outputauthor;
-      ImageView searchOutputauthor = ViewBindings.findChildViewById(rootView, id);
-      if (searchOutputauthor == null) {
+      id = R.id.search_inputAuthor;
+      SearchView searchInputAuthor = ViewBindings.findChildViewById(rootView, id);
+      if (searchInputAuthor == null) {
         break missingId;
       }
 
       return new FragmentAdminAuthorsBinding((LinearLayout) rootView, addAuthor, listviewAuthor,
-          searchInputauthor, searchOutputauthor);
+          searchInputAuthor);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
