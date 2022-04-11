@@ -2539,6 +2539,7 @@ drawable background_user
 drawable bglogsign
 drawable border
 drawable border_radius
+drawable box_shadow
 drawable btn_bg_design
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation

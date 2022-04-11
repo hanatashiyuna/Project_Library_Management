@@ -2538,6 +2538,7 @@ int drawable background_user 0x7f08005b
 int drawable bglogsign 0x7f08005c
 int drawable border 0x7f08005d
 int drawable border_radius 0x7f08005e
+int drawable box_shadow 0x7f0800ca
 int drawable btn_bg_design 0x7f08005f
 int drawable btn_checkbox_checked_mtrl 0x7f080060
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f080061

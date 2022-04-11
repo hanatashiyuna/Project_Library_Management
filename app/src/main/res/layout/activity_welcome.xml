@@ -33,29 +33,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
-    <TextView
-        android:id="@+id/subText"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@color/red"
-        android:text="CÓ VIỆC LÀM ĐÚNG NGÀNH - GIÀNH ĐẠI HỌC TOP TRÊN"
-        android:textColor="@color/white"
-        android:textSize="8sp"
+        android:background="@drawable/box_shadow"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/yellow"
-        android:text="TP.HCM"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/subText"
         app:layout_constraintTop_toBottomOf="@+id/text"
-        android:layout_marginTop="10dp"
-        android:textSize="8sp"
-        app:layout_constraintHorizontal_bias=".1"/>
+        app:layout_constraintVertical_bias=".01">
+
+        <TextView
+            android:id="@+id/subText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@color/red"
+            android:gravity="top"
+            android:padding="4dp"
+            android:text="CÓ VIỆC LÀM ĐÚNG NGÀNH - GIÀNH ĐẠI HỌC TOP TRÊN"
+            android:textColor="@color/white"
+            android:textSize="6sp"
+            android:textStyle="italic"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:background="@color/yellow"
+            android:padding="4dp"
+            android:text="TP.HCM"
+            android:textSize="6sp"
+            tools:ignore="SmallSp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
