@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.User.ReturnedBooksFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/returned_book_rec"
         android:layout_width="match_parent"

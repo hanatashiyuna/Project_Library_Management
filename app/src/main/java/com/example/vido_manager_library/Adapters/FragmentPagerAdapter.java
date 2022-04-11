@@ -10,7 +10,8 @@ import com.example.vido_manager_library.Fragment.User.ReturnedBooksFragment;
 
 public class FragmentPagerAdapter extends FragmentStateAdapter {
 
-    private final String[] title = new String[]{"borrowing", "returned"};
+    @SuppressWarnings("MismatchedReadAndWriteOfArray")
+    private final String[] title = new String[]{"Sách đang mượn", "Sách đã trả"};
 
     public FragmentPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);

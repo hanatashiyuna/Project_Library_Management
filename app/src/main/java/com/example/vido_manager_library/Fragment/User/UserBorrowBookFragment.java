@@ -19,7 +19,7 @@ import java.util.Objects;
 public class UserBorrowBookFragment extends Fragment {
 
     View view;
-    private String[] title = new String[]{"borrowing", "returned"};
+    private final String[] title = new String[]{"Sách đã mượn", "Sách đã trả"};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
