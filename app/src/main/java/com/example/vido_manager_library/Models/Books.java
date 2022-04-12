@@ -1,5 +1,7 @@
 package com.example.vido_manager_library.Models;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.io.Serializable;
 
 public class Books implements Serializable {
@@ -12,6 +14,7 @@ public class Books implements Serializable {
     private String namXb;
     private int soban;
     private int vitriId;
+    //private int img;
 
     public Books(String tensach, int soban) {
         this.tensach = tensach;
@@ -55,6 +58,18 @@ public class Books implements Serializable {
         this.soban = soban;
         this.vitriId = vitriID;
     }
+
+    /*public Books(String masach, String tensach, int tacgiaId, int theloaiId, int nhaXbid, String namXb, int soban, int vitriId, int img) {
+        this.masach = masach;
+        this.tensach = tensach;
+        this.tacgiaId = tacgiaId;
+        this.theloaiId = theloaiId;
+        this.nhaXbid = nhaXbid;
+        this.namXb = namXb;
+        this.soban = soban;
+        this.vitriId = vitriId;
+        this.img = img;
+    }*/
 
     public int getSachID() {
         return sachId;
@@ -127,4 +142,12 @@ public class Books implements Serializable {
     public void setMasach(String masach) {
         this.masach = masach;
     }
+
+    /*public int getImg() {
+        return img;
+    }
+
+    public void setImg(int img) {
+        this.img = img;
+    }*/
 }

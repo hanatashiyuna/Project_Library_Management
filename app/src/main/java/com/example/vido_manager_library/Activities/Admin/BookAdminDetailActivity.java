@@ -10,19 +10,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentTransaction;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,11 +28,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Fragment.Admin.AdminBookFragment;
+import com.example.vido_manager_library.GetRealPathUtil.RealPathUtil;
 import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
 import com.example.vido_manager_library.Interface.ApiBookAdmin;
-import com.example.vido_manager_library.Interface.ApiCategoryAdmin;
-import com.example.vido_manager_library.Interface.ApiService;
 import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.Models.Categorys;
@@ -45,7 +40,7 @@ import com.example.vido_manager_library.Models.SearchBooks;
 import com.example.vido_manager_library.R;
 
 
-import java.io.FileNotFoundException;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -73,25 +68,28 @@ public class BookAdminDetailActivity extends AppCompatActivity {
 
     private EditText ed_authorId;
     private String getNameAuthor;
+    private Uri mUri;
     ImageView upload;
+    ImageView imgAdminBook;
     Books books;
+    private ProgressDialog mProgressDialog;
+
 
     private ActivityResultLauncher<Intent> mActivityResultLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
                 @Override
                 public void onActivityResult(ActivityResult result) {
-                    Log.e("", "onActivityResult");
                     if(result.getResultCode() == Activity.RESULT_OK){
                         Intent data = result.getData();
                         if(data == null){
                             return;
                         }
                         Uri uri = data.getData();
-
+                        mUri = uri;
                         try {
                             Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
-                            upload.setImageBitmap(bitmap);
+                            imgAdminBook.setImageBitmap(bitmap);
                         }catch (IOException e) {
                             e.printStackTrace();
                         }
@@ -110,9 +108,17 @@ public class BookAdminDetailActivity extends AppCompatActivity {
         Button btn_upload = findViewById(R.id.btn_upload_image);
         upload = findViewById(R.id.upload_image);
 
-        onClickRequestPermission();
+        mProgressDialog = new ProgressDialog(this);
+        mProgressDialog.setMessage("Đợi tí nhé...");
 
-        ImageView imgAdminBook = findViewById(R.id.imgBookAdmin);
+        upload.setOnClickListener(view -> onClickRequestPermission());
+        btn_upload.setOnClickListener(view -> {
+            if(mUri != null){
+                callApiRegisterAccount();
+            }
+        });
+
+        imgAdminBook = findViewById(R.id.imgBookAdmin);
         //Tiêu đề của file BookAdminDetailActivity
         TextView title_codeBook = findViewById(R.id.title_codeBook);
         TextView title_nameBook = findViewById(R.id.title_nameBook);
@@ -156,7 +162,7 @@ public class BookAdminDetailActivity extends AppCompatActivity {
                     mListBooks = response.body();
                     for (Books books1 : mListBooks) {
                         if(books1.getTensach().equals(searchBooks.getTensach()) ){
-                           books = books1;
+                            books = books1;
                             break;
                         }
                     }
@@ -170,7 +176,6 @@ public class BookAdminDetailActivity extends AppCompatActivity {
 
                     title_authorId.setText("Tên/Id Tác Giả: ");
                     ed_authorId.setHint(String.valueOf(books.getTacgiaID()));
-                    //Log.e("id", "========================================= " + getNameAuthor);
 
                     title_categoryId.setText("Tên/Id Thể Loại: ");
                     ed_categoryId.setHint(String.valueOf(books.getTheloaiID()));
@@ -219,28 +224,18 @@ public class BookAdminDetailActivity extends AppCompatActivity {
                             Toast.makeText(BookAdminDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
                         }
                     }));
-
                 }
-
                 @Override
                 public void onFailure(Call<List<Books>> call, Throwable t) {
                     Toast.makeText(BookAdminDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
                 }
             });
-
-
-
-
         }else{
             Toast.makeText(BookAdminDetailActivity.this, "Hệ Thống Đang Gặp Vấn Đề Vui Lòng Liên Hệ Với Admin", Toast.LENGTH_SHORT).show();
         }
-
         ImageView back =  findViewById(R.id.back);
         back.setOnClickListener(view -> switchActivity());
-
-
     }
-
     private void onClickRequestPermission() {
         if(checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED){
             openGallery();
@@ -265,6 +260,14 @@ public class BookAdminDetailActivity extends AppCompatActivity {
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
         mActivityResultLauncher.launch(Intent.createChooser(intent, "Select Picture"));
+    }
+
+    public void callApiRegisterAccount(){
+        //mProgressDialog.show();
+
+        String strRealPath = RealPathUtil.getRealPath(this, mUri);
+        File file = new File(strRealPath);
+        Log.e("path img", strRealPath + " ==================");
     }
 
     public void getSelectListAuthorFormApi(ListView listView){

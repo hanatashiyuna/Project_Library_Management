@@ -144,6 +144,8 @@ com/example/vido_manager_library/databinding/ActivityLecturersGetNewPassBinding.
  com.example.vido_manager_library.databinding.ActivityLecturersGetNewPassBinding
 com/example/vido_manager_library/Adapters/ViewPageAdapter.java
  com.example.vido_manager_library.Adapters.ViewPageAdapter
+com/example/vido_manager_library/GetRealPathUtil/RealPathUtil.java
+ com.example.vido_manager_library.GetRealPathUtil.RealPathUtil
 com/example/vido_manager_library/LogSign/LecturersForgotActivity.java
  com.example.vido_manager_library.LogSign.LecturersForgotActivity
  com.example.vido_manager_library.LogSign.LecturersForgotActivity$1

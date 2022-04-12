@@ -52,7 +52,7 @@
             android:text="Chọn"
             android:textAllCaps="false"
             android:textStyle="normal"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:foreground="@drawable/btn_bg_design"
             app:layout_constraintEnd_toEndOf="@+id/imgBookAdmin"
             app:layout_constraintStart_toStartOf="@+id/imgBookAdmin"

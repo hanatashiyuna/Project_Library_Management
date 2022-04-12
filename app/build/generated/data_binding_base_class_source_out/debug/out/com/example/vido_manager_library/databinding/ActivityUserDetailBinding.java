@@ -12,6 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.vido_manager_library.R;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -36,7 +37,7 @@ public final class ActivityUserDetailBinding implements ViewBinding {
   public final ImageView imageView2;
 
   @NonNull
-  public final ImageView imageView3;
+  public final CircleImageView imageView3;
 
   @NonNull
   public final TextView logOutBtn;
@@ -49,8 +50,8 @@ public final class ActivityUserDetailBinding implements ViewBinding {
 
   private ActivityUserDetailBinding(@NonNull ConstraintLayout rootView, @NonNull TextView LGMssv,
       @NonNull TextView LGUsername, @NonNull ImageView back, @NonNull TextView btnSignup,
-      @NonNull ImageView imageView2, @NonNull ImageView imageView3, @NonNull TextView logOutBtn,
-      @NonNull TextView myInfo, @NonNull TextView version) {
+      @NonNull ImageView imageView2, @NonNull CircleImageView imageView3,
+      @NonNull TextView logOutBtn, @NonNull TextView myInfo, @NonNull TextView version) {
     this.rootView = rootView;
     this.LGMssv = LGMssv;
     this.LGUsername = LGUsername;
@@ -121,7 +122,7 @@ public final class ActivityUserDetailBinding implements ViewBinding {
       }
 
       id = R.id.imageView3;
-      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
+      CircleImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
       if (imageView3 == null) {
         break missingId;
       }

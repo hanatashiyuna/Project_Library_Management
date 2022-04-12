@@ -27,11 +27,10 @@
         android:layout_marginTop="25dp"
         android:contentDescription="@string/back" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView3"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:foreground="@drawable/border_radius"
         android:src="@drawable/avt_student"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

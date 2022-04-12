@@ -1,182 +1,182 @@
 [
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_information.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_information.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_book_admin_detail.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_book_admin_detail.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_book_admin_detail.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_book_admin_detail.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_admin_positions.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_positions.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_favourite_books.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_favourite_books.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_admin_positions.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_positions.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_admin_authors.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_authors.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_borrow_detail.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_borrow_detail.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_publisher_detail.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_publisher_detail.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_student_login.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_student_login.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_favourite_books.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_favourite_books.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_admin_categories.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_categories.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_manager_borrow.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager_borrow.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home_admin.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_home_admin.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\book_item.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\book_item.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\items.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\items.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_add_book.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\dialog_add_book.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_about_admin.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_about_admin.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_student_get_new_pass.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_student_get_new_pass.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_position_detail.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_position_detail.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_author_detail.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_author_detail.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_admin_books.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_books.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_borrowing_books.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_borrowing_books.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_welcome.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_borrow_detail.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_borrow_detail.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_returned_books.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_returned_books.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_user_detail.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_user_detail.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home_admin.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_home_admin.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home_admin.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_home_admin.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_borrowing_books.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_borrowing_books.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_position_detail.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_position_detail.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_category_detail.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_category_detail.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_manager_account.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager_account.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_lecturers_login.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_lecturers_login.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_manager_return_books.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager_return_books.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\book_item.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\book_item.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_admin_categories.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_categories.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_create_qrcode.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_create_qrcode.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_admin_pc.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_pc.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_method.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_method.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home_admin.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_home_admin.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_add_book.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\dialog_add_book.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\items.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\items.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_add_publisher.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\dialog_add_publisher.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_about.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_about.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_manager.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_manager_borrow.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager_borrow.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_add_publisher.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\dialog_add_publisher.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\information_student.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\information_student.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_information.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_information.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_lecturers_login.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_lecturers_login.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_author_detail.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_author_detail.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_returned_books.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_returned_books.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_add_author.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\dialog_add_author.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_method.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_method.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_manager_return_books.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager_return_books.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_create_qrcode.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_create_qrcode.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_student_get_new_pass.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_student_get_new_pass.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_book_detail.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_book_detail.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_user_detail.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_user_detail.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_admin_books.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_books.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_lecturers_get_new_pass.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_lecturers_get_new_pass.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_user_borrow_book.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_user_borrow_book.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_welcome.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_welcome.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_admin_authors.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_authors.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_about_admin.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_about_admin.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_add_position.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\dialog_add_position.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_student_login.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_student_login.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_lecturers_forgot.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_lecturers_forgot.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_add_author.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\dialog_add_author.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_student_forgot.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_student_forgot.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_user_borrow_book.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_user_borrow_book.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_book_detail.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_book_detail.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_add_position.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\dialog_add_position.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_manager.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_add_category.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\dialog_add_category.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_about.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_about.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_student_forgot.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_student_forgot.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_publisher_detail.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_publisher_detail.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_lecturers_get_new_pass.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_lecturers_get_new_pass.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_manager_account.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_manager_account.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_category_detail.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_category_detail.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_admin_pc.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\fragment_admin_pc.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_lecturers_forgot.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\activity_lecturers_forgot.xml"
     },
     {
-        "merged": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_add_category.xml",
-        "source": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\dialog_add_category.xml"
+        "merged": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\information_student.xml",
+        "source": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\src\\main\\res\\layout\\information_student.xml"
     }
 ]

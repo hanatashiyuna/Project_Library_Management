@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="10dp">
+
         <SearchView
             android:id="@+id/search_inputcategory"
             android:layout_width="0dp"
