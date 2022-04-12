@@ -172,7 +172,7 @@ public class BookAdminDetailActivity extends AppCompatActivity {
             });*/
 
 
-            imgAdminBook.setImageResource(R.drawable.androidprogram);
+            imgAdminBook.setImageResource(R.drawable.ic_baseline_image);
 
             title_codeBook.setText("Mã Sách: ");
             ed_codeBook.setHint(books.getMasach());

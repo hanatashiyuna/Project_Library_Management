@@ -2568,6 +2568,7 @@ drawable ic_baseline_dashboard_24
 drawable ic_baseline_file_upload
 drawable ic_baseline_home
 drawable ic_baseline_home_24
+drawable ic_baseline_image
 drawable ic_baseline_info
 drawable ic_baseline_info_24
 drawable ic_baseline_keyboard_arrow_right_24

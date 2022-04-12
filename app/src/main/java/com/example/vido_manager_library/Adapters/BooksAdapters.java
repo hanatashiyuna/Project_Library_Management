@@ -65,7 +65,7 @@ public class BooksAdapters extends RecyclerView.Adapter<BooksAdapters.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Books books = list.get(position);
-        holder.imageView.setImageResource(R.drawable.androidprogram);
+        holder.imageView.setImageResource(R.drawable.ic_baseline_image);
         holder.textView.setText(list.get(position).getTensach());
         if(books != null){
             holder.cardView.setOnClickListener(view -> iClickItemBook.onClickItemBook(books));

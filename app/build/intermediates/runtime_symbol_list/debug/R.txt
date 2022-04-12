@@ -2567,6 +2567,7 @@ int drawable ic_baseline_dashboard_24 0x7f080078
 int drawable ic_baseline_file_upload 0x7f080079
 int drawable ic_baseline_home 0x7f08007a
 int drawable ic_baseline_home_24 0x7f08007b
+int drawable ic_baseline_image 0x7f0800ce
 int drawable ic_baseline_info 0x7f08007c
 int drawable ic_baseline_info_24 0x7f08007d
 int drawable ic_baseline_keyboard_arrow_right_24 0x7f08007e
