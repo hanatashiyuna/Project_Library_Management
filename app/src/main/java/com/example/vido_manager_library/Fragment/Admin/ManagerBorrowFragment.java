@@ -14,12 +14,8 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
-import com.example.vido_manager_library.Adapters.AuthorAdapter;
 import com.example.vido_manager_library.Adapters.BooksAdapter;
-import com.example.vido_manager_library.Adapters.BooksAdapters;
-import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
 import com.example.vido_manager_library.Interface.ApiBookAdmin;
-import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.R;
 
@@ -56,11 +52,11 @@ public class ManagerBorrowFragment extends Fragment {
     }
 
     private void getListJS(RecyclerView listBooksScreen) {
-        ApiBookAdmin.apiBookAdmin.covertBookAdmin("").enqueue(new Callback<List<Books>>() {
+        ApiBookAdmin.apiBookAdmin.convertBookOriginalAdmin().enqueue(new Callback<List<Books>>() {
             @Override
             public void onResponse(Call<List<Books>> call, Response<List<Books>> response) {
                 mListBooksAdmin = response.body();
-                BooksAdapter booksAdapter = new BooksAdapter(ManagerBorrowFragment.this, mListBooksAdmin, this::onClickGoToDetail);
+                BooksAdapter booksAdapter = new BooksAdapter(ManagerBorrowFragment.this, mListBooksAdmin, books -> onClickGoToDetail(books));
                 listBooksScreen.setAdapter(booksAdapter);
             }
             private void onClickGoToDetail(Books books) {

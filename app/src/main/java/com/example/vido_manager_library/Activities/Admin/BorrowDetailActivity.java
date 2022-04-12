@@ -26,6 +26,7 @@ import com.example.vido_manager_library.Interface.ApiService;
 import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.Models.Borrow;
 import com.example.vido_manager_library.Models.Positions;
+import com.example.vido_manager_library.Models.SearchBooks;
 import com.example.vido_manager_library.Models.UserStu;
 import com.example.vido_manager_library.QRCode.Capture;
 import com.example.vido_manager_library.R;
@@ -43,7 +44,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class BorrowDetailActivity extends AppCompatActivity {
-    Books searchBook;
+    SearchBooks searchBook;
     List<Borrow> mListBorrow;
     public int IDUserStu;
     public String MSSVUserStu;
@@ -140,16 +141,16 @@ public class BorrowDetailActivity extends AppCompatActivity {
     }
 
     private void QrTreatment(String qrcode, String MSSVUserStu, int IDUserStu) {
-        ApiBookAdmin.apiBookAdmin.covertBookSAdmin(qrcode).enqueue(new Callback<Books>() {
+        ApiBookAdmin.apiBookAdmin.covertBookSAdmin(qrcode).enqueue(new Callback<SearchBooks>() {
             //@RequiresApi(api = Build.VERSION_CODES.O)
             @Override
-            public void onResponse(Call<Books> call, Response<Books> response) {
+            public void onResponse(Call<SearchBooks> call, Response<SearchBooks> response) {
                 searchBook = response.body();
                 //LocalDate today = LocalDate.now();
-                mListBorrow.add(new Borrow(IDUserStu, 1, searchBook.getSachID(), MSSVUserStu, String.valueOf("2022-04-11")));
+                mListBorrow.add(new Borrow(IDUserStu, 1, 1, MSSVUserStu, String.valueOf("2022-04-11")));
             }
             @Override
-            public void onFailure(Call<Books> call, Throwable t) {
+            public void onFailure(Call<SearchBooks> call, Throwable t) {
                 Toast.makeText(BorrowDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
             }
         });

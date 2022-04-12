@@ -6,283 +6,283 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="25"
-8-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml
+8-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml
+9-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.CALL_PHONE" />
-11-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:5:5-69
-11-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:5:22-66
+11-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:5:5-69
+11-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:5:22-66
 12    <uses-permission android:name="android.permission.CAMERA" />
-12-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:6:5-65
-12-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:6:22-62
+12-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:6:5-65
+12-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:6:22-62
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:7:5-67
-13-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:7:22-64
+13-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:7:5-67
+13-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:7:22-64
 14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-14-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:8:5-80
-14-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:8:22-77
+14-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:8:5-80
+14-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:8:22-77
 15
 16    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
 17    <uses-feature
-17-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:24:5-26:36
+17-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:24:5-26:36
 18        android:name="android.hardware.camera"
-18-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:25:9-47
+18-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:25:9-47
 19        android:required="false" />
-19-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:26:9-33
+19-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:26:9-33
 20    <uses-feature
-20-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:27:5-29:36
+20-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:27:5-29:36
 21        android:name="android.hardware.camera.front"
-21-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:28:9-53
+21-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:28:9-53
 22        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
-22-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:29:9-33
+22-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:29:9-33
 23    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
 24    <uses-feature
-24-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:32:5-34:36
+24-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:32:5-34:36
 25        android:name="android.hardware.camera.autofocus"
-25-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:33:9-57
+25-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:33:9-57
 26        android:required="false" />
-26-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:34:9-33
+26-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:34:9-33
 27    <uses-feature
-27-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:35:5-37:36
+27-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:35:5-37:36
 28        android:name="android.hardware.camera.flash"
-28-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:36:9-53
+28-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:36:9-53
 29        android:required="false" />
-29-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:37:9-33
+29-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:37:9-33
 30    <uses-feature
-30-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:38:5-40:36
+30-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:38:5-40:36
 31        android:name="android.hardware.screen.landscape"
-31-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:39:9-57
+31-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:39:9-57
 32        android:required="false" />
-32-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:40:9-33
+32-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:40:9-33
 33    <uses-feature
-33-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:41:5-43:36
+33-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:41:5-43:36
 34        android:name="android.hardware.wifi"
-34-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:42:9-45
+34-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:42:9-45
 35        android:required="false" />
-35-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:43:9-33
+35-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:43:9-33
 36
 37    <application
-37-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:10:5-94:19
+37-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:10:5-94:19
 38        android:allowBackup="true"
-38-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:11:9-35
+38-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:11:9-35
 39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-39-->[androidx.core:core:1.7.0] C:\Users\ASUS\.gradle\caches\transforms-3\9339927e08badd09bc5459e4ba900d5f\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+39-->[androidx.core:core:1.7.0] C:\Users\tan\.gradle\caches\transforms-3\9339927e08badd09bc5459e4ba900d5f\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 40        android:debuggable="true"
 41        android:extractNativeLibs="false"
 42        android:fullBackupContent="true"
-42-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:12:9-41
+42-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:12:9-41
 43        android:icon="@mipmap/ic_launcher"
-43-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:13:9-43
+43-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:13:9-43
 44        android:label="@string/app_name"
-44-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:14:9-41
+44-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:14:9-41
 45        android:roundIcon="@mipmap/ic_launcher_round"
-45-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:15:9-54
+45-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:15:9-54
 46        android:supportsRtl="true"
-46-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:16:9-35
+46-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:16:9-35
 47        android:testOnly="true"
 48        android:theme="@style/Theme.VIDO_Manager_Library" >
-48-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:17:9-58
+48-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:17:9-58
 49        <activity
-49-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:18:9-20:40
+49-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:18:9-20:40
 50            android:name="com.example.vido_manager_library.Activities.Admin.PublisherDetailActivity"
-50-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:19:13-69
+50-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:19:13-69
 51            android:exported="false" />
-51-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:20:13-37
+51-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:20:13-37
 52        <activity
-52-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:21:9-23:40
+52-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:21:9-23:40
 53            android:name="com.example.vido_manager_library.Activities.Admin.PositionDetailActivity"
-53-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:22:13-68
+53-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:22:13-68
 54            android:exported="false" />
-54-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:23:13-37
+54-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:23:13-37
 55        <activity
-55-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:24:9-26:40
+55-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:24:9-26:40
 56            android:name="com.example.vido_manager_library.Activities.Admin.CategoryDetailActivity"
-56-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:25:13-68
+56-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:25:13-68
 57            android:exported="false" />
-57-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:26:13-37
+57-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:26:13-37
 58        <activity
-58-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:27:9-29:40
+58-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:27:9-29:40
 59            android:name="com.example.vido_manager_library.Activities.Admin.AuthorDetailActivity"
-59-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:28:13-66
+59-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:28:13-66
 60            android:exported="false" />
-60-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:29:13-37
+60-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:29:13-37
 61        <activity
-61-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:30:9-32:40
+61-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:30:9-32:40
 62            android:name="com.example.vido_manager_library.Activities.Admin.BorrowDetailActivity"
-62-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:31:13-66
+62-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:31:13-66
 63            android:exported="false" />
-63-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:32:13-37
+63-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:32:13-37
 64        <activity
-64-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:33:9-36:55
+64-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:33:9-36:55
 65            android:name="com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity"
-65-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:34:13-69
+65-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:34:13-69
 66            android:exported="false"
-66-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:35:13-37
+66-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:35:13-37
 67            android:windowSoftInputMode="adjustPan" />
-67-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:36:13-52
+67-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:36:13-52
 68        <activity
-68-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:37:9-39:40
+68-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:37:9-39:40
 69            android:name="com.example.vido_manager_library.Activities.User.BookDetailActivity"
-69-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:38:13-63
+69-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:38:13-63
 70            android:exported="false" />
-70-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:39:13-37
+70-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:39:13-37
 71        <activity
-71-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:40:9-42:40
+71-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:40:9-42:40
 72            android:name="com.example.vido_manager_library.QRCode.CreateQRCodeActivity"
-72-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:41:13-56
+72-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:41:13-56
 73            android:exported="false" />
-73-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:42:13-37
+73-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:42:13-37
 74        <activity
-74-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:43:9-46:55
+74-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:43:9-46:55
 75            android:name="com.example.vido_manager_library.Activities.Admin.HomeAdminActivity"
-75-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:44:13-63
+75-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:44:13-63
 76            android:exported="false"
-76-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:45:13-37
+76-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:45:13-37
 77            android:windowSoftInputMode="adjustPan" />
-77-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:46:13-52
+77-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:46:13-52
 78        <activity
-78-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:47:9-49:40
+78-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:47:9-49:40
 79            android:name="com.example.vido_manager_library.Activities.User.InformationActivity"
-79-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:48:13-64
+79-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:48:13-64
 80            android:exported="false" />
-80-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:49:13-37
+80-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:49:13-37
 81        <activity
-81-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:50:9-52:40
+81-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:50:9-52:40
 82            android:name="com.example.vido_manager_library.Activities.User.UserDetailActivity"
-82-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:51:13-63
+82-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:51:13-63
 83            android:exported="false" />
-83-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:52:13-37
+83-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:52:13-37
 84        <activity
-84-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:53:9-55:40
+84-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:53:9-55:40
 85            android:name="com.example.vido_manager_library.LogSign.LecturersGetNewPassActivity"
-85-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:54:13-64
+85-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:54:13-64
 86            android:exported="false" />
-86-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:55:13-37
+86-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:55:13-37
 87        <activity
-87-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:56:9-58:40
+87-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:56:9-58:40
 88            android:name="com.example.vido_manager_library.LogSign.StudentGetNewPassActivity"
-88-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:57:13-62
+88-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:57:13-62
 89            android:exported="false" />
-89-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:58:13-37
+89-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:58:13-37
 90        <activity
-90-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:59:9-61:40
+90-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:59:9-61:40
 91            android:name="com.example.vido_manager_library.LogSign.LecturersForgotActivity"
-91-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:60:13-60
+91-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:60:13-60
 92            android:exported="false" />
-92-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:61:13-37
+92-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:61:13-37
 93        <activity
-93-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:62:9-64:40
+93-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:62:9-64:40
 94            android:name="com.example.vido_manager_library.LogSign.StudentForgotActivity"
-94-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:63:13-58
+94-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:63:13-58
 95            android:exported="false" />
-95-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:64:13-37
+95-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:64:13-37
 96        <activity
-96-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:65:9-67:40
+96-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:65:9-67:40
 97            android:name="com.example.vido_manager_library.LogSign.LecturersLoginActivity"
-97-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:66:13-59
+97-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:66:13-59
 98            android:exported="false" />
-98-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:67:13-37
+98-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:67:13-37
 99        <activity
-99-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:68:9-70:40
+99-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:68:9-70:40
 100            android:name="com.example.vido_manager_library.LogSign.StudentLoginActivity"
-100-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:69:13-57
+100-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:69:13-57
 101            android:exported="false" />
-101-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:70:13-37
+101-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:70:13-37
 102        <activity
-102-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:71:9-79:20
+102-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:71:9-79:20
 103            android:name="com.example.vido_manager_library.FlashScreen.WelcomeActivity"
-103-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:72:13-56
+103-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:72:13-56
 104            android:exported="true" >
-104-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:73:13-36
+104-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:73:13-36
 105            <intent-filter>
-105-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:74:13-78:29
+105-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:74:13-78:29
 106                <action android:name="android.intent.action.MAIN" />
-106-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:75:17-69
-106-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:75:25-66
+106-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:75:17-69
+106-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:75:25-66
 107
 108                <category android:name="android.intent.category.LAUNCHER" />
-108-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:77:17-77
-108-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:77:27-74
+108-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:77:17-77
+108-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:77:27-74
 109            </intent-filter>
 110        </activity>
 111        <activity
-111-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:80:9-84:55
+111-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:80:9-84:55
 112            android:name="com.example.vido_manager_library.Activities.User.MainActivity"
-112-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:81:13-57
+112-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:81:13-57
 113            android:exported="false"
-113-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:82:13-37
+113-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:82:13-37
 114            android:theme="@style/Theme.VIDO_Manager_Library"
-114-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:83:13-62
+114-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:83:13-62
 115            android:windowSoftInputMode="adjustPan" />
-115-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:84:13-52
+115-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:84:13-52
 116        <activity
-116-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:85:9-89:57
+116-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:85:9-89:57
 117            android:name="com.example.vido_manager_library.QRCode.Capture"
-117-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:86:13-43
+117-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:86:13-43
 118            android:screenOrientation="fullSensor"
-118-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:87:13-51
+118-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:87:13-51
 119            android:stateNotNeeded="true"
-119-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:88:13-42
+119-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:88:13-42
 120            android:theme="@style/zxing_CaptureTheme" />
-120-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:89:13-54
+120-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:89:13-54
 121
 122        <meta-data
-122-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:91:9-93:57
+122-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:91:9-93:57
 123            android:name="preloaded_fonts"
-123-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:92:13-43
+123-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:92:13-43
 124            android:resource="@array/preloaded_fonts" />
-124-->C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:93:13-54
+124-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:93:13-54
 125
 126        <activity
-126-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:46:9-52:63
+126-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:46:9-52:63
 127            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-127-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:47:13-74
+127-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:47:13-74
 128            android:clearTaskOnLaunch="true"
-128-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:48:13-45
+128-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:48:13-45
 129            android:screenOrientation="sensorLandscape"
-129-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:49:13-56
+129-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:49:13-56
 130            android:stateNotNeeded="true"
-130-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:50:13-42
+130-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:50:13-42
 131            android:theme="@style/zxing_CaptureTheme"
-131-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:51:13-54
+131-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:51:13-54
 132            android:windowSoftInputMode="stateAlwaysHidden" />
-132-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:52:13-60
+132-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:52:13-60
 133
 134        <provider
-134-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+134-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 135            android:name="androidx.startup.InitializationProvider"
-135-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+135-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
 136            android:authorities="com.example.vido_manager_library.androidx-startup"
-136-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+136-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
 137            android:exported="false" >
-137-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+137-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
 138            <meta-data
-138-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+138-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
 139                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-139-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+139-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
 140                android:value="androidx.startup" />
-140-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+140-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
 141            <meta-data
-141-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\0e4a425e61d135d109d64d5f17d999df\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+141-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tan\.gradle\caches\transforms-3\0e4a425e61d135d109d64d5f17d999df\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
 142                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-142-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\0e4a425e61d135d109d64d5f17d999df\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+142-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tan\.gradle\caches\transforms-3\0e4a425e61d135d109d64d5f17d999df\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
 143                android:value="androidx.startup" />
-143-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\0e4a425e61d135d109d64d5f17d999df\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+143-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tan\.gradle\caches\transforms-3\0e4a425e61d135d109d64d5f17d999df\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
 144        </provider>
 145
 146        <uses-library
-146-->[androidx.window:window:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+146-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
 147            android:name="androidx.window.extensions"
-147-->[androidx.window:window:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+147-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
 148            android:required="false" />
-148-->[androidx.window:window:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+148-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
 149        <uses-library
-149-->[androidx.window:window:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+149-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
 150            android:name="androidx.window.sidecar"
-150-->[androidx.window:window:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+150-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
 151            android:required="false" />
-151-->[androidx.window:window:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+151-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
 152    </application>
 153
 154</manifest>

@@ -3783,7 +3783,6 @@ string search_menu_title
 string select_author
 string star
 string status_bar_notification_info_overflow
-string student_borrow
 string title_activity_home_admin
 string title_activity_home_user
 string title_dashboard

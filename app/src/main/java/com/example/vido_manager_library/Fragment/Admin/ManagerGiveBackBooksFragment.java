@@ -51,11 +51,11 @@ public class ManagerGiveBackBooksFragment extends Fragment {
     }
 
     private void getListJS(RecyclerView listBooksScreen) {
-        ApiBookAdmin.apiBookAdmin.covertBookAdmin("").enqueue(new Callback<List<Books>>() {
+        ApiBookAdmin.apiBookAdmin.convertBookOriginalAdmin().enqueue(new Callback<List<Books>>() {
             @Override
             public void onResponse(Call<List<Books>> call, Response<List<Books>> response) {
                 mListBooksGiveBack = response.body();
-                BooksAdapter booksAdapter = new BooksAdapter(ManagerGiveBackBooksFragment.this, mListBooksGiveBack, this::onClickGoToDetail);
+                BooksAdapter booksAdapter = new BooksAdapter(ManagerGiveBackBooksFragment.this, mListBooksGiveBack, books -> onClickGoToDetail(books));
                 listBooksScreen.setAdapter(booksAdapter);
             }
             private void onClickGoToDetail(Books books) {

@@ -23,6 +23,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
 import com.example.vido_manager_library.Adapters.BooksAdapters;
+import com.example.vido_manager_library.Adapters.SearchBooksAdapter;
 import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
 import com.example.vido_manager_library.Interface.ApiBookAdmin;
 import com.example.vido_manager_library.Interface.ApiCategoryAdmin;
@@ -34,6 +35,7 @@ import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.Models.Categorys;
 import com.example.vido_manager_library.Models.PC;
 import com.example.vido_manager_library.Models.Positions;
+import com.example.vido_manager_library.Models.SearchBooks;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
@@ -50,7 +52,7 @@ import retrofit2.Response;
 
 public class AdminBookFragment extends Fragment {
     /**khởi tạo arraylist*/
-    List<Books> mListBooksAdmin;
+    List<SearchBooks> mListBooksAdmin;
     List<Authors> mListAuthor;
     List<Categorys> mListCategory;
     List<PC> mListPublisher;
@@ -105,22 +107,22 @@ public class AdminBookFragment extends Fragment {
     /**Lấy dữ liệu từ api*/
     private void getListJS(RecyclerView listBookScreen, String search) {
         //Gọi interface api trùng với api cần
-        ApiService.apiService.convertBookAdmin(search).enqueue(new Callback<List<Books>>() {
+        ApiBookAdmin.apiBookAdmin.covertBookAdmin(search).enqueue(new Callback<List<SearchBooks>>() {
             @Override
-            public void onResponse(Call<List<Books>> call, Response<List<Books>> response) {
+            public void onResponse(Call<List<SearchBooks>> call, Response<List<SearchBooks>> response) {
                 mListBooksAdmin = response.body();
-                BooksAdapters booksAdapters = new BooksAdapters(getActivity(), mListBooksAdmin, this::onClickGoToDetail);
-                listBookScreen.setAdapter(booksAdapters);
+                SearchBooksAdapter searchBooksAdapter = new SearchBooksAdapter(getActivity(), mListBooksAdmin, this::onClickGoToDetail);
+                listBookScreen.setAdapter(searchBooksAdapter);
             }
-            private void onClickGoToDetail(Books books) {
+            private void onClickGoToDetail(SearchBooks searchBooks) {
                 Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("book_information", books);
+                bundle.putSerializable("book_information", searchBooks);
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
             @Override
-            public void onFailure(Call<List<Books>> call, Throwable t) {
+            public void onFailure(Call<List<SearchBooks>> call, Throwable t) {
                 Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
             }
         });
@@ -129,14 +131,14 @@ public class AdminBookFragment extends Fragment {
 
     private void getListJS(RecyclerView listBookScreen) {
         //Gọi interface api trùng với api cần
-        ApiBookAdmin.apiBookAdmin.convertBookOriginalAdmin().enqueue(new Callback<List<Books>>() {
+        ApiBookAdmin.apiBookAdmin.covertBookAdmin("").enqueue(new Callback<List<SearchBooks>>() {
             @Override
-            public void onResponse(Call<List<Books>> call, Response<List<Books>> response) {
+            public void onResponse(Call<List<SearchBooks>> call, Response<List<SearchBooks>> response) {
                 mListBooksAdmin = response.body();
-                BooksAdapters booksAdapters = new BooksAdapters(getActivity(), mListBooksAdmin, this::onClickGoToDetail);
-                listBookScreen.setAdapter(booksAdapters);
+                SearchBooksAdapter searchBooksAdapter = new SearchBooksAdapter(getActivity(), mListBooksAdmin, this::onClickGoToDetail);
+                listBookScreen.setAdapter(searchBooksAdapter);
             }
-            private void onClickGoToDetail(Books books) {
+            private void onClickGoToDetail(SearchBooks books) {
                 Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("book_information", books);
@@ -144,7 +146,7 @@ public class AdminBookFragment extends Fragment {
                 startActivity(intent);
             }
             @Override
-            public void onFailure(Call<List<Books>> call, Throwable t) {
+            public void onFailure(Call<List<SearchBooks>> call, Throwable t) {
                 Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
             }
         });

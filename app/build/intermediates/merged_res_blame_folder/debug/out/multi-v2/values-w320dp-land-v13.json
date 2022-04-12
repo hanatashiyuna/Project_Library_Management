@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ASUS\\AndroidStudioProjects\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+            "outputFile": "C:\\Users\\tan\\Documents\\Code_IT\\Android_Studio_SeverTest\\VIDO_Manager_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-3\\e6a6b98a5bf4cf452a4bc3a3002b3bc1\\transformed\\material-1.5.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+                    "source": "C:\\Users\\tan\\.gradle\\caches\\transforms-3\\e6a6b98a5bf4cf452a4bc3a3002b3bc1\\transformed\\material-1.5.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

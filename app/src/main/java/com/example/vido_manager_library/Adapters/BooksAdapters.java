@@ -11,10 +11,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Interface.IClickItemBook;
 import com.example.vido_manager_library.Models.Books;
+import com.example.vido_manager_library.Models.SearchBooks;
 import com.example.vido_manager_library.R;
 
 import java.util.List;
@@ -54,6 +56,7 @@ public class BooksAdapters extends RecyclerView.Adapter<BooksAdapters.ViewHolder
         this.list = list;
         this.iClickItemBook = iClickItemBook;
     }
+
 
 
     @NonNull

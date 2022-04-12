@@ -1,6 +1,7 @@
 package com.example.vido_manager_library.Interface;
 
 import com.example.vido_manager_library.Models.Books;
+import com.example.vido_manager_library.Models.SearchBooks;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -33,9 +34,9 @@ public interface ApiBookAdmin {
     //==============================
     // lấy ra danh sách các tài khoản, mật khẩu để đăng nhập
     @GET("api/booklists?")
-    Call<List<Books>> covertBookAdmin(@Query("search") String search);
+    Call<List<SearchBooks>> covertBookAdmin(@Query("search") String search);
     @GET("api/booklists?")
-    Call<Books> covertBookSAdmin(@Query("search") String search);
+    Call<SearchBooks> covertBookSAdmin(@Query("search") String search);
     @GET("api/saches")
     Call<List<Books>> convertBookOriginalAdmin();
     //==================================
