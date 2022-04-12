@@ -11,6 +11,7 @@ import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
@@ -35,6 +36,9 @@ public interface ApiBorrowAdmin {
     @GET("api/muons")
     Call<List<Borrow>> covertBorrowkAdmin();
 
+    @GET("api/muons/{id}")
+    Call<Borrow> covertBorrowSingleAdmin(@Path("id") int id);
+
     //==================================
 
     //==============================
@@ -44,7 +48,7 @@ public interface ApiBorrowAdmin {
     //==================================
 
     //Delete data and upload database
-    @PUT("api/muons/{id}")
+    @DELETE("api/muons/{id}")
     Call<Borrow> deleteDataBorrowAdmin(@Path("id") int id);
     //==================================
 

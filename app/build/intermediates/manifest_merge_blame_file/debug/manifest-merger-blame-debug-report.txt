@@ -63,7 +63,7 @@
 35-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:43:9-33
 36
 37    <application
-37-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:10:5-94:19
+37-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:10:5-100:19
 38        android:allowBackup="true"
 38-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:11:9-35
 39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -85,204 +85,216 @@
 48-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:17:9-58
 49        <activity
 49-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:18:9-20:40
-50            android:name="com.example.vido_manager_library.Activities.Admin.PublisherDetailActivity"
-50-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:19:13-69
+50            android:name="com.example.vido_manager_library.Activities.Admin.GiveBackAdminActivity"
+50-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:19:13-67
 51            android:exported="false" />
 51-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:20:13-37
 52        <activity
 52-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:21:9-23:40
-53            android:name="com.example.vido_manager_library.Activities.Admin.PositionDetailActivity"
-53-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:22:13-68
+53            android:name="com.example.vido_manager_library.Activities.Admin.SetGiveBackAdminActivity"
+53-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:22:13-70
 54            android:exported="false" />
 54-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:23:13-37
 55        <activity
 55-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:24:9-26:40
-56            android:name="com.example.vido_manager_library.Activities.Admin.CategoryDetailActivity"
-56-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:25:13-68
+56            android:name="com.example.vido_manager_library.Activities.Admin.PublisherDetailActivity"
+56-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:25:13-69
 57            android:exported="false" />
 57-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:26:13-37
 58        <activity
 58-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:27:9-29:40
-59            android:name="com.example.vido_manager_library.Activities.Admin.AuthorDetailActivity"
-59-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:28:13-66
+59            android:name="com.example.vido_manager_library.Activities.Admin.PositionDetailActivity"
+59-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:28:13-68
 60            android:exported="false" />
 60-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:29:13-37
 61        <activity
 61-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:30:9-32:40
-62            android:name="com.example.vido_manager_library.Activities.Admin.BorrowDetailActivity"
-62-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:31:13-66
+62            android:name="com.example.vido_manager_library.Activities.Admin.CategoryDetailActivity"
+62-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:31:13-68
 63            android:exported="false" />
 63-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:32:13-37
 64        <activity
-64-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:33:9-36:55
-65            android:name="com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity"
-65-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:34:13-69
-66            android:exported="false"
+64-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:33:9-35:40
+65            android:name="com.example.vido_manager_library.Activities.Admin.AuthorDetailActivity"
+65-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:34:13-66
+66            android:exported="false" />
 66-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:35:13-37
-67            android:windowSoftInputMode="adjustPan" />
-67-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:36:13-52
-68        <activity
-68-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:37:9-39:40
-69            android:name="com.example.vido_manager_library.Activities.User.BookDetailActivity"
-69-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:38:13-63
-70            android:exported="false" />
-70-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:39:13-37
-71        <activity
-71-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:40:9-42:40
-72            android:name="com.example.vido_manager_library.QRCode.CreateQRCodeActivity"
-72-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:41:13-56
-73            android:exported="false" />
-73-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:42:13-37
+67        <activity
+67-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:36:9-38:40
+68            android:name="com.example.vido_manager_library.Activities.Admin.BorrowDetailActivity"
+68-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:37:13-66
+69            android:exported="false" />
+69-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:38:13-37
+70        <activity
+70-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:39:9-42:55
+71            android:name="com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity"
+71-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:40:13-69
+72            android:exported="false"
+72-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:41:13-37
+73            android:windowSoftInputMode="adjustPan" />
+73-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:42:13-52
 74        <activity
-74-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:43:9-46:55
-75            android:name="com.example.vido_manager_library.Activities.Admin.HomeAdminActivity"
+74-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:43:9-45:40
+75            android:name="com.example.vido_manager_library.Activities.User.BookDetailActivity"
 75-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:44:13-63
-76            android:exported="false"
+76            android:exported="false" />
 76-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:45:13-37
-77            android:windowSoftInputMode="adjustPan" />
-77-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:46:13-52
-78        <activity
-78-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:47:9-49:40
-79            android:name="com.example.vido_manager_library.Activities.User.InformationActivity"
-79-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:48:13-64
-80            android:exported="false" />
-80-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:49:13-37
-81        <activity
-81-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:50:9-52:40
-82            android:name="com.example.vido_manager_library.Activities.User.UserDetailActivity"
-82-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:51:13-63
-83            android:exported="false" />
-83-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:52:13-37
+77        <activity
+77-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:46:9-48:40
+78            android:name="com.example.vido_manager_library.QRCode.CreateQRCodeActivity"
+78-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:47:13-56
+79            android:exported="false" />
+79-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:48:13-37
+80        <activity
+80-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:49:9-52:55
+81            android:name="com.example.vido_manager_library.Activities.Admin.HomeAdminActivity"
+81-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:50:13-63
+82            android:exported="false"
+82-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:51:13-37
+83            android:windowSoftInputMode="adjustPan" />
+83-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:52:13-52
 84        <activity
 84-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:53:9-55:40
-85            android:name="com.example.vido_manager_library.LogSign.LecturersGetNewPassActivity"
+85            android:name="com.example.vido_manager_library.Activities.User.InformationActivity"
 85-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:54:13-64
 86            android:exported="false" />
 86-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:55:13-37
 87        <activity
 87-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:56:9-58:40
-88            android:name="com.example.vido_manager_library.LogSign.StudentGetNewPassActivity"
-88-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:57:13-62
+88            android:name="com.example.vido_manager_library.Activities.User.UserDetailActivity"
+88-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:57:13-63
 89            android:exported="false" />
 89-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:58:13-37
 90        <activity
 90-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:59:9-61:40
-91            android:name="com.example.vido_manager_library.LogSign.LecturersForgotActivity"
-91-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:60:13-60
+91            android:name="com.example.vido_manager_library.LogSign.LecturersGetNewPassActivity"
+91-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:60:13-64
 92            android:exported="false" />
 92-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:61:13-37
 93        <activity
 93-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:62:9-64:40
-94            android:name="com.example.vido_manager_library.LogSign.StudentForgotActivity"
-94-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:63:13-58
+94            android:name="com.example.vido_manager_library.LogSign.StudentGetNewPassActivity"
+94-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:63:13-62
 95            android:exported="false" />
 95-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:64:13-37
 96        <activity
 96-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:65:9-67:40
-97            android:name="com.example.vido_manager_library.LogSign.LecturersLoginActivity"
-97-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:66:13-59
+97            android:name="com.example.vido_manager_library.LogSign.LecturersForgotActivity"
+97-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:66:13-60
 98            android:exported="false" />
 98-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:67:13-37
 99        <activity
 99-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:68:9-70:40
-100            android:name="com.example.vido_manager_library.LogSign.StudentLoginActivity"
-100-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:69:13-57
+100            android:name="com.example.vido_manager_library.LogSign.StudentForgotActivity"
+100-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:69:13-58
 101            android:exported="false" />
 101-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:70:13-37
 102        <activity
-102-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:71:9-79:20
-103            android:name="com.example.vido_manager_library.FlashScreen.WelcomeActivity"
-103-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:72:13-56
-104            android:exported="true" >
-104-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:73:13-36
-105            <intent-filter>
-105-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:74:13-78:29
-106                <action android:name="android.intent.action.MAIN" />
-106-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:75:17-69
-106-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:75:25-66
-107
-108                <category android:name="android.intent.category.LAUNCHER" />
-108-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:77:17-77
-108-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:77:27-74
-109            </intent-filter>
-110        </activity>
-111        <activity
-111-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:80:9-84:55
-112            android:name="com.example.vido_manager_library.Activities.User.MainActivity"
-112-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:81:13-57
-113            android:exported="false"
-113-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:82:13-37
-114            android:theme="@style/Theme.VIDO_Manager_Library"
-114-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:83:13-62
-115            android:windowSoftInputMode="adjustPan" />
-115-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:84:13-52
-116        <activity
-116-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:85:9-89:57
-117            android:name="com.example.vido_manager_library.QRCode.Capture"
-117-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:86:13-43
-118            android:screenOrientation="fullSensor"
-118-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:87:13-51
-119            android:stateNotNeeded="true"
-119-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:88:13-42
-120            android:theme="@style/zxing_CaptureTheme" />
-120-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:89:13-54
-121
-122        <meta-data
-122-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:91:9-93:57
-123            android:name="preloaded_fonts"
+102-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:71:9-73:40
+103            android:name="com.example.vido_manager_library.LogSign.LecturersLoginActivity"
+103-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:72:13-59
+104            android:exported="false" />
+104-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:73:13-37
+105        <activity
+105-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:74:9-76:40
+106            android:name="com.example.vido_manager_library.LogSign.StudentLoginActivity"
+106-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:75:13-57
+107            android:exported="false" />
+107-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:76:13-37
+108        <activity
+108-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:77:9-85:20
+109            android:name="com.example.vido_manager_library.FlashScreen.WelcomeActivity"
+109-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:78:13-56
+110            android:exported="true" >
+110-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:79:13-36
+111            <intent-filter>
+111-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:80:13-84:29
+112                <action android:name="android.intent.action.MAIN" />
+112-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:81:17-69
+112-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:81:25-66
+113
+114                <category android:name="android.intent.category.LAUNCHER" />
+114-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:83:17-77
+114-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:83:27-74
+115            </intent-filter>
+116        </activity>
+117        <activity
+117-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:86:9-90:55
+118            android:name="com.example.vido_manager_library.Activities.User.MainActivity"
+118-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:87:13-57
+119            android:exported="false"
+119-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:88:13-37
+120            android:theme="@style/Theme.VIDO_Manager_Library"
+120-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:89:13-62
+121            android:windowSoftInputMode="adjustPan" />
+121-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:90:13-52
+122        <activity
+122-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:91:9-95:57
+123            android:name="com.example.vido_manager_library.QRCode.Capture"
 123-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:92:13-43
-124            android:resource="@array/preloaded_fonts" />
-124-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:93:13-54
-125
-126        <activity
-126-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:46:9-52:63
-127            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-127-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:47:13-74
-128            android:clearTaskOnLaunch="true"
-128-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:48:13-45
-129            android:screenOrientation="sensorLandscape"
-129-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:49:13-56
-130            android:stateNotNeeded="true"
-130-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:50:13-42
-131            android:theme="@style/zxing_CaptureTheme"
-131-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:51:13-54
-132            android:windowSoftInputMode="stateAlwaysHidden" />
-132-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:52:13-60
-133
-134        <provider
-134-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-135            android:name="androidx.startup.InitializationProvider"
-135-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-136            android:authorities="com.example.vido_manager_library.androidx-startup"
-136-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-137            android:exported="false" >
-137-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-138            <meta-data
-138-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-139                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-139-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-140                android:value="androidx.startup" />
-140-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-141            <meta-data
-141-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tan\.gradle\caches\transforms-3\0e4a425e61d135d109d64d5f17d999df\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-142                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-142-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tan\.gradle\caches\transforms-3\0e4a425e61d135d109d64d5f17d999df\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-143                android:value="androidx.startup" />
-143-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tan\.gradle\caches\transforms-3\0e4a425e61d135d109d64d5f17d999df\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-144        </provider>
-145
-146        <uses-library
-146-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
-147            android:name="androidx.window.extensions"
-147-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
-148            android:required="false" />
-148-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
-149        <uses-library
-149-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
-150            android:name="androidx.window.sidecar"
-150-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
-151            android:required="false" />
-151-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
-152    </application>
-153
-154</manifest>
+124            android:screenOrientation="fullSensor"
+124-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:93:13-51
+125            android:stateNotNeeded="true"
+125-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:94:13-42
+126            android:theme="@style/zxing_CaptureTheme" />
+126-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:95:13-54
+127
+128        <meta-data
+128-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:97:9-99:57
+129            android:name="preloaded_fonts"
+129-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:98:13-43
+130            android:resource="@array/preloaded_fonts" />
+130-->C:\Users\tan\Documents\Code_IT\Android_Studio_SeverTest\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:99:13-54
+131
+132        <activity
+132-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:46:9-52:63
+133            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+133-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:47:13-74
+134            android:clearTaskOnLaunch="true"
+134-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:48:13-45
+135            android:screenOrientation="sensorLandscape"
+135-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:49:13-56
+136            android:stateNotNeeded="true"
+136-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:50:13-42
+137            android:theme="@style/zxing_CaptureTheme"
+137-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:51:13-54
+138            android:windowSoftInputMode="stateAlwaysHidden" />
+138-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\tan\.gradle\caches\transforms-3\b712005b5a5ac6f778433dc49ed0519c\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:52:13-60
+139
+140        <provider
+140-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+141            android:name="androidx.startup.InitializationProvider"
+141-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+142            android:authorities="com.example.vido_manager_library.androidx-startup"
+142-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+143            android:exported="false" >
+143-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+144            <meta-data
+144-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+145                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+145-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+146                android:value="androidx.startup" />
+146-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\09b79be83fba3907471fe1de63f439d3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+147            <meta-data
+147-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tan\.gradle\caches\transforms-3\0e4a425e61d135d109d64d5f17d999df\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+148                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+148-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tan\.gradle\caches\transforms-3\0e4a425e61d135d109d64d5f17d999df\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+149                android:value="androidx.startup" />
+149-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tan\.gradle\caches\transforms-3\0e4a425e61d135d109d64d5f17d999df\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+150        </provider>
+151
+152        <uses-library
+152-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+153            android:name="androidx.window.extensions"
+153-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+154            android:required="false" />
+154-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+155        <uses-library
+155-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+156            android:name="androidx.window.sidecar"
+156-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+157            android:required="false" />
+157-->[androidx.window:window:1.0.0] C:\Users\tan\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+158    </application>
+159
+160</manifest>

@@ -2564,6 +2564,7 @@ drawable ic_baseline_arrow_back_ios_new
 drawable ic_baseline_arrow_drop_down
 drawable ic_baseline_arrow_drop_down_24
 drawable ic_baseline_arrow_drop_up
+drawable ic_baseline_check_24
 drawable ic_baseline_dashboard_24
 drawable ic_baseline_file_upload
 drawable ic_baseline_home
@@ -2796,6 +2797,7 @@ id btn_Login
 id btn_LoginAdmin
 id btn_LoginStu
 id btn_add_new_borrow
+id btn_addnewgiveback
 id btn_delete
 id btn_repair
 id btn_save_borow
@@ -2813,6 +2815,7 @@ id center
 id centerCrop
 id center_horizontal
 id center_vertical
+id certificate
 id chain
 id chain2
 id chains
@@ -2834,6 +2837,7 @@ id clip_vertical
 id clockwise
 id closest
 id code_student
+id codebook
 id collapseActionView
 id compress
 id confirm_button
@@ -3099,6 +3103,7 @@ id nameBook
 id name_borrow
 id name_item
 id name_student
+id namebook
 id namecard_borrow
 id nav_controller_view_tag
 id nav_host_fragment_container
@@ -3191,6 +3196,17 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sgb_dayborrow
+id sgb_daygiveback
+id sgb_imgborrow
+id sgb_mssv
+id sgb_namelec
+id sgb_namestu
+id sgb_titledayborrow
+id sgb_titledaygiveback
+id sgb_titlemssv
+id sgb_titlenamelec
+id sgb_titlenamestu
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3300,6 +3316,8 @@ id title_position
 id title_publish_year
 id title_publisherId
 id title_template
+id titlecodebook
+id titlenamebook
 id toggle
 id top
 id topPanel
@@ -3452,6 +3470,7 @@ layout activity_book_detail
 layout activity_borrow_detail
 layout activity_category_detail
 layout activity_create_qrcode
+layout activity_give_back_admin
 layout activity_home_admin
 layout activity_information
 layout activity_lecturers_forgot
@@ -3460,6 +3479,7 @@ layout activity_lecturers_login
 layout activity_main
 layout activity_position_detail
 layout activity_publisher_detail
+layout activity_set_give_back_admin
 layout activity_student_forgot
 layout activity_student_get_new_pass
 layout activity_student_login

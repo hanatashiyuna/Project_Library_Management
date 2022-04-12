@@ -39,6 +39,8 @@ public interface ApiBookAdmin {
     Call<SearchBooks> covertBookSAdmin(@Query("search") String search);
     @GET("api/saches")
     Call<List<Books>> convertBookOriginalAdmin();
+    @GET("api/saches/{id}")
+    Call<Books> convertSingleBookOriginalAdmin(@Path("id") int id);
     //==================================
 
     //==============================

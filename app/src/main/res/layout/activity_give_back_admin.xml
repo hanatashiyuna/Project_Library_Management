@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Admin.GiveBackAdminActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg_log_sign">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/sgb_titlemssv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="MSSV: "
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/sgb_mssv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="2006010004"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/sgb_titlenamestu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Tên Sinh Viên: "
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/sgb_namestu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="2006010004"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/sgb_titlenamelec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Thủ Thư Kí Gửi: "
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/sgb_namelec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="2006010004"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/sgb_titledaygiveback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Ngày Trả: "
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/sgb_daygiveback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="2006010004"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+        <ImageView
+            android:id="@+id/sgb_imgborrow"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="2"
+            android:src="@drawable/androidprogram"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/titlenamebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên Sách: "
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/namebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:text="Android"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+                <TextView
+                    android:id="@+id/titlecodebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mã Sách: "
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/codebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:text="Android"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:background="@color/orange"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/certificate"
+        android:text="Đã Hoàn Trả Thành Công."
+        android:gravity="center"
+        />
+
+</LinearLayout>

@@ -2563,6 +2563,7 @@ int drawable ic_baseline_arrow_back_ios_new 0x7f080074
 int drawable ic_baseline_arrow_drop_down 0x7f080075
 int drawable ic_baseline_arrow_drop_down_24 0x7f080076
 int drawable ic_baseline_arrow_drop_up 0x7f080077
+int drawable ic_baseline_check_24 0x7f0800cf
 int drawable ic_baseline_dashboard_24 0x7f080078
 int drawable ic_baseline_file_upload 0x7f080079
 int drawable ic_baseline_home 0x7f08007a
@@ -2795,6 +2796,7 @@ int id btn_Login 0x7f0a0089
 int id btn_LoginAdmin 0x7f0a008a
 int id btn_LoginStu 0x7f0a008b
 int id btn_add_new_borrow 0x7f0a008c
+int id btn_addnewgiveback 0x7f0a02c1
 int id btn_delete 0x7f0a008d
 int id btn_repair 0x7f0a008e
 int id btn_save_borow 0x7f0a008f
@@ -2812,6 +2814,7 @@ int id center 0x7f0a009a
 int id centerCrop 0x7f0a009b
 int id center_horizontal 0x7f0a009c
 int id center_vertical 0x7f0a009d
+int id certificate 0x7f0a02d1
 int id chain 0x7f0a009e
 int id chain2 0x7f0a009f
 int id chains 0x7f0a00a0
@@ -2833,6 +2836,7 @@ int id clip_vertical 0x7f0a00af
 int id clockwise 0x7f0a00b0
 int id closest 0x7f0a00b1
 int id code_student 0x7f0a00b2
+int id codebook 0x7f0a02c2
 int id collapseActionView 0x7f0a00b3
 int id compress 0x7f0a00b4
 int id confirm_button 0x7f0a00b5
@@ -3098,6 +3102,7 @@ int id nameBook 0x7f0a01b8
 int id name_borrow 0x7f0a01b9
 int id name_item 0x7f0a01ba
 int id name_student 0x7f0a01bb
+int id namebook 0x7f0a02c3
 int id namecard_borrow 0x7f0a01bc
 int id nav_controller_view_tag 0x7f0a01bd
 int id nav_host_fragment_container 0x7f0a01be
@@ -3190,6 +3195,17 @@ int id search_voice_btn 0x7f0a0214
 int id select_dialog_listview 0x7f0a0215
 int id selected 0x7f0a0216
 int id selection_type 0x7f0a0217
+int id sgb_dayborrow 0x7f0a02c4
+int id sgb_daygiveback 0x7f0a02c5
+int id sgb_imgborrow 0x7f0a02c6
+int id sgb_mssv 0x7f0a02c7
+int id sgb_namelec 0x7f0a02c8
+int id sgb_namestu 0x7f0a02c9
+int id sgb_titledayborrow 0x7f0a02ca
+int id sgb_titledaygiveback 0x7f0a02cb
+int id sgb_titlemssv 0x7f0a02cc
+int id sgb_titlenamelec 0x7f0a02cd
+int id sgb_titlenamestu 0x7f0a02ce
 int id sharedValueSet 0x7f0a0218
 int id sharedValueUnset 0x7f0a0219
 int id shortcut 0x7f0a021a
@@ -3299,6 +3315,8 @@ int id title_position 0x7f0a0281
 int id title_publish_year 0x7f0a0282
 int id title_publisherId 0x7f0a0283
 int id title_template 0x7f0a0284
+int id titlecodebook 0x7f0a02cf
+int id titlenamebook 0x7f0a02d0
 int id toggle 0x7f0a0285
 int id top 0x7f0a0286
 int id topPanel 0x7f0a0287
@@ -3451,6 +3469,7 @@ int layout activity_book_detail 0x7f0d001e
 int layout activity_borrow_detail 0x7f0d001f
 int layout activity_category_detail 0x7f0d0020
 int layout activity_create_qrcode 0x7f0d0021
+int layout activity_give_back_admin 0x7f0d00ac
 int layout activity_home_admin 0x7f0d0022
 int layout activity_information 0x7f0d0023
 int layout activity_lecturers_forgot 0x7f0d0024
@@ -3459,6 +3478,7 @@ int layout activity_lecturers_login 0x7f0d0026
 int layout activity_main 0x7f0d0027
 int layout activity_position_detail 0x7f0d0028
 int layout activity_publisher_detail 0x7f0d0029
+int layout activity_set_give_back_admin 0x7f0d00ad
 int layout activity_student_forgot 0x7f0d002a
 int layout activity_student_get_new_pass 0x7f0d002b
 int layout activity_student_login 0x7f0d002c

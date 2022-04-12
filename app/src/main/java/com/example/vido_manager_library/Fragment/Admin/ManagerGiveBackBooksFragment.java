@@ -14,9 +14,13 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
+import com.example.vido_manager_library.Activities.Admin.GiveBackAdminActivity;
 import com.example.vido_manager_library.Adapters.BooksAdapter;
+import com.example.vido_manager_library.Adapters.GiveBackAdapter;
 import com.example.vido_manager_library.Interface.ApiBookAdmin;
+import com.example.vido_manager_library.Interface.ApiGiveBackAdmin;
 import com.example.vido_manager_library.Models.Books;
+import com.example.vido_manager_library.Models.GiveBack;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
@@ -33,7 +37,7 @@ import retrofit2.Response;
 public class ManagerGiveBackBooksFragment extends Fragment {
 
     View view;
-    private List<Books> mListBooksGiveBack;
+    private List<GiveBack> mListBooksGiveBack;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -51,23 +55,23 @@ public class ManagerGiveBackBooksFragment extends Fragment {
     }
 
     private void getListJS(RecyclerView listBooksScreen) {
-        ApiBookAdmin.apiBookAdmin.convertBookOriginalAdmin().enqueue(new Callback<List<Books>>() {
+        ApiGiveBackAdmin.apiGiveBackAdmin.covertGiveBackAdmin().enqueue(new Callback<List<GiveBack>>() {
             @Override
-            public void onResponse(Call<List<Books>> call, Response<List<Books>> response) {
+            public void onResponse(Call<List<GiveBack>> call, Response<List<GiveBack>> response) {
                 mListBooksGiveBack = response.body();
-                BooksAdapter booksAdapter = new BooksAdapter(ManagerGiveBackBooksFragment.this, mListBooksGiveBack, books -> onClickGoToDetail(books));
-                listBooksScreen.setAdapter(booksAdapter);
+                GiveBackAdapter giveBackAdapter = new GiveBackAdapter(ManagerGiveBackBooksFragment.this, mListBooksGiveBack,this::onClickGoToDetail);
+                listBooksScreen.setAdapter(giveBackAdapter);
             }
-            private void onClickGoToDetail(Books books) {
-                Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
+            private void onClickGoToDetail(GiveBack giveBack) {
+                Intent intent = new Intent(getActivity(), GiveBackAdminActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("book_information", books);
+                bundle.putSerializable("giveback_information", giveBack);
                 intent.putExtras(bundle);
                 startActivity(intent);
 
             }
             @Override
-            public void onFailure(Call<List<Books>> call, Throwable t) {
+            public void onFailure(Call<List<GiveBack>> call, Throwable t) {
                 Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
             }
         });

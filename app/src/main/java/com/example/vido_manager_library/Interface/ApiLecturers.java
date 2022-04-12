@@ -33,8 +33,8 @@ public interface ApiLecturers {
     // lấy ra danh sách các tài khoản, mật khẩu để đăng nhập
     @GET("api/thuthus")
     Call<List<UserLectuters>> covertUserLectuters();
-    /*@GET("")
-    Call<List<UserAuthor>> covertUserLecturers(@Query("id") String id);*/
+    @GET("api/thuthus/{id}")
+    Call<UserLectuters> covertUserSingleLecturers(@Path("id") int id);
     //==================================
 
     //==============================

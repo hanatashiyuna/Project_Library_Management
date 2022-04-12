@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Activities.Admin.BorrowDetailActivity;
+import com.example.vido_manager_library.Interface.IClickItemBorrow;
 import com.example.vido_manager_library.Interface.IClickItemPositions;
 import com.example.vido_manager_library.Models.Borrow;
 import com.example.vido_manager_library.Models.Positions;
@@ -24,7 +25,7 @@ public class BorrowAdapter extends RecyclerView.Adapter<BorrowAdapter.ViewHolder
     Activity activity;
     Fragment fragment;
     List<Borrow> list;
-    IClickItemPositions iClickItemPositions;
+    IClickItemBorrow iClickItemBorrow;
 
     //Context to Activity
     public BorrowAdapter(Activity activity, List<Borrow> list) {
@@ -32,10 +33,10 @@ public class BorrowAdapter extends RecyclerView.Adapter<BorrowAdapter.ViewHolder
         this.list = list;
     }
 
-    public BorrowAdapter(Fragment fragment, List<Borrow> list, IClickItemPositions iClickItemPositions) {
+    public BorrowAdapter(Fragment fragment, List<Borrow> list, IClickItemBorrow iClickItemBorrow) {
         this.fragment = fragment;
         this.list = list;
-        this.iClickItemPositions = iClickItemPositions;
+        this.iClickItemBorrow =  iClickItemBorrow;
     }
 
     @NonNull
@@ -49,6 +50,8 @@ public class BorrowAdapter extends RecyclerView.Adapter<BorrowAdapter.ViewHolder
         Borrow borrow = list.get(position);
         holder.name_item.setText(list.get(position).getMasosinhvien());
         holder.category_item.setText(String.valueOf(list.get(position).getNgaymuon()));
+
+        holder.itemSum.setOnClickListener(view -> iClickItemBorrow.onClickItemBorrow(borrow));
 
     }
 

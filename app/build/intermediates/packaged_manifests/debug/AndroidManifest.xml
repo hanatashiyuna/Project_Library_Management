@@ -47,6 +47,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.VIDO_Manager_Library" >
         <activity
+            android:name="com.example.vido_manager_library.Activities.Admin.GiveBackAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.vido_manager_library.Activities.Admin.SetGiveBackAdminActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.vido_manager_library.Activities.Admin.PublisherDetailActivity"
             android:exported="false" />
         <activity

@@ -110,7 +110,7 @@ public class BookAdminDetailActivity extends AppCompatActivity {
         Button btn_upload = findViewById(R.id.btn_upload_image);
         upload = findViewById(R.id.upload_image);
 
-        onClickRequestPermission();
+        upload.setOnClickListener(view -> onClickRequestPermission());
 
         ImageView imgAdminBook = findViewById(R.id.imgBookAdmin);
         //Tiêu đề của file BookAdminDetailActivity
@@ -170,7 +170,6 @@ public class BookAdminDetailActivity extends AppCompatActivity {
 
                     title_authorId.setText("Tên/Id Tác Giả: ");
                     ed_authorId.setHint(String.valueOf(books.getTacgiaID()));
-                    //Log.e("id", "========================================= " + getNameAuthor);
 
                     title_categoryId.setText("Tên/Id Thể Loại: ");
                     ed_categoryId.setHint(String.valueOf(books.getTheloaiID()));
