@@ -1,12 +1,24 @@
 package com.example.vido_manager_library.Activities.Admin;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -32,6 +44,8 @@ import com.example.vido_manager_library.Models.Positions;
 import com.example.vido_manager_library.R;
 
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,6 +55,7 @@ import retrofit2.Response;
 
 public class BookAdminDetailActivity extends AppCompatActivity {
 
+    private static final int MY_REQUEST_CODE = 10;
     List<Books> mListBooks;
     List<Authors> mListAuthor;
     List<Categorys> mListCategory;
@@ -57,6 +72,30 @@ public class BookAdminDetailActivity extends AppCompatActivity {
 
     private EditText ed_authorId;
     private String getNameAuthor;
+    ImageView upload;
+
+    private ActivityResultLauncher<Intent> mActivityResultLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    Log.e("", "onActivityResult");
+                    if(result.getResultCode() == Activity.RESULT_OK){
+                        Intent data = result.getData();
+                        if(data == null){
+                            return;
+                        }
+                        Uri uri = data.getData();
+
+                        try {
+                            Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
+                            upload.setImageBitmap(bitmap);
+                        }catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            });
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -65,6 +104,11 @@ public class BookAdminDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_book_admin_detail);
 
         arrayListAuthor = new ArrayList<>();
+
+        Button btn_upload = findViewById(R.id.btn_upload_image);
+        upload = findViewById(R.id.upload_image);
+
+        onClickRequestPermission();
 
         ImageView imgAdminBook = findViewById(R.id.imgBookAdmin);
         //Tiêu đề của file BookAdminDetailActivity
@@ -196,6 +240,32 @@ public class BookAdminDetailActivity extends AppCompatActivity {
         back.setOnClickListener(view -> switchActivity());
 
 
+    }
+
+    private void onClickRequestPermission() {
+        if(checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED){
+            openGallery();
+        }else{
+            String[] permission = {Manifest.permission.READ_EXTERNAL_STORAGE};
+            requestPermissions(permission, MY_REQUEST_CODE);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if(requestCode == MY_REQUEST_CODE){
+            if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                openGallery();
+            }
+        }
+    }
+
+    private void openGallery() {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        mActivityResultLauncher.launch(Intent.createChooser(intent, "Select Picture"));
     }
 
     public void getSelectListAuthorFormApi(ListView listView){
