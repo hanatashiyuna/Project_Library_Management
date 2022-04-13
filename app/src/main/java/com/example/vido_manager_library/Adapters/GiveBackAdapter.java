@@ -11,48 +11,45 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.vido_manager_library.Activities.Admin.BorrowDetailActivity;
 import com.example.vido_manager_library.Interface.IClickItemBorrow;
-import com.example.vido_manager_library.Interface.IClickItemPositions;
+import com.example.vido_manager_library.Interface.IClickItemGiveBack;
 import com.example.vido_manager_library.Models.Borrow;
-import com.example.vido_manager_library.Models.Positions;
+import com.example.vido_manager_library.Models.GiveBack;
 import com.example.vido_manager_library.R;
 
 import java.util.List;
 
-public class BorrowAdapter extends RecyclerView.Adapter<BorrowAdapter.ViewHolder>{
+public class GiveBackAdapter extends RecyclerView.Adapter<GiveBackAdapter.ViewHolder>{
     //Context context;
     Activity activity;
     Fragment fragment;
-    List<Borrow> list;
-    IClickItemBorrow iClickItemBorrow;
+    List<GiveBack> list;
+    IClickItemGiveBack iClickItemGiveBack;
 
     //Context to Activity
-    public BorrowAdapter(Activity activity, List<Borrow> list) {
+    public GiveBackAdapter(Activity activity, List<GiveBack> list) {
         this.activity = activity;
         this.list = list;
     }
 
-    public BorrowAdapter(Fragment fragment, List<Borrow> list, IClickItemBorrow iClickItemBorrow) {
+    public GiveBackAdapter(Fragment fragment, List<GiveBack> list, IClickItemGiveBack iClickItemGiveBack) {
         this.fragment = fragment;
         this.list = list;
-        this.iClickItemBorrow =  iClickItemBorrow;
+        this.iClickItemGiveBack =  iClickItemGiveBack;
     }
 
     @NonNull
     @Override
-    public BorrowAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new BorrowAdapter.ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.items, parent, false));
+    public GiveBackAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new GiveBackAdapter.ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.items, parent, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Borrow borrow = list.get(position);
-        holder.name_item.setText(list.get(position).getMasosinhvien());
-        holder.category_item.setText(String.valueOf(list.get(position).getNgaymuon()));
-
-        holder.itemSum.setOnClickListener(view -> iClickItemBorrow.onClickItemBorrow(borrow));
-
+        GiveBack giveBack = list.get(position);
+        holder.name_item.setText(String.valueOf(list.get(position).getMuonId()));
+        holder.category_item.setText(String.valueOf(list.get(position).getNgaytra()));
+        holder.itemSum.setOnClickListener(view -> iClickItemGiveBack.onClickItemGiveBack(giveBack));
     }
 
     @Override

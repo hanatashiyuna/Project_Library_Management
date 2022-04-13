@@ -2,11 +2,27 @@ package com.example.vido_manager_library.Models;
 
 import java.io.Serializable;
 
+/*		"traId": 1,
+                "muonId": 1,
+                "thuthuId": 1,
+                "ngaytra": "2020-06-01T00:00:00"
+                */
 public class GiveBack implements Serializable {
     private int traId, muonId,thuthuId;
     private String ngaytra;
 
+    public GiveBack(int traId, int muonId, int thuthuId, String ngaytra) {
+        this.traId = traId;
+        this.muonId = muonId;
+        this.thuthuId = thuthuId;
+        this.ngaytra = ngaytra;
+    }
 
+    public GiveBack(int muonId, int thuthuId, String ngaytra) {
+        this.muonId = muonId;
+        this.thuthuId = thuthuId;
+        this.ngaytra = ngaytra;
+    }
 
     public int getTraId() {
         return traId;

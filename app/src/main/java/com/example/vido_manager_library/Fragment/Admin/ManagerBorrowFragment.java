@@ -13,10 +13,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
-import com.example.vido_manager_library.Adapters.BooksAdapter;
-import com.example.vido_manager_library.Interface.ApiBookAdmin;
-import com.example.vido_manager_library.Models.Books;
+import com.example.vido_manager_library.Activities.Admin.SetGiveBackAdminActivity;
+import com.example.vido_manager_library.Adapters.BorrowAdapter;
+import com.example.vido_manager_library.Interface.ApiBorrowAdmin;
+import com.example.vido_manager_library.Models.Borrow;
 import com.example.vido_manager_library.R;
 
 import java.util.ArrayList;
@@ -33,14 +33,14 @@ import retrofit2.Response;
 public class ManagerBorrowFragment extends Fragment {
 
     View view;
-    private List<Books> mListBooksAdmin;
+    private List<Borrow> mListBorrowAdmin;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_manager_borrow, container, false);
-        mListBooksAdmin = new ArrayList<>();
+        mListBorrowAdmin = new ArrayList<>();
 
         RecyclerView listBooksScreen = view.findViewById(R.id.rec_manager_borrow);
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(Objects.requireNonNull(getActivity()), DividerItemDecoration.VERTICAL);
@@ -52,23 +52,23 @@ public class ManagerBorrowFragment extends Fragment {
     }
 
     private void getListJS(RecyclerView listBooksScreen) {
-        ApiBookAdmin.apiBookAdmin.convertBookOriginalAdmin().enqueue(new Callback<List<Books>>() {
+        ApiBorrowAdmin.apiBorrowAdmin.covertBorrowkAdmin().enqueue(new Callback<List<Borrow>>() {
             @Override
-            public void onResponse(Call<List<Books>> call, Response<List<Books>> response) {
-                mListBooksAdmin = response.body();
-                BooksAdapter booksAdapter = new BooksAdapter(ManagerBorrowFragment.this, mListBooksAdmin, books -> onClickGoToDetail(books));
-                listBooksScreen.setAdapter(booksAdapter);
+            public void onResponse(Call<List<Borrow>> call, Response<List<Borrow>> response) {
+                mListBorrowAdmin = response.body();
+                BorrowAdapter borrowAdapter = new BorrowAdapter(ManagerBorrowFragment.this, mListBorrowAdmin, this::onClickGoToDetail);
+                listBooksScreen.setAdapter(borrowAdapter);
             }
-            private void onClickGoToDetail(Books books) {
-                Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
+            private void onClickGoToDetail(Borrow borrow) {
+                Intent intent = new Intent(getActivity(), SetGiveBackAdminActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("book_information", books);
+                bundle.putSerializable("borrow_information", borrow);
                 intent.putExtras(bundle);
                 startActivity(intent);
 
             }
             @Override
-            public void onFailure(Call<List<Books>> call, Throwable t) {
+            public void onFailure(Call<List<Borrow>> call, Throwable t) {
                 Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
             }
         });

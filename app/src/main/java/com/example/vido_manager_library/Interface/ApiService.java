@@ -38,10 +38,9 @@ public interface ApiService {
     /*@GET("")
     Call<List<UserAuthor>> covertUserLecturers(@Query("id") String id);*/
     //==================================
-    @GET("api/booklists?")
-    Call<List<Books>> convertBookAdmin(@Query("search") String search);
-    @GET("api/tacgias?")
-    Call<List<Authors>> convertAuthor(@Query("search") String search);
+    @GET("api/SinhViens/{id}")
+    Call<UserStu> convertSingleUserStu(@Path("id") int id);
+
     //==============================
     // Update data project upload database
     @PUT("api/SinhViens/{id}")
