@@ -33,6 +33,8 @@ public interface ApiPositionAdmin {
     // lấy ra danh sách các tài khoản, mật khẩu để đăng nhập
     @GET("api/vitris")
     Call<List<Positions>> covertPositionAdmin();
+    @GET("api/vitris/{id}")
+    Call<Positions> convertPosition(@Path("id") int id);
     //==================================
 
     //==============================

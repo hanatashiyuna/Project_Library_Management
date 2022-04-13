@@ -37,6 +37,8 @@ public interface ApiAuthorAdmin {
     // lấy ra danh sách các tài khoản, mật khẩu để đăng nhập
     @GET("api/tacgias")
     Call<List<Authors>> covertAuthorAdmin();
+    @GET("api/tacgias/{id}")
+    Call<Authors> convertAuthor(@Path("id") int id);
 
     //==================================
 

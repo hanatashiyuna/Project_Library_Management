@@ -33,8 +33,8 @@ public interface ApiCategoryAdmin {
     // lấy ra danh sách các tài khoản, mật khẩu để đăng nhập
     @GET("api/theloais")
     Call<List<Categorys>> covertCategoryAdmin();
-    /*@GET("")
-    Call<List<UserAuthor>> covertUserLecturers(@Query("id") String id);*/
+    @GET("api/theloais/{id}")
+    Call<Categorys> covertCategory(@Path("id") int id);
     //==================================
 
     //==============================

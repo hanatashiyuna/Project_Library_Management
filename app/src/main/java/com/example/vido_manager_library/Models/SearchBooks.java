@@ -2,14 +2,16 @@ package com.example.vido_manager_library.Models;
 
 import java.io.Serializable;
 
-/*"tensach": "Lập trình C++",
+/*
+        "tensach": "Lập trình C++",
         "tentheloai": "Khoa học",
         "tentacgia": "Nguyễn Anh Kim Khoa",
         "tenxuatban": "Kim đồng",
         "namXb": 2010,
         "soban": 5,
         "soke": "s1.1",
-        "img": "null"*/
+        "img": "null"
+        */
 public class SearchBooks implements Serializable {
     private String tensach;
     private String tentheloai;

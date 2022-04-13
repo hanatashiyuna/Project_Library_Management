@@ -2804,6 +2804,7 @@ id btn_delete
 id btn_repair
 id btn_save_borow
 id btn_signup
+id btn_upload_image
 id buttonPanel
 id cache_measures
 id callMeasure

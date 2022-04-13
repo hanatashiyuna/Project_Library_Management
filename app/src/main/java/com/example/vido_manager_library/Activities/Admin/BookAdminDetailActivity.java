@@ -31,6 +31,9 @@ import android.widget.Toast;
 import com.example.vido_manager_library.GetRealPathUtil.RealPathUtil;
 import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
 import com.example.vido_manager_library.Interface.ApiBookAdmin;
+import com.example.vido_manager_library.Interface.ApiCategoryAdmin;
+import com.example.vido_manager_library.Interface.ApiPositionAdmin;
+import com.example.vido_manager_library.Interface.ApiPublishingHouseAdmin;
 import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.Models.Categorys;
@@ -53,21 +56,16 @@ public class BookAdminDetailActivity extends AppCompatActivity {
 
     private static final int MY_REQUEST_CODE = 10;
     List<Books> mListBooks;
-    List<Authors> mListAuthor;
-    List<Categorys> mListCategory;
-    List<PC> mListPublisher;
-    List<Positions> mListPosition;
+
+    Authors mAuthors;
+    Categorys mCategory;
+    PC mPublisher;
+    Positions mPositions;
 
     ArrayList<String> arrayListAuthor, arrayListCategory, arrayListPublisher, arrayListPosition;
 
-    private static String searchBook = "";
-    private static String getIdAuthor = "";
-    private static String getIdCategory = "";
-    private static String getIdPublisher = "";
-    private static String getIdPosition = "";
 
     private EditText ed_authorId;
-    private String getNameAuthor;
     private Uri mUri;
     ImageView upload;
     ImageView imgAdminBook;
@@ -154,11 +152,13 @@ public class BookAdminDetailActivity extends AppCompatActivity {
             return;
         }
         if(bundle.containsKey("book_information")){
+            //mProgressDialog.show();
             SearchBooks searchBooks = (SearchBooks) bundle.get("book_information");
 
             ApiBookAdmin.apiBookAdmin.convertBookOriginalAdmin().enqueue(new Callback<List<Books>>() {
                 @Override
                 public void onResponse(Call<List<Books>> call, Response<List<Books>> response) {
+                    //mProgressDialog.dismiss();
                     mListBooks = response.body();
                     for (Books books1 : mListBooks) {
                         if(books1.getTensach().equals(searchBooks.getTensach()) ){
@@ -174,14 +174,14 @@ public class BookAdminDetailActivity extends AppCompatActivity {
                     title_nameBook.setText("Tên Sách: ");
                     ed_nameBook.setHint(books.getTensach());
 
-                    title_authorId.setText("Tên/Id Tác Giả: ");
-                    ed_authorId.setHint(String.valueOf(books.getTacgiaID()));
+                    title_authorId.setText("Tên Tác Giả: ");
+                    getSelectItemFormApi(ed_authorId, "author");
 
-                    title_categoryId.setText("Tên/Id Thể Loại: ");
-                    ed_categoryId.setHint(String.valueOf(books.getTheloaiID()));
+                    title_categoryId.setText("Tên Thể Loại: ");
+                    getSelectItemFormApi(ed_categoryId, "category");
 
-                    title_publisherId.setText("Id Nhà Xuất Bản: ");
-                    ed_publisherId.setHint(String.valueOf(books.getNhaxbID()));
+                    title_publisherId.setText("Nhà Xuất Bản: ");
+                    getSelectItemFormApi(ed_publisherId, "publisher");
 
                     title_pbYear.setText("Năm Xuất Bản: ");
                     ed_pbYear.setHint(books.getNamxb());
@@ -190,11 +190,12 @@ public class BookAdminDetailActivity extends AppCompatActivity {
                     ed_amount.setHint(String.valueOf(books.getSoban()));
 
                     title_position.setText("Id Vị Trí: ");
-                    ed_position.setHint(String.valueOf(books.getVitriID()));
+                    getSelectItemFormApi(ed_position, "position");
 
                     btn_repair.setOnClickListener(view -> {
                         String code_book = ed_codeBook.getText().toString().trim();
                         String name_book = ed_nameBook.getText().toString().trim();
+                        int idAuthor = Integer.parseInt(ed_authorId.getText().toString().trim());
                         if (!code_book.equals("") && !name_book.equals("")) {
                             ApiBookAdmin.apiBookAdmin.updateDataBookAdmin(books.getSachID(), books).enqueue(new Callback<Books>() {
                                 @Override
@@ -227,6 +228,7 @@ public class BookAdminDetailActivity extends AppCompatActivity {
                 }
                 @Override
                 public void onFailure(Call<List<Books>> call, Throwable t) {
+                    //mProgressDialog.dismiss();
                     Toast.makeText(BookAdminDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
                 }
             });
@@ -270,62 +272,60 @@ public class BookAdminDetailActivity extends AppCompatActivity {
         Log.e("path img", strRealPath + " ==================");
     }
 
-    public void getSelectListAuthorFormApi(ListView listView){
-        ApiAuthorAdmin.apiauthoradmin.covertAuthorAdmin().enqueue(new Callback<List<Authors>>() {
-            @Override
-            public void onResponse(Call<List<Authors>> call, Response<List<Authors>> response) {
-                mListAuthor = response.body();
-                for(Authors authors: mListAuthor){
-                    arrayListAuthor.add(authors.getTentacgia());
+    public void getSelectItemFormApi(EditText editText, String key){
+        if(key.equals("position")){
+            ApiPositionAdmin.apiPositionAdmin.convertPosition(books.getVitriID()).enqueue(new Callback<Positions>() {
+                @Override
+                public void onResponse(Call<Positions> call, Response<Positions> response) {
+                    mPositions = response.body();
+                    editText.setHint(mPositions.getTenhang());
                 }
-                //khởi tạo array adapter
-                ArrayAdapter<String> adapter = new ArrayAdapter<>(BookAdminDetailActivity.this, android.R.layout.simple_list_item_1, arrayListAuthor);
-                listView.setAdapter(adapter);
 
-                ed_authorId.addTextChangedListener(new TextWatcher() {
-                    @Override
-                    public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-                    }
-
-                    @Override
-                    public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                        //filter array list
-                        adapter.getFilter().filter(charSequence);
-                    }
-
-                    @Override
-                    public void afterTextChanged(Editable editable) {
-
-                    }
-                });
-
-                listView.setOnItemClickListener((adapterView, view1, i, l) -> {
-                    ed_authorId.setText(adapter.getItem(i));
-                    getIdAuthor = adapter.getItem(i);
-                    listView.setAdapter(null);
-                });
-            }
-
-            @Override
-            public void onFailure(Call<List<Authors>> call, Throwable t) {
-                Toast.makeText(BookAdminDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-    }
-
-    public int GetIDAuthor(){
-        int IDAuthor = 0;
-        if(mListAuthor != null){
-            for(Authors getauthors: mListAuthor){
-                if(getauthors.getTentacgia().equals(getIdAuthor)){
-                    IDAuthor = getauthors.getTacgiaId();
-                    break;
+                @Override
+                public void onFailure(Call<Positions> call, Throwable t) {
+                    Toast.makeText(BookAdminDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
                 }
-            }
+            });
+        }else if(key.equals("publisher")){
+            ApiPublishingHouseAdmin.apiPublishingHouseAdmin.convertPublisher(books.getNhaxbID()).enqueue(new Callback<PC>() {
+                @Override
+                public void onResponse(Call<PC> call, Response<PC> response) {
+                    mPublisher = response.body();
+                    editText.setHint(mPublisher.getTenxuatban());
+                }
+
+                @Override
+                public void onFailure(Call<PC> call, Throwable t) {
+                    Toast.makeText(BookAdminDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }else if(key.equals("author")){
+            ApiAuthorAdmin.apiauthoradmin.convertAuthor(books.getTacgiaID()).enqueue(new Callback<Authors>() {
+                @Override
+                public void onResponse(Call<Authors> call, Response<Authors> response) {
+                    mAuthors = response.body();
+                    editText.setHint(mAuthors.getTentacgia());
+                }
+
+                @Override
+                public void onFailure(Call<Authors> call, Throwable t) {
+                    Toast.makeText(BookAdminDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }else if(key.equals("category")){
+            ApiCategoryAdmin.apicategoryadmin.covertCategory(books.getTheloaiID()).enqueue(new Callback<Categorys>() {
+                @Override
+                public void onResponse(Call<Categorys> call, Response<Categorys> response) {
+                    mCategory = response.body();
+                    editText.setHint(mCategory.getTentheloai());
+                }
+
+                @Override
+                public void onFailure(Call<Categorys> call, Throwable t) {
+                    Toast.makeText(BookAdminDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                }
+            });
         }
-        return IDAuthor;
     }
 
     public void switchActivity(){

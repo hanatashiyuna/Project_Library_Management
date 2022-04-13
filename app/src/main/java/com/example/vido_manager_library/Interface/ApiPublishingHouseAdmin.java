@@ -33,6 +33,8 @@ public interface ApiPublishingHouseAdmin {
     // lấy ra danh sách các tài khoản, mật khẩu để đăng nhập
     @GET("api/nhaxbs")
     Call<List<PC>> covertPublishingHouseAdmin();
+    @GET("api/nhaxbs/{id}")
+    Call<PC> convertPublisher(@Path("id") int id);
 
     //==================================
 
