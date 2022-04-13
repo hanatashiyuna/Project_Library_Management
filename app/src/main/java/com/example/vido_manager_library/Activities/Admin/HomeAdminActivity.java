@@ -1,27 +1,23 @@
 package com.example.vido_manager_library.Activities.Admin;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_ADMIN_LOGIN;
+import static com.example.vido_manager_library.Const.ConstUTF8.NOTIFY_SYSTEM_FALSE;
+
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Activities.User.MainActivity;
 import com.example.vido_manager_library.DataBase.DB_Helper;
 import com.example.vido_manager_library.Emtity.AccountAdminModify;
-import com.example.vido_manager_library.Emtity.AccountModify;
 import com.example.vido_manager_library.Fragment.Admin.AboutAdminFragment;
 import com.example.vido_manager_library.Fragment.Admin.HomeAdminFragment;
 import com.example.vido_manager_library.Fragment.Admin.ManagerAccountFragment;
 import com.example.vido_manager_library.Fragment.Admin.ManagerFragment;
-import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
 import com.example.vido_manager_library.Interface.ApiService;
-import com.example.vido_manager_library.LogSign.StudentLoginActivity;
-import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.Models.UserLectuters;
 import com.example.vido_manager_library.Models.UserStu;
 import com.example.vido_manager_library.QRCode.Capture;
@@ -31,7 +27,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -51,7 +46,7 @@ public class HomeAdminActivity extends AppCompatActivity {
         if (!AccountAdminModify.serchDBAdmin()) {
             Intent intent_inforAdminMain = getIntent();
             Bundle bundleInforAdmin = intent_inforAdminMain.getExtras();
-            UserLectuters userLectuters = (UserLectuters) bundleInforAdmin.get("infor_userLecturersLogin");
+            UserLectuters userLectuters = (UserLectuters) bundleInforAdmin.get(KEY_ADMIN_LOGIN);
             DB_Helper.getInstance(this);
             AccountAdminModify.insert(userLectuters);
         }
@@ -109,7 +104,7 @@ public class HomeAdminActivity extends AppCompatActivity {
             /*
              * khi content = null: khoi tao alert dialog
              */
-            String qrcode = String.valueOf(intentResult.getContents());
+            String qrcode = intentResult.getContents();
             getListUser(qrcode);
 
         }else{
@@ -128,14 +123,15 @@ public class HomeAdminActivity extends AppCompatActivity {
             }
             @Override
             public void onFailure(Call<List<UserStu>> call, Throwable t) {
-                Toast.makeText(HomeAdminActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(HomeAdminActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
     }
     private void QrTreatment(String qrcode) {
-        String qrtreatment = qrcode.toString().trim();
+        //to upper case qr_treatment
+        String qrTreatment = qrcode.trim();
 
-        if (!qrtreatment.equals("")) {
+        if (!qrTreatment.equals("")) {
             if (mListUser == null || mListUser.isEmpty()){
                 return;
             }
@@ -144,7 +140,7 @@ public class HomeAdminActivity extends AppCompatActivity {
 
             for (UserStu userStu: mListUser) {
                 //set password
-                if (qrtreatment.equals(userStu.getMasosinhvien())){
+                if (qrTreatment.equals(userStu.getMasosinhvien())){
                     isHasUser = true;
                     mUser = userStu;
                     mListUser = null;

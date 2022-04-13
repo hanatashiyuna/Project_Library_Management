@@ -1,10 +1,12 @@
 package com.example.vido_manager_library.Activities.Admin;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_GIVE_BACK;
+import static com.example.vido_manager_library.Const.ConstUTF8.NOTIFY_SYSTEM_FALSE;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,16 +34,16 @@ public class GiveBackAdminActivity extends AppCompatActivity {
 
         Intent intent_inforMain = getIntent();
         Bundle bundleInfor = intent_inforMain.getExtras();
-        GiveBack giveBack = (GiveBack) bundleInfor.get("giveback_information");
+        GiveBack giveBack = (GiveBack) bundleInfor.get(KEY_GIVE_BACK);
 
         TextView sgb_mssv = findViewById(R.id.sgb_mssv);
-        TextView sgb_namestu = findViewById(R.id.sgb_namestu);
-        TextView sgb_namelec = findViewById(R.id.sgb_namelec);
-        TextView sgb_dayborrow = findViewById(R.id.sgb_daygiveback);
-        TextView namebook = findViewById(R.id.namebook);
+        TextView sgb_nameStu = findViewById(R.id.sgb_namestu);
+        TextView sgb_nameLec = findViewById(R.id.sgb_namelec);
+        TextView sgb_dayBorrow = findViewById(R.id.sgb_daygiveback);
+        TextView nameBook = findViewById(R.id.namebook);
         TextView codebook = findViewById(R.id.codebook);
 
-        sgb_dayborrow.setText(String.valueOf(giveBack.getNgaytra()));
+        sgb_dayBorrow.setText(String.valueOf(giveBack.getNgaytra()));
 
         ApiBorrowAdmin.apiBorrowAdmin.covertBorrowSingleAdmin(giveBack.getMuonId()).enqueue(new Callback<Borrow>() {
             @Override
@@ -52,7 +54,7 @@ public class GiveBackAdminActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<UserStu> call, Response<UserStu> response) {
                         UserStu userStu = response.body();
-                        sgb_namestu.setText(String.valueOf(userStu.getTensinhvien()));
+                        sgb_nameStu.setText(String.valueOf(userStu.getTensinhvien()));
                         sgb_mssv.setText(String.valueOf(userStu.getMasosinhvien()));
                     }
                     @Override
@@ -66,7 +68,7 @@ public class GiveBackAdminActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<Books> call, Response<Books> response) {
                         Books books = response.body();
-                        namebook.setText(String.valueOf(books.getTensach()));
+                        nameBook.setText(String.valueOf(books.getTensach()));
                         codebook.setText(String.valueOf(books.getMasach()));
                     }
                     @Override
@@ -77,7 +79,7 @@ public class GiveBackAdminActivity extends AppCompatActivity {
             }
             @Override
             public void onFailure(Call<Borrow> call, Throwable t) {
-                Toast.makeText(GiveBackAdminActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(GiveBackAdminActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -85,11 +87,11 @@ public class GiveBackAdminActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<UserLectuters> call, Response<UserLectuters> response) {
                 UserLectuters userLectuters = response.body();
-                sgb_namelec.setText(String.valueOf(userLectuters.getHoten()));
+                sgb_nameLec.setText(String.valueOf(userLectuters.getHoten()));
             }
             @Override
             public void onFailure(Call<UserLectuters> call, Throwable t) {
-                Toast.makeText(GiveBackAdminActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(GiveBackAdminActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
 

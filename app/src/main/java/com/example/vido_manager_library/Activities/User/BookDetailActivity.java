@@ -1,5 +1,7 @@
 package com.example.vido_manager_library.Activities.User;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_USER_BOOK_DETAIL;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -18,16 +20,17 @@ public class BookDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_book_detail);
 
         TextView nameBook = findViewById(R.id.nameBook);
-        TextView nameAuthor = findViewById(R.id.nameAuthor);
+        TextView codeBook = findViewById(R.id.codeBook);
         ImageView imgBook = findViewById(R.id.img_book);
         ImageView back = findViewById(R.id.back);
         Bundle bundle = getIntent().getExtras();
         if(bundle == null){
             return;
         }
-        Books books = (Books) bundle.get("book_information");
+        Books books = (Books) bundle.get(KEY_USER_BOOK_DETAIL);
         nameBook.setText(books.getTensach());
         imgBook.setImageResource(R.drawable.androidprogram);
+        codeBook.setText(books.getMasach());
 
         back.setOnClickListener(view -> switchActivity());
     }

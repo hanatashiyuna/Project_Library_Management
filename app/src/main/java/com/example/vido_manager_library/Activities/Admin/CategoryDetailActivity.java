@@ -1,18 +1,19 @@
 package com.example.vido_manager_library.Activities.Admin;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_CATEGORY_DETAIL;
+import static com.example.vido_manager_library.Const.ConstUTF8.NOTIFY_SYSTEM_FALSE;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
 import com.example.vido_manager_library.Interface.ApiCategoryAdmin;
 import com.example.vido_manager_library.Models.Categorys;
 import com.example.vido_manager_library.R;
@@ -43,8 +44,8 @@ public class CategoryDetailActivity extends AppCompatActivity {
             return;
         }
 
-        if(bundle.containsKey("books_category")){
-            Categorys categorys = (Categorys) bundle.get("books_category");
+        if(bundle.containsKey(KEY_CATEGORY_DETAIL)){
+            Categorys categorys = (Categorys) bundle.get(KEY_CATEGORY_DETAIL);
 
             title_nameCategory.setText("Thể Loại: ");
             ed_category.setHint(categorys.getTentheloai());
@@ -62,7 +63,7 @@ public class CategoryDetailActivity extends AppCompatActivity {
 
                         @Override
                         public void onFailure(Call<Categorys> call, Throwable t) {
-                            Toast.makeText(CategoryDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CategoryDetailActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
                         }
                     });
                 }else {
@@ -79,11 +80,11 @@ public class CategoryDetailActivity extends AppCompatActivity {
 
                 @Override
                 public void onFailure(Call<Categorys> call, Throwable t) {
-                    Toast.makeText(CategoryDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CategoryDetailActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
                 }
             }));
         }else {
-            Toast.makeText(CategoryDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau", Toast.LENGTH_SHORT).show();
+            Toast.makeText(CategoryDetailActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
         }
     }
 

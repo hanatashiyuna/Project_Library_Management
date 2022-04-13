@@ -55,6 +55,7 @@
     <string name="star">star</string>
     <string name="image_book">imageBook</string>
     <string name="none">none</string>
+    <string name="comfirm_give_back">Xác Nhận Hoàn Trả</string>
 
     <string-array name="book_list">
         <item></item>

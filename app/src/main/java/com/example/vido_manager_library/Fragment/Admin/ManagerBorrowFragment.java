@@ -1,5 +1,8 @@
 package com.example.vido_manager_library.Fragment.Admin;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_SET_GIVE_BACK;
+import static com.example.vido_manager_library.Const.ConstUTF8.NOTIFY_SYSTEM_FALSE;
+
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -62,14 +65,14 @@ public class ManagerBorrowFragment extends Fragment {
             private void onClickGoToDetail(Borrow borrow) {
                 Intent intent = new Intent(getActivity(), SetGiveBackAdminActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("borrow_information", borrow);
+                bundle.putSerializable(KEY_SET_GIVE_BACK, borrow);
                 intent.putExtras(bundle);
                 startActivity(intent);
 
             }
             @Override
             public void onFailure(Call<List<Borrow>> call, Throwable t) {
-                Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
 

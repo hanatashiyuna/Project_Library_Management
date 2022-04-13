@@ -1,5 +1,8 @@
 package com.example.vido_manager_library.Fragment.Admin;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_AUTHOR_DETAIL;
+import static com.example.vido_manager_library.Const.ConstUTF8.NOTIFY_SYSTEM_FALSE;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -19,10 +22,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Activities.Admin.AuthorDetailActivity;
-import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
 import com.example.vido_manager_library.Adapters.AuthorAdapter;
 import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
-import com.example.vido_manager_library.Interface.ApiService;
 import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.R;
 
@@ -43,7 +44,6 @@ public class AdminAuthorFragment extends Fragment {
     List<Authors> mListAuthorAdmin;
     ImageView btnAddAuthor;
     SearchView searchViewAuthor;
-    //private static String searchAuthor = "";
 
     @Nullable
     @Override
@@ -55,8 +55,6 @@ public class AdminAuthorFragment extends Fragment {
         btnAddAuthor = view.findViewById(R.id.addAuthor);
         btnAddAuthor.setOnClickListener(view1 -> showDialog());
 
-
-
         RecyclerView listAuthorScreen = view.findViewById(R.id.listview_author);
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(Objects.requireNonNull(getActivity()), DividerItemDecoration.VERTICAL);
 
@@ -66,16 +64,6 @@ public class AdminAuthorFragment extends Fragment {
         getListJS(listAuthorScreen);
 
         searchViewAuthor = view.findViewById(R.id.search_inputAuthor);
-        /*searchViewAuthor.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override public boolean onQueryTextSubmit(String query) {
-                return false;
-            }
-            @Override public boolean onQueryTextChange(String newText) {
-                //searchAuthor = newText;
-                //getListJS(listAuthorScreen, searchAuthor);
-                return true;
-            }
-        });*/
 
         return view;
     }
@@ -104,7 +92,7 @@ public class AdminAuthorFragment extends Fragment {
                     }
                     @Override
                     public void onFailure(Call<Authors> call, Throwable t) {
-                        Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
                     }
                 });
 
@@ -114,30 +102,6 @@ public class AdminAuthorFragment extends Fragment {
         }).setNegativeButton("Hủy", (dialogInterface, i) -> dialogInterface.dismiss());
         builder.show();
     }
-
-    /*private void getListJS(RecyclerView listBookScreen, String search) {
-        //Gọi interface api trùng với api cần
-        ApiService.apiService.convertAuthor(search).enqueue(new Callback<List<Authors>>() {
-            @Override
-            public void onResponse(Call<List<Authors>> call, Response<List<Authors>> response) {
-                mListAuthorAdmin = response.body();
-                AuthorAdapter authorAdapter = new AuthorAdapter(AdminAuthorFragment.this, mListAuthorAdmin, this::onClickGoToDetail);
-                listBookScreen.setAdapter(authorAdapter);
-            }
-            private void onClickGoToDetail(Authors authors) {
-                Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putSerializable("book_information", authors);
-                intent.putExtras(bundle);
-                startActivity(intent);
-            }
-            @Override
-            public void onFailure(Call<List<Authors>> call, Throwable t) {
-                Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-    }*/
 
     private void getListJS(RecyclerView listAuthorScreen) {
         ApiAuthorAdmin.apiauthoradmin.covertAuthorAdmin().enqueue(new Callback<List<Authors>>() {
@@ -150,14 +114,14 @@ public class AdminAuthorFragment extends Fragment {
             private void onClickGoToDetail(Authors authors) {
                 Intent intent = new Intent(getActivity(), AuthorDetailActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("books_informationAuthor", authors);
+                bundle.putSerializable(KEY_AUTHOR_DETAIL, authors);
                 intent.putExtras(bundle);
                 startActivity(intent);
 
             }
             @Override
             public void onFailure(Call<List<Authors>> call, Throwable t) {
-                Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
 

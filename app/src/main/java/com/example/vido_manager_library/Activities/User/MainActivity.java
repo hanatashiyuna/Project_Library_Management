@@ -1,5 +1,7 @@
 package com.example.vido_manager_library.Activities.User;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_USER_LOGIN;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -12,7 +14,6 @@ import com.example.vido_manager_library.Fragment.User.AboutFragment;
 import com.example.vido_manager_library.Fragment.User.FavouriteBooksFragment;
 import com.example.vido_manager_library.Fragment.User.HomeFragment;
 import com.example.vido_manager_library.Fragment.User.UserBorrowBookFragment;
-import com.example.vido_manager_library.Models.UserAuthor;
 import com.example.vido_manager_library.Models.UserStu;
 import com.example.vido_manager_library.QRCode.CreateQRCodeActivity;
 import com.example.vido_manager_library.R;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         if (!AccountModify.serchDB()) {
             Intent intent_inforMain = getIntent();
             Bundle bundleInfor = intent_inforMain.getExtras();
-            UserStu userStu = (UserStu) bundleInfor.get("infor_userLogin");
+            UserStu userStu = (UserStu) bundleInfor.get(KEY_USER_LOGIN);
             DB_Helper.getInstance(this);
             AccountModify.insert(userStu);
         }

@@ -1,5 +1,8 @@
 package com.example.vido_manager_library.Activities.Admin;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_PUBLISHER_DETAIL;
+import static com.example.vido_manager_library.Const.ConstUTF8.NOTIFY_SYSTEM_FALSE;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -11,10 +14,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Interface.ApiPositionAdmin;
 import com.example.vido_manager_library.Interface.ApiPublishingHouseAdmin;
 import com.example.vido_manager_library.Models.PC;
-import com.example.vido_manager_library.Models.Positions;
 import com.example.vido_manager_library.R;
 
 import retrofit2.Call;
@@ -50,8 +51,8 @@ public class PublisherDetailActivity extends AppCompatActivity {
             return;
         }
 
-        if(bundle.containsKey("pushing_company")){
-            PC pc = (PC) bundle.get("pushing_company");
+        if(bundle.containsKey(KEY_PUBLISHER_DETAIL)){
+            PC pc = (PC) bundle.get(KEY_PUBLISHER_DETAIL);
 
             title_namePublisher.setText("Tên Nhà Xuất Bản: ");
             ed_namePublisher.setHint(pc.getTenxuatban());
@@ -85,39 +86,9 @@ public class PublisherDetailActivity extends AppCompatActivity {
 
                         @Override
                         public void onFailure(Call<PC> call, Throwable t) {
-                            Toast.makeText(PublisherDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(PublisherDetailActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
                         }
                     });
-                /*}else if(namePublisher.equals("")){
-                    pc.setTenxuatban(pc.getTenxuatban());
-                    pc.setDiachi(pc.getDiachi());
-                    ApiPositionAdmin.apiPositionAdmin.updateDataPositionAdmin(positions.getVitriId(), positions).enqueue(new Callback<Positions>() {
-                        @Override
-                        public void onResponse(Call<Positions> call, Response<Positions> response) {
-                            Toast.makeText(PositionDetailActivity.this, "Lưu Thành Công", Toast.LENGTH_SHORT).show();
-                            switchActivity();
-                        }
-
-                        @Override
-                        public void onFailure(Call<Positions> call, Throwable t) {
-                            Toast.makeText(PositionDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
-                        }
-                    });
-                }else if(bookSelf.equals("")) {
-                    positions.setTenhang(namePosition);
-                    positions.setSoke(positions.getSoke());
-                    ApiPositionAdmin.apiPositionAdmin.updateDataPositionAdmin(positions.getVitriId(), positions).enqueue(new Callback<Positions>() {
-                        @Override
-                        public void onResponse(Call<Positions> call, Response<Positions> response) {
-                            Toast.makeText(PositionDetailActivity.this, "Lưu Thành Công", Toast.LENGTH_SHORT).show();
-                            switchActivity();
-                        }
-
-                        @Override
-                        public void onFailure(Call<Positions> call, Throwable t) {
-                            Toast.makeText(PositionDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
-                        }
-                    });*/
                 }else {
                     Toast.makeText(PublisherDetailActivity.this, "Thiếu Tên Hàng hoặc Số Kệ", Toast.LENGTH_SHORT).show();
                 }
@@ -132,12 +103,12 @@ public class PublisherDetailActivity extends AppCompatActivity {
 
                 @Override
                 public void onFailure(Call<PC> call, Throwable t) {
-                    Toast.makeText(PublisherDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(PublisherDetailActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
                 }
             }));
 
         }else {
-            Toast.makeText(PublisherDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau", Toast.LENGTH_SHORT).show();
+            Toast.makeText(PublisherDetailActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
         }
     }
 

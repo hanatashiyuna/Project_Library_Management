@@ -1,11 +1,13 @@
 package com.example.vido_manager_library.Activities.Admin;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_POSITION_DETAIL;
+import static com.example.vido_manager_library.Const.ConstUTF8.NOTIFY_SYSTEM_FALSE;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -45,8 +47,8 @@ public class PositionDetailActivity extends AppCompatActivity {
             return;
         }
 
-        if(bundle.containsKey("books_self")){
-            Positions positions = (Positions) bundle.get("books_self");
+        if(bundle.containsKey(KEY_POSITION_DETAIL)){
+            Positions positions = (Positions) bundle.get(KEY_POSITION_DETAIL);
 
             title_namePosition.setText("Tên Hàng: ");
             ed_namePosition.setHint(positions.getTenhang());
@@ -60,48 +62,15 @@ public class PositionDetailActivity extends AppCompatActivity {
                 if(!namePosition.equals("") && !bookSelf.equals("")){
                     positions.setTenhang(namePosition);
                     positions.setSoke(bookSelf);
-                    ApiPositionAdmin.apiPositionAdmin.updateDataPositionAdmin(positions.getVitriId(), positions).enqueue(new Callback<Positions>() {
-                        @Override
-                        public void onResponse(Call<Positions> call, Response<Positions> response) {
-                            Toast.makeText(PositionDetailActivity.this, "Lưu Thành Công", Toast.LENGTH_SHORT).show();
-                            switchActivity();
-                        }
-
-                        @Override
-                        public void onFailure(Call<Positions> call, Throwable t) {
-                            Toast.makeText(PositionDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
-                        }
-                    });
+                    callApiPosition(positions);
                 }else if(namePosition.equals("")){
                     positions.setTenhang(positions.getTenhang());
                     positions.setSoke(bookSelf);
-                    ApiPositionAdmin.apiPositionAdmin.updateDataPositionAdmin(positions.getVitriId(), positions).enqueue(new Callback<Positions>() {
-                        @Override
-                        public void onResponse(Call<Positions> call, Response<Positions> response) {
-                            Toast.makeText(PositionDetailActivity.this, "Lưu Thành Công", Toast.LENGTH_SHORT).show();
-                            switchActivity();
-                        }
-
-                        @Override
-                        public void onFailure(Call<Positions> call, Throwable t) {
-                            Toast.makeText(PositionDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
-                        }
-                    });
+                    callApiPosition(positions);
                 }else if(bookSelf.equals("")) {
                     positions.setTenhang(namePosition);
                     positions.setSoke(positions.getSoke());
-                    ApiPositionAdmin.apiPositionAdmin.updateDataPositionAdmin(positions.getVitriId(), positions).enqueue(new Callback<Positions>() {
-                        @Override
-                        public void onResponse(Call<Positions> call, Response<Positions> response) {
-                            Toast.makeText(PositionDetailActivity.this, "Lưu Thành Công", Toast.LENGTH_SHORT).show();
-                            switchActivity();
-                        }
-
-                        @Override
-                        public void onFailure(Call<Positions> call, Throwable t) {
-                            Toast.makeText(PositionDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
-                        }
-                    });
+                    callApiPosition(positions);
                 }else {
                     Toast.makeText(PositionDetailActivity.this, "Thiếu Tên Hàng hoặc Số Kệ", Toast.LENGTH_SHORT).show();
                 }
@@ -116,17 +85,32 @@ public class PositionDetailActivity extends AppCompatActivity {
 
                 @Override
                 public void onFailure(Call<Positions> call, Throwable t) {
-                    Toast.makeText(PositionDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(PositionDetailActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
                 }
             }));
 
         }else {
-            Toast.makeText(PositionDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau", Toast.LENGTH_SHORT).show();
+            Toast.makeText(PositionDetailActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
         }
     }
 
     public void switchActivity(){
         Intent intent = new Intent(PositionDetailActivity.this, HomeAdminActivity.class);
         startActivity(intent);
+    }
+
+    public void callApiPosition(Positions positions){
+        ApiPositionAdmin.apiPositionAdmin.updateDataPositionAdmin(positions.getVitriId(), positions).enqueue(new Callback<Positions>() {
+            @Override
+            public void onResponse(Call<Positions> call, Response<Positions> response) {
+                Toast.makeText(PositionDetailActivity.this, "Lưu Thành Công", Toast.LENGTH_SHORT).show();
+                switchActivity();
+            }
+
+            @Override
+            public void onFailure(Call<Positions> call, Throwable t) {
+                Toast.makeText(PositionDetailActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

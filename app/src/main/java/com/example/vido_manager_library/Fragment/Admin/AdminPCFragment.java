@@ -1,5 +1,8 @@
 package com.example.vido_manager_library.Fragment.Admin;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_PUBLISHER_DETAIL;
+import static com.example.vido_manager_library.Const.ConstUTF8.NOTIFY_SYSTEM_FALSE;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -42,7 +45,6 @@ public class AdminPCFragment extends Fragment {
     List<PC> mListPCAdmin;
     ImageView btnAddPC;
     SearchView searchViewPc;
-    //private static String searchPublisher = "";
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -59,18 +61,6 @@ public class AdminPCFragment extends Fragment {
         listPCScreen.addItemDecoration(itemDecoration);
         getListJS(listPCScreen);
         searchViewPc = view.findViewById(R.id.search_inputpc);
-        /*searchViewPc.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String s) {
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String s) {
-                //searchPublisher = new Text;
-                return true;
-            }
-        });*/
         return view;
     }
 
@@ -85,42 +75,16 @@ public class AdminPCFragment extends Fragment {
             private void onClickGoToDetail(PC pc) {
                 Intent intent = new Intent(getActivity(), PublisherDetailActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("pushing_company", pc);
+                bundle.putSerializable(KEY_PUBLISHER_DETAIL, pc);
                 intent.putExtras(bundle);
                 startActivity(intent);
 
             }
             @Override
             public void onFailure(Call<List<PC>> call, Throwable t) {
-                Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
-
-    }
-
-    private void getListJS(RecyclerView listPCScreen, String search) {
-
-        /*ApiService.apiService.convertBookAdmin(search).enqueue(new Callback<List<PC>>() {
-            @Override
-            public void onResponse(Call<List<PC>> call, Response<List<PC>> response) {
-                mListPCAdmin = response.body();
-                PCAdapter pcAdapter = new PCAdapter(AdminPCFragment.this, mListPCAdmin, this::onClickGoToDetail);
-                listPCScreen.setAdapter(pcAdapter);
-            }
-            private void onClickGoToDetail(PC pc) {
-                Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putSerializable("pushing_company", pc);
-                intent.putExtras(bundle);
-                startActivity(intent);
-
-            }
-            @Override
-            public void onFailure(Call<List<PC>> call, Throwable t) {
-                Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
-            }
-        });*/
-
     }
 
     private void showDialog() {
@@ -151,7 +115,7 @@ public class AdminPCFragment extends Fragment {
                     }
                     @Override
                     public void onFailure(Call<PC> call, Throwable t) {
-                        Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
                     }
                 });
 

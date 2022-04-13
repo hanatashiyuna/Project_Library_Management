@@ -1,177 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.Admin.SetGiveBackAdminActivity"
-    android:orientation="vertical"
-    android:background="@drawable/bg_log_sign">
+    android:background="@drawable/bg_log_sign"
+    android:paddingTop="25dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-        <TextView
-            android:id="@+id/sgb_titlemssv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="MSSV: "
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-        <TextView
-            android:id="@+id/sgb_mssv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="2006010004"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-    </LinearLayout>
+        android:src="@drawable/ic_baseline_arrow_back_ios_new"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/sgb_titlemssv"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-        <TextView
-            android:id="@+id/sgb_titlenamestu"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="Tên Sinh Viên: "
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-        <TextView
-            android:id="@+id/sgb_namestu"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="2006010004"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-    </LinearLayout>
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="MSSV:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/sgb_mssv"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-        <TextView
-            android:id="@+id/sgb_titlenamelec"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="Thủ Thư Kí Gửi: "
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-        <TextView
-            android:id="@+id/sgb_namelec"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="2006010004"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-    </LinearLayout>
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/sgb_titlemssv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sgb_titlemssv"
+        app:layout_constraintTop_toTopOf="@+id/sgb_titlemssv"
+        app:layout_constraintHorizontal_bias="0"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+
+    <TextView
+        android:id="@+id/sgb_titlenamestu"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-        <TextView
-            android:id="@+id/sgb_titledayborrow"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="Ngày Mượn: "
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-        <TextView
-            android:id="@+id/sgb_dayborrow"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="2006010004"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-    </LinearLayout>
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Tên Sinh Viên:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sgb_titlemssv" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/sgb_namestu"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="40dp">
-        <ImageView
-            android:id="@+id/sgb_imgborrow"
-            android:layout_width="0dp"
-            android:layout_height="200dp"
-            android:layout_weight="2"
-            android:src="@drawable/androidprogram"/>
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/titlenamebook"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tên Sách: "
-                    android:textStyle="bold"
-                    android:textSize="20sp"/>
-                <TextView
-                    android:id="@+id/namebook"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="10dp"
-                    android:text="Android"
-                    android:textStyle="bold"
-                    android:textSize="20sp"/>
-            </LinearLayout>
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/sgb_titlenamestu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/sgb_titlenamestu"
+        app:layout_constraintTop_toTopOf="@+id/sgb_titlenamestu" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingTop="20dp">
-                <TextView
-                    android:id="@+id/titlecodebook"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Mã Sách: "
-                    android:textStyle="bold"
-                    android:textSize="20sp"/>
-                <TextView
-                    android:id="@+id/codebook"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="10dp"
-                    android:text="Android"
-                    android:textStyle="bold"
-                    android:textSize="20sp"/>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/sgb_titlenamelec"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="20dp"
-        android:paddingLeft="10dp">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn_addnewgiveback"
-            android:text="Xác Nhận Hoàn Trả"/>
-    </LinearLayout>
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Thủ Thư Ký Gửi:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sgb_titlenamestu" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/sgb_namelec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/sgb_titlenamelec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sgb_titlenamelec"
+        app:layout_constraintTop_toTopOf="@+id/sgb_titlenamelec"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <TextView
+        android:id="@+id/sgb_titledayborrow"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Ngày Mượn:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sgb_titlenamelec" />
+
+    <TextView
+        android:id="@+id/sgb_dayborrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toBottomOf="@+id/sgb_titledayborrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sgb_titledayborrow"
+        app:layout_constraintTop_toTopOf="@+id/sgb_titledayborrow" />
+
+    <ImageView
+        android:id="@+id/sgb_imgborrow"
+        android:layout_width="110dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/androidprogram"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sgb_titledayborrow" />
+
+    <TextView
+        android:id="@+id/titlenamebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Tên Sách:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sgb_imgborrow"
+        app:layout_constraintTop_toTopOf="@+id/sgb_imgborrow" />
+
+    <TextView
+        android:id="@+id/namebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/sgb_imgborrow"
+        app:layout_constraintTop_toBottomOf="@+id/titlenamebook"/>
+
+    <TextView
+        android:id="@+id/titlecodebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Mã Sách:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sgb_imgborrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/sgb_imgborrow"
+        app:layout_constraintTop_toBottomOf="@+id/namebook" />
+
+    <TextView
+        android:id="@+id/codebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/sgb_imgborrow"
+        app:layout_constraintTop_toBottomOf="@+id/titlecodebook" />
+
+    <Button
+        android:id="@+id/btn_addnewgiveback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:foreground="@drawable/btn_bg_design"
+        android:text="@string/comfirm_give_back"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sgb_imgborrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

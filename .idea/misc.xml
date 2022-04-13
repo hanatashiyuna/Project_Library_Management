@@ -10,6 +10,7 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/border.xml" value="0.290625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/border_radius.xml" value="0.290625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/box_shadow.xml" value="0.290625" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/btn_design_radius.xml" value="0.290625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/corner_radius.xml" value="0.290625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/ic_baseline_file_upload.xml" value="0.290625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/drawable/ic_baseline_home.xml" value="0.290625" />
@@ -42,6 +43,7 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_position_detail.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_publisher_detail.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_scanner.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_set_give_back_admin.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_student_forgot.xml" value="0.2708333333333333" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_student_get_new_pass.xml" value="0.2708333333333333" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/activity_student_login.xml" value="0.27447916666666666" />
@@ -69,7 +71,7 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_home.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_home_admin.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_manager.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_manager_account.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_manager_account.xml" value="0.24365942028985507" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_manager_borrow.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_manager_return_books.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VIDO_Manager_Library/app/src/main/res/layout/fragment_returned_books.xml" value="0.2604166666666667" />
@@ -114,19 +116,14 @@
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio/VIDO_Manager_Library/app/src/main/res/layout/items.xml" value="0.18206521739130435" />
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio_SeverTest/VIDO_Manager_Library/app/src/main/res/layout/activity_book_detail.xml" value="0.1" />
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio_SeverTest/VIDO_Manager_Library/app/src/main/res/layout/activity_borrow_detail.xml" value="0.10461956521739131" />
-        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio_SeverTest/VIDO_Manager_Library/app/src/main/res/layout/activity_give_back_admin.xml" value="0.25" />
-        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio_SeverTest/VIDO_Manager_Library/app/src/main/res/layout/activity_set_give_back_admin.xml" value="0.25" />
-        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio_SeverTest/VIDO_Manager_Library/app/src/main/res/layout/activity_set_pay_admin.xml" value="0.1" />
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio_SeverTest/VIDO_Manager_Library/app/src/main/res/layout/book_item.xml" value="0.33" />
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio_SeverTest/VIDO_Manager_Library/app/src/main/res/layout/dialog_add_book.xml" value="0.26166902404526166" />
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio_SeverTest/VIDO_Manager_Library/app/src/main/res/layout/fragment_admin_books.xml" value="0.15172101449275363" />
-        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio_SeverTest/VIDO_Manager_Library/app/src/main/res/layout/fragment_manager_borrow.xml" value="0.1933876811594203" />
-        <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio_SeverTest/VIDO_Manager_Library/app/src/main/res/layout/fragment_manager_return_books.xml" value="0.1933876811594203" />
         <entry key="..\:/Users/tan/Documents/Code_IT/Android_Studio_SeverTest/VIDO_Manager_Library/app/src/main/res/layout/items.xml" value="0.1" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

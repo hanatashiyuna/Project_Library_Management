@@ -1,5 +1,8 @@
 package com.example.vido_manager_library.Fragment.Admin;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_BOOK_DETAIL;
+import static com.example.vido_manager_library.Const.ConstUTF8.NOTIFY_SYSTEM_FALSE;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -22,14 +25,12 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
-import com.example.vido_manager_library.Adapters.BooksAdapters;
 import com.example.vido_manager_library.Adapters.SearchBooksAdapter;
 import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
 import com.example.vido_manager_library.Interface.ApiBookAdmin;
 import com.example.vido_manager_library.Interface.ApiCategoryAdmin;
 import com.example.vido_manager_library.Interface.ApiPositionAdmin;
 import com.example.vido_manager_library.Interface.ApiPublishingHouseAdmin;
-import com.example.vido_manager_library.Interface.ApiService;
 import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.Models.Books;
 import com.example.vido_manager_library.Models.Categorys;
@@ -123,7 +124,7 @@ public class AdminBookFragment extends Fragment {
             }
             @Override
             public void onFailure(Call<List<SearchBooks>> call, Throwable t) {
-                Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -141,13 +142,13 @@ public class AdminBookFragment extends Fragment {
             private void onClickGoToDetail(SearchBooks books) {
                 Intent intent = new Intent(getActivity(), BookAdminDetailActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("book_information", books);
+                bundle.putSerializable(KEY_BOOK_DETAIL, books);
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
             @Override
             public void onFailure(Call<List<SearchBooks>> call, Throwable t) {
-                Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -201,17 +202,17 @@ public class AdminBookFragment extends Fragment {
         builder.setTitle("Thêm Sách Mới").setPositiveButton("Save", (dialogInterface, i) -> {
             String codeBook = edCodeBook.getText().toString();
             String nameBook = edNameBook.getText().toString();
-            int idAuthor = ((int) GetIDAuthor());
+            int idAuthor = GetIDAuthor();
             String year = edYear.getText().toString();
-            int idCategory = ((int) GetIDCategory());
-            int idPublisher = ((int) GetIDPublisher());
+            int idCategory = GetIDCategory();
+            int idPublisher = GetIDPublisher();
             int amount;
             if(!edAmount.getText().toString().equals("")){
                 amount = Integer.parseInt(edAmount.getText().toString());
             }else{
                 amount = 0;
             }
-            int idPosition = ((int) GetIDPosition());
+            int idPosition = GetIDPosition();
 
             if (!nameBook.equals("") || !year.equals("") || idPublisher != 0 || idAuthor != 0 || idCategory != 0 || idPosition != 0) {
                 Books books = new Books(codeBook,nameBook, idAuthor, idCategory, idPublisher, year, amount, idPosition);
@@ -223,7 +224,7 @@ public class AdminBookFragment extends Fragment {
                     }
                     @Override
                     public void onFailure(Call<Books> call, Throwable t) {
-                        Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
                     }
                 });
             }else {
@@ -273,7 +274,7 @@ public class AdminBookFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Authors>> call, Throwable t) {
-                Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -319,7 +320,7 @@ public class AdminBookFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Categorys>> call, Throwable t) {
-                Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -363,7 +364,7 @@ public class AdminBookFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<PC>> call, Throwable t) {
-                Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -408,7 +409,7 @@ public class AdminBookFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Positions>> call, Throwable t) {
-                Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
     }

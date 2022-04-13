@@ -1,15 +1,15 @@
 package com.example.vido_manager_library.Activities.User;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_FORGOT_USER;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -27,9 +27,9 @@ public class UserDetailActivity extends AppCompatActivity {
 
     TextView btnLogOut, btn_signup, myInfo, name, LG_Username, LG_mssv, version;
     ImageView back;
-    UserStu infor_signup;
-    Integer id_mssv;
-    String get_name;
+//    UserStu infor_signup;
+//    Integer id_mssv;
+//    String get_name;
     UserStu infor_sidnup;
 
     @SuppressLint("InflateParams")
@@ -80,69 +80,55 @@ public class UserDetailActivity extends AppCompatActivity {
 
 
         //thong tin sinh viên
-        myInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AlertDialog.Builder builder =new AlertDialog.Builder(UserDetailActivity.this);
+        myInfo.setOnClickListener(view -> {
+            AlertDialog.Builder builder =new AlertDialog.Builder(UserDetailActivity.this);
 
 //      Khai báo layout sẽ đưa vào nơi chỉ định
-                LayoutInflater inflater = getLayoutInflater();
-                view = inflater.inflate(R.layout.activity_information, null);
+            LayoutInflater inflater = getLayoutInflater();
+            view = inflater.inflate(R.layout.activity_information, null);
 
-                TextView infor_getmssv = view.findViewById(R.id.infor_getmssv);
-                TextView infor_getname = view.findViewById(R.id.infor_getname);
-                TextView infor_getaddress = view.findViewById(R.id.infor_getaddress);
-                TextView infor_getclass = view.findViewById(R.id.infor_getclass);
-                TextView infor_getemail = view.findViewById(R.id.infor_getemail);
-                TextView infor_getcmnd = view.findViewById(R.id.infor_getcmnd);
-                TextView infor_getbirth = view.findViewById(R.id.infor_getbirth);
-                TextView infor_getmajors = view.findViewById(R.id.infor_getmajors);
+            TextView infor_getmssv = view.findViewById(R.id.infor_getmssv);
+            TextView infor_getname = view.findViewById(R.id.infor_getname);
+            TextView infor_getaddress = view.findViewById(R.id.infor_getaddress);
+            TextView infor_getclass = view.findViewById(R.id.infor_getclass);
+            TextView infor_getemail = view.findViewById(R.id.infor_getemail);
+            TextView infor_getcmnd = view.findViewById(R.id.infor_getcmnd);
+            TextView infor_getbirth = view.findViewById(R.id.infor_getbirth);
+            TextView infor_getmajors = view.findViewById(R.id.infor_getmajors);
 
 
-                infor_getmssv.setText(String.valueOf(infor_sidnup.getMasosinhvien()));
-                infor_getname.setText(String.valueOf(infor_sidnup.getTensinhvien()));
-                infor_getaddress.setText(String.valueOf(infor_sidnup.getDiachi()));
-                infor_getclass.setText(String.valueOf(infor_sidnup.getLop()));
-                infor_getemail.setText(String.valueOf(infor_sidnup.getEmail()));
-                infor_getcmnd.setText(String.valueOf(infor_sidnup.getSoCmnd()));
-                infor_getbirth.setText(String.valueOf(infor_sidnup.getNgaysinh()));
-                infor_getmajors.setText(String.valueOf(infor_sidnup.getKhoa()));
+            infor_getmssv.setText(String.valueOf(infor_sidnup.getMasosinhvien()));
+            infor_getname.setText(String.valueOf(infor_sidnup.getTensinhvien()));
+            infor_getaddress.setText(String.valueOf(infor_sidnup.getDiachi()));
+            infor_getclass.setText(String.valueOf(infor_sidnup.getLop()));
+            infor_getemail.setText(String.valueOf(infor_sidnup.getEmail()));
+            infor_getcmnd.setText(String.valueOf(infor_sidnup.getSoCmnd()));
+            infor_getbirth.setText(String.valueOf(infor_sidnup.getNgaysinh()));
+            infor_getmajors.setText(String.valueOf(infor_sidnup.getKhoa()));
 
-                builder.setView(view);
-                builder.setIcon(R.drawable.ic_baseline_info_24);
-                builder.setTitle("Thông tin sinh viên.").setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                });
-                builder.show();
-            }
+            builder.setView(view);
+            builder.setIcon(R.drawable.ic_baseline_info_24);
+            builder.setTitle("Thông tin sinh viên.").setPositiveButton("OK", (dialogInterface, i) -> dialogInterface.dismiss());
+            builder.show();
         });
 
         //Sign Up
 
-        btn_signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //Do không đồng bộ Api nên không sử dụng được
-                Intent intent_Signup = new Intent(UserDetailActivity.this, StudentGetNewPassActivity.class);
-                Bundle bundle_Signup = new Bundle();
-                bundle_Signup.putSerializable("Forgot_userLogin", infor_sidnup);
-                intent_Signup.putExtras(bundle_Signup);
-                startActivity(intent_Signup);
-            }
+        btn_signup.setOnClickListener(view -> {
+            //Do không đồng bộ Api nên không sử dụng được
+            Intent intent_Signup = new Intent(UserDetailActivity.this, StudentGetNewPassActivity.class);
+            Bundle bundle_Signup = new Bundle();
+            bundle_Signup.putSerializable(KEY_FORGOT_USER, infor_sidnup);
+            intent_Signup.putExtras(bundle_Signup);
+            startActivity(intent_Signup);
         });
 
         //logout
-        btnLogOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AccountModify.delete(infor_sidnup.getSinhvienId());
-                switchActivity();
-                //xử lý sau đăng xuất
-                finish();
-            }
+        btnLogOut.setOnClickListener(view -> {
+            AccountModify.delete(infor_sidnup.getSinhvienId());
+            switchActivity();
+            //xử lý sau đăng xuất
+            finish();
         });
 
         back.setOnClickListener(view -> {

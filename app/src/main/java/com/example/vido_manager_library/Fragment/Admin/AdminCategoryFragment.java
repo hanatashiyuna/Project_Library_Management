@@ -1,5 +1,8 @@
 package com.example.vido_manager_library.Fragment.Admin;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_CATEGORY_DETAIL;
+import static com.example.vido_manager_library.Const.ConstUTF8.NOTIFY_SYSTEM_FALSE;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.SearchView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -19,13 +21,9 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
 import com.example.vido_manager_library.Activities.Admin.CategoryDetailActivity;
-import com.example.vido_manager_library.Adapters.AuthorAdapter;
 import com.example.vido_manager_library.Adapters.CategoryAdapter;
-import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
 import com.example.vido_manager_library.Interface.ApiCategoryAdmin;
-import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.Models.Categorys;
 import com.example.vido_manager_library.R;
 
@@ -41,7 +39,6 @@ public class AdminCategoryFragment extends Fragment {
     List<Categorys> mListCategoryAdmin;
     ImageView btn_add;
     SearchView searchViewCategory;
-    //private static String searchCategory = "";
 
     @Nullable
     @Override
@@ -60,19 +57,6 @@ public class AdminCategoryFragment extends Fragment {
         getListJS(listCategoryScreen);
 
         searchViewCategory = view.findViewById(R.id.search_inputcategory);
-        /*searchViewCategory.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String s) {
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String s) {
-                //searchCategory = new Text;
-                return true;
-            }
-        });*/
-
         return view;
     }
 
@@ -87,14 +71,14 @@ public class AdminCategoryFragment extends Fragment {
             private void onClickGoToDetail(Categorys categorys) {
                 Intent intent = new Intent(getActivity(), CategoryDetailActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("books_category", categorys);
+                bundle.putSerializable(KEY_CATEGORY_DETAIL, categorys);
                 intent.putExtras(bundle);
                 startActivity(intent);
 
             }
             @Override
             public void onFailure(Call<List<Categorys>> call, Throwable t) {
-                Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -122,7 +106,7 @@ public class AdminCategoryFragment extends Fragment {
                     }
                     @Override
                     public void onFailure(Call<Categorys> call, Throwable t) {
-                        Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
                     }
                 });
 

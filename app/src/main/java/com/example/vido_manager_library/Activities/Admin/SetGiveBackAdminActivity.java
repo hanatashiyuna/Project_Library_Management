@@ -1,18 +1,19 @@
 package com.example.vido_manager_library.Activities.Admin;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_AUTHOR_DETAIL;
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_SET_GIVE_BACK;
+import static com.example.vido_manager_library.Const.ConstUTF8.NOTIFY_SYSTEM_FALSE;
+
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Adapters.BorrowAdapter;
-import com.example.vido_manager_library.Fragment.Admin.ManagerBorrowFragment;
 import com.example.vido_manager_library.Fragment.Admin.ManagerFragment;
 import com.example.vido_manager_library.Interface.ApiBookAdmin;
 import com.example.vido_manager_library.Interface.ApiBorrowAdmin;
@@ -27,7 +28,6 @@ import com.example.vido_manager_library.Models.UserStu;
 import com.example.vido_manager_library.R;
 
 import java.time.LocalDate;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -43,28 +43,28 @@ public class SetGiveBackAdminActivity extends AppCompatActivity {
 
         Intent intent_inforMain = getIntent();
         Bundle bundleInfor = intent_inforMain.getExtras();
-        Borrow borrow = (Borrow) bundleInfor.get("borrow_information");
+        Borrow borrow = (Borrow) bundleInfor.get(KEY_SET_GIVE_BACK);
 
         TextView sgb_mssv = findViewById(R.id.sgb_mssv);
-        TextView sgb_namestu = findViewById(R.id.sgb_namestu);
-        TextView sgb_namelec = findViewById(R.id.sgb_namelec);
-        TextView sgb_dayborrow = findViewById(R.id.sgb_dayborrow);
-        TextView namebook = findViewById(R.id.namebook);
+        TextView sgb_nameStu = findViewById(R.id.sgb_namestu);
+        TextView sgb_nameLec = findViewById(R.id.sgb_namelec);
+        TextView sgb_dayBorrow = findViewById(R.id.sgb_dayborrow);
+        TextView nameBook = findViewById(R.id.namebook);
         TextView codebook = findViewById(R.id.codebook);
-        Button btn_addnewgiveback = findViewById(R.id.btn_addnewgiveback);
+        Button btn_addNewGiveBack = findViewById(R.id.btn_addnewgiveback);
 
         sgb_mssv.setText(String.valueOf(borrow.getMasosinhvien()));
-        sgb_dayborrow.setText(String.valueOf(borrow.getNgaymuon()));
+        sgb_dayBorrow.setText(String.valueOf(borrow.getNgaymuon()));
 
         ApiService.apiService.convertSingleUserStu(borrow.getSinhvienId()).enqueue(new Callback<UserStu>() {
             @Override
             public void onResponse(Call<UserStu> call, Response<UserStu> response) {
                 UserStu userStu = response.body();
-                sgb_namestu.setText(String.valueOf(userStu.getTensinhvien()));
+                sgb_nameStu.setText(String.valueOf(userStu.getTensinhvien()));
             }
             @Override
             public void onFailure(Call<UserStu> call, Throwable t) {
-                Toast.makeText(SetGiveBackAdminActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SetGiveBackAdminActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -72,11 +72,11 @@ public class SetGiveBackAdminActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<UserLectuters> call, Response<UserLectuters> response) {
                 UserLectuters userLectuters = response.body();
-                sgb_namelec.setText(String.valueOf(userLectuters.getHoten()));
+                sgb_nameLec.setText(String.valueOf(userLectuters.getHoten()));
             }
             @Override
             public void onFailure(Call<UserLectuters> call, Throwable t) {
-                Toast.makeText(SetGiveBackAdminActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SetGiveBackAdminActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -84,18 +84,16 @@ public class SetGiveBackAdminActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Books> call, Response<Books> response) {
                 Books books = response.body();
-                namebook.setText(String.valueOf(books.getTensach()));
+                nameBook.setText(String.valueOf(books.getTensach()));
                 codebook.setText(String.valueOf(books.getMasach()));
             }
             @Override
             public void onFailure(Call<Books> call, Throwable t) {
-                Toast.makeText(SetGiveBackAdminActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SetGiveBackAdminActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
 
-        /** set button give back book */
-
-        btn_addnewgiveback.setOnClickListener(view -> {
+        btn_addNewGiveBack.setOnClickListener(view -> {
             LocalDate today = LocalDate.now();
             GiveBack giveBack = new GiveBack(borrow.getMuonId(), borrow.getThuthuId(), String.valueOf(today));
             insertDataGiveBack(giveBack);
@@ -110,7 +108,7 @@ public class SetGiveBackAdminActivity extends AppCompatActivity {
             }
             @Override
             public void onFailure(Call<GiveBack> call, Throwable t) {
-                Toast.makeText(SetGiveBackAdminActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SetGiveBackAdminActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -120,12 +118,17 @@ public class SetGiveBackAdminActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Borrow> call, Response<Borrow> response) {
                 Toast.makeText(SetGiveBackAdminActivity.this, "Xử Lí Thành Công", Toast.LENGTH_SHORT).show();
-
+                switchActivity();
             }
             @Override
             public void onFailure(Call<Borrow> call, Throwable t) {
-                Toast.makeText(SetGiveBackAdminActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SetGiveBackAdminActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    public void switchActivity(){
+        Intent intent = new Intent(SetGiveBackAdminActivity.this, HomeAdminActivity.class);
+        startActivity(intent);
     }
 }

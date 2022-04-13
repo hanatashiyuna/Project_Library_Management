@@ -1,18 +1,19 @@
 package com.example.vido_manager_library.Activities.Admin;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_AUTHOR_DETAIL;
+import static com.example.vido_manager_library.Const.ConstUTF8.NOTIFY_SYSTEM_FALSE;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.vido_manager_library.Fragment.Admin.AdminAuthorFragment;
 import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
 import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.R;
@@ -46,8 +47,8 @@ public class AuthorDetailActivity extends AppCompatActivity {
         if(bundle == null){
             return;
         }
-        if(bundle.containsKey("books_informationAuthor")){
-            Authors authors = (Authors) bundle.get("books_informationAuthor");
+        if(bundle.containsKey(KEY_AUTHOR_DETAIL)){
+            Authors authors = (Authors) bundle.get(KEY_AUTHOR_DETAIL);
             title_editText2.setText("Tên Tác Giả: ");
             editText2.setHint(authors.getTentacgia());
             title_editText3.setText("Năm Sinh (yyyy-mm-dd): ");
@@ -66,7 +67,7 @@ public class AuthorDetailActivity extends AppCompatActivity {
                         }
                         @Override
                         public void onFailure(Call<Authors> call, Throwable t) {
-                            Toast.makeText(AuthorDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AuthorDetailActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
                         }
                     });
 
@@ -83,11 +84,11 @@ public class AuthorDetailActivity extends AppCompatActivity {
                 }
                 @Override
                 public void onFailure(Call<Authors> call, Throwable t) {
-                    Toast.makeText(AuthorDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AuthorDetailActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
                 }
             }));
         }else {
-            Toast.makeText(AuthorDetailActivity.this, "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AuthorDetailActivity.this, NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
         }
 
         ImageView back =  findViewById(R.id.back);

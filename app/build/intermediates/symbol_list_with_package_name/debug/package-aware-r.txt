@@ -2549,6 +2549,7 @@ drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
+drawable btn_design_radius
 drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
@@ -2656,8 +2657,10 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable transparent_background
+font aguafina_script
 font amarante
 font amita
+font arizonia
 font arsenal
 font castoro
 id ALT
@@ -2840,6 +2843,7 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
+id codeBook
 id code_student
 id codebook
 id collapseActionView
@@ -2982,6 +2986,7 @@ id imageQRCode
 id imageView
 id imageView2
 id imageView3
+id imageView4
 id imgBookAdmin
 id img_book
 id immediateStop
@@ -3025,6 +3030,7 @@ id legacy
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
 id list_view_borrow
@@ -3103,7 +3109,6 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id my_info
-id nameAuthor
 id nameBook
 id name_borrow
 id name_item
@@ -3291,6 +3296,7 @@ id textView5
 id textView6
 id textView7
 id textView8
+id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3677,6 +3683,7 @@ string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
 string code_book
+string comfirm_give_back
 string delete
 string error_icon_content_description
 string exposed_dropdown_menu_content_description

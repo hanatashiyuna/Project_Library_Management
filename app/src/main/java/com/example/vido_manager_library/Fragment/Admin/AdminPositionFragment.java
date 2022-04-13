@@ -1,5 +1,8 @@
 package com.example.vido_manager_library.Fragment.Admin;
 
+import static com.example.vido_manager_library.Const.ConstUTF8.KEY_POSITION_DETAIL;
+import static com.example.vido_manager_library.Const.ConstUTF8.NOTIFY_SYSTEM_FALSE;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -18,13 +21,9 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.vido_manager_library.Activities.Admin.BookAdminDetailActivity;
 import com.example.vido_manager_library.Activities.Admin.PositionDetailActivity;
-import com.example.vido_manager_library.Adapters.AuthorAdapter;
 import com.example.vido_manager_library.Adapters.PositionAdapter;
-import com.example.vido_manager_library.Interface.ApiAuthorAdmin;
 import com.example.vido_manager_library.Interface.ApiPositionAdmin;
-import com.example.vido_manager_library.Models.Authors;
 import com.example.vido_manager_library.Models.Positions;
 import com.example.vido_manager_library.R;
 
@@ -44,7 +43,6 @@ public class AdminPositionFragment extends Fragment {
     List<Positions> mListPositionsAdmin;
     ImageView btn_add;
     SearchView searchViewPosition;
-    //private static String searchPosition = "";
 
     @Nullable
     @Override
@@ -63,18 +61,6 @@ public class AdminPositionFragment extends Fragment {
         getListJS(listPositionsScreen);
 
         searchViewPosition = view.findViewById(R.id.search_inputposition);
-        /*searchViewPosition.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String s) {
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String s) {
-                //searchPosition = new Text;
-                return true;
-            }
-        });*/
         return view;
     }
 
@@ -89,13 +75,13 @@ public class AdminPositionFragment extends Fragment {
             private void onClickGoToDetail(Positions positions) {
                 Intent intent = new Intent(getActivity(), PositionDetailActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("books_self", positions);
+                bundle.putSerializable(KEY_POSITION_DETAIL, positions);
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
             @Override
             public void onFailure(Call<List<Positions>> call, Throwable t) {
-                Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -126,7 +112,7 @@ public class AdminPositionFragment extends Fragment {
 
                     @Override
                     public void onFailure(Call<Positions> call, Throwable t) {
-                        Toast.makeText(getActivity(), "Hệ Thông Đang Xử Lí Vui Lòng Trở Lại Sau Vài Giây", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), NOTIFY_SYSTEM_FALSE, Toast.LENGTH_SHORT).show();
                     }
                 });
             }else {

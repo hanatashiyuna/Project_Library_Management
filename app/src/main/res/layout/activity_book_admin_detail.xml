@@ -189,7 +189,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title_categoryId"
-            android:inputType="number"
+            android:inputType="text"
             android:importantForAutofill="no"/>
 
         <TextView
@@ -219,7 +219,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title_publisherId"
-            android:inputType="number"
+            android:inputType="text"
             android:importantForAutofill="no"/>
 
         <TextView
@@ -309,7 +309,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title_position"
-            android:inputType="number"
+            android:inputType="text"
             android:importantForAutofill="no"/>
 
         <Button

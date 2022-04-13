@@ -30,7 +30,6 @@ public interface ApiPositionAdmin {
 
     //Set up api and link
     //==============================
-    // lấy ra danh sách các tài khoản, mật khẩu để đăng nhập
     @GET("api/vitris")
     Call<List<Positions>> covertPositionAdmin();
     @GET("api/vitris/{id}")

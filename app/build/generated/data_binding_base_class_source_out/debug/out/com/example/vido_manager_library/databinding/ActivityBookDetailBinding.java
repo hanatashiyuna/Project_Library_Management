@@ -24,20 +24,20 @@ public final class ActivityBookDetailBinding implements ViewBinding {
   public final ImageView back;
 
   @NonNull
-  public final ImageView imgBook;
+  public final TextView codeBook;
 
   @NonNull
-  public final TextView nameAuthor;
+  public final ImageView imgBook;
 
   @NonNull
   public final TextView nameBook;
 
   private ActivityBookDetailBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView back,
-      @NonNull ImageView imgBook, @NonNull TextView nameAuthor, @NonNull TextView nameBook) {
+      @NonNull TextView codeBook, @NonNull ImageView imgBook, @NonNull TextView nameBook) {
     this.rootView = rootView;
     this.back = back;
+    this.codeBook = codeBook;
     this.imgBook = imgBook;
-    this.nameAuthor = nameAuthor;
     this.nameBook = nameBook;
   }
 
@@ -74,15 +74,15 @@ public final class ActivityBookDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.img_book;
-      ImageView imgBook = ViewBindings.findChildViewById(rootView, id);
-      if (imgBook == null) {
+      id = R.id.codeBook;
+      TextView codeBook = ViewBindings.findChildViewById(rootView, id);
+      if (codeBook == null) {
         break missingId;
       }
 
-      id = R.id.nameAuthor;
-      TextView nameAuthor = ViewBindings.findChildViewById(rootView, id);
-      if (nameAuthor == null) {
+      id = R.id.img_book;
+      ImageView imgBook = ViewBindings.findChildViewById(rootView, id);
+      if (imgBook == null) {
         break missingId;
       }
 
@@ -92,7 +92,7 @@ public final class ActivityBookDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityBookDetailBinding((ConstraintLayout) rootView, back, imgBook, nameAuthor,
+      return new ActivityBookDetailBinding((ConstraintLayout) rootView, back, codeBook, imgBook,
           nameBook);
     }
     String missingId = rootView.getResources().getResourceName(id);
