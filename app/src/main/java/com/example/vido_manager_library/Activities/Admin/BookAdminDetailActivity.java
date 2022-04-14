@@ -220,12 +220,14 @@ public class BookAdminDetailActivity extends AppCompatActivity {
                         String namePosition = ed_position.getText().toString().trim();
                         String year = ed_pbYear.getText().toString().trim();
                         String strAmount = ed_amount.getText().toString().trim();
-                        int amount = Integer.parseInt(strAmount);
-                        /*if(!strAmount.equals("")){
+                        int amount;
+                        if(!strAmount.equals("")){
+                            Log.e("here!", strAmount + "===========================");
                             amount = Integer.parseInt(strAmount);
                         }else{
+                            Log.e("here rong!", "===========================");
                             amount = 1;
-                        }*/
+                        }
 
                         convertIdItem(nameAuthor, nameCategory, namePublisher, namePosition);
                         isCheckInput(code_book, name_book, nameAuthor, nameCategory, namePublisher, year, namePosition);
