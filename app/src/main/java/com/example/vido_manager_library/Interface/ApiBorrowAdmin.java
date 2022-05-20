@@ -25,7 +25,7 @@ public interface ApiBorrowAdmin {
 
     //https://zalobot.pmsa.com.vn/api/booklists?search=
     ApiBorrowAdmin apiBorrowAdmin= new Retrofit.Builder()
-            .baseUrl("https://zalobot.pmsa.com.vn/")
+            .baseUrl("http://zalobot.pmsa.com.vn/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
             .create(ApiBorrowAdmin.class);

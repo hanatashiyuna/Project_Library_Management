@@ -25,7 +25,7 @@ public interface ApiService {
 
     //https://zalobot.pmsa.com.vn/api/sinhviens
     ApiService apiService = new Retrofit.Builder()
-            .baseUrl("https://zalobot.pmsa.com.vn/")
+            .baseUrl("http://zalobot.pmsa.com.vn/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
             .create(ApiService.class);

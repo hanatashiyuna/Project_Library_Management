@@ -6,7 +6,7 @@ INJECTED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\m
 INJECTED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:2:1-103:12
 MERGED from [androidx.databinding:viewbinding:7.0.4] C:\Users\ASUS\.gradle\caches\transforms-3\813345eb504f680a3545dd04c623c665\transformed\jetified-viewbinding-7.0.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.4.2] C:\Users\ASUS\.gradle\caches\transforms-3\66377c2fc5e5bb2fded9583c56a726a9\transformed\navigation-ui-2.4.2\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.material:material:1.5.0] C:\Users\ASUS\.gradle\caches\transforms-3\e6a6b98a5bf4cf452a4bc3a3002b3bc1\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ASUS\.gradle\caches\transforms-3\18333b2219159932fe8c8492401c9daf\transformed\material-1.6.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\ASUS\.gradle\caches\transforms-3\1f79276959ca9fb7f15de4c6158306e1\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\ASUS\.gradle\caches\transforms-3\19075c4677e37e538c54d7f745fc8af4\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:17:1-55:12
@@ -106,8 +106,8 @@ ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main
 		ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:8:22-77
 application
 ADDED from C:\Users\ASUS\AndroidStudioProjects\VIDO_Manager_Library\app\src\main\AndroidManifest.xml:10:5-101:19
-MERGED from [com.google.android.material:material:1.5.0] C:\Users\ASUS\.gradle\caches\transforms-3\e6a6b98a5bf4cf452a4bc3a3002b3bc1\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.5.0] C:\Users\ASUS\.gradle\caches\transforms-3\e6a6b98a5bf4cf452a4bc3a3002b3bc1\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ASUS\.gradle\caches\transforms-3\18333b2219159932fe8c8492401c9daf\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ASUS\.gradle\caches\transforms-3\18333b2219159932fe8c8492401c9daf\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\ASUS\.gradle\caches\transforms-3\1f79276959ca9fb7f15de4c6158306e1\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\ASUS\.gradle\caches\transforms-3\1f79276959ca9fb7f15de4c6158306e1\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\59595c0a99abd232ac1db25f0566a72d\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:45:5-53:19
@@ -316,8 +316,8 @@ MERGED from [androidx.databinding:viewbinding:7.0.4] C:\Users\ASUS\.gradle\cache
 MERGED from [androidx.databinding:viewbinding:7.0.4] C:\Users\ASUS\.gradle\caches\transforms-3\813345eb504f680a3545dd04c623c665\transformed\jetified-viewbinding-7.0.4\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-ui:2.4.2] C:\Users\ASUS\.gradle\caches\transforms-3\66377c2fc5e5bb2fded9583c56a726a9\transformed\navigation-ui-2.4.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.4.2] C:\Users\ASUS\.gradle\caches\transforms-3\66377c2fc5e5bb2fded9583c56a726a9\transformed\navigation-ui-2.4.2\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.material:material:1.5.0] C:\Users\ASUS\.gradle\caches\transforms-3\e6a6b98a5bf4cf452a4bc3a3002b3bc1\transformed\material-1.5.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.5.0] C:\Users\ASUS\.gradle\caches\transforms-3\e6a6b98a5bf4cf452a4bc3a3002b3bc1\transformed\material-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ASUS\.gradle\caches\transforms-3\18333b2219159932fe8c8492401c9daf\transformed\material-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\ASUS\.gradle\caches\transforms-3\18333b2219159932fe8c8492401c9daf\transformed\material-1.6.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\ASUS\.gradle\caches\transforms-3\1f79276959ca9fb7f15de4c6158306e1\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\ASUS\.gradle\caches\transforms-3\1f79276959ca9fb7f15de4c6158306e1\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\ASUS\.gradle\caches\transforms-3\19075c4677e37e538c54d7f745fc8af4\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41

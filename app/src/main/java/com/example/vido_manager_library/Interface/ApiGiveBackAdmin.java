@@ -23,7 +23,7 @@ public interface ApiGiveBackAdmin {
 
     //https://zalobot.pmsa.com.vn/api/booklists?search=
     ApiGiveBackAdmin apiGiveBackAdmin= new Retrofit.Builder()
-            .baseUrl("https://zalobot.pmsa.com.vn/")
+            .baseUrl("http://zalobot.pmsa.com.vn/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
             .create(ApiGiveBackAdmin.class);

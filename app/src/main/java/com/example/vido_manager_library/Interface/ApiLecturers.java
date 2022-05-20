@@ -23,7 +23,7 @@ public interface ApiLecturers {
 
     //https://zalobot.pmsa.com.vn/api/thuthus
     ApiLecturers apiLecturers= new Retrofit.Builder()
-            .baseUrl("https://zalobot.pmsa.com.vn/")
+            .baseUrl("http://zalobot.pmsa.com.vn/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
             .create(ApiLecturers.class);

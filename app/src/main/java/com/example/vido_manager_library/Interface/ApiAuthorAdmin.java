@@ -27,7 +27,7 @@ public interface ApiAuthorAdmin {
 
     //https://zalobot.pmsa.com.vn/api/tacgias
     ApiAuthorAdmin apiauthoradmin = new Retrofit.Builder()
-            .baseUrl("https://zalobot.pmsa.com.vn/")
+            .baseUrl("http://zalobot.pmsa.com.vn/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
             .create(ApiAuthorAdmin.class);
